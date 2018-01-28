@@ -13,7 +13,10 @@
       <path d="M 14,182 H 276"  stroke="#fff" stroke-width="2px" fill="transparent" style="stroke-linecap: round; stroke-linecap: round; stroke-dashoffset: 524;" />
     </g></svg>
     <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="">Découvrir</a>
-    <img id="home__hero__bg" src="/images/azteques.jpg" alt="Photos d'une scène d'un spectacle">
+    <video id="home__hero__bg" poster="/images/hero_bg_poster.jpg" autoplay loop>
+      <source src="/videos/hero_bg.webm" type="video/webm">
+      <source src="/videos/hero_bg.mp4" type="video/mp4">
+    </video>
   </div>
   <pane :type="'pane--left'" :bgImage="'/images/mikitos_pelops.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/maquillage.jpg'" :text="maquillage"></pane>
