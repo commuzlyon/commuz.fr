@@ -203,8 +203,7 @@ let presentation = {
       '<p>Au grand désespoir de sa mère persuadée que son fils peut accomplir de grandes choses, Pélops se satisfait de sa position, sans véritable ambition. Elle aura beau le sermonner, Pélops reviendra toujours à ses moutons. Cependant, surplombant la Grèce depuis le Mont Olympe, les Dieux, eux, ne font pas la sourde oreille.</p>' +
       '<p>Quel destin réservent-ils à Pélops ?</p>',
   bgImage: '/images/equipes/equipe--2017.jpg',
-  image: '/images/affiches/affiche--2017.jpg',
-  gallerie: true
+  image: '/images/affiches/affiche--2017.jpg'
 }
 
 let equipe = {

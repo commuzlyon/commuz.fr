@@ -1,5 +1,14 @@
 <template lang="html">
   <div>
+    <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text">
+      <!-- <template scope="props">
+        <div class="annee__links">
+          <div class="button-link">
+            <router-link :to="`/gallerie/2017`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>
+          </div>
+        </div>
+      </template> -->
+    </pane>
     <div class="section">
       <div class="section__description">
         <img src="/logos/poles/2018/bureau.png" alt="">
@@ -176,6 +185,12 @@
 
 <script>
 import Pane from '@/components/Pane'
+
+let presentation = {
+  text: '<h1>Stay tuned...</h1>',
+  bgImage: '/images/equipes/equipe--2018.jpg'
+  // image: '/images/affiches/affiche--2018.jpg'
+}
 
 let equipe = {
   bureau: [
@@ -626,7 +641,7 @@ let equipe = {
 export default {
   components: { Pane },
   data: function () {
-    return { equipe }
+    return { equipe, presentation }
   }
 }
 </script>
