@@ -11,7 +11,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 
-let anneesEquipes = [ '2018', '2017' ]
+let anneesEquipes = [ '2018', '2017', '2016' ]
 
 export default {
   components: { Navbar },
@@ -46,6 +46,10 @@ export default {
     align-self: center;
     font-size: 1.1em;
   }
+}
+
+.button-link {
+  margin-top: 1em;
 }
 
 .section__description {

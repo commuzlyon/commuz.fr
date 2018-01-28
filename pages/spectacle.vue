@@ -234,6 +234,6 @@ export default {
 }
 
 .button-link {
-  margin-top: 1.2em;
+  margin-top: 1em;
 }
 </style>
