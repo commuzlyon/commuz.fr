@@ -15,11 +15,11 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "fontfaceobserver": "^2.0.13",
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
+    "eslint": "^4.16.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
