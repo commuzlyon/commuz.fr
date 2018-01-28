@@ -2,7 +2,7 @@
   <div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/bureau.png" alt=""> -->
+        <img src="/logos/poles/2018/bureau.png" alt="">
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
@@ -15,7 +15,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/visibilite.png" alt=""> -->
+        <img src="/logos/poles/2018/visibilite.png" alt="">
         <h2>Visibilité</h2>
       </div>
       <div class="section__membres">
@@ -54,7 +54,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/ac.png" alt=""> -->
+        <img src="/logos/poles/2018/ac.png" alt="">
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
@@ -132,7 +132,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/decors.png" alt=""> -->
+        <img src="/logos/poles/2018/decors.png" alt="">
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
