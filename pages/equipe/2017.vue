@@ -665,8 +665,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.pane--media ~ .section {
-  margin-top: 3rem;
-}
+<style lang="css">
 </style>

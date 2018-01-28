@@ -52,6 +52,10 @@ export default {
   margin-top: 1em;
 }
 
+.pane--media ~ .section {
+  margin-top: 3rem;
+}
+
 .section__description {
   display: flex;
   flex-direction: row;
