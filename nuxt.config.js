@@ -99,6 +99,6 @@ module.exports = {
   //   return trans
   // },
   router: {
-    middleware: [ 'redirect_equipe', 'redirect_gallerie' ]
+    middleware: [ 'redirect_equipe', 'redirect_gallerie', 'redirect_conchiage' ]
   }
 }
