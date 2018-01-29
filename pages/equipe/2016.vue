@@ -431,7 +431,76 @@ let equipe = {
   ],
 
   zikos: [
-
+    {
+      role: 'Respo zikos / Piano',
+      nom: 'Vivien Geoffroy',
+      photo: 'vivgeo.png'
+    },
+    {
+      role: 'Respo zikos / Guitare rythmique',
+      nom: 'Jean-Xia Chou',
+      photo: 'jeacho.png'
+    },
+    {
+      role: 'Hautbois',
+      nom: 'Aristide Bled',
+      photo: 'arible.png'
+    },
+    {
+      role: 'Accordéon',
+      nom: 'Francois-Rémi Mazy',
+      photo: 'framaz.png'
+    },
+    {
+      role: 'Violon',
+      nom: 'Théophile Brézot',
+      photo: 'thebre.png'
+    },
+    {
+      role: 'Violon',
+      nom: 'Claire-Marie Gaisne',
+      photo: 'clagai.png'
+    },
+    {
+      role: 'Violoncelle',
+      nom: 'Sacha Hornik',
+      photo: 'sachor.png'
+    },
+    {
+      role: 'Euphonium',
+      nom: 'Florian Lacaze',
+      photo: 'flolac.png'
+    },
+    {
+      role: 'Guitare basse',
+      nom: 'Sacha Landré',
+      photo: 'saclan.png'
+    },
+    {
+      role: 'Guitare solo / Tambourin',
+      nom: 'Quentin Lemaire',
+      photo: 'quelem.png'
+    },
+    {
+      role: 'Batterie',
+      nom: 'Florent Monasterolo',
+      photo: 'flomon.png'
+    },
+    {
+      role: 'Clarinette',
+      nom: 'Mathilde Rajon',
+      photo: 'matraj.png'
+    },
+    {
+      role: 'Saxophone',
+      nom: 'Adrien Rive',
+      photo: 'adrriv.png'
+    },
+    {
+      role: 'Flûte',
+      nom: 'Florentin Vallée',
+      photo: 'floval.png'
+    }
   ],
 
   technique: [
