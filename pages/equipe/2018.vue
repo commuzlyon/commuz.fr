@@ -381,82 +381,82 @@ let equipe = {
 
   zikos: [
     {
-      role: 'Respo Zikos',
+      role: 'Respo Zikos / Violoncelle',
       nom: 'Eva Meunier',
       photo: ''
     },
     {
-      role: 'Respo Zikos',
+      role: 'Respo Zikos / Chef d\'orchestre',
       nom: 'Vincent Duong',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Alto & trompette',
       nom: 'Marwan Hassan',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Trombonne',
       nom: 'Denis Guibert',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Piano',
       nom: 'Paul Duvivier',
       photo: ''
     },
     {
-      role: 'Musicienne',
+      role: 'Flûte',
       nom: 'Jeanne Gauillaumat',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Trompette',
       nom: 'Clément Borne',
       photo: ''
     },
     {
-      role: 'Musicienne',
+      role: 'Clarinette',
       nom: 'Océane Rey',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Saxophone',
       nom: 'Adrien Rive',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Violon',
       nom: 'Antoine Boudon',
       photo: ''
     },
     {
-      role: 'Musicienne',
+      role: 'Violon',
       nom: 'Aliénor Delhay',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Guitare',
       nom: 'Antoine Diers',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Basse',
       nom: 'Vivien Geoffroy',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Guitare',
       nom: 'Côme Peladeau',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Batterie',
       nom: 'Julien Schryve',
       photo: ''
     },
     {
-      role: 'Musicien',
+      role: 'Euphonium',
       nom: 'Matthias Zugarramurdi',
       photo: ''
     }
