@@ -2,7 +2,14 @@
 <div>
   <navbar class="rel"></navbar>
   <div id="spectacle__hero">
-    <h1>Le thème de l'édition 2018 n'a pas encore été annoncé, stay tuned&hellip;</h1>
+    <div id="spectacle__hero_text">
+      <h2>Le spectacle 2018 est en pleine préparation, suivez l'avancée sur</h2>
+      <h2><a class="inline-link" target="_blank" href="https://www.instagram.com/commuzlyon/">Instagram</a></h2>
+    </div>
+    <video id="spectacle__hero_bg" poster="/images/timelapse-zikos_poster.jpg" autoplay loop>
+      <source src="/videos/timelapse-zikos.webm" type="video/webm">
+      <source src="/videos/timelapse-zikos.mp4" type="video/mp4">
+    </video>
   </div>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
@@ -196,19 +203,37 @@ export default {
 
 <style lang="scss" scoped>
 #spectacle__hero {
-  background: linear-gradient(90deg, #ff6a88 55%, #ff99ac);
   color: white;
   min-height: 70vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr auto;
   align-items: center;
   justify-items: center;
+}
 
-  h1 {
-    margin: 6rem;
-    text-align: center;
+#spectacle__hero_text {
+  grid-area: 1 / 1 / -1 / -1;
+  z-index: 1;
+  margin: 6rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0.5em;
   }
+
+  a {
+    color: var(--pink);
+  }
+}
+
+#spectacle__hero_bg {
+  grid-area: 1 / 1 / -1 / -1;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
 }
 
 #precedentes {
