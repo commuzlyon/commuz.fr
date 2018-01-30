@@ -11,7 +11,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 
-let anneesEquipes = [ '2018', '2017', '2016' ]
+let anneesEquipes = [ '2018', '2017', '2016', '2014' ]
 
 export default {
   components: { Navbar },
@@ -25,6 +25,8 @@ export default {
 #years-list {
   padding: 1rem 5rem 3rem 5rem;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   a {
     margin-right: 0.8em;
@@ -41,6 +43,7 @@ export default {
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  padding: 0 2em;
 
   h2 {
     align-self: center;
@@ -53,7 +56,7 @@ export default {
 }
 
 .pane--media ~ .section {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .section__description {

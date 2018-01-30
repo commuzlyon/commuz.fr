@@ -57,7 +57,7 @@ let anneesPassees = [
     bgImage: '/images/equipes/equipe--2016.jpg',
     image: '/images/affiches/affiche--2016.jpg',
     gallerie: false,
-    equipe: false
+    equipe: true
   },
   {
     annee: 2015,
@@ -76,7 +76,7 @@ let anneesPassees = [
     bgImage: '/images/equipes/equipe--2014.jpg',
     image: '/images/affiches/affiche--2014.jpg',
     gallerie: false,
-    equipe: false
+    equipe: true
   },
   {
     annee: 2013,
