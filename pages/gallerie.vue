@@ -25,6 +25,8 @@ export default {
 #years-list {
   padding: 1rem 5rem 3rem 5rem;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   a {
     margin-right: 0.8em;
