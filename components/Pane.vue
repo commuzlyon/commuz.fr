@@ -69,7 +69,7 @@ export default {
   }
 
   .pane__bg {
-    filter: brightness(0.3);
+    filter: brightness(0.25);
     grid-area: 1 / 1 / -1 / -1;
   }
 }

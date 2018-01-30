@@ -2,15 +2,17 @@
 <div>
   <navbar class="rel"></navbar>
   <div id="spectacle__hero">
-    <div id="spectacle__hero_text">
-      <h2>Le spectacle 2018 est en pleine préparation, suivez l'avancée sur</h2>
-      <h2><a class="inline-link" target="_blank" href="https://www.instagram.com/commuzlyon/">Instagram</a></h2>
-    </div>
     <video id="spectacle__hero_bg" poster="/images/timelapse-zikos_poster.jpg" autoplay loop>
       <source src="/videos/timelapse-zikos.webm" type="video/webm">
       <source src="/videos/timelapse-zikos.mp4" type="video/mp4">
     </video>
   </div>
+
+  <section id="spectacle__presentation">
+    <h2>Le spectacle 2018 est en pleine préparation ! Suivez son avancée sur</h2>
+    <h2><a class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a> ou <a class="inline-link" target="_blank" href="https://www.instagram.com/commuzlyon/">Instagram</a></h2>
+  </section>
+
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
     <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
@@ -140,7 +142,7 @@ let anneesPassees = [
   {
     annee: 2007,
     text: '<h2>2007 : Opération Redfish</h2>' +
-            '<pIl existe un objet précieux, véritable Saint Graal des temps modernes, mais qui n\'a de vraie valeur que si les deux parties qui le composent sont réunies.</p>' +
+          '<p>Il existe un objet précieux, véritable Saint Graal des temps modernes, mais qui n\'a de vraie valeur que si les deux parties qui le composent sont réunies.</p>' +
           '<p>La première vient d\'être dérobée mais la seconde a disparu depuis des temps immémoriaux. Afin de protéger cette dernière, deux experts décident de partir à sa recherche.</p>',
     bgImage: '/images/equipes/2007.jpg',
     image: '/images/affiches/affiche--2007.jpg',
@@ -160,7 +162,8 @@ let anneesPassees = [
   {
     annee: 2005,
     text: '<h2>2005 : Derrière le Miroir</h2>' +
-          '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
+          '<p>6 personnes, que rien ne semble relier entre elles, se retrouvent dans un lieu étrange... Durant leur attente, des relations se nouent, les passés et les cœurs se dévoilent. Mais au fait, qu\'attendent-elles ainsi ? Et quel est cet étrange « administrateur » qui apparaît de temps à autre et semble détenir toutes les réponses sans jamais rien révéler ?</p>' +
+          '<p>Dans ce lieu où le temps semble ne plus exister, sous le regard cynique de l’administrateur, ces 6 personnes vont apprendre à voir leur vie sous un éclairage différent, à la lumière de l\'histoire et du regard des 5 autres. Ne pas savoir pourquoi ni pour combien de temps elles sont ensemble les pousse à découvrir leurs sentiments, leurs envies, et à se parler sans se préoccuper des apparences.',
     bgImage: '/images/equipes/equipe--2005.jpg',
     image: '/images/affiches/affiche--2005.jpg',
     gallerie: false,
@@ -169,7 +172,9 @@ let anneesPassees = [
   {
     annee: 2004,
     text: '<h2>2004 : La Danse des Girafes</h2>' +
-          '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
+          '<p>8 amis réunis, leur passé sur la table, leur présent avec eux et leur futur en question se retrouvent, mais qu\'ont t\'ils encore en commun, que pensent-ils réellement des uns et des autres, d\'eux-mêmes ? Quelles conséquences sur leur propre vie ces retrouvailles vont-elles avoir ?</p>' +
+          '<p>C\'est dans cette ambiance à la fois introspective et sociale qu\'évolue le spectacle de la Commuz\' 2004, plongé dans l\'onirisme et la dure réalité des rapports humains, mais où les scènes peuvent être drôles et graves à la fois car c\'est ainsi que sont nos liens quand on est une grande bande d\'amis aux caractères aussi diverses et parfois incompatibles que possible.</p>' +
+          '<p>Parfois, c\'est la jungle.</p>',
     bgImage: '/images/equipes/equipe--2004.jpg',
     image: '/images/affiches/affiche--2004.jpg',
     gallerie: false,
@@ -206,26 +211,13 @@ export default {
 <style lang="scss" scoped>
 #spectacle__hero {
   color: white;
-  min-height: 70vh;
+  // min-height: 70vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 100%;
   align-items: center;
   justify-items: center;
-}
-
-#spectacle__hero_text {
-  grid-area: 1 / 1 / -1 / -1;
-  z-index: 1;
-  margin: 6rem;
-  text-align: center;
-
-  h2 {
-    margin-bottom: 0.5em;
-  }
-
-  a {
-    color: var(--pink);
-  }
+  margin-bottom: 2em;
 }
 
 #spectacle__hero_bg {
@@ -235,7 +227,25 @@ export default {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.5);
+}
+
+#spectacle__presentation {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  @media only screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+  // background: linear-gradient(100deg, #621837, #47193b 60%);
+  background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    color: var(--light-pink);
+    font-size: 1.2em;
+  }
 }
 
 #precedentes {
