@@ -58,6 +58,7 @@ import Navbar from '@/components/Navbar'
 import Foot from '@/components/Foot'
 import bus from '@/components/bus'
 import FontFaceObserver from 'fontfaceobserver'
+import anime from 'animejs'
 
 export default {
   components: { Navbar, Foot },
@@ -69,15 +70,15 @@ export default {
 
     function removePreloader () {
       let preloaderElt = document.getElementById('preloader__container')
-      let preloaderAnim = preloaderElt.animate([
-        { opacity: 1 },
-        { opacity: 0 }
-      ], {
-        duration: 1000,
-        fill: 'forwards',
-        easing: 'ease-out'
+      let removeOverlayAnimation = anime({
+        targets: preloaderElt,
+        opacity: [1, 0],
+        duration: 2000,
+        easing: 'easeOutSine'
       })
-      preloaderAnim.onfinish = () => preloaderElt.remove()
+      removeOverlayAnimation.finished.then(() => {
+        preloaderElt.remove()
+      })
       bus.$emit('loaded', true)
     }
 
@@ -93,10 +94,10 @@ export default {
 <style lang="scss" scoped>
 // transitioning between elements in router-view
 
-.router-view-fade-leave-active {
+.router-overlay-leave-active {
   transition: opacity 0.3s ease;
 }
-.router-view-fade-leave-to {
+.router-overlay-leave-to {
   opacity: 0.5;
 }
 
@@ -108,6 +109,12 @@ export default {
   background-color: black;
   z-index: 90;
   transform-origin: bottom;
-  transform: scale3d(1, 0, 1);
+  transform: scaleY(0);
+  transition: transform 0.4s ease-in-out;
+
+  &.up {
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+  }
 }
 </style>

@@ -1,38 +1,18 @@
 function addOverlay (el, done) {
-  let slideTiming = {
-    duration: 300,
-    fill: 'forwards',
-    easing: 'ease-in-out',
-    iterations: 1
-  }
-  let scaleUpKF = [
-    { transform: 'scale3d(1,0,1)' },
-    { transform: 'scale3d(1,1,1)' }
-  ]
   let overlayElt = document.getElementById('overlayDiv')
-  let addOverlayAnim = overlayElt.animate(scaleUpKF, slideTiming)
-  addOverlayAnim.onfinish = () => done()
+  overlayElt.classList.add('up')
+  window.setTimeout(() => {
+    overlayElt.classList.remove('up')
+    done()
+  }, 300)
 }
 
 function removeOverlay (el, done) {
-  let slideTiming = {
-    duration: 300,
-    fill: 'forwards',
-    easing: 'ease-in-out',
-    iterations: 1
-  }
-  let scaleDownKF = [
-    { transform: 'scale3d(1,1,1)' },
-    { transform: 'scale3d(1,0,1)' }
-  ]
   let overlayElt = document.getElementById('overlayDiv')
-  window.setTimeout(function () {
-    window.scrollTo(0, 0)
-    let removeOverlayAnim = overlayElt.animate(scaleDownKF, slideTiming)
-    removeOverlayAnim.onfinish = function () {
-      done()
-    }
-  }, 300)
+  window.setTimeout(() => {
+    overlayElt.classList.remove('up')
+    done()
+  }, 700)
 }
 
 module.exports = {
@@ -72,32 +52,19 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor:
+    [ 'animejs' ]
   },
   css: [
     '@/assets/css/global.scss',
   ],
   transition: {
     mode: 'out-in',
-    name: 'router-view-fade',
+    name: 'router-overlay',
     leave: addOverlay,
     enter: removeOverlay
   },
-  // transition: function _transition (to, from) {
-  //   let reg = new RegExp('\/\w\/\w')
-  //   console.log(to)
-  //   if (to.match(reg) && from.match(reg)) {
-  //     console.log('hip')
-  //     return 'fade'
-  //   }
-  //   let trans = {
-  //     mode: 'out-in',
-  //     name: 'router-view-fade',
-  //     leave: addOverlay,
-  //     enter: removeOverlay
-  //   }
-  //   return trans
-  // },
   router: {
     middleware: [ 'redirect_equipe', 'redirect_gallerie', 'redirect_conchiage' ]
   }
