@@ -111,7 +111,7 @@ let anneesPassees = [
   {
     annee: 2010,
     text: '<h2>2010 : Humour, Gouache et Beauté</h2>' +
-          '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
+          '<p>La pièce retrace l’histoire (véritable) de nos plus grands peintres de la Renaissance : Raphaël, Léonard, Vitruve, et Michel et Ange, les siamois.</p>',
     bgImage: '/images/equipes/equipe--2010.jpg',
     image: '/images/affiches/affiche--2010.jpg',
     gallerie: false,
@@ -130,7 +130,8 @@ let anneesPassees = [
   {
     annee: 2008,
     text: '<h2>2008 : Profession : Détective</h2>' +
-          '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
+          '<p>La nuit s\'est achevée. Désormais les korrigans dansent, dansent autour du feu. Mais leurs victimes ne seront pas au rendez-vous... Non, ce soir, quelqu\'un d\'autre s\'en chargera : un étrange évènement menace la vie tranquille d\'un manoir des plus éclectiques de la Bretagne profonde.</p>' +
+          '<p>Les rideaux s\'ouvrent, les personnages s\'affrontent, se méfient, s\'aiment, se détestent... Les quiproquos naissent, se mêlent pour concocter une potion efficace contre les idées les plus noires. Tandis que les émotions se succèdent au gré des situations, les indices apparaissent et disparaissent sous les yeux des spectateurs. Serez-vous aussi perspicace que notre détective pour percer le mystère ?</p>',
     bgImage: '/images/equipes/2008.jpg',
     image: '/images/affiches/affiche--2008.jpg',
     gallerie: false,
@@ -149,7 +150,8 @@ let anneesPassees = [
   {
     annee: 2006,
     text: '<h2>2006 : La Surprise du Chef</h2>' +
-          '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
+          '<p>Cette année, la pièce sera une satire, humoristique mais pertinente, du monde de la politique. Le spectateur se verra plonger pendant plus d\'une heure et demie dans une aventure rocambolesque.</p>' +
+          '<p>Un chef qui plaque tout du jour au lendemain... voilà qui donne une bien mauvaise image dans le milieu de la politique. Pour rester crédible, les quatre membres qui restent n’ont qu’une seule solution: être unis, et essayer de cacher l’affaire aux médias. Mais la réalité est d’un tout autre ton !</p>',
     bgImage: '/images/equipes/2006.jpg',
     image: '/images/affiches/affiche--2006.jpg',
     gallerie: false,
