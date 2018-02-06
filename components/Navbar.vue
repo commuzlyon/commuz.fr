@@ -12,7 +12,7 @@
         <router-link class="navbar__link" active-class="navbar__link--active" to="/spectacle"><span>Le spectacle</span></router-link>
       </li>
       <li class="navbar__item">
-        <router-link class="navbar__link" active-class="navbar__link--active" to="/gallerie"><span>Les photos</span></router-link>
+        <router-link class="navbar__link" active-class="navbar__link--active" to="/galerie"><span>Les photos</span></router-link>
       </li>
       <li class="navbar__item">
         <router-link class="navbar__link" active-class="navbar__link--active" to="/equipe"><span>L'équipe</span></router-link>

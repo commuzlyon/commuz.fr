@@ -81,16 +81,24 @@ export default {
 <style lang="scss">
 #jambonbrie__container {
   width: 100%;
+  min-width: 350px;
   height: 100vh;
   display: grid;
   grid-gap: 0;
   justify-items: center;
-  grid-template-columns: 1fr 350px 1fr 270px;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 350px 1fr;
+  grid-template-rows: 2fr 1fr 100px;
+  @media only screen and (min-width: 650px) {
+    grid-template-columns: 1fr 350px 1fr 270px;
+    grid-template-rows: 2fr 1fr;
+  }
 }
 
 #jambonbrie__bg {
-  grid-area: 1 / 1 / -1 / -2;
+  grid-area: 1 / 1 / -2 / -1;
+  @media only screen and (min-width: 650px) {
+    grid-area: 1 / 1 / -1 / -2;
+  }
   z-index: -1;
   height: 100%;
   width: 100%;
@@ -99,7 +107,10 @@ export default {
 }
 
 #jambonbrie__tartine {
-  grid-area: 2 / 2 / -1 / 3;
+  grid-area: 2 / 2 / -2 / -1;
+  @media only screen and (min-width: 650px) {
+    grid-area: 2 / 2 / -1 / -2;
+  }
   width: 350px;
   background: url('/c/jambonbrie/tartine.png');
   background-position: center;
@@ -116,17 +127,26 @@ export default {
 }
 
 #jambonbrie__ingredients {
-  grid-area: 1 / 4 / -1 / -1;
+  grid-area: 3 / 1 / -1 / -1;
+  background-repeat: repeat-x;
+  flex-direction: row;
+  @media only screen and (min-width: 650px) {
+    grid-area: 1 / 4 / -1 / -1;
+    background-repeat: repeat-y;
+    flex-direction: column;
+    height: 70%;
+  }
+  padding: 1em;
   align-self: center;
-  height: 70%;
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: space-around;
+  background: url('/c/jambonbrie/frigo.jpg');
+  background-size: contain;
 }
 
 #jambonbrie__brie, #jambonbrie__jambon {
-  width: 200px;
+  max-width: 200px;
 }
 </style>

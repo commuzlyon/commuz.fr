@@ -2,7 +2,7 @@
   <div>
     <navbar class="rel"></navbar>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesGallerie" :key="id" :to="`/gallerie/${annee}`" exact>{{ annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesGallerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
     </div>
     <nuxt-child/>
   </div>
