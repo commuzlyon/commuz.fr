@@ -378,6 +378,11 @@ let equipe = {
     },
     {
       role: 'Compositeur',
+      nom: 'Erwan Blain',
+      photo: 'pwell.gif'
+    },
+    {
+      role: 'Compositeur',
       nom: 'Vivien Geoffroy',
       photo: 'paccio.gif'
     },
