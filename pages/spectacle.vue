@@ -23,7 +23,7 @@
     <template scope="props">
       <div v-if="annee.gallerie || annee.equipe" class="annee__links">
         <div v-if="annee.gallerie" class="button-link">
-          <router-link class="" :to="`/gallerie/${annee.annee}`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>
+          <router-link class="" :to="`/galerie/${annee.annee}`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>
         </div>
         <div v-if="annee.equipe" class="button-link">
           <router-link class="" :to="`/equipe/${annee.annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
