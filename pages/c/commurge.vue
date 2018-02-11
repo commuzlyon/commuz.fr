@@ -207,9 +207,11 @@ export default {
 .match__person {
   @media (max-width: 799px) {
     height: 45%;
+    // width: auto;
   }
   @media (min-width: 800px) {
     width: 40vw;
+    // height: auto;
   }
   margin: 0 1em 1em 1em;
   display: flex;
@@ -218,7 +220,14 @@ export default {
   align-items: center;
 
   img {
-    max-height: 100%;
+    @media (max-width: 799px) {
+      max-height: 100%;
+      width: auto;
+    }
+    @media (min-width: 800px) {
+      width: 100%;
+      height: auto;
+    }
     max-width: 100%;
     min-height: 0;
     min-width: 0;
