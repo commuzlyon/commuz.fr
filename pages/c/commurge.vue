@@ -1,13 +1,9 @@
 <template lang="html">
-<div>
+<div style="overflow-y: hidden;">
   <audio id="commurge_audio" src="" autoplay loop></audio>
-  <!-- <form method="POST" name="chopes" id="chopes_form" action="/c/commurge" hidden netlify>
-    <input type="text" name="chopeA" id="form__chopeA" value="">
-    <input type="text" name="chopeB" id="form__chopeB" value="">
-  </form> -->
   <div id="overlay_chope">
     <img id="close_chope" src="/c/commurge/close.gif" alt="">
-    <img id="love_loader" src="/c/commurge/iloveyou.gif" alt="">
+    <img id="love_loader" src="/c/commurge/iloveyou.gif">
     <div id="match">
       <div class="match__person" id="chopeA">
         <img src="/c/commurge/trombi/Mayar.JPG" alt="">
@@ -17,12 +13,7 @@
         <img src="/c/commurge/trombi/Emeline.JPG" alt="">
         <p>Emeline</p>
       </div>
-      <form method="POST" enctype="application/x-www-form-urlencoded" name="chopes" id="chopes_form" action="/c/commurge" netlify>
-        <input type="text" name="chopeA" id="form__chopeA" value="" hidden>
-        <input type="text" name="chopeB" id="form__chopeB" value="" hidden>
-        <input type="image" src="/c/commurge/pouce.gif" id="send_chope">
-      </form>
-      <!-- <img id="send_chope" src="/c/commurge/pouce.gif" alt=""> -->
+      <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
@@ -78,9 +69,6 @@ let showChope = function () {
     let chopeP = chopeElt.childNodes[1]
     chopeImg.src = `/c/commurge/trombi/${nom}.JPG`
     chopeP.innerHTML = `${nom}`
-
-    let formChopeElt = document.getElementById(`form__${id}`)
-    formChopeElt.value = nom
   }
   applyChope(chopeA, 'chopeA')
   applyChope(chopeB, 'chopeB')
@@ -89,7 +77,6 @@ let showChope = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
   let loveLoaderElt = document.getElementById('love_loader')
   let matchElt = document.getElementById('match')
-  let matchPersonElts = document.getElementsByClassName('match__person')
 
   let timelineChope = anime.timeline()
 
@@ -97,7 +84,7 @@ let showChope = function () {
     targets: overlayChopeElt,
     borderRadius: ['50%', '0%'],
     width: '100%',
-    height: '100vh',
+    height: '100%',
     duration: 1500,
     easing: 'easeInOutQuart'
   }).add({
@@ -115,16 +102,19 @@ let showChope = function () {
   }).add({
     targets: matchElt,
     opacity: 1
-  }).add({
-    targets: matchPersonElts,
-    transform: ['scale(0.7)', 'scale(1)'],
-    delay: '2000'
   })
 }
 
 let sendChope = function () {
-  let chopesForm = document.getElementById('chopes_form')
-  chopesForm.submit()
+  let chope = {}
+  chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
+  chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
+
+  const req = new XMLHttpRequest()
+  req.open('POST', 'https://hooks.zapier.com/hooks/catch/2955359/zrxj48/')
+  req.send(JSON.stringify(chope))
+
+  closeChope()
 }
 
 export default {
@@ -151,30 +141,17 @@ export default {
   background-image: url('/c/commurge/coeurs_bg.gif');
   background-repeat: repeat;
   border-radius: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   height: 0;
   width: 0;
-  display: grid;
-  justify-items: center;
-  align-items: center;
   overflow: hidden;
-}
-
-#overlay_chope__bg {
-  grid-area: 1 / 1 / -1 / -1;
-  height: 100%;
-  width: 100%;
-
-  img {
-    object-position: center;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #close_chope {
@@ -189,26 +166,42 @@ export default {
 #send_chope {
   position: absolute;
   cursor: pointer;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  height: 100px;
+  height: 80px;
 }
 
 #love_loader {
   opacity: 0;
   z-index: 11;
-  grid-area: 1 / 1 / -1 / -1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 40vw;
 }
 
 #match {
   opacity: 0;
   grid-area: 1 / 1 / -1 / -1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+  justify-content: center;
+  max-height: calc(100vh - 90px - 120px);
+  width: 95vw;
 }
 
 .match__person {
+  @media (max-width: 799px) {
+    height: 30vh;
+  }
+  @media (min-width: 800px) {
+    width: 40vw;
+  }
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -216,13 +209,15 @@ export default {
   align-items: center;
 
   img {
+    max-height: 100%;
+    max-width: 100%;
     margin-bottom: 1em;
-    border: inset 8px pink;
+    border: inset 5px pink;
   }
 
   p {
     font-family: 'Pacifico', cursive;
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }
 
