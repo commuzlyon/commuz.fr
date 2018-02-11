@@ -166,10 +166,17 @@ export default {
 #send_chope {
   position: absolute;
   cursor: pointer;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 80px;
+  @media (max-width: 799px) {
+    top: 20px;
+  }
+  right: 20px;
+  height: 50px;
+  @media (min-width: 800px) {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 80px;
+  }
 }
 
 #love_loader {
@@ -184,25 +191,27 @@ export default {
 
 #match {
   opacity: 0;
-  grid-area: 1 / 1 / -1 / -1;
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  height: calc(100vh - 90px);
   @media (min-width: 800px) {
+    align-self: center;
     flex-direction: row;
+    max-height: calc(100vh - 90px - 120px);
   }
   justify-content: center;
-  max-height: calc(100vh - 90px - 120px);
   width: 95vw;
 }
 
 .match__person {
   @media (max-width: 799px) {
-    height: 30vh;
+    height: 45%;
   }
   @media (min-width: 800px) {
     width: 40vw;
   }
-  margin: 1em;
+  margin: 0 1em 1em 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,7 +226,10 @@ export default {
 
   p {
     font-family: 'Pacifico', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    @media (min-width: 800px) {
+      font-size: 1.5em;
+    }
   }
 }
 
