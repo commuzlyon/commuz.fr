@@ -1,10 +1,10 @@
 <template lang="html">
 <div>
   <audio id="commurge_audio" src="" autoplay loop></audio>
-  <form name="chopes" id="chopes_form" action="/c/commurge" hidden netlify>
+  <!-- <form method="POST" name="chopes" id="chopes_form" action="/c/commurge" hidden netlify>
     <input type="text" name="chopeA" id="form__chopeA" value="">
     <input type="text" name="chopeB" id="form__chopeB" value="">
-  </form>
+  </form> -->
   <div id="overlay_chope">
     <img id="close_chope" src="/c/commurge/close.gif" alt="">
     <img id="love_loader" src="/c/commurge/iloveyou.gif" alt="">
@@ -17,7 +17,12 @@
         <img src="/c/commurge/trombi/Emeline.JPG" alt="">
         <p>Emeline</p>
       </div>
-      <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <form method="POST" enctype="application/x-www-form-urlencoded" name="chopes" id="chopes_form" action="/c/commurge" netlify>
+        <input type="text" name="chopeA" id="form__chopeA" value="" hidden>
+        <input type="text" name="chopeB" id="form__chopeB" value="" hidden>
+        <input type="image" src="/c/commurge/pouce.gif" id="send_chope">
+      </form>
+      <!-- <img id="send_chope" src="/c/commurge/pouce.gif" alt=""> -->
     </div>
   </div>
   <div id="commurge__container">
