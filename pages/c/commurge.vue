@@ -123,6 +123,7 @@ let sendChope = function () {
 }
 
 export default {
+  layout: 'conchiage',
   methods: { showChope, closeChope, sendChope },
   mounted: function () {
     let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3']
