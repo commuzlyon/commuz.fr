@@ -6,12 +6,12 @@
     <img id="love_loader" src="/c/commurge/iloveyou.gif">
     <div id="match">
       <div class="match__person" id="chopeA">
-        <img src="/c/commurge/trombi/Mayar.JPG" alt="">
-        <p>Mayar</p>
+        <img src="" alt="">
+        <p></p>
       </div>
       <div class="match__person" id="chopeB">
-        <img src="/c/commurge/trombi/Emeline.JPG" alt="">
-        <p>Emeline</p>
+        <img src="" alt="">
+        <p></p>
       </div>
       <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
@@ -220,6 +220,8 @@ export default {
   img {
     max-height: 100%;
     max-width: 100%;
+    min-height: 0;
+    min-width: 0;
     margin-bottom: 1em;
     border: inset 5px pink;
   }
