@@ -1,7 +1,7 @@
 
 <template lang="html">
 <div>
-  <navbar class="rel"></navbar>
+  <!-- <navbar class="rel"></navbar> -->
   <audio src="/c/rootz/surmaroute.mp3" autoplay loop></audio>
   <div id="rootz__container">
     <img src="/c/rootz/rootz.png" alt="">
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+// import Navbar from '@/components/Navbar'
 import anime from 'animejs'
 
 export default {
-  components: { Navbar },
+  // components: { Navbar },
   mounted: function () {
     var maxElements = 40
     var duration = 3000

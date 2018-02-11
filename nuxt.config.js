@@ -57,7 +57,7 @@ module.exports = {
     [ 'animejs' ]
   },
   css: [
-    '@/assets/css/global.scss',
+    '@/assets/css/global.scss'
   ],
   transition: {
     mode: 'out-in',

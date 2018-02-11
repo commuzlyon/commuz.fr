@@ -2,9 +2,9 @@
 <div>
   <navbar class="rel"></navbar>
   <div id="spectacle__hero">
-    <video id="spectacle__hero_bg" poster="/images/timelapse-zikos_poster.jpg" autoplay loop>
-      <source src="/videos/timelapse-zikos.webm" type="video/webm">
-      <source src="/videos/timelapse-zikos.mp4" type="video/mp4">
+    <video id="spectacle__hero_bg" poster="/images/timelapse-zikos-danse_poster.jpg" autoplay loop>
+      <!-- <source src="/videos/timelapse-zikos.webm" type="video/webm"> -->
+      <source src="/videos/timelapse-zikos-danse.mp4" type="video/mp4">
     </video>
   </div>
 

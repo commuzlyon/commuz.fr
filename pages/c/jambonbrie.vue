@@ -1,6 +1,6 @@
 <template lang="html">
 <div class="">
-  <navbar class="abs"></navbar>
+  <!-- <navbar class="abs"></navbar> -->
   <div id="jambonbrie__container">
     <img id="jambonbrie__bg" src="/c/jambonbrie/amour.jpg" alt="">
     <div id="jambonbrie__ingredients" class="dropper">
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+// import Navbar from '@/components/Navbar'
 
 export default {
-  components: { Navbar },
+  // components: { Navbar },
   mounted: function () {
     function showAmour () {
       let dossiers = ['lise.jpg', 'lally.mp4', 'thazzy.jpg']
