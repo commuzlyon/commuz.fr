@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <audio id="commurge_audio" src="" autoplay loop></audio>
-  <form name="chopes" id="chopes_form" netlify>
+  <form name="chopes" id="chopes_form" action="/c/commurge" hidden netlify>
     <input type="text" name="chopeA" id="form__chopeA" value="">
     <input type="text" name="chopeB" id="form__chopeB" value="">
   </form>
@@ -140,10 +140,6 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-
-form {
-  display: none;
-}
 
 #overlay_chope {
   background-color: #f687e5;
