@@ -6,7 +6,7 @@
     <input type="text" name="chopeB" id="form__chopeB" value="">
   </form>
   <div id="overlay_chope">
-    <img @click="closeChope()" id="close_chope" src="/c/commurge/close.gif" alt="">
+    <img id="close_chope" src="/c/commurge/close.gif" alt="">
     <img id="love_loader" src="/c/commurge/iloveyou.gif" alt="">
     <div id="match">
       <div class="match__person" id="chopeA">
@@ -17,7 +17,7 @@
         <img src="/c/commurge/trombi/Emeline.JPG" alt="">
         <p>Emeline</p>
       </div>
-      <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
@@ -27,7 +27,7 @@
     <div id="titanic">
       <img class="commurge__bg" src="/c/commurge/titanic.jpg" alt="">
     </div>
-    <button @click="showChope()" type="button" class="commurge__button">Découvrir une chope</button>
+    <button id="show_chope" type="button" class="commurge__button">Découvrir une chope</button>
     <img class="commurge__image" id="coeur" src="/c/commurge/coeurs.gif" alt="">
     <img class="commurge__image" id="ange" src="/c/commurge/ange.gif" alt="">
     <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="">
@@ -128,6 +128,10 @@ export default {
     let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3']
     let i = Math.floor(Math.random() * Math.floor(chansons.length))
     document.getElementById('commurge_audio').src = `/c/commurge/${chansons[i]}`
+
+    document.getElementById('show_chope').addEventListener('click', showChope)
+    document.getElementById('send_chope').addEventListener('click', sendChope)
+    document.getElementById('close_chope').addEventListener('click', closeChope)
   }
 }
 </script>
@@ -234,10 +238,6 @@ form {
   background-color: #f687e5;
   background-image: url('/c/commurge/stars_bg.gif');
   background-repeat: repeat;
-}
-
-#show_chope {
-  position: relative;
 }
 
 .commurge__button {
