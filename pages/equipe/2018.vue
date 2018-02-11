@@ -108,8 +108,14 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <template v-if="membre.nom == 'Marwan Hassan'">
+            <router-link to="/rootz"><p><b>{{ membre.nom }}</b><br/>
+              <i>{{ membre.role }}</i></p></router-link>
+          </template>
+          <template v-else>
+            <p><b>{{ membre.nom }}</b><br/>
+              <i>{{ membre.role }}</i></p>
+          </template>
         </div>
       </div>
     </div>

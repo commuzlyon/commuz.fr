@@ -38,7 +38,6 @@
 
 <script>
 import anime from 'animejs'
-// import ratios from '/assets/js/ratios_commurge'
 import ratios from '@/static/c/commurge/ratios.json'
 
 let closeChope = function () {
@@ -114,7 +113,7 @@ let showChope = function () {
   }).add({
     targets: matchPersonElts,
     transform: ['scale(0.7)', 'scale(1)'],
-    delay: '300'
+    delay: '2000'
   })
 }
 
