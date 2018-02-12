@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-test",
+  "name": "site-commuz",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Site internet de la Commuz",
   "author": "",
   "private": true,
   "scripts": {
