@@ -198,7 +198,7 @@
 import Pane from '@/components/Pane'
 
 let presentation = {
-  text: '<h2>2017 : Le Caprice des Jeux</h2>' +
+  text: '<h2>2017 : Les Caprices des Jeux</h2>' +
       '<p>Grèce Antique, vous avez dit ? Nous irons donc y rencontrer Pélops et sa mère, deux modestes gens vivant paisiblement grâce à leur troupeau de moutons.</p>' +
       '<p>Au grand désespoir de sa mère persuadée que son fils peut accomplir de grandes choses, Pélops se satisfait de sa position, sans véritable ambition. Elle aura beau le sermonner, Pélops reviendra toujours à ses moutons. Cependant, surplombant la Grèce depuis le Mont Olympe, les Dieux, eux, ne font pas la sourde oreille.</p>' +
       '<p>Quel destin réservent-ils à Pélops ?</p>',
