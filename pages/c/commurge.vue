@@ -12,7 +12,7 @@
         <img src="" alt="">
         <p></p>
       </div>
-      <img id="send_no_chope" src="/c/commurge/vomis.gif" alt="">
+      <img id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
       <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
@@ -174,7 +174,7 @@ export default {
   top: 30px;
   // left: 20px;
   left: 50%;
-  transform: translateX(-200%);
+  transform: translateX(-200%) scaleY(-1);
 }
 
 #send_chope {
