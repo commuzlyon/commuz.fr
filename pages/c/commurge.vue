@@ -2,7 +2,6 @@
 <div style="overflow-y: hidden;">
   <audio id="commurge_audio" src="" autoplay loop></audio>
   <div id="overlay_chope">
-    <img id="close_chope" src="/c/commurge/close.gif" alt="">
     <img id="love_loader" src="/c/commurge/iloveyou.gif">
     <div id="match">
       <div class="match__person" id="chopeA">
@@ -13,6 +12,7 @@
         <img src="" alt="">
         <p></p>
       </div>
+      <img id="send_no_chope" src="/c/commurge/vomis.gif" alt="">
       <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
@@ -105,6 +105,18 @@ let showChope = function () {
   })
 }
 
+let sendNoChope = function () {
+  let chope = {}
+  chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
+  chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
+
+  const req2 = new XMLHttpRequest()
+  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/2955359/zi5t25/')
+  req2.send(JSON.stringify(chope))
+
+  closeChope()
+}
+
 let sendChope = function () {
   let chope = {}
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
@@ -119,7 +131,7 @@ let sendChope = function () {
 
 export default {
   layout: 'conchiage',
-  methods: { showChope, closeChope, sendChope },
+  methods: { showChope, sendNoChope, sendChope },
   mounted: function () {
     let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3']
     let i = Math.floor(Math.random() * Math.floor(chansons.length))
@@ -127,7 +139,7 @@ export default {
 
     document.getElementById('show_chope').addEventListener('click', showChope)
     document.getElementById('send_chope').addEventListener('click', sendChope)
-    document.getElementById('close_chope').addEventListener('click', closeChope)
+    document.getElementById('send_no_chope').addEventListener('click', sendNoChope)
   }
 }
 </script>
@@ -154,29 +166,33 @@ export default {
   justify-content: center;
 }
 
-#close_chope {
+#send_no_chope {
   position: absolute;
   cursor: pointer;
   width: 50px;
-  height: 50px;
-  top: 20px;
-  left: 20px;
+  height: 70px;
+  top: 30px;
+  // left: 20px;
+  left: 50%;
+  transform: translateX(-200%);
 }
 
 #send_chope {
   position: absolute;
   cursor: pointer;
-  @media (max-width: 799px) {
-    top: 20px;
-  }
-  right: 20px;
-  height: 50px;
-  @media (min-width: 800px) {
-    bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    height: 80px;
-  }
+  // @media (max-width: 799px) {
+    top: 30px;
+  // }
+  // right: 20px;
+  height: 70px;
+  right: 50%;
+  transform: translateX(200%);
+  // @media (min-width: 800px) {
+  //   bottom: 20px;
+  //   right: 50%;
+  //   transform: translateX(50%);
+  //   height: 80px;
+  // }
 }
 
 #love_loader {
@@ -194,11 +210,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 120px);
   @media (min-width: 800px) {
     align-self: center;
     flex-direction: row;
-    max-height: calc(100vh - 90px - 120px);
+    // max-height: calc(100vh - 90px - 120px);
   }
   justify-content: center;
   width: 95vw;
