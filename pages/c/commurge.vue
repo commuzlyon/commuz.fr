@@ -172,7 +172,6 @@ export default {
   width: 50px;
   height: 70px;
   top: 30px;
-  // left: 20px;
   left: 50%;
   transform: translateX(-200%) scaleY(-1);
 }
@@ -180,19 +179,10 @@ export default {
 #send_chope {
   position: absolute;
   cursor: pointer;
-  // @media (max-width: 799px) {
-    top: 30px;
-  // }
-  // right: 20px;
+  top: 30px;
   height: 70px;
   right: 50%;
   transform: translateX(200%);
-  // @media (min-width: 800px) {
-  //   bottom: 20px;
-  //   right: 50%;
-  //   transform: translateX(50%);
-  //   height: 80px;
-  // }
 }
 
 #love_loader {
@@ -202,7 +192,7 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 40vw;
+  width: 45vw;
 }
 
 #match {
