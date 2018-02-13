@@ -133,7 +133,7 @@ export default {
   layout: 'conchiage',
   methods: { showChope, sendNoChope, sendChope },
   mounted: function () {
-    let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3']
+    let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3', 'leila.mp3', 'ilavaitlesmots.mp3', 'senorita.mp3']
     let i = Math.floor(Math.random() * Math.floor(chansons.length))
     document.getElementById('commurge_audio').src = `/c/commurge/${chansons[i]}`
 
