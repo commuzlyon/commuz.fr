@@ -413,7 +413,7 @@ let equipe = {
     },
     {
       role: 'Flûte',
-      nom: 'Jeanne Gauillaumat',
+      nom: 'Jeanne Guillaumat',
       photo: ''
     },
     {
