@@ -12,8 +12,8 @@
         <img src="" alt="">
         <p></p>
       </div>
-      <img id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
-      <img id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendNoChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
@@ -23,11 +23,10 @@
     <div id="titanic">
       <img class="commurge__bg" src="/c/commurge/titanic.jpg" alt="">
     </div>
-    <button id="show_chope" type="button" class="commurge__button">Découvrir une chope</button>
+    <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">Découvrir une chope</button>
     <img class="commurge__image" id="coeur" src="/c/commurge/coeurs.gif" alt="">
     <img class="commurge__image" id="ange" src="/c/commurge/ange.gif" alt="">
     <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="">
-    <img class="commurge__image" id="fleurs" src="/c/commurge/fleurs.gif" alt="">
   </div>
 </div>
 </template>
@@ -36,28 +35,29 @@
 import anime from 'animejs'
 import ratios from '@/static/c/commurge/ratios.json'
 
-let closeChope = function () {
+let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
-  let matchElt = document.getElementById('match')
 
   let timelineChope = anime.timeline()
 
   timelineChope.add({
     targets: overlayChopeElt,
-    borderRadius: ['0%', '50%'],
-    width: 0,
-    height: 0,
-    duration: 1500,
+    borderRadius: ['50%', '0%'],
+    translateX: ['-50%', '-50%'],
+    translateY: ['-50%', '-50%'],
+    scale: [0, 1],
+    duration: 1000,
     easing: 'easeInOutQuart'
-  }).add({
-    targets: matchElt,
-    opacity: [1, 0],
-    duration: 200
+  })
+
+  timelineChope.finished.then(() => {
+    let commurgeImagesElts = document.querySelectorAll('.commurge__image')
+    commurgeImagesElts.forEach((elt) => elt.remove())
+    genChope()
   })
 }
 
-let showChope = function () {
-  // choisis les chopes
+let genChope = function () {
   let noms = ['Youmi', 'Jon', 'Haba', 'Estelle', 'Mayar', 'Claire', 'Nicolas', 'Emeline', 'Phyl', 'Ferrat', 'Stéphan', 'Egah', 'O\'Lyon', 'Yari', 'Yorick', 'Tihssy', 'Emma', 'Néo', 'Poulpy', 'Balou', 'Rai\'ja', 'Taman', 'Kapry', 'Lydie', 'Palma', 'Passih', 'Marianne', 'Marine', 'Cécile', 'Djuna', 'Yaza', 'Karla', 'Anne', 'Thibaut', 'Philippine', 'Chloé', 'Polia', 'Dupastis', 'Lafarine', 'Georace', 'Mathieu', 'Charlotte', 'HDV', 'Foxh', 'Nyma', 'Lola', 'Willa', 'Caroline', 'Rhomi', 'Cely', 'Oley', 'Lénou', 'Aylie', 'Eva', 'Keeto', 'Rootz', 'Origami', 'Spac', 'Lyndra', 'Thiko', 'Lynéha', 'Berkum', 'Dinan', 'Muzz', 'Royce', 'Paccio', 'Flex', 'Sanzès', 'Matthias', 'Yukhu', 'Arpys', 'Laka', 'Lafon', 'Standy', 'Inès', 'Aurore', 'Lisa', 'Sheiros', 'Tazzy', 'Lally', 'Lise']
 
   let chopeA = noms[Math.floor(Math.random() * Math.floor(noms.length))]
@@ -73,36 +73,43 @@ let showChope = function () {
   applyChope(chopeA, 'chopeA')
   applyChope(chopeB, 'chopeB')
 
-  // òuvre l'overlay
-  let overlayChopeElt = document.getElementById('overlay_chope')
   let loveLoaderElt = document.getElementById('love_loader')
   let matchElt = document.getElementById('match')
 
   let timelineChope = anime.timeline()
 
   timelineChope.add({
-    targets: overlayChopeElt,
-    borderRadius: ['50%', '0%'],
-    width: '100%',
-    height: '100%',
-    duration: 1500,
-    easing: 'easeInOutQuart'
-  }).add({
     targets: loveLoaderElt,
     opacity: 1,
     duration: 500,
-    easing: 'easeInQuad',
-    offset: '-=1000'
+    easing: 'easeInOutQuart'
   }).add({
     targets: loveLoaderElt,
     opacity: 0,
     duration: 500,
-    easing: 'easeOutSine',
-    offset: '+=1500'
+    easing: 'easeInOutQuart',
+    offset: '+=2000'
   }).add({
     targets: matchElt,
-    opacity: 1
+    opacity: [0, 1],
+    duration: 300,
+    easing: 'easeInOutQuart'
   })
+}
+
+let genNouvelleChope = function () {
+  let matchElt = document.getElementById('match')
+
+  let timelineChope = anime.timeline()
+
+  timelineChope.add({
+    targets: matchElt,
+    opacity: 0,
+    duration: 400,
+    easing: 'easeInOutQuart'
+  })
+
+  timelineChope.finished.then(genChope)
 }
 
 let sendNoChope = function () {
@@ -114,7 +121,7 @@ let sendNoChope = function () {
   req2.open('POST', 'https://hooks.zapier.com/hooks/catch/2955359/zi5t25/')
   req2.send(JSON.stringify(chope))
 
-  closeChope()
+  genNouvelleChope()
 }
 
 let sendChope = function () {
@@ -126,20 +133,16 @@ let sendChope = function () {
   req.open('POST', 'https://hooks.zapier.com/hooks/catch/2955359/zrxj48/')
   req.send(JSON.stringify(chope))
 
-  closeChope()
+  genNouvelleChope()
 }
 
 export default {
   layout: 'conchiage',
-  methods: { showChope, sendNoChope, sendChope },
+  methods: { openOverlay, sendNoChope, sendChope },
   mounted: function () {
     let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3', 'leila.mp3', 'ilavaitlesmots.mp3', 'senorita.mp3']
     let i = Math.floor(Math.random() * Math.floor(chansons.length))
     document.getElementById('commurge_audio').src = `/c/commurge/${chansons[i]}`
-
-    document.getElementById('show_chope').addEventListener('click', showChope)
-    document.getElementById('send_chope').addEventListener('click', sendChope)
-    document.getElementById('send_no_chope').addEventListener('click', sendNoChope)
   }
 }
 </script>
@@ -157,9 +160,9 @@ export default {
   z-index: 10;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
-  height: 0;
-  width: 0;
+  transform: translate(-50%,-50%) scale(0);
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -204,7 +207,6 @@ export default {
   @media (min-width: 800px) {
     align-self: center;
     flex-direction: row;
-    // max-height: calc(100vh - 90px - 120px);
   }
   justify-content: center;
   width: 95vw;
@@ -309,15 +311,6 @@ export default {
   @media (min-width: 700px) {
     display: block;
     grid-area: 1 / 3 / 2 / 4;
-  }
-}
-
-#fleurs {
-  display: none;
-  grid-area: 1 / 1 / 2 / 2;
-  @media (min-width: 700px) {
-    display: block;
-    grid-area: 3 / 3 / 4 / 4;
   }
 }
 
