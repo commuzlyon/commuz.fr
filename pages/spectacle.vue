@@ -1,6 +1,9 @@
 <template lang="html">
 <div>
   <navbar class="rel"></navbar>
+
+  <pane type="pane--right" bgImage="/images/spectacteurs.jpg" :text="billetterie"></pane>
+
   <div id="spectacle__hero">
     <video id="spectacle__hero_bg" poster="/images/timelapse-zikos-danse_poster.jpg" autoplay loop>
       <!-- <source src="/videos/timelapse-zikos.webm" type="video/webm"> -->
@@ -9,7 +12,7 @@
   </div>
 
   <section id="spectacle__presentation">
-    <h2>Le spectacle 2018 est en pleine préparation ! Suivez son avancée sur</h2>
+    <h2>Pour suivre les derniers préparatifs du spectacle 2018, suivez nous sur</h2>
     <h2><a class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a> ou <a class="inline-link" target="_blank" href="https://www.instagram.com/commuzlyon/">Instagram</a></h2>
   </section>
 
@@ -37,6 +40,10 @@
 <script>
 import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
+
+let billetterie = '<h2>Prenez vos places !</h2>' +
+                  '<p>Rendez-vous sur cette page le dimanche 25 février à 12h pour prendre vos places</p>' +
+                  '<p>N\'attendez pas trop, l\'année dernière toutes les places ont été vendues en 3 jours seulement...</p>'
 
 let anneesPassees = [
   {
@@ -203,7 +210,7 @@ let anneesPassees = [
 export default {
   components: { Navbar, Pane },
   data: function () {
-    return { anneesPassees }
+    return { anneesPassees, billetterie }
   }
 }
 </script>
@@ -217,7 +224,7 @@ export default {
   grid-template-columns: 100%;
   align-items: center;
   justify-items: center;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
 }
 
 #spectacle__hero_bg {
@@ -234,10 +241,9 @@ export default {
   text-align: center;
   padding: 2rem;
   @media only screen and (min-width: 768px) {
-    padding: 4rem;
+    padding: 4rem 3rem 1rem 3rem;
   }
-  // background: linear-gradient(100deg, #621837, #47193b 60%);
-  background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
+  // background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
   h2 {
     margin-bottom: 0.5em;
   }

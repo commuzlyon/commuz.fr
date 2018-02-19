@@ -18,6 +18,12 @@
       <source src="/videos/hero_bg.mp4" type="video/mp4">
     </video>
   </div>
+
+  <div id="link_to_spectacle">
+    <h2>La billetterie va bientôt ouvrir !</h2>
+    <h2>Toutes les informations dans l'onglet <router-link class="inline-link" to="/spectacle">spectacle</router-link></h2>
+  </div>
+
   <pane :type="'pane--left'" :bgImage="'/images/mikitos_pelops.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/maquillage.jpg'" :text="maquillage"></pane>
 
@@ -135,6 +141,7 @@ export default {
   @media (orientation: landscape) {
     height: 100vh;
   }
+  margin-bottom: 2em;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr auto 1fr;
@@ -177,6 +184,25 @@ export default {
     object-fit: cover;
     object-position: center;
     filter: brightness(0.7);
+  }
+}
+
+
+#link_to_spectacle {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  @media only screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+  background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    color: var(--light-pink);
+    font-size: 1.2em;
   }
 }
 
