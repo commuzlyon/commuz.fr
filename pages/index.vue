@@ -20,8 +20,8 @@
   </div>
 
   <div id="link_to_spectacle">
-    <h2>La billetterie va bientôt ouvrir !</h2>
-    <h2>Toutes les informations dans l'onglet <router-link class="inline-link" to="/spectacle">spectacle</router-link></h2>
+    <h2>La billetterie est maintenant ouverte !</h2>
+    <h2>Prenez votre place <a href="https://collecte.io/la-commuz-2018" class="inline-link">ici</a></h2>
   </div>
 
   <pane :type="'pane--left'" :bgImage="'/images/mikitos_pelops.jpg'" :text="presentation"></pane>

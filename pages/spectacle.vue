@@ -43,7 +43,7 @@ import Pane from '@/components/Pane'
 
 let billetterie = '<h2>Prenez vos places !</h2>' +
                   '<p>Les représentations auront lieu les 6, 8 et 10 mars à partir de 19h45 dans l\'espace culturel EOLE de Craponne</p>' +
-                  '<p>Rendez-vous sur cette page le dimanche 25 février à 12h pour prendre vos places</p>' +
+                  '<p><a href="https://collecte.io/la-commuz-2018" class="inline-link">Billetterie en ligne</a></p>' +
                   '<p>N\'attendez pas trop, l\'année dernière toutes les places ont été vendues en 3 jours seulement...</p>'
 
 let anneesPassees = [
