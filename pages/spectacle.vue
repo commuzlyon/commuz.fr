@@ -2,19 +2,7 @@
 <div>
   <navbar class="rel"></navbar>
 
-  <pane type="pane--right" bgImage="/images/spectacteurs.jpg" :text="billetterie"></pane>
-
-  <div id="spectacle__hero">
-    <video id="spectacle__hero_bg" poster="/images/timelapse-zikos-danse_poster.jpg" autoplay loop>
-      <!-- <source src="/videos/timelapse-zikos.webm" type="video/webm"> -->
-      <source src="/videos/timelapse-zikos-danse.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <section id="spectacle__presentation">
-    <h2>Pour suivre les derniers préparatifs du spectacle 2018, suivez nous sur</h2>
-    <h2><a class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a> ou <a class="inline-link" target="_blank" href="https://www.instagram.com/commuzlyon/">Instagram</a></h2>
-  </section>
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2018.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
 
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
@@ -41,10 +29,9 @@
 import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
-let billetterie = '<h2>Prenez vos places !</h2>' +
-                  '<p>Les représentations auront lieu les 6, 8 et 10 mars à partir de 19h45 dans l\'espace culturel EOLE de Craponne</p>' +
-                  '<p><a href="https://collecte.io/la-commuz-2018" class="inline-link">Billetterie en ligne</a></p>' +
-                  '<p>N\'attendez pas trop, l\'année dernière toutes les places ont été vendues en 3 jours seulement...</p>'
+let infos = '<h2>Dernière ligne droite !</h2>' +
+                  '<p>Les représentations auront lieu les 6, 8 et 10 mars à partir de 19h45 dans l\'espace culturel EOLE de Craponne.</p>' +
+                  '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 let anneesPassees = [
   {
@@ -211,50 +198,12 @@ let anneesPassees = [
 export default {
   components: { Navbar, Pane },
   data: function () {
-    return { anneesPassees, billetterie }
+    return { anneesPassees, infos }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-#spectacle__hero {
-  color: white;
-  // min-height: 70vh;
-  height: 60vh;
-  display: grid;
-  grid-template-columns: 100%;
-  align-items: center;
-  justify-items: center;
-  // margin-bottom: 2em;
-}
-
-#spectacle__hero_bg {
-  grid-area: 1 / 1 / -1 / -1;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-#spectacle__presentation {
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  @media only screen and (min-width: 768px) {
-    padding: 4rem 3rem 1rem 3rem;
-  }
-  // background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
-  h2 {
-    margin-bottom: 0.5em;
-  }
-
-  a {
-    color: var(--light-pink);
-    font-size: 1.2em;
-  }
-}
-
 #precedentes {
   padding: 5rem;
   color: white;

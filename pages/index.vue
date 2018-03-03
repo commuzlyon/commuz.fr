@@ -19,11 +19,6 @@
     </video>
   </div>
 
-  <div id="link_to_spectacle">
-    <h2>La billetterie est maintenant ouverte !</h2>
-    <h2>Prenez votre place <a href="https://collecte.io/la-commuz-2018" class="inline-link">ici</a></h2>
-  </div>
-
   <pane :type="'pane--left'" :bgImage="'/images/mikitos_pelops.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/maquillage.jpg'" :text="maquillage"></pane>
 
@@ -184,25 +179,6 @@ export default {
     object-fit: cover;
     object-position: center;
     filter: brightness(0.7);
-  }
-}
-
-
-#link_to_spectacle {
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  @media only screen and (min-width: 768px) {
-    padding: 4rem;
-  }
-  background: linear-gradient(25deg, #B24592 0%, #c84c62 100%);
-  h2 {
-    margin-bottom: 0.5em;
-  }
-
-  a {
-    color: var(--light-pink);
-    font-size: 1.2em;
   }
 }
 
