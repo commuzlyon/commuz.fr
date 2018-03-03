@@ -37,7 +37,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/scenario.png" alt=""> -->
+        <img src="/logos/poles/2018/scenario.png" alt="">
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
@@ -50,7 +50,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <!-- <img src="/logos/poles/2018/mes.png" alt=""> -->
+        <img src="/logos/poles/2018/mes.png" alt="">
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
