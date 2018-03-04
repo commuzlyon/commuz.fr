@@ -577,6 +577,11 @@ let equipe = {
     },
     {
       role: 'Costumière',
+      nom: 'Inès Joly',
+      photo: 'inejol.png'
+    },
+    {
+      role: 'Costumière',
       nom: 'Marianne Coupry',
       photo: 'marcou.png'
     },

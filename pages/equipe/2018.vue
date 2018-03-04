@@ -186,8 +186,9 @@ import Pane from '@/components/Pane'
 
 let presentation = {
   text: '<h2>Bas les masques</h2>' +
-        '<p>Année 1919. Aube des années folles. Etats-Unis. Le grand magnat de l\'automobile Daniel Richard quitte ce monde avec une fortune à laisser. Sur son testament sont inscrits des proches du défunt, mais aussi des inconnus.</p>' +
-        '<p>Comment connaissaient-ils Daniel Richard ? Qu\'est-ce qui se cache derrière ce testament ? Quelques soient les réponses, cette enquête les amènera à se poser des questions sur eux-mêmes, faire ressurgir le passé de Daniel, et élucider ce mystère.</p>',
+        '<p>1919, États-Unis.</p>' +
+        '<p>A l\'aube des années folles, un vent de liberté souffle sur l’Amérique. Le grand magnat de l’automobile Daniel Richard vient de quitter ce monde laissant une immense fortune derrière lui. Sur son testament sont inscrits les noms des proches du défunt mais aussi d\'illustres inconnus.</p>' +
+        '<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>',
   bgImage: '/images/equipes/equipe--2018.jpg',
   image: '/images/affiches/affiche--2018.jpg'
 }
