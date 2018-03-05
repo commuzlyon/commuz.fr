@@ -229,12 +229,12 @@ let equipe = {
       photo: 'ines.jpg'
     },
     {
-      role: 'Démarcheuse',
+      role: 'Partenariats',
       nom: 'Aurore Boyer',
       photo: 'aurore.jpg'
     },
     {
-      role: 'Démarcheuse',
+      role: 'Partenariats',
       nom: 'Lisa Semling',
       photo: 'lisa.jpg'
     },
