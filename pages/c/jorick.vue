@@ -1,16 +1,14 @@
 <template lang="html">
 <div class="">
-  <!-- <navbar class="rel"></navbar> -->
   <img src="/c/jorick/groupe-jorick.jpg">
   <div id="snow"></div>
 </div>
 </template>
 
 <script>
-// import Navbar from '@/components/Navbar'
 
 export default {
-  // components: { Navbar }
+  layout: 'conchiage'
 }
 </script>
 
