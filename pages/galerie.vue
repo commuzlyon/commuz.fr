@@ -11,7 +11,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 
-let anneesGallerie = [ '2017' ]
+let anneesGallerie = [ '2018', '2017' ]
 
 export default {
   components: { Navbar },
