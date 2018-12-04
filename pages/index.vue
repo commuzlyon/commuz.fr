@@ -19,7 +19,7 @@
     </video>
   </div>
 
-  <pane :type="'pane--left'" :bgImage="'/images/mikitos_pelops.jpg'" :text="presentation"></pane>
+  <pane :type="'pane--left'" :bgImage="'/images/danseurs-2018.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/maquillage.jpg'" :text="maquillage"></pane>
 
   <section id="testimonial">
