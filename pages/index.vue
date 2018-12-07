@@ -20,7 +20,7 @@
   </div>
 
   <pane :type="'pane--left'" :bgImage="'/images/danseurs-2018.jpg'" :text="presentation"></pane>
-  <pane :type="'pane--right'" :bgImage="'/images/maquillage.jpg'" :text="maquillage"></pane>
+  <pane :type="'pane--right'" :bgImage="'/images/spectacleAaZ.jpg'" :text="maquillage"></pane>
 
   <section id="testimonial">
     <div class="quote">
