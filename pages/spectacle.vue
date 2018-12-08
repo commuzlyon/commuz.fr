@@ -2,7 +2,7 @@
 <div>
   <navbar class="rel"></navbar>
 
-  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2018.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--2018.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->
 
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
@@ -34,6 +34,17 @@ let infos = '<h2>Dernière ligne droite !</h2>' +
                   '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 let anneesPassees = [
+  {
+    annee: 2018,
+    text: '<h2>2018 : Bas les masques</h2>' +
+          "<p>1919, États-Unis.</p>" + 
+          "<p>A l'aube des années folles, un vent de liberté souffle sur l’Amérique. Le grand magnat de l’automobile Daniel Richard vient de quitter ce monde laissant une immense fortune derrière lui. Sur son testament sont inscrits les noms des proches du défunt mais aussi d'illustres inconnus.</p>" +
+          "<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>",
+    bgImage: '/images/equipes/equipe--2018.jpg',
+    image: '/images/affiches/affiche--2018.jpg',
+    gallerie: true,
+    equipe: true
+  },
   {
     annee: 2017,
     text: '<h2>2017 : Les Caprices des Jeux</h2>' +
