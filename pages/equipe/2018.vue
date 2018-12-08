@@ -163,21 +163,19 @@
         </div>
       </div>
     </div>
-    <router-link to="/c/jambonbrie">
-      <div class="section">
-        <div class="section__description">
-          <img src="/logos/poles/2018/amour.png" alt="">
-          <h2>Amour</h2>
-        </div>
-        <div class="section__membres">
-          <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
-            <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-            <p><b>{{ membre.nom }}</b><br/>
-            <i>{{ membre.role }}</i></p>
-          </div>
+    <div class="section">
+      <div class="section__description">
+        <img src="/logos/poles/2018/amour.png" alt="">
+        <h2>Amour</h2>
+      </div>
+      <div class="section__membres">
+        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
+          <p><b>{{ membre.nom }}</b><br/>
+          <i>{{ membre.role }}</i></p>
         </div>
       </div>
-    </router-link>
+    </div>
   </div>
 </template>
 
