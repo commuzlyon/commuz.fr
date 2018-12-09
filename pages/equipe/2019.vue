@@ -273,7 +273,7 @@ let equipe = {
   mes: [
     {
       role: 'Respo Tableaux',
-      nom: 'Emma Hakimi',
+      nom: 'Anne Loquineau',
       photo: 'emma.jpg'
     },
     {
@@ -283,7 +283,7 @@ let equipe = {
     },
     {
       role: 'Metteuse en scène',
-      nom: 'Anne Loquineau',
+      nom: 'Emma Hakimi',
       photo: 'tihssy.jpg'
     }
   ],
