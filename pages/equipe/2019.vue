@@ -126,7 +126,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2019/costumes.png" alt="">
+        <img src="/logos/poles/2019/costumier.png" alt="">
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
