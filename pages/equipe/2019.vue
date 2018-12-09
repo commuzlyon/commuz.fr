@@ -237,7 +237,7 @@ let equipe = {
     },
     {
       role: 'Partenariats',
-      nom: 'Eloir Roudaire',
+      nom: 'Eloi Roudaire',
       photo: 'lisa.jpg'
     },
     {
