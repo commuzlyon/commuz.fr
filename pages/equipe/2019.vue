@@ -607,7 +607,7 @@ let equipe = {
     },
     {
       role: 'VP son',
-      nom: 'Thibault Decombe',
+      nom: 'Thibaut Decombe',
       photo: 'pydow.jpg'
     },
     {
