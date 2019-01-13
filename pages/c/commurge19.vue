@@ -67,7 +67,7 @@ let genChope = function () {
     let chopeElt = document.getElementById(id)
     let chopeImg = chopeElt.childNodes[0]
     let chopeP = chopeElt.childNodes[1]
-    chopeImg.src = `/c/commurge/trombi/${nom}.JPG`
+    chopeImg.src = `/c/commurge19/trombi/${nom}.JPG` //A changer ici après
     chopeP.innerHTML = `${nom}`
   }
   applyChope(chopeA, 'chopeA')
