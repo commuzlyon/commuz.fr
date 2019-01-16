@@ -310,7 +310,7 @@ let equipe = {
       photo: 'rai\'ja.jpg'
     },
     {
-      role: 'Acteure-chanteur',
+      role: 'Acteur-chanteur',
       nom: 'Pierre Babinet',
       photo: 'taman.jpg'
     },
@@ -558,7 +558,7 @@ let equipe = {
       photo: 'nyma.jpg'
     },
     {
-      role: 'Décoratrice',
+      role: 'Décorateur',
       nom: 'Edouard Wattine',
       photo: 'lola.jpg'
     },
