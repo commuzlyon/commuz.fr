@@ -1,6 +1,6 @@
 <template lang="html">
 <div class="">
-  <a href="t-rex/index.html">Jouer au jeu</a>
+  <a href="chameau/index.html">Jouer au jeu</a>
 </div>
 </template>
 
