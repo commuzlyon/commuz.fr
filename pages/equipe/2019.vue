@@ -429,11 +429,6 @@ let equipe = {
       photo: 'dinan.jpg'
     },
     {
-      role: 'Euphonium',
-      nom: 'Matthias Zugarramundi',
-      photo: 'muzz.jpg'
-    },
-    {
       role: 'Piano',
       nom: 'Pauline Colas des Francs',
       photo: 'royce.jpg'
@@ -554,7 +549,7 @@ let equipe = {
     },
     {
       role: 'Respo décors',
-      nom: 'Victoire Mommja',
+      nom: 'Victoire Momméja',
       photo: 'willa.jpg'
     },
     {
