@@ -316,7 +316,7 @@ let equipe = {
     },
     {
       role: 'Acteur-chanteur',
-      nom: 'Stéphane Couffin',
+      nom: 'Stéphan Couffin',
       photo: 'kapry.jpg'
     }
   ],
