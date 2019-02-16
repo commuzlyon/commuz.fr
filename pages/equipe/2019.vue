@@ -182,18 +182,11 @@
 <script>
 import Pane from '@/components/Pane'
 
-/*let presentation = {
-  text: '<h2>Bas les masques</h2>' +
-        '<p>1919, États-Unis.</p>' +
-        '<p>A l\'aube des années folles, un vent de liberté souffle sur l’Amérique. Le grand magnat de l’automobile Daniel Richard vient de quitter ce monde laissant une immense fortune derrière lui. Sur son testament sont inscrits les noms des proches du défunt mais aussi d\'illustres inconnus.</p>' +
-        '<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>',
-  bgImage: '/images/equipes/equipe--2018.jpg',
-  image: '/images/affiches/affiche--2018.jpg'
-}*/
 let presentation = {
-  text: '<h2>Page en construction</h2>',
-  bgImage: '/images/equipes/equipe--2019.jpg'
-}
+  text: '<h2>2019 : Désorientés</h2>' +
+          "<p>Au cœur du XIème siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
+  bgImage: '/images/equipes/equipe--2019.jpg',
+  image: '/images/affiches/affiche--2019.jpg'
 
 let equipe = {
   bureau: [
