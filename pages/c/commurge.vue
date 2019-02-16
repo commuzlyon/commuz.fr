@@ -118,7 +118,7 @@ let sendNoChope = function () {
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
   const req2 = new XMLHttpRequest()
-  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/3012903/zv4b0c/')
+  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/4315874/0e8sxq/')
   req2.send(JSON.stringify(chope))
 
   genNouvelleChope()
@@ -130,7 +130,7 @@ let sendChope = function () {
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
   const req = new XMLHttpRequest()
-  req.open('POST', 'https://hooks.zapier.com/hooks/catch/3012903/zvuvuj/')
+  req.open('POST', 'https://hooks.zapier.com/hooks/catch/4315874/0ljmph/')
   req.send(JSON.stringify(chope))
 
   genNouvelleChope()

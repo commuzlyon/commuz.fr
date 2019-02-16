@@ -33,7 +33,7 @@
 
 <script>
 import anime from 'animejs'
-import ratios from '@/static/c/commurge/ratios.json'
+import ratios from '@/static/c/commurge19/ratios.json'
 
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
