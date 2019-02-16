@@ -2,8 +2,11 @@
 <div>
   <navbar class="rel"></navbar>
 
-  <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--2018.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->
-
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2019.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  <!--<video id="trailer--2019" poster="/images/poster-trailer--2019.jpg" controls>
+    <source src="/videos/trailer--2019.mp4" type="video/mp4">
+    <source src="/videos/trailer--2019.webm" type="video/webm">
+  </video>-->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
     <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
@@ -22,7 +25,7 @@
       </div>
     </template>
   </pane>
-</div>
+  </div>
 </template>
 
 <script>
@@ -30,10 +33,19 @@ import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
 let infos = '<h2>Dernière ligne droite !</h2>' +
-                  '<p>Les représentations auront lieu les 6, 8 et 10 mars à partir de 19h45 dans l\'espace culturel EOLE de Craponne.</p>' +
+                  '<p>Les représentations auront lieu les 5, 6, 7 et 8 mars à partir de 19h00 dans la salle Paul Garcin de Lyon.</p>' +
                   '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 let anneesPassees = [
+  {
+    annee: 2019,
+    text: '<h2>2019 : Désorientés</h2>' +
+          "<p>Au cœur du XIème siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
+    bgImage: '/images/equipes/equipe--2019.jpg',
+    image: '/images/affiches/affiche--2019.jpg',
+    gallerie: false,
+    equipe: true
+  },
   {
     annee: 2018,
     text: '<h2>2018 : Bas les masques</h2>' +
