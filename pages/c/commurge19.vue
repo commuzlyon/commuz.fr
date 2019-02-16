@@ -33,7 +33,7 @@
 
 <script>
 import anime from 'animejs'
-import ratios from '@/static/c/commurge19/ratios.json'
+import ratios from '@/static/c/commurge/ratios.json'
 
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
@@ -58,7 +58,7 @@ let openOverlay = function () {
 }
 
 let genChope = function () {
-  let noms = ['Agathe','Akelo','Alix','Anne','Arsène','Aurore','Aylie','Balavoine','Bobby','Carla','Cécile','Charlotte','Chloé','Chonlé','Clara','Clarisse','Clervie','Dinan','Doudou','Emma Hakimi','Emma de Boissoudy','Eva','Fender','Foxh','François','Hippo','Hotel de Ville - Louis Pradel, correspondance métro C, ouverture des portes à gauche dans le sens de la circulation','Inouï','Iris','JMM','Joke','Juana','Julia','Khappa','Klara','Lafarine','Léna','Lence','Lili la Tigresse','Lina','Luna','Margaux','Marie','Marine','Métry','Mikitos','Muzi','Nasté','Nerohn','Nyma','O\'Lyon','Origami','Pauline','Paypouz','Philippine','Place Guichard - Bourse du Travail','Pollux','Pradow','Roxane','Sheeper','Shender','Sia','Sincity','Stéphane','Suzanne','TER','Thakin','Thanol','Thiko','Tila','Tokha','Trakop','Yari','Yghle','Yon\'cé','Zhapy','Zoum','Zuga','Zypo'];
+  let noms = ['Agathe','Akelo','Alix','Anne','Sans Souci','Aurore','Aylie','Balavoine','Bobby','Cécile','Charlotte Dillard','Charlotte Garreau','Chloé','Chonlé','Clara','Clervie','Dinan','Doudou','Emma de Boissoudy','Emma Hakimi','Eva','Fender','Foxh','François','Hippo','Hotel de Ville - Louis Pradel, correspondance métro C, ouverture des portes à gauche dans le sens de la circulation','Inouï','Iris','JMM','Joke','Juana','Julia','Khappa','Klara','Lafarine','Léna','Laurence','Lili','Lina','Linbo','Luna','Margaux','Marie','Marine','Métry','Mikitos','Muzi','Nasté','Nérohn','Nyma',"O'Lyon",'Origami','Pauline','Paypouz','Philippine','Place Guichard - Bourse du Travail','Pollux','Pradow','Roxane','Shender','Sia','Sin City','Stéphan','Suzanne','T.E.R.','Thakin','Thanol','Thiko','Tila','Tokha','Trakop','Valtha','Yghle',"Yon'cé",'Zhapy','Zoum','Zuga','Zypo'];
   
   let chopeA = noms[Math.floor(Math.random() * Math.floor(noms.length))]
   let chopeB = ratios[chopeA][Math.floor(Math.random() * Math.floor(ratios[chopeA].length))]
@@ -67,7 +67,7 @@ let genChope = function () {
     let chopeElt = document.getElementById(id)
     let chopeImg = chopeElt.childNodes[0]
     let chopeP = chopeElt.childNodes[1]
-    chopeImg.src = `/c/commurge19/trombi/${nom}.JPG` //A changer ici après
+    chopeImg.src = `/c/commurge/trombi/${nom}.JPG`
     chopeP.innerHTML = `${nom}`
   }
   applyChope(chopeA, 'chopeA')
@@ -118,7 +118,7 @@ let sendNoChope = function () {
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
   const req2 = new XMLHttpRequest()
-  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/4315874/0e8sxq/')
+  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/3012903/zv4b0c/')
   req2.send(JSON.stringify(chope))
 
   genNouvelleChope()
