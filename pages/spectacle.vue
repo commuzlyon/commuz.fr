@@ -260,30 +260,28 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 5rem;
   width: 100%;
     
   h2 {
       text-align: center;
-      padding: 15px;
   }
 }
     
 @media screen and (min-width: 800px) {
     #trailer--2019 {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 25px;
-        padding-top: 25px;
+        padding-top: 25px;*/
         width:800px;
-        text-align: center;
+        /*text-align: center;
         
         h2 {
             text-align: center;
             padding: 15px;
-        }
+        }*/
     }
 }
 </style>
