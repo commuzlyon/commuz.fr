@@ -8,7 +8,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -21,7 +21,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -34,7 +34,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -47,7 +47,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -73,7 +73,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -86,7 +86,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -99,7 +99,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <template v-if="membre.nom == 'Marwan Hassan'">
             <router-link to="/rootz"><p><b>{{ membre.nom }}</b><br/>
               <i>{{ membre.role }}</i></p></router-link>
@@ -118,7 +118,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -131,7 +131,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -144,7 +144,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -157,7 +157,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -170,7 +170,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">-->
+          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -638,4 +638,7 @@ export default {
 </script>
 
 <style lang="scss">
+    .trombi_membre {
+        clip:rect(0px,15px,15px,30px);
+    }
 </style>
