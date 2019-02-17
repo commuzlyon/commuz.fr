@@ -639,6 +639,6 @@ export default {
 
 <style lang="scss">
     .trombi_membre {
-        clip:rect(0px,15px,15px,30px);
+        clip:rect(0px,185px,170px,15px);
     }
 </style>
