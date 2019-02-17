@@ -3,11 +3,13 @@
   <navbar class="rel"></navbar>
 
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--2019.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
-  <h2>Découvrez le trailer de l'édition 2019</h2>
-  <video id="trailer--2019" poster="/images/poster-trailer--2019.jpg" controls>
-    <source src="/videos/trailer--2019.mp4" type="video/mp4">
-    <source src="/videos/trailer--2019.webm" type="video/webm">
-  </video>
+  <div id="trailer--2019">
+    <h2>Découvrez le trailer de l'édition 2019</h2>
+    <video poster="/images/poster-trailer--2019.jpg" controls>
+      <source src="/videos/trailer--2019.mp4" type="video/mp4">
+      <source src="/videos/trailer--2019.webm" type="video/webm">
+    </video>
+  </div>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
     <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
@@ -260,6 +262,11 @@ export default {
   padding-bottom: 25px;
   padding-top: 25px;
   width: 100%;
+    
+  h2 {
+      text-align: center;
+      padding: 15px;
+  }
 }
     
 @media screen and (min-width: 800px) {
@@ -269,6 +276,12 @@ export default {
         padding-bottom: 25px;
         padding-top: 25px;
         width:800px;
+        text-align: center;
+        
+        h2 {
+            text-align: center;
+            padding: 15px;
+        }
     }
 }
 </style>
