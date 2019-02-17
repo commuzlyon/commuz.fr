@@ -252,4 +252,16 @@ export default {
 .button-link {
   margin-top: 1em;
 }
+    
+#trailer--2019 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+    
+@media screen and (min-width: 600px) {
+    #trailer--2019 {
+        width:600px;
+    }
+}
 </style>
