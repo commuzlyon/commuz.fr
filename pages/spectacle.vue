@@ -3,6 +3,7 @@
   <navbar class="rel"></navbar>
 
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--2019.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  <h2>Découvrez le trailer de l'édition 2019</h2>
   <video id="trailer--2019" poster="/images/poster-trailer--2019.jpg" controls>
     <source src="/videos/trailer--2019.mp4" type="video/mp4">
     <source src="/videos/trailer--2019.webm" type="video/webm">
@@ -256,12 +257,18 @@ export default {
 #trailer--2019 {
   display: flex;
   align-items: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
   width: 100%;
 }
     
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     #trailer--2019 {
-        width:600px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width:800px;
     }
 }
 </style>
