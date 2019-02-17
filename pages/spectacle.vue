@@ -3,10 +3,10 @@
   <navbar class="rel"></navbar>
 
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--2019.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
-  <!--<video id="trailer--2019" poster="/images/poster-trailer--2019.jpg" controls>
+  <video id="trailer--2019" poster="/images/poster-trailer--2019.jpg" controls>
     <source src="/videos/trailer--2019.mp4" type="video/mp4">
     <source src="/videos/trailer--2019.webm" type="video/webm">
-  </video>-->
+  </video>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
     <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
