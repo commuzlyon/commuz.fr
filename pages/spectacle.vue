@@ -258,6 +258,7 @@ export default {
     
 #trailer--2019 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -272,6 +273,7 @@ export default {
 @media screen and (min-width: 800px) {
     #trailer--2019 {
         display: flex;
+        flex-direction: column;
         align-items: center;
         padding-bottom: 25px;
         padding-top: 25px;
