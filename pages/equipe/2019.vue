@@ -638,4 +638,8 @@ export default {
 </script>
 
 <style lang="scss">
+    /*.trombi_membre {
+        position: absolute;
+        clip:rect(0px,185px,170px,15px);
+    }*/
 </style>

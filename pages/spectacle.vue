@@ -10,10 +10,9 @@
       <source src="/videos/trailer--2019.webm" type="video/webm">
     </video>
   </div>
-  <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text"></pane>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
-    <p>Déjà plus de 17 ans de représentations, de 2002 à 2019 !</p>
+    <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
     <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>
@@ -40,15 +39,8 @@ let infos = '<h2>Dernière ligne droite !</h2>' +
                   '<p>Les représentations auront lieu les 5, 6, 7 et 8 mars à partir de 19h00 dans la salle Paul Garcin de Lyon.</p>' +
                   '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
-let presentation = {
-  text: '<h2>2019 : Désorientés</h2>' +
-          "<p>Au cœur du XIème siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
-  bgImage: '/images/equipes/equipe--2019.jpg',
-  image: '/images/affiches/affiche--2019.jpg'
-}
-
 let anneesPassees = [
-  /*{
+  {
     annee: 2019,
     text: '<h2>2019 : Désorientés</h2>' +
           "<p>Au cœur du XIème siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
@@ -56,7 +48,7 @@ let anneesPassees = [
     image: '/images/affiches/affiche--2019.jpg',
     gallerie: false,
     equipe: true
-  },*/
+  },
   {
     annee: 2018,
     text: '<h2>2018 : Bas les masques</h2>' +
@@ -283,7 +275,13 @@ export default {
 @media screen and (min-width: 800px) {
     #trailer--2019 {
         #trailer-video {
+        /*display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+        padding-top: 25px;*/
         width:800px;
+        //text-align: center;
         }
     }
 }
