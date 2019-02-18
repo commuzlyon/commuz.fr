@@ -223,11 +223,11 @@ let equipe = {
       nom: 'Thomas Kuoch',
       photo: 'akelo.jpg'
     },
-    {
+    /*{
       role: 'Partenariats',
       nom: 'Clarisse Bonnay',
-      //photo: 'aurore.jpg'
-    },
+      photo: 'aurore.jpg'
+    },*/
     {
       role: 'Partenariats',
       nom: 'Eloi Roudaire',
