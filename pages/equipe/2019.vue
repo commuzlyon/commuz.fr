@@ -8,7 +8,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -21,7 +21,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -34,7 +34,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -47,7 +47,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -73,7 +73,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -86,7 +86,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -99,7 +99,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <template v-if="membre.nom == 'Marwan Hassan'">
             <router-link to="/rootz"><p><b>{{ membre.nom }}</b><br/>
               <i>{{ membre.role }}</i></p></router-link>
@@ -118,7 +118,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -131,7 +131,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -144,7 +144,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -157,7 +157,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -170,7 +170,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
-          <!--<img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">-->
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -193,22 +193,22 @@ let equipe = {
     {
       role: 'Présidente',
       nom: 'Justine Cordelle',
-      photo: 'youmi.jpg'
+      photo: 'justine.jpg'
     },
     {
       role: 'Vice-Présidente',
       nom: 'Marianne Clément',
-      photo: 'jon.jpg'
+      photo: 'marianne.jpg'
     },
     {
       role: 'Secrétaire Générale',
       nom: 'Sophie Rolloy',
-      photo: 'haba.jpg'
+      photo: 'sophie.jpg'
     },
     {
       role: 'Trésorière',
       nom: 'Capucine Taillard',
-      photo: 'estelle.jpg'
+      photo: 'capucine.jpg'
     }
   ],
 
@@ -216,27 +216,27 @@ let equipe = {
     {
       role: 'Communication',
       nom: 'Eva Meunier',
-      photo: 'standy.jpg'
+      photo: 'Eva.jpg'
     },
     {
       role: 'Communication',
       nom: 'Thomas Kuoch',
-      photo: 'ines.jpg'
+      photo: 'akelo.jpg'
     },
     {
       role: 'Partenariats',
       nom: 'Clarisse Bonnay',
-      photo: 'aurore.jpg'
+      //photo: 'aurore.jpg'
     },
     {
       role: 'Partenariats',
       nom: 'Eloi Roudaire',
-      photo: 'lisa.jpg'
+      photo: 'zhapy.jpg'
     },
     {
       role: 'Webmaster',
       nom: 'Raphaël Chalicarne',
-      photo: 'sheiros.jpg'
+      photo: 'shender.jpg'
     }
   ],
 
@@ -244,22 +244,22 @@ let equipe = {
     {
       role: 'Scénariste',
       nom: 'Clément Borne',
-      photo: 'mayar.jpg'
+      photo: 'thiko.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Ivain Rodriguez',
-      photo: 'claire.jpg'
+      photo: 'olyon.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Pierre Allegre',
-      photo: 'nico.jpg'
+      photo: 'yhgle.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Romain Hamet',
-      photo: 'emeline.jpg'
+      photo: 'thakin.jpg'
     }
   ],
 
@@ -267,17 +267,17 @@ let equipe = {
     {
       role: 'Respo Tableaux',
       nom: 'Anne Loquineau',
-      photo: 'emma.jpg'
+      photo: 'anne.jpg'
     },
     {
       role: 'Metteuse en scène',
       nom: 'Aurore Boyer',
-      photo: 'yorick.jpg'
+      photo: 'aurore.jpg'
     },
     {
       role: 'Metteuse en scène',
       nom: 'Emma Hakimi',
-      photo: 'tihssy.jpg'
+      photo: 'emma_hakimi.jpg'
     }
   ],
 
@@ -285,12 +285,12 @@ let equipe = {
     {
       role: 'Acteur-chanteur',
       nom: 'Benoit Decorse',
-      photo: 'neo.jpg'
+      photo: 'trakop.jpg'
     },
     {
       role: 'Actrice-chanteuse',
       nom: 'Jeanne Monnier',
-      photo: 'poulpy.jpg'
+      photo: 'Yon_ce.jpg'
     },
     {
       role: 'Actrice-chanteuse',
@@ -300,17 +300,17 @@ let equipe = {
     {
       role: 'Actrice-chanteuse',
       nom: 'Lina Piredda',
-      photo: 'rai\'ja.jpg'
+      photo: 'lina.jpg'
     },
     {
       role: 'Acteur-chanteur',
       nom: 'Pierre Babinet',
-      photo: 'taman.jpg'
+      photo: 'zoum.jpg'
     },
     {
       role: 'Acteur-chanteur',
       nom: 'Stéphan Couffin',
-      photo: 'kapry.jpg'
+      photo: 'stephan.jpg'
     }
   ],
 
@@ -318,32 +318,32 @@ let equipe = {
     {
       role: 'Respo chant',
       nom: 'Nicolas Chavonnand-Valades',
-      photo: 'phyl.jpg'
+      photo: 'nico.jpg'
     },
     {
       role: 'Respo chant',
       nom: 'Tom Filczinger',
-      photo: 'ferrat.jpg'
+      photo: 'tom.jpg'
     },
     {
       role: 'Choriste - Soprane',
       nom: 'Emma de Boissoudy',
-      photo: 'von zimmel.jpg'
+      photo: 'emma_de_boissoudy.jpg'
     },
     {
       role: 'Choriste - Mezzo-Soprane',
       nom: 'Suzanne He',
-      photo: 'egah.jpg'
+      photo: 'suzanne.jpg'
     },
     {
       role: 'Choriste - Ténor',
       nom: 'Cyril Lome',
-      photo: 'olyon.jpg'
+      photo: 'cyril.jpg'
     },
     {
       role: 'Choriste - Baryton',
       nom: 'Vincent Haguet',
-      photo: 'yari.jpg'
+      photo: 'khappa.jpg'
     }
   ],
 
@@ -351,22 +351,22 @@ let equipe = {
     {
       role: 'Respo compositeur',
       nom: 'Alexandre Cartier',
-      photo: 'yukhu.jpg'
+      photo: 'Paypouz.jpg'
     },
     {
       role: 'Respo compositeur',
       nom: 'Fabien Duranson',
-      photo: 'arpys.jpg'
+      photo: 'Pollux.jpg'
     },
     {
       role: 'Compositeur',
       nom: 'Noëlle Houriez',
-      photo: 'laka.jpg'
+      photo: 'noelle.jpg'
     },
     {
       role: 'Compositeur',
       nom: 'Luis Juan Barragán',
-      photo: 'duish.jpg'
+      photo: 'inoui.jpg'
     }
   ],
 
@@ -374,72 +374,72 @@ let equipe = {
     {
       role: 'Respo Zikos', // / Violoncelle',
       nom: 'Antoine Boudon',
-      photo: 'eva.jpg'
+      photo: 'dinan.jpg'
     },
     {
       role: 'Respo Zikos',// / Chef d\'orchestre',
       nom: 'Matthias Zugarramurdi',
-      photo: 'keeto.jpg'
+      photo: 'Zuga.jpg'
     },
     {
       role: 'Violon',
       nom: 'Raphaëlle David',
-      photo: 'rootz.jpg'
+      photo: 'fender.jpg'
     },
     {
       role: 'Violon',
       nom: 'Agathe Voillequin',
-      photo: 'origami.jpg'
+      photo: 'agathe.jpg'
     },
     {
       role: 'Violoncelle',
       nom: 'Hippolyte Coste',
-      photo: 'spac.jpg'
+      photo: 'hippo.jpg'
     },
     {
       role: 'Flûte traversière',
       nom: 'Alix Robinne',
-      photo: 'lyndra.jpg'
+      photo: 'alix.jpg'
     },
     {
       role: 'Clarinette',
       nom: 'Pierre-Etienne Dury',
-      photo: 'thiko.jpg'
+      photo: 'juana.jpg'
     },
     {
       role: 'Saxophone alto',
       nom: 'Aurélien Vu Ngoc',
-      photo: 'lyneha.jpg'
+      photo: 'ter.jpg'
     },
     {
       role: 'Trompette',
       nom: 'Arsène Marzorati',
-      photo: 'berkum.jpg'
+      photo: 'sans_souci.jpg'
     },
     {
       role: 'Trombone',
       nom: 'Denis Guibert',
-      photo: 'dinan.jpg'
+      photo: 'origami.jpg'
     },
     {
       role: 'Piano',
       nom: 'Pauline Colas des Francs',
-      photo: 'royce.jpg'
+      photo: 'Pauline.jpg'
     },
     {
       role: 'Guitare',
       nom: 'Loïc Béthencourt',
-      photo: 'paccio.jpg'
+      photo: 'chonlé.jpg'
     },
     {
       role: 'Guitare basse',
       nom: 'Martin Bouillot',
-      photo: 'flex.jpg'
+      photo: 'pradow.jpg'
     },
     {
       role: 'Batterie',
       nom: 'François Courbin',
-      photo: 'sanzes.jpg'
+      photo: 'dumelon.jpg'
     }
   ],
 
@@ -447,62 +447,62 @@ let equipe = {
     {
       role: 'Respo danse',
       nom: 'Chloé Rondepierre',
-      photo: 'palma.jpg'
+      photo: 'chloé.jpg'
     },
     {
       role: 'Respo danse',
       nom: 'Philippine Renard',
-      photo: 'passih.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Carla Salique',
-      photo: 'marianne.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Cécile Goubet',
-      photo: 'marine.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Charlotte Dillard',
-      photo: 'cecile.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Léna Kasmi',
-      photo: 'djuna.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Linbo Sun',
-      photo: 'yaza.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Marie Nagy',
-      photo: 'karla.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Marine Antoine',
-      photo: 'anne.jpg'
-    },
-    {
-      role: 'Danseur',
-      nom: 'Muzi Zhu',
-      photo: 'candy.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Julia Ohana',
       photo: 'philippine.jpg'
     },
     {
       role: 'Danseuse',
+      nom: 'Carla Salique',
+      photo: 'carla.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Cécile Goubet',
+      photo: 'cecile.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Charlotte Dillard',
+      photo: 'charlotte_dillard.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Léna Kasmi',
+      photo: 'lena.jpg'
+    },
+    {
+      role: 'Danseur',
+      nom: 'Linbo Sun',
+      photo: 'linbo.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Marie Nagy',
+      photo: 'marie.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Marine Antoine',
+      photo: 'marine.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Muzi Zhu',
+      photo: 'muzi.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Julia Ohana',
+      photo: 'julia.jpg'
+    },
+    {
+      role: 'Danseuse',
       nom: 'Roxane Boyer',
-      photo: 'chloe.jpg'
+      photo: 'roxane.jpg'
     }
   ],
 
@@ -510,27 +510,27 @@ let equipe = {
     {
       role: 'Respo costumes',
       nom: 'Solène Butault',
-      photo: 'rhomi.jpg'
+      photo: 'tokha.jpg'
     },
     {
       role: 'Respo costumes',
       nom: 'Valentine Rasse',
-      photo: 'cely.jpg'
+      photo: 'valentine.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Clervie Grillet',
-      photo: 'oley.jpg'
+      photo: 'clervie.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Iris Edelman',
-      photo: 'lenou.jpg'
+      photo: 'iris.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Lison Allard',
-      photo: 'aylie.jpg'
+      photo: 'lison.jpg'
     }
   ],
 
@@ -538,32 +538,27 @@ let equipe = {
     {
       role: 'Respo décors',
       nom: 'Valentin Allard',
-      photo: 'foxh.jpg'
+      photo: 'Zypo.jpg'
     },
     {
       role: 'Respo décors',
       nom: 'Victoire Momméja',
-      photo: 'willa.jpg'
+      photo: 'Tila.jpg'
     },
     {
       role: 'Décoratrice',
       nom: 'Clara Viner',
-      photo: 'nyma.jpg'
+      photo: 'Clara.jpg'
     },
     {
       role: 'Décorateur',
       nom: 'Edouard Wattine',
-      photo: 'lola.jpg'
-    },
-    {
-      role: 'Décoratrice',
-      nom: 'Caroline Yang',
-      photo: 'caroline.jpg'
+      photo: 'Edouard.jpg'
     },
     {
       role: 'Décoratrice',
       nom: 'Margaux Lefrère',
-      photo: 'caroline.jpg'
+      photo: 'Margaux.jpg'
     }
   ],
 
@@ -571,42 +566,42 @@ let equipe = {
     {
       role: 'Respo son',
       nom: 'Antoine Caisson',
-      photo: 'polia.jpg'
+      photo: 'lafarine.jpg'
     },
     {
       role: 'Respo Son',
       nom: 'Dorian Belverge',
-      photo: 'dupastis.jpg'
+      photo: 'nerohn.jpg'
     },
     {
       role: 'VP son',
       nom: 'Julien Guinot',
-      photo: 'lafarine.jpg'
+      photo: 'joke.jpg'
     },
     {
       role: 'VP son',
       nom: 'Laurence Goigoux',
-      photo: 'georace.jpg'
+      photo: 'laurence.jpg'
     },
     {
       role: 'VP son',
       nom: 'Robin Mourton',
-      photo: 'pydow.jpg'
+      photo: 'naste.jpg'
     },
     {
       role: 'VP son',
       nom: 'Thibaut Decombe',
-      photo: 'pydow.jpg'
+      photo: 'balavoine.jpg'
     },
     {
       role: 'Respo lumière',
       nom: 'Tom Humeau',
-      photo: 'charlotte.jpg'
+      photo: 'jmm.jpg'
     },
     {
       role: 'Respo vidéo',
       nom: 'Antoine-Marie Portalier',
-      photo: 'HDV.jpg'
+      photo: 'guich.jpg'
     }
   ],
 
@@ -614,17 +609,17 @@ let equipe = {
     {
       role: 'VP Amour',
       nom: 'Charlotte Garreau',
-      photo: 'tazzy.jpg'
+      photo: 'charlotte_garreau.jpg'
     },
     {
       role: 'VP Amour',
       nom: 'Gaëtan Marchais',
-      photo: 'lally.jpg'
+      photo: 'hdv.jpg'
     },
     {
       role: 'VP Amour',
       nom: 'Vincent Arthaud',
-      photo: 'lise.jpg'
+      photo: 'bobby.jpg'
     }
   ]
 }
