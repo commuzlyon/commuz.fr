@@ -13,7 +13,7 @@
 
 let gallerie2016 = {
   photos: [ 53, '.jpg' ],
-  emphase = [2,7,9,12,14,17,20,33,35,41,43,47]
+  emphase: [2,7,9,12,14,17,20,33,35,41,43,47]
 }
 
 export default {
