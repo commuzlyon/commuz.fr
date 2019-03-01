@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <div class="gallerie_grid">
-      <div class="gallerie_grid__entry" v-for="n in gallerie2016.photos[0]" :key="n" :class="gallerie2017.emphase.indexOf(n) >= 0 ? 'big-image' : 'small-image'">
+      <div class="gallerie_grid__entry" v-for="n in gallerie2016.photos[0]" :key="n" :class="gallerie2016.emphase.indexOf(n) >= 0 ? 'big-image' : 'small-image'">
         <!-- <img v-img="{ group: edition.annee, src: '/images/gallerie/2017' + edition.photos[1] }" class="lazy-image" :data-src="'/static/images/gallerie/' + edition.annee + '/' + n + edition.photos[1]"/> -->
         <img class="lazy-image" :data-src="'/images/gallerie/2016/' + n + gallerie2016.photos[1]"/>
       </div>
