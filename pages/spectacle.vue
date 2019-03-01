@@ -12,7 +12,7 @@
   </div>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
-    <p>Déjà plus de 16 ans de représentations, de 2002 à 2018 !</p>
+    <p>Déjà plus de 17 ans de représentations, de 2002 à 2019 !</p>
     <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>

@@ -11,7 +11,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 
-let anneesEquipes = [ '2019','2018', '2017', '2016', '2014' ]
+let anneesEquipes = [ '2019','2018', '2017', '2016'/*, '2014'*/ ]
 
 export default {
   components: { Navbar },

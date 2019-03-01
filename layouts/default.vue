@@ -16,7 +16,7 @@
       }
       html {
         overflow-y: scroll;
-        overflox-x: none;
+        overflow-x: none;
       }
       #preloader_bg {
         height:100vh;
