@@ -110,6 +110,6 @@
     
     var n = perles.length;
     var indice = Math.floor((Math.random() * n));
-    var perle_text = perles[n][0];
-    var perle_auteur = perles[n][1];
+    var perle_text = perles[indice][0];
+    var perle_auteur = perles[indice][1];
 </script>
