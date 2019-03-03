@@ -125,11 +125,14 @@
         var indice = Math.floor((Math.random() * n));
         var perle_text = perles[indice][0];
         var perle_auteur = perles[indice][1];
+        var perle_array = [perle_text,perle_auteur];
         
-        return perle_text, perle_auteur;
+        return perle_array;
     }
     
-    let perle_text, perle_auteur =  refresh(n, perles);
+    let perle_array =  refresh(n, perles);
+    let perle_text = perle_array[0];
+    let perle_auteur = perle_array[1];
     
 export default {
   layout: 'conchiage',
