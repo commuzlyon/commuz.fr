@@ -6,15 +6,6 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-        perle_text: 'Perle'
-    }
-  },
-components: {
-}
-}
     var perles = [["Le corps est dedans / RIP les paroles","NCV"],
 ["L'avantage c'est que si la vidéo ne marche pas, c'est pas bien grave","NCV"],
 ["Catastrophe, la pire jusqu'à présent","NCV"],
@@ -116,9 +107,21 @@ components: {
 ["Je suis pas un pro mais je dirais que c'est faux sur le libre.","TS"],
 ["Changement de sexe","MP"],
 ];
-    
     var n = perles.length;
     var indice = Math.floor((Math.random() * n));
-    let perle_text = perles[indice][0];
-    let perle_auteur = perles[indice][1];
+    var perle_text = perles[indice][0];
+    var perle_auteur = perles[indice][1];
+    
+export default {
+  data () {
+    return {
+        perle_text,
+        perle_auteur
+    }
+  },
+components: {
+}
+}
+    
+
 </script>
