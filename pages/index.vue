@@ -44,7 +44,7 @@
       <img src="/logos/em_corpo.svg" alt="Logo de la corpo l'emlyon business school">
       <img src="/logos/crous.png" alt="Logo du Crous de Lyon">
       <img src="/logos/udl.svg" alt="Logo de l'Université de Lyon">
-      <img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">
+      <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
     </div>
   </section>
 </div>
