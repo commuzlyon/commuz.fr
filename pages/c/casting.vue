@@ -3,7 +3,7 @@
     <h1>{{ perle_text }}</h1>
     <h3>{{ perle_auteur }}</h3>
 </div>
-<div>
+<div class="">
     <svg version="1.1" id="refresh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="408px" height="408px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve"><g fill="#fff">
         <path d="M346.8,61.2C311.1,22.95,260.1,0,204,0C91.8,0,0,91.8,0,204s91.8,204,204,204c94.35,0,173.4-66.3,196.35-153H346.8
