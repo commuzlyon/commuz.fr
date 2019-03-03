@@ -1,6 +1,6 @@
 <template lang="html">
-<div class="">
-    <p>Commentaire : {{ perle_text }}</p>
+<div id="app">
+    <p>Commentaire : {{ message }}</p>
     <p>Auteur : {{ perle_auteur }}</p>
 </div>
 </template>
@@ -112,4 +112,11 @@
     var indice = Math.floor((Math.random() * n));
     var perle_text = perles[indice][0];
     var perle_auteur = perles[indice][1];
+    
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js!'
+        }
+    })
 </script>
