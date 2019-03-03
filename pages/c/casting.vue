@@ -1,11 +1,20 @@
 <template lang="html">
-<div id="app">
-    <p>Commentaire : {{ message }}</p>
+<div class="">
+    <p>Commentaire : {{ perle_text }}</p>
     <p>Auteur : {{ perle_auteur }}</p>
 </div>
 </template>
 
 <script>
+export default {
+  data () {
+    return {
+        perle_text: 'Perle'
+    }
+  },
+components: {
+}
+}
     var perles = [["Le corps est dedans / RIP les paroles","NCV"],
 ["L'avantage c'est que si la vidéo ne marche pas, c'est pas bien grave","NCV"],
 ["Catastrophe, la pire jusqu'à présent","NCV"],
@@ -110,13 +119,6 @@
     
     var n = perles.length;
     var indice = Math.floor((Math.random() * n));
-    var perle_text = perles[indice][0];
-    var perle_auteur = perles[indice][1];
-    
-    new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue.js!'
-        }
-    })
+    let perle_text = perles[indice][0];
+    let perle_auteur = perles[indice][1];
 </script>
