@@ -5,8 +5,8 @@
         <h3>{{ perle_auteur }}</h3>
     </div>
 
-    <div class="refresh-button">
-        <img @click="refresh_perle()" src="/c/casting/refresh-button.png">
+    <div class="refresh-button" @click="refresh_perle(n, perles)" >
+        <img src="/c/casting/refresh-button.png">
     </div>
 </div>
 </template>
@@ -160,7 +160,7 @@ components: {
         margin-right: auto;
         
         img {
-            width: 300px;
+            width: 200px;
             height: auto;
         }
     }
