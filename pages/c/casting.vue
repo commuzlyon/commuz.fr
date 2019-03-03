@@ -154,7 +154,7 @@ components: {
         padding: 5rem;
     }
     
-    refresh-button {
+    .refresh-button {
         display: block;
         margin-left: auto;
         margin-right: auto;
