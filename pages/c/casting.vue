@@ -1,7 +1,7 @@
 <template lang="html">
-<div class="">
-    <p>Commentaire : {{ perle_text }}</p>
-    <p>Auteur : {{ perle_auteur }}</p>
+<div class="perles">
+    <h1>'"' + {{ perle_text }} + '"'</h1>
+    <h3>'"' +  {{ perle_auteur }} + '"'</h3>
 </div>
 </template>
 
@@ -125,3 +125,12 @@ components: {
     
 
 </script>
+
+<style lang="scss" scoped>
+    .perles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+    }
+</style>
