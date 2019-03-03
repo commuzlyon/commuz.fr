@@ -5,9 +5,9 @@
         <h3>{{ perle_auteur }}</h3>
     </div>
 
-    <div class="refresh-button" @click="refresh_perle(n, perles)" >
+    <!--<div class="refresh-button" @click="refresh_perle(n, perles)" >
         <img src="/c/casting/refresh-button.png">
-    </div>
+    </div>-->
 </div>
 </template>
 
