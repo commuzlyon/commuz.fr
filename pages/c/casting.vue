@@ -133,6 +133,7 @@
     
 export default {
   layout: 'conchiage',
+  methods: { refresh_perle },
   data () {
     return {
         perle_text,
