@@ -118,7 +118,7 @@
     //let perle_text = perles[indice][0];
     //let perle_auteur = perles[indice][1];
     
-    let refresh_perle = function(n, perles) {
+    var refresh_perle = function(n, perles) {
         var indice = Math.floor((Math.random() * n));
         var perle_text = perles[indice][0];
         var perle_auteur = perles[indice][1];
