@@ -3,15 +3,9 @@
     <h1>{{ perle_text }}</h1>
     <h3>{{ perle_auteur }}</h3>
 </div>
-<!--<div id = "refresh">
-    <svg id = "refresh__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;"><g fill="#fff">
-        <path d="M346.8,61.2C311.1,22.95,260.1,0,204,0C91.8,0,0,91.8,0,204s91.8,204,204,204c94.35,0,173.4-66.3,196.35-153H346.8
-			C326.4,313.65,270.3,357,204,357c-84.15,0-153-68.85-153-153c0-84.15,68.85-153,153-153c43.35,0,79.05,17.85,107.1,45.9l-81.6,81.6H408V0L346.8,61.2z"/>
-    </g>
-    </svg>
-</div>-->
-<div @click="refresh_perle(n,perles)" id="refresh-button">
-    <img src="/c/casting/refresh-button.png">
+
+<div>
+    <img @click="refresh_perle(n,perles)" src="/c/casting/refresh-button.png" id="refresh-button">
 </div>
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
