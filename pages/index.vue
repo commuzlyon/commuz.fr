@@ -37,7 +37,7 @@
     <div id="sponsors__text">
       <h2>Ils nous ont soutenus</h2>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette_Commuz_2018.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <a class="inline-link" href="mailto:partenariat@commuz.fr">Clarisse et Éloi</a>.</p>
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <a class="inline-link" href="mailto:partenariat@commuz.fr">Clarisse et Éloi</a>.</p>
     </div>
     <div id="sponsors__logos">
       <img src="/logos/ecl.svg" alt="Logo de l'École Centrale de Lyon">
