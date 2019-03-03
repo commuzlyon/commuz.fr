@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="perles">
-    <h1>'"' + {{ perle_text }} + '"'</h1>
-    <h3>'"' +  {{ perle_auteur }} + '"'</h3>
+    <h1>{{ perle_text }}</h1>
+    <h3>{{ perle_auteur }}</h3>
 </div>
 </template>
 
@@ -113,6 +113,7 @@
     var perle_auteur = perles[indice][1];
     
 export default {
+  layout: 'conchiage',
   data () {
     return {
         perle_text,
@@ -131,6 +132,7 @@ components: {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 5rem;
     }
 </style>
