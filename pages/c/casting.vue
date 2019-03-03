@@ -154,9 +154,14 @@ components: {
         padding: 5rem;
     }
     
-    img.refresh-button {
+    refresh-button {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        
+        img {
+            width: 300px;
+            height: auto;
+        }
     }
 </style>
