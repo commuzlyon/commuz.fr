@@ -129,7 +129,7 @@
         return perle_text, perle_auteur;
     }
     
-    let perle_text, perle_auteur: refresh(n, perles);
+    let perle_text, perle_auteur =  refresh(n, perles);
     
 export default {
   layout: 'conchiage',
