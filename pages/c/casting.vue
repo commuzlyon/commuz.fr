@@ -1,14 +1,14 @@
 <template lang="html">
-<div class="perles">
-    <h1>{{ perle_text }}</h1>
-    <h3>{{ perle_auteur }}</h3>
-</div>
-
 <div>
-    <img @click="refresh_perle(n,perles)" src="/c/casting/refresh-button.png" id="refresh-button">
-</div>
+    <div class="perles">
+        <h1>{{ perle_text }}</h1>
+        <h3>{{ perle_auteur }}</h3>
+    </div>
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div>
+        <img @click="refresh_perle(n,perles)" src="/c/casting/refresh-button.png" id="refresh-button">
+    </div>
+</div>
 </template>
 
 <script>
