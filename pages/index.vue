@@ -102,7 +102,7 @@ function startAnim () {
 
 let data = {
   presentation: '<h2>La Commuz\', c\'est quoi ?</h2>' +
-    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
+    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École centrale de Lyon et de emlyon business school.</p>' +
     '<p>L\'année dernière, la Commuz\' 2018, Bas les Masques, a conquis plus de 1000 spectateurs lors de trois soirées de spectacle.</p>',
   maquillage: '<h2>Un spectacle imaginé de A à Z</h2>' +
     '<p>De l\'élaboration du scénario en passant par les chorégraphies, la musique, la composition des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
