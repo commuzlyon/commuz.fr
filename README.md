@@ -9,7 +9,7 @@
 
 # Description
 
-Site Internet de la Commuz' – Comédie musicale étudiante commune à l'École Centrale de Lyon et à l'emlyon business school
+Site Internet de la Commuz' – Comédie musicale étudiante commune à l'École centrale de Lyon et à l'emlyon *business school*.
 
 # Auteurs
 
