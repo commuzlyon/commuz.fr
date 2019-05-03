@@ -28,7 +28,7 @@
       <img src="/icons/quote_open.svg" alt="">
       <div class="quote__author">
         <img src="/images/debouck.jpg" alt="">
-        <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon</span>
+        <span>Frank Debouck &ndash; Directeur de l'École centrale de Lyon</span>
       </div>
     </div>
   </section>
@@ -40,7 +40,7 @@
       <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <a class="inline-link" href="mailto:partenariat@commuz.fr">Clarisse et Éloi</a>.</p>
     </div>
     <div id="sponsors__logos">
-      <img src="/logos/ecl.svg" alt="Logo de l'École Centrale de Lyon">
+      <img src="/logos/ecl.svg" alt="Logo de l'École centrale de Lyon">
       <img src="/logos/em_corpo.svg" alt="Logo de la corpo l'emlyon business school">
       <img src="/logos/crous.png" alt="Logo du Crous de Lyon">
       <img src="/logos/udl.svg" alt="Logo de l'Université de Lyon">
