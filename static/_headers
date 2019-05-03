@@ -1,3 +1,4 @@
 # Tout le site est concerné
 # /*
 # Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self';
+Content-Security-Policy: frame-ancestors 'none'
