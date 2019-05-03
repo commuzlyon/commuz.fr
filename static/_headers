@@ -1,0 +1,3 @@
+# Tout le site est concerné
+/*
+    Content-Security-Policy: frame-ancestors 'none'
