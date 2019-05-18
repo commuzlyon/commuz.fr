@@ -21,7 +21,7 @@
   </div>
   <div id="legal">
     <h3>Mentions légales</h3>
-    <p>La Commuz' est un projet artistique commun à l'École centrale de Lyon et à l'emlyon business school.<br/>
+    <p>La Commuz' est un projet artistique commun à l'École centrale de Lyon et à emlyon business school.<br/>
     Elle constitue également un club artistique de l'Association des Élèves de l'École Centrale de Lyon.</p>
   </div>
   <div id="contact">
