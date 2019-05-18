@@ -41,7 +41,7 @@
     </div>
     <div id="sponsors__logos">
       <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/ecl.svg" alt="Logo de l'École centrale de Lyon"></a>
-      <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/logos/em_corpo.svg" alt="Logo de la corpo l'emlyon business school"></a>
+      <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/logos/em_corpo.svg" alt="Logo de la corpo emlyon business school"></a>
       <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/crous.png" alt="Logo du Crous de Lyon"></a>
       <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/udl.svg" alt="Logo de l'Université de Lyon"></a>
       <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
