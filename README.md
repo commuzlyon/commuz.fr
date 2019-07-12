@@ -19,3 +19,7 @@ La version actuelle du site est une refonte menée par Étienne Sanguinetti, ins
 - Étienne Sanguinetti : Webmestre du mandat 2017 - 2018 ;
 - Raphaël Chalicarne : Webmestre du mandat 2018 - 2019 ;
 - Bastien Laville : Webmestre du mandat 2019 - 2020.
+
+# À faire
+
+- Améliorer la galerie photo (https://vuejsexamples.com/simple-lightbox-component-for-vue-applications/)
