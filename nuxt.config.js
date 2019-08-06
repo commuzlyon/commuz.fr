@@ -26,8 +26,11 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Comédie musicale étudiante commune à l\'École centrale de Lyon et à emlyon business school' },
       { name: 'theme-color', content: '#fe7a90' },
-      { property: 'og:title', content: 'La Commuz'},
-      { property: 'og:description', content: 'Comédie musicale étudiante commune à l\'École centrale de Lyon et à emlyon business school'}
+      { property: 'og:site_name', content: "commuz"},
+      { property: 'og:title', content: "La Commuz'"},
+      { property: 'og:locale', content: 'fr_FR'},
+      { property: 'og:description', content: 'Comédie musicale étudiante commune à l\'École centrale de Lyon et à emlyon business school'},
+      {name: 'twitter:title', content: "La commuz'"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
