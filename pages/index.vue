@@ -28,7 +28,7 @@
       <img src="/icons/quote_open.svg" alt="">
       <div class="quote__author">
         <img src="/images/debouck.jpg" alt="">
-        <span>Frank Debouck &ndash; Directeur de l'École centrale de Lyon</span>
+        <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon</span>
       </div>
     </div>
   </section>
@@ -40,7 +40,7 @@
       <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <a class="inline-link" href="mailto:partenariat@commuz.fr">Constance et Hyppolite</a>.</p>
     </div>
     <div id="sponsors__logos">
-      <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/ecl.svg" alt="Logo de l'École centrale de Lyon"></a>
+      <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/ecl.svg" alt="Logo de l'École Centrale de Lyon"></a>
       <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/logos/em_corpo.svg" alt="Logo de la corpo emlyon business school"></a>
       <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/crous.png" alt="Logo du Crous de Lyon"></a>
       <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/udl.svg" alt="Logo de l'Université de Lyon"></a>
@@ -102,7 +102,7 @@ function startAnim () {
 
 let data = {
   presentation: '<h2>La Commuz\', c\'est quoi ?</h2>' +
-    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École centrale de Lyon et de emlyon business school.</p>' +
+    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
     '<p>L\'année dernière, la Commuz\' 2018, Bas les Masques, a conquis plus de 1000 spectateurs lors de trois soirées de spectacle.</p>',
   maquillage: '<h2>Un spectacle imaginé de A à Z</h2>' +
     '<p>De l\'élaboration du scénario en passant par les chorégraphies, la musique, la composition des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
