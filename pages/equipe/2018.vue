@@ -210,7 +210,7 @@ let equipe = {
     },
     {
       role: 'Trésorière',
-      nom: 'Estelle Assens',
+      nom: 'Estelle',
       photo: 'estelle.jpg'
     }
   ],

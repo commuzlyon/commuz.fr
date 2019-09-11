@@ -243,7 +243,7 @@ let equipe = {
     },
     {
       role: 'Partenariat',
-      nom: 'Estelle Assens',
+      nom: 'Estelle',
       photo: 'estelle.gif'
     },
     {
