@@ -23,4 +23,4 @@ La version actuelle du site est une refonte menée par Étienne Sanguinetti, ins
 
 # À faire
 
-- Améliorer la galerie photo (https://vuejsexamples.com/simple-lightbox-component-for-vue-applications/)
+- Galerie photo (https://vuejsexamples.com/simple-lightbox-component-for-vue-applications/)
