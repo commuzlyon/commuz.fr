@@ -2,6 +2,7 @@
 
 ![](https://img.shields.io/github/last-commit/commuzlyon/site.svg)
 ![](https://img.shields.io/github/languages/code-size/commuzlyon/site.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/face0701-6909-4838-afdc-8181323725ca/deploy-status)](https://app.netlify.com/sites/commuz/deploys)
 
 <div align="center">
   <img src="https://www.ec-lyon.fr/sites/default/files/styles/full/public/logo_commuz.png">
