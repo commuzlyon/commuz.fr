@@ -27,6 +27,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Comédie musicale étudiante commune à l\'École Centrale de Lyon et à emlyon business school' },
       { name: 'theme-color', content: '#fe7a90' },
       // Open Graph
+      { property: 'og:type', content: "website" },
       { property: 'og:site_name', content: "commuz" },
       { property: 'og:title', content: "La Commuz'" },
       { property: 'og:locale', content: 'fr_FR' },
