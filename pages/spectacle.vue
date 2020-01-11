@@ -35,8 +35,8 @@
 import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
-let infos = '<h2>Nouvelle édition en approche !</h2>' +
-                  '<p>Les représentations de l\'édition 2019 ont eu lieu les 5, 6, 7 et 8 mars à la salle Paul Garcin de Lyon ; retrouvez-nous en 2020 pour une nouvelle édition de la Commuz\' !</p>' +
+let infos = '<h2>Édition 2020 très prochainement !</h2>' +
+                  '<p>Les représentations de l\'édition 2019 ont eu lieu du 5 au 8 mars à la salle Paul Garcin de Lyon ; retrouvez-nous en 2020 pour une nouvelle édition de la Commuz\' !</p>' +
                   '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 let anneesPassees = [
