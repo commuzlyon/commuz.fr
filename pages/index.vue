@@ -19,7 +19,7 @@
     </video>
   </div>
 
-  <pane :type="'pane--left'" :bgImage="'/images/danseurs-2018.jpg'" :text="presentation"></pane>
+  <pane :type="'pane--left'" :bgImage="'/images/danseurs-2019.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/spectacleAaZ.jpg'" :text="maquillage"></pane>
 
   <section id="testimonial">
@@ -103,7 +103,7 @@ function startAnim () {
 let data = {
   presentation: '<h2>La Commuz\', c\'est quoi ?</h2>' +
     '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
-    '<p>L\'année dernière, la Commuz\' 2018, Bas les Masques, a conquis plus de 1000 spectateurs lors de trois soirées de spectacle.</p>',
+    '<p>L\'année dernière, la Commuz\' 2019, Désorientés, a conquis plus de 1000 spectateurs lors de trois soirées de spectacle.</p>',
   maquillage: '<h2>Un spectacle imaginé de A à Z</h2>' +
     '<p>De l\'élaboration du scénario en passant par les chorégraphies, la musique, la composition des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
     '<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d\'une qualité professionnelle.</p>'
