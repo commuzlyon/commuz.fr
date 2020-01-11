@@ -46,7 +46,7 @@ let anneesPassees = [
           "<p>Au cœur du XIe siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
     bgImage: '/images/equipes/equipe--2019.jpg',
     image: '/images/affiches/affiche--2019.jpg',
-    gallerie: false,
+    gallerie: true,
     equipe: true
   },
   {

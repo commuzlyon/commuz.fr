@@ -9,3 +9,11 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# Windows repository
+
+.directory
+
+# Git login
+
+auth.json
