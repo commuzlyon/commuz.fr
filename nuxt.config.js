@@ -34,7 +34,7 @@ module.exports = {
       { property: 'og:description', content: 'Comédie musicale étudiante commune à l\'École Centrale de Lyon et à emlyon business school' },
       // Carte Twitter
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@commuz' }, // ce nom d'utilisateur n'est pas attribué (à régler)
+      { name: 'twitter:site', content: '@commuzlyon' },
       { name: 'twitter:title', content: 'La Commuz' },
       { name: 'twitter:description', content: "Comédie musicale étudiante commune à l'École Centrale de Lyon et à emlyon business school" },
       { name: 'twitter:image', content: 'https://commuz.fr/images/commuz-masque-logo.png' },
