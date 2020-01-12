@@ -12,10 +12,10 @@
       <path d="M 300,78 H 510" stroke="#fff" stroke-width="2px" fill="transparent" style="stroke-linecap: round; stroke-dashoffset: 420;" />
       <path d="M 14,182 H 276"  stroke="#fff" stroke-width="2px" fill="transparent" style="stroke-linecap: round; stroke-linecap: round; stroke-dashoffset: 524;" />
     </g></svg>
-    <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="">Découvrir</a>
+    <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
     <video id="home__hero_bg" poster="/images/poster-video-accueil.jpg" autoplay loop>
-      <source src="/videos/video_webmaster_15s_webm.webm" type="video/webm">
-      <source src="/videos/video_webmaster_15s_mp4.mp4" type="video/mp4">
+      <source src="/videos/video_intro_webm.webm" type="video/webm">
+      <source src="/videos/video_intro_mp4.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -24,10 +24,10 @@
 
   <section id="testimonial">
     <div class="quote">
-      <p>J'ai pris hier soir un grand plaisir, le spectacle est de grande qualité, son, lumière, costumes magnifiques, décors, le tout au service d'artistes de talents : musiciens, danseurs, chanteurs, acteurs- chanteurs.</p>
-      <img src="/icons/quote_open.svg" alt="">
+      <p>J'ai pris hier soir un grand plaisir, le spectacle est de grande qualité, son, lumière, costumes magnifiques, décors, le tout au service d'artistes de talents : musiciens, danseurs, chanteurs, acteurs-chanteurs.</p>
+      <img src="/icons/quote_open.svg" alt="Guillemets">
       <div class="quote__author">
-        <img src="/images/debouck.jpg" alt="">
+        <img src="/images/debouck.jpg" alt="Photo de Frank Debouck">
         <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon</span>
       </div>
     </div>
@@ -102,10 +102,10 @@ function startAnim () {
 
 let data = {
   presentation: '<h2>La Commuz\', c\'est quoi ?</h2>' +
-    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 17 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
-    '<p>L\'année dernière, la Commuz\' 2019, Désorientés, a conquis plus de 1000 spectateurs lors de trois soirées de spectacle.</p>',
+    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 18 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
+    '<p>L\'année dernière, la Commuz\' 2019, Désorientés, a conquis plus de 1000 spectateurs lors de quatre soirées de spectacle.</p>',
   maquillage: '<h2>Un spectacle imaginé de A à Z</h2>' +
-    '<p>De l\'élaboration du scénario en passant par les chorégraphies, la musique, la composition des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
+    '<p>De l\'élaboration du scénario en passant par les chorégraphies, la composition et l\'orchestration des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
     '<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d\'une qualité professionnelle.</p>'
 }
 
