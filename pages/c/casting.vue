@@ -5,9 +5,9 @@
         <h3>{{ perle_auteur }}</h3>
     </div>
 
-    <!--<div class="refresh-button" @click="refresh_perle(n, perles)" >
+    <div class="refresh-button" @click="refresh_perle(n, perles)" >
         <img src="/c/casting/refresh-button.png">
-    </div>-->
+    </div>
 </div>
 </template>
 
@@ -147,9 +147,6 @@
 ["C MoR","IR"],
 ];
     var n = perles.length;
-    let indice = Math.floor((Math.random() * n));
-    //let perle_text = perles[indice][0];
-    //let perle_auteur = perles[indice][1];
     
     var refresh_perle = function(n, perles) {
         var indice = Math.floor((Math.random() * n));
