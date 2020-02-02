@@ -94,16 +94,16 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/musik .png" alt="">
+        <img src="/logos/poles/2020/musik.png" alt="">
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2020/' + membre.photo" alt="">
-          <template v-if="membre.nom == 'Marwan Hassan'">
+<!--           <template v-if="membre.nom == 'Marwan Hassan'">
             <router-link to="/rootz"><p><b>{{ membre.nom }}</b><br/>
               <i>{{ membre.role }}</i></p></router-link>
-          </template>
+          </template> -->
           <template v-else>
             <p><b>{{ membre.nom }}</b><br/>
               <i>{{ membre.role }}</i></p>
@@ -215,30 +215,30 @@ let equipe = {
   ],
 
   visibilite: [
-    // {
-    //   role: 'Communication',
-    //   nom: 'Eva Meunier',
-    //   photo: 'Eva.jpg'
-    // },
-    // {
-    //   role: 'Communication',
-    //   nom: 'Thomas Kuoch',
-    //   photo: 'akelo.jpg'
-    // },
+    {
+      role: 'Communication',
+      nom: 'Julien Guinot',
+      photo: 'julieng.jpg'
+    },
+    {
+      role: 'Communication',
+      nom: 'Klara Wolowska',
+      photo: 'klaraw.jpg'
+    },
+    {
+      role: 'Webmestre',
+      nom: 'Bastien Laville',
+      photo: 'bastienl.jpg'
+    },
     {
       role: 'Partenariats',
       nom: 'Constance De Bejarry',
-      photo: 'aurore.jpg'
+      photo: 'cdb.jpg'
     },
     {
       role: 'Partenariats',
       nom: 'Hippolyte Coste',
       photo: 'hippoc.jpg'
-    },
-    {
-      role: 'Webmaster',
-      nom: 'Bastien Laville',
-      photo: 'bastienl.jpg'
     }
   ],
 
@@ -407,6 +407,11 @@ let equipe = {
       role: 'Flûte',
       nom: 'Théophile Dandé',
       photo: 'theophiled.jpg'
+    },
+    {
+      role: 'Hautbois',
+      nom: 'Zoé Morel',
+      photo: 'zoem.jpg'
     },
     {
       role: 'Saxophone soprano',
