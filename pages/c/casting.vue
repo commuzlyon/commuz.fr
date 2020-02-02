@@ -134,7 +134,7 @@
 ["Un peu terne ; il parle comme François Mitterand","TH"],
 ["A boycotté l'harmonique","BD"],
 ["English a bit yaourt but sympa","BD"],
-["Atouts : il fait très bien la goutte, petit "putain" quand il oublie son texte","NC"],
+["Atouts : il fait très bien la goutte, petit « putain » quand il oublie son texte","NC"],
 ["S'est plantée, n’a pas compris que le poste « chanteur » n'existait pas.","VH"],
 ["Potentiel humoristique : aime faire le pitre","VH"],
 ["C’est bien, et en fait non","VH"],
