@@ -3,7 +3,7 @@
     <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text"></pane>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/bureau.png" alt="">
+        <img src="/logos/poles/2020/bureau.png" alt="Bureau">
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
@@ -16,7 +16,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/visibilite.png" alt="">
+        <img src="/logos/poles/2020/visibilite.png" alt="Visibilité">
         <h2>Visibilité</h2>
       </div>
       <div class="section__membres">
@@ -29,7 +29,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/scenario.png" alt="">
+        <img src="/logos/poles/2020/scenario.png" alt="Scénario">
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
@@ -42,7 +42,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/mes.png" alt="">
+        <img src="/logos/poles/2020/mes.png" alt="Mise en scènes">
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
@@ -55,7 +55,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/ac.png" alt="">
+        <img src="/logos/poles/2020/ac.png" alt="Acteur-chanteur, comédien">
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
@@ -68,7 +68,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/choristes.png" alt="">
+        <img src="/logos/poles/2020/choristes.png" alt="Choristes">
         <h2>Chant</h2>
       </div>
       <div class="section__membres">
@@ -81,7 +81,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/composition.png" alt="">
+        <img src="/logos/poles/2020/composition.png" alt="Composition">
         <h2>Composition</h2>
       </div>
       <div class="section__membres">
@@ -94,7 +94,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/musik.png" alt="">
+        <img src="/logos/poles/2020/musik.png" alt="Musique">
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
@@ -113,7 +113,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/danse.png" alt="">
+        <img src="/logos/poles/2020/danse.png" alt="Danseuses">
         <h2>Danse</h2>
       </div>
       <div class="section__membres">
@@ -126,7 +126,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/costumes.png" alt="">
+        <img src="/logos/poles/2020/costumes.png" alt="Costumes">
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
@@ -139,7 +139,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/decors.png" alt="">
+        <img src="/logos/poles/2020/decors.png" alt="Décors">
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
@@ -152,7 +152,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/technique.png" alt="">
+        <img src="/logos/poles/2020/technique.png" alt="Technique">
         <h2>Son, lumière et vidéo</h2>
       </div>
       <div class="section__membres">
@@ -165,7 +165,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/amour.png" alt="">
+        <img src="/logos/poles/2020/amour.png" alt="Support">
         <h2>Amour</h2>
       </div>
       <div class="section__membres">
@@ -210,7 +210,7 @@ let equipe = {
     {
       role: 'Trésorière',
       nom: 'Nina Cressend',
-      photo: 'capucine.jpg'
+      photo: 'ninac.jpg'
     }
   ],
 
@@ -256,7 +256,7 @@ let equipe = {
     {
       role: 'Scénariste',
       nom: 'Amandine Chemoul',
-      photo: 'yhgle.jpg'
+      photo: 'amdinec.jpg'
     },
     {
       role: 'Scénariste',
