@@ -145,6 +145,7 @@
 ["Il se croit à l'opéra ??","BD"],
 ["Mauvaise incarnation du tractopelle, on pourra pas lui donner ce genre de rôle","TH"],
 ["C MoR","IR"],
+["N’a de brillant que le t-shirt","VH"],
 ];
     var n = perles.length;
     
