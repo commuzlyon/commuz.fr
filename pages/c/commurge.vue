@@ -12,8 +12,8 @@
         <img src="" alt="">
         <p></p>
       </div>
-      <img @click="sendNoChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
       <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendNoChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
@@ -34,6 +34,7 @@
 <script>
 import anime from 'animejs'
 import ratios from '@/static/c/commurge/ratios.json'
+
 
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
@@ -148,10 +149,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+  @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+  @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-#overlay_chope {
+  #overlay_chope {
   background-color: #f687e5;
   background-image: url('/c/commurge/coeurs_bg.gif');
   background-repeat: repeat;
@@ -167,9 +168,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  }
 
-#send_no_chope {
+  #send_no_chope {
   position: absolute;
   cursor: pointer;
   width: 50px;
@@ -177,18 +178,18 @@ export default {
   top: 30px;
   left: 50%;
   transform: translateX(-200%) scaleY(-1);
-}
+  }
 
-#send_chope {
+  #send_chope {
   position: absolute;
   cursor: pointer;
   top: 30px;
   height: 70px;
   right: 50%;
   transform: translateX(200%);
-}
+  }
 
-#love_loader {
+  #love_loader {
   opacity: 0;
   z-index: 11;
   position: fixed;
@@ -196,9 +197,9 @@ export default {
   top: 50%;
   transform: translate(-50%,-50%);
   width: 45vw;
-}
+  }
 
-#match {
+  #match {
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -210,9 +211,9 @@ export default {
   }
   justify-content: center;
   width: 95vw;
-}
+  }
 
-.match__person {
+  .match__person {
   @media (max-width: 799px) {
     height: 45%;
     // width: auto;
@@ -250,10 +251,10 @@ export default {
       font-size: 1.5em;
     }
   }
-}
+  }
 
 
-#commurge__container {
+  #commurge__container {
   height: 100vh;
   width: 100%;
   display: grid;
@@ -266,9 +267,9 @@ export default {
   background-color: #f687e5;
   background-image: url('/c/commurge/stars_bg.gif');
   background-repeat: repeat;
-}
+  }
 
-.commurge__button {
+  .commurge__button {
   grid-area: 1 / 1 / 2 / 2;
   @media (min-width: 700px) {
     grid-area: 2 / 2 / 3 / 3;
@@ -281,45 +282,45 @@ export default {
   color: white;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
-}
+  }
 
-.commurge__image {
+  .commurge__image {
   max-height: 100%;
   max-width: 100%;
   z-index: 1;
-}
+  }
 
-#coeur {
+  #coeur {
   grid-area: 1 / 1 / 2 / 2;
   @media (min-width: 700px) {
     grid-area: 2 / 2 / 3 / 3;
   }
-}
+  }
 
-#ange {
+  #ange {
   display: none;
   grid-area: 1 / 1 / 2 / 2;
   @media (min-width: 700px) {
     display: block;
     grid-area: 1 / 1 / 2 / 2;
   }
-}
+  }
 
-#colombe {
+  #colombe {
   display: none;
   grid-area: 1 / 1 / 2 / 2;
   @media (min-width: 700px) {
     display: block;
     grid-area: 1 / 3 / 2 / 4;
   }
-}
+  }
 
-.commurge__bg {
+  .commurge__bg {
   mix-blend-mode: overlay;
   z-index: 0
-}
+  }
 
-#titanic, #love {
+  #titanic, #love {
   grid-area: 1 / 1 / -1 / -1;
   height: 100%;
   width: 100%;
@@ -330,5 +331,5 @@ export default {
     height: 100%;
     width: 100%;
   }
-}
+  }
 </style>
