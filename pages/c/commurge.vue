@@ -130,6 +130,7 @@ let sendChope = function () {
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
+  console.log(chope)
   const req = new XMLHttpRequest()
   req.open('POST', 'https://hooks.zapier.com/hooks/catch/4528028/phgugs/')
   req.send(JSON.stringify(chope))
