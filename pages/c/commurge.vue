@@ -1,6 +1,6 @@
 <template lang="html">
 <div style="overflow-y: hidden;">
-  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>
+  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop muted></audio>
   <div id="overlay_chope">
     <img id="love_loader" src="/c/commurge/wink.gif">
     <div id="match">
