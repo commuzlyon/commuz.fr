@@ -2,7 +2,7 @@
 <div style="overflow-y: hidden;">
   <audio id="commurge_audio" src="" autoplay loop></audio>
   <div id="overlay_chope">
-    <img id="love_loader" src="/c/commurge/iloveyou.gif">
+    <img id="love_loader" src="/c/commurge/wink.gif">
     <div id="match">
       <div class="match__person" id="chopeA">
         <img src="" alt="">
@@ -12,8 +12,8 @@
         <img src="" alt="">
         <p></p>
       </div>
-      <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
       <img @click="sendNoChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
@@ -23,7 +23,7 @@
     <div id="titanic">
       <img class="commurge__bg" src="/c/commurge/titanic.jpg" alt="">
     </div>
-    <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">Découvrir une chope</button>
+    <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">Découvrir une chope !</button>
     <img class="commurge__image" id="coeur" src="/c/commurge/coeurs.gif" alt="">
     <img class="commurge__image" id="ange" src="/c/commurge/ange.gif" alt="">
     <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="">
@@ -141,9 +141,9 @@ export default {
   layout: 'conchiage',
   methods: { openOverlay, sendNoChope, sendChope },
   mounted: function () {
-    let chansons = ['celui.mp3', 'jaimeraistrop.mp3', 'everythingido.mp3', 'laissemoitaimer.mp3', 'heyoh.mp3', 'femmelikeyou.mp3', 'miamor.mp3', 'leila.mp3', 'ilavaitlesmots.mp3', 'senorita.mp3']
+    let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3']
     let i = Math.floor(Math.random() * Math.floor(chansons.length))
-    document.getElementById('commurge_audio').src = `/c/commurge/${chansons[i]}`
+    document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`
   }
 }
 </script>
