@@ -1,6 +1,6 @@
 <template lang="html">
 <div style="overflow-y: hidden;">
-  <audio id="commurge_audio" src="" autoplay loop></audio>
+  <audio id="commurge_audio" type="audio/mp3" src="" autoplay loop></audio>
   <div id="overlay_chope">
     <img id="love_loader" src="/c/commurge/wink.gif">
     <div id="match">
@@ -130,7 +130,6 @@ let sendChope = function () {
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
-  console.log(chope)
   const req = new XMLHttpRequest()
   req.open('POST', 'https://hooks.zapier.com/hooks/catch/4528028/phgugs/')
   req.send(JSON.stringify(chope))
@@ -147,7 +146,9 @@ export default {
     document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`
   }
 }
+
 </script>
+
 
 <style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
