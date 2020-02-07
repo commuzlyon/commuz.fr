@@ -115,6 +115,7 @@ let genNouvelleChope = function () {
 
 let sendNoChope = function () {
   let chope = {}
+  chope['validay'] = 'no' // Miskine le couple n'est pas validé par le commuzard
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
@@ -127,6 +128,7 @@ let sendNoChope = function () {
 
 let sendChope = function () {
   let chope = {}
+  chope['validay'] = 'yes' // Là c'est validée
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
@@ -136,6 +138,12 @@ let sendChope = function () {
 
   genNouvelleChope()
 }
+
+// Note (BL) : j'ai volontairement laissé tomber le système à base de zapier
+// Il n'était ni pérenne (compte à recréer toutes les 2 semaines) ni effiace (interface GUI brouillon)
+// À la place, je conseille d'utiliser un système php ultra simple et un compte perso gratuit sur alwaysdata
+// C'est moins élégant, mais on a un contrôle plus fin sur nos données
+
 
 export default {
   layout: 'conchiage',
