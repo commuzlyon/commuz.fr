@@ -1,6 +1,6 @@
 <template lang="html">
 <div style="overflow-y: hidden;">
-  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop muted></audio>
+  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>
   <div id="overlay_chope">
     <img id="love_loader" src="/c/commurge/wink.gif">
     <div id="match">
@@ -119,7 +119,7 @@ let sendNoChope = function () {
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
   const req2 = new XMLHttpRequest()
-  req2.open('POST', 'https://hooks.zapier.com/hooks/catch/4528028/phgdmr/')
+  req2.open('POST', 'https://bastienlaville.alwaysdata.net/')
   req2.send(JSON.stringify(chope))
 
   genNouvelleChope()
@@ -131,7 +131,7 @@ let sendChope = function () {
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
 
   const req = new XMLHttpRequest()
-  req.open('POST', 'https://hooks.zapier.com/hooks/catch/4528028/phgugs/')
+  req.open('POST', 'https://bastienlaville.alwaysdata.net/')
   req.send(JSON.stringify(chope))
 
   genNouvelleChope()
