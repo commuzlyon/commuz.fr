@@ -59,7 +59,12 @@ let openOverlay = function () {
 }
 
 let genChope = function () {
-  let noms = ['Agathe','Akelo','Alix','Anne','Sans Souci','Aurore','Aylie','Balavoine','Bobby','Cécile','Charlotte Dillard','Charlotte Garreau','Chloé','Chonlé','Clara','Clervie','Dinan','Doudou','Emma de Boissoudy','Emma Hakimi','Eva','Fender','Foxh','François','Hippo',"Hotel de Ville - Louis Pradel",'Inouï','Iris','JMM','Joke','Juana','Julia','Khappa','Klara','Lafarine','Léna','Laurence','Lili','Lina','Linbo','Luna','Margaux','Marie','Marine','Métry','Mikitos','Muzi','Nasté','Nérohn','Nyma',"O'Lyon",'Origami','Pauline','Paypouz','Philippine','Place Guichard - Bourse du Travail','Pollux','Pradow','Roxane','Shender','Sia','Sin City','Stéphan','Suzanne','T.E.R.','Thakin','Thanol','Thiko','Tila','Tokha','Trakop','Valtha','Yghle',"Yon'cé",'Zhapy','Zoum','Zuga','Zypo','Ferrat']
+  let noms = ['Agathe P', 'Agathe V', 'Alexia', 'Alice A', 'Alice B', 'Amandine', 'Arsène', 'Aurélien', 'Benoît',
+               'Boris', 'Bérénice', 'Camille', 'Carla', 'Chaloupe', 'Clara', 'Clervie', 'Clémence', 'Constance', 'Céline', 'David',
+                'Dumelon', 'Dédon', 'edouard', 'Emma', 'Flymm', 'Genatz', 'Iris', 'Ivain', 'JuanTurko', 'Julian', 'Julien', 'Juliette',
+                'Keeto', 'keJo', 'Laïs', 'Lise', 'Lison', 'Lomboh', 'Louis', 'Loïc', 'Léo', 'Maaëlys', 'Mahé', 'Marie', 'Martin Bouillot',
+                'Maxence', 'Mayar', 'Nathan', 'Nicolas Miranda', 'Nina', 'Pauline', 'Phrygoh', 'Scoopyh', 'Strady', 'Thibault', 'Théophile',
+                'Tom Humeau', 'Tom Mehl', 'Vincent prez', 'YonC', 'Yuexuan', 'Zac', 'Zhuoran']
 
   let chopeA = noms[Math.floor(Math.random() * Math.floor(noms.length))]
   let chopeB = ratios[chopeA][Math.floor(Math.random() * Math.floor(ratios[chopeA].length))]
@@ -140,7 +145,7 @@ let sendChope = function () {
 }
 
 // Note (BL) : j'ai volontairement laissé tomber le système à base de zapier
-// Il n'était ni pérenne (compte à recréer toutes les 2 semaines) ni effiace (interface GUI brouillon)
+// Il n'était ni pérenne (compte à recréer toutes les 2 semaines) ni efficace (interface GUI brouillonne)
 // À la place, je conseille d'utiliser un système php ultra simple et un compte perso gratuit sur alwaysdata
 // C'est moins élégant, mais on a un contrôle plus fin sur nos données
 
@@ -180,7 +185,7 @@ export default {
   justify-content: center;
   }
 
-  #send_no_chope {
+  #send_chope {
   position: absolute;
   cursor: pointer;
   width: 50px;
@@ -190,7 +195,7 @@ export default {
   transform: translateX(-200%) scaleY(-1);
   }
 
-  #send_chope {
+  #send_no_chope {
   position: absolute;
   cursor: pointer;
   top: 30px;
