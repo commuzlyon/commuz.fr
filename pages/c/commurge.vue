@@ -12,8 +12,8 @@
         <img src="" alt="">
         <p></p>
       </div>
-      <img @click="sendNoChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
-      <img @click="sendChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendNoChope()" id="send_chope" src="/c/commurge/pouce.gif" alt="">
+      <img @click="sendChope()" id="send_no_chope" src="/c/commurge/pouce.gif" alt="">
     </div>
   </div>
   <div id="commurge__container">
