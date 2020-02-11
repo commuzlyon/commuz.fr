@@ -41,7 +41,7 @@ let hashToken = function () {
 }
 
 
-hashUser = hashToken();
+let hashUser = hashToken();
 
 
 let openOverlay = function () {
