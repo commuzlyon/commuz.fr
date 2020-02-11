@@ -35,6 +35,14 @@
 import anime from 'animejs'
 import ratios from '@/static/c/commurge/ratios.json'
 
+// Si jamais on veut attribuer un token unique par connexion au site
+let hashToken = function () {
+  return(Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15));
+}
+
+
+hashUser = hashToken();
+
 
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope')
@@ -123,6 +131,7 @@ let sendNoChope = function () {
   chope['validay'] = 'no' // Miskine le couple n'est pas validé par le commuzard
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
+  chope['id'] = hashUser;
 
   const req2 = new XMLHttpRequest()
   req2.open('POST', 'https://bastienlaville.alwaysdata.net/')
@@ -133,9 +142,10 @@ let sendNoChope = function () {
 
 let sendChope = function () {
   let chope = {}
-  chope['validay'] = 'yes' // Là c'est validée
+  chope['validay'] = 'yes' // Là c'est une chope validée
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
+  chope['id'] = hashUser;
 
   const req = new XMLHttpRequest()
   req.open('POST', 'https://bastienlaville.alwaysdata.net/')
