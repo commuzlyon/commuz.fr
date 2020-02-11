@@ -211,7 +211,7 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 45vw;
+  width: 35vw;
   }
 
   #match {
