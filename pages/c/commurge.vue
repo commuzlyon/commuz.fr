@@ -21,12 +21,12 @@
       <img class="commurge__bg" src="/c/commurge/lovebg.jpg" alt="">
     </div>
     <div id="titanic">
-      <img class="commurge__bg" src="/c/commurge/titanic.jpg" alt="">
+      <img class="commurge__bg" src="/c/commurge/tramp.jpg" alt="">
     </div>
     <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">Découvrir une chope !</button>
-    <img class="commurge__image" id="coeur" src="/c/commurge/coeurs.gif" alt="">
-    <img class="commurge__image" id="ange" src="/c/commurge/ange.gif" alt="">
-    <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="">
+    <img class="commurge__image" id="coeur" src="/c/commurge/coeurs.gif" alt="kheur <3">
+    <img class="commurge__image" id="ange" src="/c/commurge/clippy.gif" alt="clippy">
+    <img class="commurge__image" id="colombe" src="/c/commurge/clippy2.gif" alt="un autre clippy">
   </div>
 </div>
 </template>
