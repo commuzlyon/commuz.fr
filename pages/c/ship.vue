@@ -132,6 +132,7 @@ let sendNoChope = function () {
   chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
   chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
   chope['id'] = hashUser;
+  chope['timestamp'] = Date.now();
 
   const req2 = new XMLHttpRequest()
   req2.open('POST', 'https://bastienlaville.alwaysdata.net/')
