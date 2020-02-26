@@ -2,17 +2,17 @@
 <div>
   <navbar class="rel"></navbar>
 
-  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2019.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2020.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
   <div id="trailer--2019">
-    <h2>Découvrez le trailer de l'édition 2019</h2>
-    <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
+    <h2>Découvrez bientôt le trailer de l'édition 2020</h2>
+<!--     <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
       <source src="/videos/trailer--2019.mp4" type="video/mp4">
       <source src="/videos/trailer--2019.webm" type="video/webm">
-    </video>
+    </video> -->
   </div>
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
-    <p>Déjà plus de 17 ans de représentations, de 2002 à 2019 !</p>
+    <p>Déjà plus de 18 ans de représentations, de 2002 à 2020 !</p>
     <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>
@@ -35,8 +35,8 @@
 import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
-let infos = '<h2>Nouvelle édition très prochainement !</h2>' +
-                  '<p>Les représentations de l\'édition 2020 auront lieu prochainement à la salle Paul Garcin de Lyon ; retrouvez-nous en mars 2020 pour une nouvelle édition de la Commuz\' !</p>' //+
+let infos = '<h2>Commuz 2020 : contretemps</h2>' +
+                  "<p>Titouan, adolescent de 17 ans en fac d'Histoire se réveille à Versailles, un matin de 1712, dans un corps qui n'est pas le sien. Le propriétaire de ce corps s'appelle Joseph, est compositeur du Roi, et reprend connaissance au même moment dans la chambre de Titouan, au XXIe siècle. Alors que les proches de Joseph défilent devant Titouan avec leurs intrigues et leurs secrets, l'adolescent se rend rapidement compte qu'il a une énorme responsabilité : il doit composer une comédie-ballet pour Louis XIV. </p>" //+
                   // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 let anneesPassees = [
