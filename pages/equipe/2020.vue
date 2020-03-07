@@ -210,6 +210,11 @@ let equipe = {
 
   visibilite: [
     {
+      role: 'Star',
+      nom: 'Bro Douai',
+      photo: 'Bro.jpg'
+    },
+    {
       role: 'Communication',
       nom: 'Julien Guinot',
       photo: 'Joke.jpg'
@@ -273,11 +278,11 @@ let equipe = {
   ],
 
   ac: [
-    {
-      role: 'Actrice-chanteuse',
-      nom: 'Delphine Gindres',
-      photo: 'Delphine.jpg'
-    },
+    // {
+    //   role: 'Actrice-chanteuse',
+    //   nom: 'Delphine Gindre',
+    //   photo: 'Delphine.jpg'
+    // },
     {
       role: 'Acteur-chanteur',
       nom: 'Nathan Godoy',
@@ -400,7 +405,7 @@ let equipe = {
     {
       role: 'Flûte',
       nom: 'Théophile Dandé',
-      photo: 'Zer.jpg'
+      photo: 'Zher.jpg'
     },
     {
       role: 'Hautbois',
