@@ -1,5 +1,5 @@
 export default function ({ route, redirect }) {
   if (route.fullPath === '/equipe') {
-    return redirect('/equipe/2019')
+    return redirect('/equipe/2020')
   }
 }

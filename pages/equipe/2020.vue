@@ -100,14 +100,8 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2020/' + membre.photo" alt="">
-<!--           <template v-if="membre.nom == 'Marwan Hassan'">
-            <router-link to="/rootz"><p><b>{{ membre.nom }}</b><br/>
-              <i>{{ membre.role }}</i></p></router-link>
-          </template> -->
-          <template v-else>
-            <p><b>{{ membre.nom }}</b><br/>
-              <i>{{ membre.role }}</i></p>
-          </template>
+          <p><b>{{ membre.nom }}</b><br/>
+          <i>{{ membre.role }}</i></p>
         </div>
       </div>
     </div>
@@ -183,8 +177,8 @@
 import Pane from '@/components/Pane'
 
 let presentation = {
-  text: '<h2>2020 : Titre final lol</h2>' +
-          "<p>Un petit descriptif</p>",
+  text: '<h2>2020 - Contretemps</h2>' +
+          "<p>Titouan, adolescent de 17 ans en fac d'Histoire se réveille à Versailles, un matin de 1712, dans un corps qui n'est pas le sien. Le propriétaire de ce corps s'appelle Joseph, est compositeur du Roi, et reprend connaissance au même moment dans la chambre de Titouan, au XXI<sup>e</sup> siècle. Alors que les proches de Joseph défilent devant Titouan avec leurs intrigues et leurs secrets, l'adolescent se rend rapidement compte qu'il a une énorme responsabilité : il doit composer une comédie-ballet pour Louis XIV. </p>",
   bgImage: '/images/equipes/equipe--2020.jpg',
   image: '/images/affiches/affiche--2020.jpg'
 }
@@ -282,7 +276,7 @@ let equipe = {
     {
       role: 'Actrice-chanteuse',
       nom: 'Delphine Gindres',
-      photo: 'delphineg.jpg'
+      photo: 'Delphine.jpg'
     },
     {
       role: 'Acteur-chanteur',
