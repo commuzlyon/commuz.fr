@@ -42,7 +42,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2020/mes.png" alt="Mise en scènes">
+        <img src="/logos/poles/2020/mes.png" alt="Mise en scène">
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
@@ -195,22 +195,22 @@ let equipe = {
     {
       role: 'Président',
       nom: 'Vincent Haguet',
-      photo: 'vincenth.jpg'
+      photo: 'Khappa.jpg'
     },
     {
       role: 'Vice-Président',
       nom: 'Édouard Wattinne',
-      photo: 'francoisw.jpg'
+      photo: 'Edouard.jpg'
     },
     {
       role: 'Secrétaire Générale',
       nom: 'François Courbin',
-      photo: 'francoisc.jpg'
+      photo: 'Dumelon.jpg'
     },
     {
       role: 'Trésorière',
       nom: 'Nina Cressend',
-      photo: 'ninac.jpg'
+      photo: 'Nina.jpg'
     }
   ],
 
@@ -218,27 +218,27 @@ let equipe = {
     {
       role: 'Communication',
       nom: 'Julien Guinot',
-      photo: 'julieng.jpg'
+      photo: 'Joke.jpg'
     },
     {
       role: 'Communication',
       nom: 'Klara Wolowska',
-      photo: 'klaraw.jpg'
+      photo: 'Klara.jpg'
     },
     {
       role: 'Webmestre',
       nom: 'Bastien Laville',
-      photo: 'bastienl.jpg'
+      photo: 'Bastien.jpg'
     },
     {
       role: 'Partenariats',
       nom: 'Constance De Bejarry',
-      photo: 'cdb.jpg'
-    },
-    {
-      role: 'Partenariats',
-      nom: 'Hippolyte Coste',
-      photo: 'hippoc.jpg'
+      photo: 'Constance.jpg'
+    // },
+    // {
+    //   role: 'Partenariats',
+    //   nom: 'Hippolyte Coste',
+    //   photo: 'hippoc.jpg'
     }
   ],
 
@@ -246,22 +246,22 @@ let equipe = {
     {
       role: 'Scénariste',
       nom: 'Tom Humeau',
-      photo: 'tomh.jpg'
+      photo: 'TomH.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Alice Bensussan',
-      photo: 'aliceb.jpg'
+      photo: 'Alice.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Amandine Chemoul',
-      photo: 'amdinec.jpg'
+      photo: 'Amandine.jpg'
     },
     {
       role: 'Scénariste',
       nom: 'Loïc Denis',
-      photo: 'loicd.jpg'
+      photo: 'Loic.jpg'
     }
   ],
 
@@ -269,12 +269,12 @@ let equipe = {
     {
       role: 'Metteur en scène',
       nom: 'Ivain Rodriguez',
-      photo: 'ivainr.jpg'
+      photo: 'Olyon.jpg'
     },
     {
       role: 'Metteuse en scène',
       nom: 'Benoît Descorse',
-      photo: 'benoitd.jpg'
+      photo: 'Trakop.jpg'
     }
   ],
 
@@ -287,37 +287,37 @@ let equipe = {
     {
       role: 'Acteur-chanteur',
       nom: 'Nathan Godoy',
-      photo: 'nathang.jpg'
+      photo: 'Nathan.jpg'
     },
     {
       role: 'Acteur-chanteur',
       nom: 'Zaccharie Lakhal',
-      photo: 'zacl.jpg'
+      photo: 'Zac.jpg'
     },
     {
       role: 'Actrice-chanteuse',
       nom: 'Agathe Peigney',
-      photo: 'agathep.jpg'
+      photo: 'AgatheP.jpg'
     },
     {
       role: 'Acteur-chanteur',
       nom: 'Théo Santos',
-      photo: 'mayar.jpg'
+      photo: 'Mayar.jpg'
     },
     {
       role: 'Comédien',
       nom: 'Paul Nédélec',
-      photo: 'pauln.jpg'
+      photo: 'Phrygoh.jpg'
     },
     {
       role: 'Comédien',
       nom: 'Mahé Venault',
-      photo: 'mahev.jpg'
+      photo: 'Mahe.jpg'
     },
     {
       role: 'Comédienne',
       nom: 'Adam Alice',
-      photo: 'adama.jpg'
+      photo: 'AliceA.jpg'
     }
   ],
 
@@ -325,32 +325,32 @@ let equipe = {
     {
       role: 'Respo chant',
       nom: 'Suzanne He',
-      photo: 'suzanneh.jpg'
+      photo: 'Suzanne.jpg'
     },
     {
       role: 'Respo chant',
       nom: 'Agathe Voillequin',
-      photo: 'agathev.jpg'
+      photo: 'AgatheV.jpg'
     },
     {
       role: 'Choriste',
       nom: 'Julian Achatz',
-      photo: 'juliana.jpg'
+      photo: 'Julian.jpg'
     },
     {
       role: 'Choriste',
       nom: 'Maxence Bideaux',
-      photo: 'maxenceb.jpg'
+      photo: 'Maxence.jpg'
     },
     {
       role: 'Choriste',
       nom: "Marie d'Hacourt",
-      photo: 'maried.jpg'
+      photo: 'Marie.jpg'
     },
     {
       role: 'Choriste',
       nom: 'Apolline Jauffret',
-      photo: 'apoj.jpg'
+      photo: 'Apolline.jpg'
     }
   ],
 
@@ -358,22 +358,22 @@ let equipe = {
     {
       role: 'Respo compositeur',
       nom: 'Louis Barlet',
-      photo: 'louisb.jpg'
+      photo: 'Zephy.jpg'
     },
     {
       role: 'Respo compositeur',
       nom: 'Arsène Marzorati',
-      photo: 'arsenem.jpg'
+      photo: 'Arsene.jpg'
     },
     {
       role: 'Compositeur',
       nom: 'Thibault Carpogno',
-      photo: 'thibaultc.jpg'
+      photo: 'thibault.jpg'
     },
     {
       role: 'Compositeur',
       nom: 'Julien Gehrke',
-      photo: 'julieng.jpg'
+      photo: 'JulienG.jpg'
     }
   ],
 
@@ -381,77 +381,77 @@ let equipe = {
     {
       role: 'Respo Zikos',
       nom: 'Emma de Boissoudy',
-      photo: 'emmad.jpg'
+      photo: 'Emma.jpg'
     },
     {
       role: 'Respo Zikos',
       nom: 'Vincent Duong',
-      photo: 'vincentd.jpg'
+      photo: 'Keeto.jpg'
     },
     {
       role: 'Violon',
       nom: 'David Kene',
-      photo: 'davidk.jpg'
+      photo: 'David.jpg'
     },
     {
       role: 'Violon',
       nom: 'Jean Turck',
-      photo: 'jeant.jpg'
+      photo: 'JeanT1.jpg'
     },
     {
       role: 'Alto',
       nom: 'Alicia Barsacq',
-      photo: 'aliciab.jpg'
+      photo: 'Alicia.jpg'
     },
     {
       role: 'Flûte',
       nom: 'Théophile Dandé',
-      photo: 'theophiled.jpg'
+      photo: 'Zer.jpg'
     },
     {
       role: 'Hautbois',
       nom: 'Zoé Morel',
-      photo: 'zoem.jpg'
+      photo: 'Zoe.jpg'
     },
     {
       role: 'Saxophone soprano',
       nom: 'Martin Greiveldinger',
-      photo: 'marting.jpg'
+      photo: 'Quibu.jpg'
     },
     {
       role: 'Saxophone alto',
       nom: 'Victor Penalver',
-      photo: 'victorp.jpg'
+      photo: 'Lomboh.jpg'
     },
     {
       role: 'Trompette',
       nom: 'Samuel Rizoulière',
-      photo: 'samuelr.jpg'
+      photo: 'Samuel.jpg'
     },
     {
       role: 'Trombone',
       nom: 'Tom Mehl',
-      photo: 'tomm.jpg'
+      photo: 'TomAlibabasse.jpg'
     },
     {
       role: 'Piano',
       nom: 'Lauréna Éliard',
-      photo: 'laurenae.jpg'
+      photo: 'Laurena.jpg'
     },
     {
       role: 'Guitare',
       nom: 'Robin Calmard',
-      photo: 'robinc.jpg'
+      photo: 'Robin.jpg'
     },
     {
       role: 'Guitare basse',
       nom: 'Nicolas Moniez',
-      photo: 'nicolasm.jpg'
+      photo: 'Chaloupe.jpg'
     },
     {
       role: 'Batterie',
       nom: 'Léo Savigni',
-      photo: 'léos.jpg'
+      photo: 'LeoS.jpg'
     }
   ],
 
@@ -459,62 +459,62 @@ let equipe = {
     {
       role: 'Respo danse',
       nom: 'Léna Kasmi',
-      photo: 'lenak.jpg'
+      photo: 'Lena.jpg'
     },
     {
       role: 'Respo danse',
       nom: 'Jeanne Monier',
-      photo: 'jeannem.jpg'
+      photo: 'Jeanne.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Carla Salique',
-      photo: 'carla.jpg'
+      photo: 'Valtha.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Bérénice Vives',
-      photo: 'berenicev.jpg'
+      photo: 'Berenice.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Clémence Bouquillon',
-      photo: 'clemenceb.jpg'
+      photo: 'Clemence.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Anastasia Bruniaux',
-      photo: 'anastasiab.jpg'
+      photo: 'Anastasia.jpg'
     },
     {
       role: 'Danseur',
       nom: 'Linbo Sun',
-      photo: 'linbo.jpg'
+      photo: 'Linbo.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Eva Giband',
-      photo: 'evag.jpg'
+      photo: 'Eva.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Yuexuan Kong',
-      photo: 'yuek.jpg'
+      photo: 'Yuexuan.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Li Zhuoran',
-      photo: 'liz.jpg'
+      photo: 'Zhuoran.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Juliette Quinet',
-      photo: 'julietteq.jpg'
+      photo: 'Juliette.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Céline Raillé',
-      photo: 'celiner.jpg'
+      photo: 'Celine.jpg'
     }
   ],
 
@@ -522,27 +522,27 @@ let equipe = {
     {
       role: 'Respo costumes',
       nom: 'Iris Edelman',
-      photo: 'irise.jpg'
+      photo: 'Iris.jpg'
     },
     {
       role: 'Respo costumes',
       nom: 'Clervie Grillet',
-      photo: 'clervie.jpg'
+      photo: 'Clervos.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Lise Charcosset',
-      photo: 'lisec.jpg'
+      photo: 'Lise.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Pauline Colas Des Francs',
-      photo: 'pcdf.jpg'
+      photo: 'Pauline.jpg'
     },
     {
       role: 'Costumière',
       nom: 'Marguerite de La Porte',
-      photo: 'mdlp.jpg'
+      photo: 'Marguerite.jpg'
     }
   ],
 
@@ -550,27 +550,27 @@ let equipe = {
     {
       role: 'Respo décors',
       nom: 'Lison Allard',
-      photo: 'lisona.jpg'
+      photo: 'Lison.jpg'
     },
     {
       role: 'Respo décors',
       nom: 'Martin Le Henaff',
-      photo: 'mlh.jpg'
+      photo: 'Genatz.jpg'
     },
     {
       role: 'Décoratrice',
       nom: 'Laïs Foix',
-      photo: 'laisf.jpg'
+      photo: 'Lais.jpg'
     },
     {
       role: 'Décorateur',
       nom: 'Julien Mougel',
-      photo: 'Julienm.jpg'
+      photo: 'Scoopyh.jpg'
     },
     {
       role: 'Décoratrice',
       nom: 'Maëlys Herrouin',
-      photo: 'maelysh.jpg'
+      photo: 'Maelys.jpg'
     }
   ],
 
@@ -578,37 +578,37 @@ let equipe = {
     {
       role: 'Respo son',
       nom: 'Aurélien Vu NGnoc',
-      photo: 'aurelienvu.jpg'
+      photo: 'Aurelien.jpg'
     },
-    {
-      role: 'VP son',
-      nom: 'Clara Angrand',
-      photo: 'claraa.jpg'
-    },
-    {
-      role: 'VP son',
-      nom: 'Éléonor Audiot',
-      photo: 'eleonora.jpg'
-    },
+    // {
+    //   role: 'VP son',
+    //   nom: 'Clara Angrand',
+    //   photo: 'claraa.jpg'
+    // },
+    // {
+    //   role: 'VP son',
+    //   nom: 'Éléonor Audiot',
+    //   photo: 'eleonora.jpg'
+    // },
     {
       role: 'VP son',
       nom: 'Camille Babin',
-      photo: 'camilleb.jpg'
+      photo: 'Camille.jpg'
     },
     {
       role: 'VP son',
       nom: 'Boris Laurent',
-      photo: 'borisl.jpg'
+      photo: 'Boris.jpg'
     },
     {
       role: 'VP son',
       nom: 'Nicolas Miranda',
-      photo: 'nicolasm.jpg'
+      photo: 'Brador.jpg'
     },
     {
       role: 'VP lumière',
       nom: 'Alban Gosset',
-      photo: 'albang.jpg'
+      photo: 'Alban.jpg'
     }
   ],
 
@@ -616,17 +616,17 @@ let equipe = {
     {
       role: 'VP Amour',
       nom: 'Martin Bouillot',
-      photo: 'martinb.jpg'
+      photo: 'Pradow.jpg'
     },
     {
       role: 'VP Amour',
       nom: 'Alexia De Mombynes',
-      photo: 'adm.jpg'
+      photo: 'Alexia.jpg'
     },
     {
       role: 'VP Amour',
       nom: 'Chloé Lutz',
-      photo: 'chloel.jpg'
+      photo: 'Flymm.jpg'
     }
   ]
 }
