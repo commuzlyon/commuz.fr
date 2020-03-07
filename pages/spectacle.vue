@@ -4,7 +4,7 @@
 
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--2020.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
   <div id="trailer--2019">
-    <h2>Découvrez bientôt le trailer de l'édition 2020 !</h2>
+<!--     <h2>Découvrez bientôt le trailer de l'édition 2020 !</h2> -->
 <!--     <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
       <source src="/videos/trailer--2019.mp4" type="video/mp4">
       <source src="/videos/trailer--2019.webm" type="video/webm">
