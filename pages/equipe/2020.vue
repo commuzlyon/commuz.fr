@@ -266,6 +266,11 @@ let equipe = {
 
   mes: [
     {
+      role: 'Coordinatrice artistique',
+      nom: 'Roxane Boyer',
+      photo: 'Roxanne.jpg'
+    },
+    {
       role: 'Metteur en scène',
       nom: 'Ivain Rodriguez',
       photo: 'Olyon.jpg'
