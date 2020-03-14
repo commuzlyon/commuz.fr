@@ -581,7 +581,7 @@ let equipe = {
   technique: [
     {
       role: 'Respo son',
-      nom: 'Aurélien Vu NGnoc',
+      nom: 'Aurélien Vu Ngoc',
       photo: 'Aurelien.jpg'
     },
     // {
@@ -608,6 +608,11 @@ let equipe = {
       role: 'VP son',
       nom: 'Nicolas Miranda',
       photo: 'Brador.jpg'
+    },
+    {
+      role: 'VP son',
+      nom: 'Clara Angrand',
+      photo: 'Nahe.jpg'
     },
     {
       role: 'VP lumière',
