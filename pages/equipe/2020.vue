@@ -618,6 +618,11 @@ let equipe = {
       role: 'VP lumière',
       nom: 'Alban Gosset',
       photo: 'Alban.jpg'
+    },
+    {
+      role: 'Respo vidéo',
+      nom: 'Pierre Rouaix',
+      photo: 'Pierre.jpg'
     }
   ],
 
