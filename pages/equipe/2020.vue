@@ -283,11 +283,11 @@ let equipe = {
   ],
 
   ac: [
-    // {
-    //   role: 'Actrice-chanteuse',
-    //   nom: 'Delphine Gindre',
-    //   photo: 'Delphine.jpg'
-    // },
+    {
+      role: 'Actrice-chanteuse',
+      nom: 'Delphine Gindre',
+      photo: 'Dédon.jpg'
+      },
     {
       role: 'Acteur-chanteur',
       nom: 'Nathan Godoy',
