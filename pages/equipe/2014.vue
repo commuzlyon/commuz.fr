@@ -384,11 +384,6 @@ let equipe = {
   amour: [
     {
       role: 'VP amour',
-      nom: 'Mathieu Ortolé',
-      photo: 'cudi.jpg'
-    },
-    {
-      role: 'VP amour',
       nom: 'Nicolas Papernot',
       photo: 'orky.jpg'
     }
