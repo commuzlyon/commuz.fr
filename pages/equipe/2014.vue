@@ -486,11 +486,6 @@ let equipe = {
     },
     {
       role: 'Acteur-chanteur',
-      nom: 'Leopold Schmutz',
-      photo: 'leopold.jpg'
-    },
-    {
-      role: 'Acteur-chanteur',
       nom: 'Nicolas Dalisson',
       photo: 'nicolasdalisson.jpg'
     }
