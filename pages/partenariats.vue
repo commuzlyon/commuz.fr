@@ -20,6 +20,9 @@
     </div>
 </section>
 
+<div id="plaquette">
+  <pane :type="'pane--right'" :bgImage="'/images/couverturePlaquette.jpg'" :text="data.plaquette"></pane>
+</div>
     <table id="tablePartenaires">
       <tr>
         <td v-for="partenaire in respoPartenariats">
@@ -54,10 +57,14 @@ let respoPartenariats = [
   }
 ]
 
+let data = {
+  plaquette: '<p>Vous pouvez retrouver la plaquette sponsors en cliquant <a id="dlPlaquette" class="inline-link" href="/Plaquette 2019.pdf" download>ici</a>'
+}
+
 export default {
   components: { Navbar, Pane },
   data: function () {
-    return {respoPartenariats}
+    return {respoPartenariats, data}
   }
 }
 </script>
@@ -86,9 +93,6 @@ export default {
     h2 {
       margin-bottom: 0.5em;
     }
-    a {
-      color: var(--pink);
-    }
 }
 
 #sponsors__logos {
@@ -106,4 +110,10 @@ export default {
     }
   }
 }
+
+#dlPlaquette {
+  color: var(--pink);
+}
+
+
 </style>
