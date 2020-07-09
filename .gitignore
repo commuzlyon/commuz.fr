@@ -17,3 +17,6 @@ dist
 # Git login
 
 auth.json
+
+# Lanceur du site en local
+commuzLocal.bat
