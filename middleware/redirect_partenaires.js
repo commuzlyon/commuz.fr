@@ -1,5 +1,5 @@
 export default function ({ route, redirect }) {
-  if (route.fullPath === '/partenariats_bis') {
-    return redirect('/partenariats_bis')
+  if (route.fullPath === '/partenariatsbis') {
+    return redirect('/partenariatsbis')
   }
 }
