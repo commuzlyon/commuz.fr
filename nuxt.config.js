@@ -79,6 +79,6 @@ module.exports = {
     enter: removeOverlay
   },
   router: {
-    middleware: [ 'redirect_equipe', 'redirect_galerie', 'redirect_conchiage' ]
+    middleware: [ 'redirect_equipe', 'redirect_galerie', 'redirect_conchiage', 'redirect_partenaires']
   }
 }

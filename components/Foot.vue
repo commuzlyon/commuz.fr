@@ -28,7 +28,7 @@
     <h3>Contacts</h3>
     <p>Pour toute question, contactez-nous sur <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
     <!-- <p>Pour toute question, vous pouvez contacter notre présidente, <a class="inline-link" href="mailto:contact@commuz.fr">Apolline</a>. <br/> -->
-    Pour toute demande relative aux partenariats, contactez nos deux responsables partenariats <a class="inline-link" href="mailto:partenariat@commuz.fr"> Julie et Jonathan.</a></p>
+    Pour toute demande relative aux partenariats, contactez nos deux responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan</span></router-link></p>
   </div>
 </footer>
 </template>

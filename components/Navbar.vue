@@ -17,6 +17,9 @@
       <li class="navbar__item">
         <router-link class="navbar__link" active-class="navbar__link--active" to="/equipe"><span>L'équipe</span></router-link>
       </li>
+      <li class="navbar__item">
+        <router-link class="navbar__link" active-class="navbar__link--active" to="/partenariats"><span>Partenariats</span></router-link>
+      </li>
     </ul>
   </nav>
 </template>
