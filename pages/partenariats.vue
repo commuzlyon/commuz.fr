@@ -1,9 +1,31 @@
 <template lang="html">
 
-  <div>
-    <navbar class="rel"></navbar>
+<div>
+  <navbar class="rel"></navbar>
 
-<section id="sponsors">
+  <div id="plaquette">
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat Julie et Jonathan à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+  </div>
+
+  <div id="tablePartenaires">
+    <table>
+      <tr>
+        <td v-for="partenaire in respoPartenariats">
+          <img :src="partenaire.image" alt="" id="partenaires_photo">
+        </td>
+      <tr>
+        <td v-for="partenaire in respoPartenariats">
+          {{ partenaire.nom }} {{ partenaire.prenom  }}
+          <br>
+          Email: {{ partenaire.mail }}
+          <br>
+          Télephone: {{ partenaire.telephone }}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <section id="sponsors">
     <div id="sponsors__text">
       <h2>Ils nous ont soutenus</h2>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
@@ -18,23 +40,10 @@
       <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/logos/udl.svg" alt="Logo de l'Université de Lyon"></a>
       <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
     </div>
-</section>
 
-<div id="plaquette">
-  <pane :type="'pane--right'" :bgImage="'/images/couverturePlaquette.jpg'" :text="data.plaquette"></pane>
+
+  </section>
 </div>
-    <table id="tablePartenaires">
-      <tr>
-        <td v-for="partenaire in respoPartenariats">
-          {{ partenaire.nom }} {{ partenaire.prenom  }}
-          <br>
-          Email: {{ partenaire.mail }}
-          <br>
-          Télephone: {{ partenaire.telephone }}
-        </td>
-      </tr>
-    </table>
-  </div>
 </template>
 
 <script>
@@ -42,23 +51,25 @@ import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
 
-let respoPartenariats = [
-  {
-    prenom: "Jonathan",
-    nom: "Tata",
-    telephone: "06 77 77 77 77",
-    mail: "fff@gmail.com"
-  },
-  {
-    prenom: "Julie",
-    nom: "Humayou",
-    telephone: "06 66 66 66 66",
-    mail: "ggg@gmail.com"
-  }
-]
+let respoPartenariats = {
+    respo2: {
+      prenom: "Julie",
+      nom: "Humayou",
+      telephone: "06 66 66 66 66",
+      mail: "ggg@gmail.com",
+      image: "/images/Partenaires/Julie_Humayou.jpg"
+    },
+    respo1: {
+      prenom: "Jonathan",
+      nom: "Tata",
+      telephone: "06 77 77 77 77",
+      mail: "fff@gmail.com",
+      image: "/images/Partenaires/Jonathan_Tata.jpg"    
+    }
+}
+
 
 let data = {
-  plaquette: '<p>Vous pouvez retrouver la plaquette sponsors en cliquant <a id="dlPlaquette" class="inline-link" href="/Plaquette 2019.pdf" download>ici</a>'
 }
 
 export default {
@@ -76,6 +87,12 @@ export default {
   display:flex;
   justify-content: center;
   text-align: center;
+
+  img {
+    margin-right: 1em;
+    height: 200px;
+    width: 200px;
+  }
 }
 
 #sponsors {
@@ -96,6 +113,21 @@ export default {
 }
 
 #sponsors__logos {
+  display: flex;
+  width: 80%;
+  @media only screen and (min-width: 992px) {
+    width: 60%;
+  }
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    max-height: 100px;
+    margin: 1rem;
+  }
+}
+
+#partenaires_photo {
     display: flex;
     width: 80%;
     @media only screen and (min-width: 992px) {
@@ -111,9 +143,24 @@ export default {
   }
 }
 
-#dlPlaquette {
-  color: var(--pink);
+#plaquette {
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  text-align: center;
+  margin-bottom: 2rem;
+
+   
+  a {
+    color: var(--pink);
+  }
 }
+
 
 
 </style>
