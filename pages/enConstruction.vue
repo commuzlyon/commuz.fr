@@ -21,5 +21,10 @@ export default {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
+
+  a {
+    color: var(--pink);
+  }
 }
+
 </style>
