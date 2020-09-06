@@ -17,6 +17,7 @@
       <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li>
       <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li>
       <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li>
+      <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li>
     </ul>
   </div>
   <div id="legal">
