@@ -4,7 +4,7 @@
   <navbar class="rel"></navbar>
 
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat Julie et Jonathan à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Julie et Jonathan à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -15,9 +15,8 @@
         </td>
       <tr>
         <td v-for="partenaire in respoPartenariats">
-          {{ partenaire.nom }} {{ partenaire.prenom  }}
-          <br>
-          Email: {{ partenaire.mail }}
+          {{ partenaire.prenom }} {{ partenaire.nom  }}
+          
           <br>
           Télephone: {{ partenaire.telephone }}
         </td>
@@ -47,44 +46,39 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-import Pane from '@/components/Pane'
-
+import Navbar from "@/components/Navbar";
+import Pane from "@/components/Pane";
 
 let respoPartenariats = {
-    respo2: {
-      prenom: "Julie",
-      nom: "Humayou",
-      telephone: "06 66 66 66 66",
-      mail: "ggg@gmail.com",
-      image: "/images/Partenaires/Julie_Humayou.jpg"
-    },
-    respo1: {
-      prenom: "Jonathan",
-      nom: "Tata",
-      telephone: "06 77 77 77 77",
-      mail: "fff@gmail.com",
-      image: "/images/Partenaires/Jonathan_Tata.jpg"    
-    }
-}
+  respo2: {
+    prenom: "Julie",
+    nom: "Humayou",
+    telephone: "06 89 94 77 59",
+    mail: "partenariat@commuz.fr",
+    image: "/images/Partenaires/Julie_Humayou_1.jpg",
+  },
+  respo1: {
+    prenom: "Jonathan",
+    nom: "Tata",
+    telephone: "07 89 53 81 41",
+    mail: "partenariat@commuz.fr",
+    image: "/images/Partenaires/Jonathan_Tata_1.jpg",
+  },
+};
 
-
-let data = {
-}
+let data = {};
 
 export default {
   components: { Navbar, Pane },
   data: function () {
-    return {respoPartenariats, data}
-  }
-}
+    return { respoPartenariats, data };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
-#tablePartenaires 
-{
-  display:flex;
+#tablePartenaires {
+  display: flex;
   justify-content: center;
   text-align: center;
 
@@ -99,6 +93,7 @@ export default {
   color: white;
   padding: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,24 +105,24 @@ export default {
     h2 {
       margin-bottom: 0.5em;
     }
-}
-
-#sponsors__logos {
-  display: flex;
-  width: 80%;
-  @media only screen and (min-width: 992px) {
-    width: 60%;
   }
-  flex-wrap: wrap;
-  justify-content: center;
 
-  img {
-    max-height: 100px;
-    margin: 1rem;
+  #sponsors__logos {
+    display: flex;
+    width: 80%;
+    @media only screen and (min-width: 992px) {
+      width: 60%;
+    }
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      max-height: 100px;
+      margin: 1rem;
+    }
   }
-}
 
-#partenaires_photo {
+  #partenaires_photo {
     display: flex;
     width: 80%;
     @media only screen and (min-width: 992px) {
@@ -151,16 +146,11 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
-   
   a {
     color: var(--pink);
   }
 }
-
-
-
 </style>

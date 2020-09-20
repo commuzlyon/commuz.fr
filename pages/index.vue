@@ -37,7 +37,7 @@
     <div id="sponsors__text">
       <h2>Ils nous ont soutenus</h2>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan.</span></router-link></p>
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan.</span></router-link></p>
       
     </div>
     <div id="sponsors__logos">
@@ -52,81 +52,89 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-import Pane from '@/components/Pane'
-import bus from '@/components/bus'
-import anime from 'animejs'
+import Navbar from "@/components/Navbar";
+import Pane from "@/components/Pane";
+import bus from "@/components/bus";
+import anime from "animejs";
 
-function startAnim () {
+function startAnim() {
   // animate hero logo
   if (!document.hidden) {
-    document.removeEventListener('visibilitychange', startAnim)
+    document.removeEventListener("visibilitychange", startAnim);
 
-    let lettersElt = document.querySelectorAll('#home__hero__logo path:not(:nth-child(6)):not(:nth-last-child(-n+2)')
-    let linesElt = document.querySelectorAll('#home__hero__logo path:nth-last-child(-n+2)')
+    let lettersElt = document.querySelectorAll(
+      "#home__hero__logo path:not(:nth-child(6)):not(:nth-last-child(-n+2)"
+    );
+    let linesElt = document.querySelectorAll(
+      "#home__hero__logo path:nth-last-child(-n+2)"
+    );
 
-    var timeline = anime.timeline()
+    var timeline = anime.timeline();
 
-    timeline.add({
-      targets: lettersElt,
-      opacity: {
-        value: ['0', '1'],
-        duration: 500
-      },
-      translateY: {
-        value: ['-30%', '0'],
-        duration: 800
-      },
-      delay: function (el, i, l) {
-        return i * 300
-      },
-      easing: 'easeOutQuart'
-    }).add({
-      targets: linesElt[0],
-      'stroke-dasharray': {
-        value: ['210, 315, 0', '210, 210, 210'],
-        duration: 1000
-      },
-      easing: 'linear',
-      offset: '0'
-    }).add({
-      targets: linesElt[1],
-      'stroke-dasharray': {
-        value: ['262, 393, 0', '262, 262, 262'],
-        duration: 1500
-      },
-      easing: 'linear',
-      offset: '0'
-    })
+    timeline
+      .add({
+        targets: lettersElt,
+        opacity: {
+          value: ["0", "1"],
+          duration: 500,
+        },
+        translateY: {
+          value: ["-30%", "0"],
+          duration: 800,
+        },
+        delay: function (el, i, l) {
+          return i * 300;
+        },
+        easing: "easeOutQuart",
+      })
+      .add({
+        targets: linesElt[0],
+        "stroke-dasharray": {
+          value: ["210, 315, 0", "210, 210, 210"],
+          duration: 1000,
+        },
+        easing: "linear",
+        offset: "0",
+      })
+      .add({
+        targets: linesElt[1],
+        "stroke-dasharray": {
+          value: ["262, 393, 0", "262, 262, 262"],
+          duration: 1500,
+        },
+        easing: "linear",
+        offset: "0",
+      });
   }
 }
 
 let data = {
-  presentation: '<h2>La Commuz\', c\'est quoi ?</h2>' +
-    '<p>La Commuz\' est une comédie musicale organisée chaque année depuis 18 ans par une équipe de 80 étudiants de l\'École Centrale de Lyon et de emlyon business school.</p>' +
-    '<p>L\'année dernière, la Commuz\' 2019, Désorientés, a conquis plus de 1000 spectateurs lors de quatre soirées de spectacle.</p>',
-  maquillage: '<h2>Un spectacle imaginé de A à Z</h2>' +
-    '<p>De l\'élaboration du scénario en passant par les chorégraphies, la composition et l\'orchestration des musiques, la mise en place de l\'éclairage et du son, la création des costumes et des décors&hellip;</p>' +
-    '<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d\'une qualité professionnelle.</p>'
-}
+  presentation:
+    "<h2>La Commuz', c'est quoi ?</h2>" +
+    "<p>La Commuz' est une comédie musicale organisée chaque année depuis 18 ans par une équipe de 80 étudiants de l'École Centrale de Lyon et de emlyon business school.</p>" +
+    "<p>L'année dernière, la Commuz' 2019, Désorientés, a conquis plus de 1000 spectateurs lors de quatre soirées de spectacle.</p>",
+  maquillage:
+    "<h2>Un spectacle imaginé de A à Z</h2>" +
+    "<p>De l'élaboration du scénario en passant par les chorégraphies, la composition et l'orchestration des musiques, la mise en place de l'éclairage et du son, la création des costumes et des décors&hellip;</p>" +
+    "<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d'une qualité professionnelle.</p>",
+};
 
 export default {
   components: { Navbar, Pane },
   data: function () {
-    return data
+    return data;
   },
   mounted: function () {
     // document.addEventListener('visibilitychange', startAnim)
     // startAnim()
-    bus.$on('loaded', function (load) {
+    bus.$on("loaded", function (load) {
       if (load === true) {
-        document.addEventListener('visibilitychange', startAnim)
-        startAnim()
+        document.addEventListener("visibilitychange", startAnim);
+        startAnim();
       }
-    })
-  }
-
-}
+    });
+  },
+};
 </script>
 
 <style lang="scss">
@@ -183,7 +191,6 @@ export default {
   }
 }
 
-
 #testimonial {
   width: 90%;
   @media only screen and (min-width: 768px) {
@@ -191,7 +198,7 @@ export default {
   }
   @media only screen and (min-width: 992px) {
     width: 70%;
- }
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +244,6 @@ export default {
     }
   }
 }
-
 
 #sponsors {
   color: white;

@@ -1,4 +1,4 @@
-function addOverlay (el, done) {
+function addOverlay(el, done) {
   let overlayElt = document.getElementById('overlayDiv')
   overlayElt.classList.add('up')
   window.setTimeout(() => {
@@ -7,7 +7,7 @@ function addOverlay (el, done) {
   }, 300)
 }
 
-function removeOverlay (el, done) {
+function removeOverlay(el, done) {
   let overlayElt = document.getElementById('overlayDiv')
   window.setTimeout(() => {
     overlayElt.classList.remove('up')
@@ -56,7 +56,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -67,7 +67,7 @@ module.exports = {
       }
     },
     vendor:
-    [ 'animejs' ]
+      ['animejs']
   },
   css: [
     '@/assets/css/global.scss'
@@ -79,6 +79,6 @@ module.exports = {
     enter: removeOverlay
   },
   router: {
-    middleware: [ 'redirect_equipe', 'redirect_galerie', 'redirect_conchiage', 'redirect_partenaires', 'redirect_enconstruction']
+    middleware: ['redirect_equipe', 'redirect_galerie', 'redirect_conchiage', 'redirect_enconstruction']
   }
 }
