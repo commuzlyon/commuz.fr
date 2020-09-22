@@ -15,10 +15,10 @@
         </td>
       <tr>
         <td v-for="partenaire in respoPartenariats">
-          {{ partenaire.prenom }} {{ partenaire.nom  }}
+          <p>{{ partenaire.prenom }} {{ partenaire.nom  }}
           
           <br>
-          Télephone: {{ partenaire.telephone }}
+          Télephone: {{ partenaire.telephone }}</p>
         </td>
       </tr>
     </table>
