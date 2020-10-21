@@ -37,7 +37,7 @@
     <div id="sponsors__text">
       <h2>Ils nous ont soutenus</h2>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan.</span></router-link></p>
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Pauline, Jonathan et Julie.</span></router-link></p>
       
     </div>
     <div id="sponsors__logos">

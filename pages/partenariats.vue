@@ -4,7 +4,7 @@
   <navbar class="rel"></navbar>
 
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Julie et Jonathan à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -50,12 +50,12 @@ import Navbar from "@/components/Navbar";
 import Pane from "@/components/Pane";
 
 let respoPartenariats = {
-  respo2: {
-    prenom: "Julie",
-    nom: "Humayou",
-    telephone: "06 89 94 77 59",
+  respo3: {
+    prenom: "Pauline",
+    nom: "Perrin",
+    telephone: "06 60 08 95 87",
     mail: "partenariat@commuz.fr",
-    image: "/images/Partenaires/Julie_Humayou_1.jpg",
+    image: "/images/Partenaires/Pauline_Perrin_1.png",
   },
   respo1: {
     prenom: "Jonathan",
@@ -63,6 +63,13 @@ let respoPartenariats = {
     telephone: "07 89 53 81 41",
     mail: "partenariat@commuz.fr",
     image: "/images/Partenaires/Jonathan_Tata_1.jpg",
+  },
+  respo2: {
+    prenom: "Julie",
+    nom: "Humayou",
+    telephone: "06 89 94 77 59",
+    mail: "partenariat@commuz.fr",
+    image: "/images/Partenaires/Julie_Humayou_1.jpg",
   },
 };
 
