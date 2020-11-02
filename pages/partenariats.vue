@@ -4,7 +4,7 @@
   <navbar class="rel"></navbar>
 
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2021.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -29,7 +29,7 @@
       <h2>Ils nous ont soutenus</h2>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
       <p>Merci à nos partenaires qui nous aident et nous soutiennent dans la réalisation de ce spectacle</p>
-      <!--<p>Téléchargez la <a class="inline-link" href="/Plaquette 2019.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan.</span></router-link></p>-->
+      <!--<p>Téléchargez la <a class="inline-link" href="/Plaquette 2021.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariat <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Julie et Jonathan.</span></router-link></p>-->
       
     </div>
     <div id="sponsors__logos">
