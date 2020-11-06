@@ -18,7 +18,7 @@
           <p>{{ partenaire.prenom }} {{ partenaire.nom  }}
           
           <br>
-          Téléphone: {{ partenaire.telephone }}</p>
+          Téléphone : {{ partenaire.telephone }}</p>
         </td>
       </tr>
     </table>
