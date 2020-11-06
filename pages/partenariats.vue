@@ -4,7 +4,7 @@
   <navbar class="rel"></navbar>
 
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2021.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2021.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -18,7 +18,7 @@
           <p>{{ partenaire.prenom }} {{ partenaire.nom  }}
           
           <br>
-          Télephone: {{ partenaire.telephone }}</p>
+          Téléphone: {{ partenaire.telephone }}</p>
         </td>
       </tr>
     </table>
@@ -54,21 +54,21 @@ let respoPartenariats = {
     prenom: "Pauline",
     nom: "Perrin",
     telephone: "06 60 08 95 87",
-    mail: "partenariat@commuz.fr",
+    mail: "commuzlyon@gmail.co",
     image: "/images/Partenaires/Pauline_Perrin_1.png",
   },
   respo1: {
     prenom: "Jonathan",
     nom: "Tata",
     telephone: "07 89 53 81 41",
-    mail: "partenariat@commuz.fr",
+    mail: "commuzlyon@gmail.co",
     image: "/images/Partenaires/Jonathan_Tata_1.jpg",
   },
   respo2: {
     prenom: "Julie",
     nom: "Humayou",
     telephone: "06 89 94 77 59",
-    mail: "partenariat@commuz.fr",
+    mail: "commuzlyon@gmail.com",
     image: "/images/Partenaires/Julie_Humayou_1.jpg",
   },
 };
