@@ -348,7 +348,7 @@ let equipe = {
     },
     {
       role: 'Choriste',
-      nom: "Marie d'Hacourt",
+      nom: "Marie d'Harcourt",
       photo: 'Marie.jpg'
     },
     {
