@@ -19,7 +19,8 @@ La version actuelle du site est une refonte menée par Étienne Sanguinetti, ins
 - Gauthier Fanucci : Webmestre du mandat 2016 - 2017 ;
 - Étienne Sanguinetti : Webmestre du mandat 2017 - 2018 ;
 - Raphaël Chalicarne : Webmestre du mandat 2018 - 2019 ;
-- Bastien Laville : Webmestre du mandat 2019 - 2020.
+- Bastien Laville : Webmestre du mandat 2019 - 2020 ;
+- Alban Gosset: Webmestre du mandat 2020 - 2021.
 
 # À faire
 
