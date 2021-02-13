@@ -67,15 +67,19 @@ let openOverlay = function () {
 }
 
 let genChope = function () {
-  let noms = ['Agathe P', 'Agathe V', 'Alexia', 'Alice A', 'Alice B', 'Amandine', 'Arsène', 'Aurélien', 'Benoît',
-               'Boris', 'Bérénice', 'Camille', 'Carla', 'Chaloupe', 'Clara', 'Clervie', 'Clémence', 'Constance', 'Céline', 'David',
-                'Dumelon', 'Dédon', 'edouard', 'Emma', 'Flymm', 'Genatz', 'Iris', 'Ivain', 'JuanTurko', 'Julian', 'Julien', 'Juliette',
-                'Keeto', 'keJo', 'Laïs', 'Lise', 'Lison', 'Lomboh', 'Louis', 'Loïc', 'Léo', 'Maaëlys', 'Mahé', 'Marie', 'Martin Bouillot',
-                'Maxence', 'Mayar', 'Nathan', 'Nicolas Miranda', 'Nina', 'Pauline', 'Phrygoh', 'Scoopyh', 'Strady', 'Thibault', 'Théophile',
-                'Tom Humeau', 'Tom Mehl', 'Vincent prez', 'YonC', 'Yuexuan', 'Zac', 'Zhuoran']
-
+  let noms = ['Bro', 'Albane', 'Clémence', 'Juliette B', 'Joseph', 'Perrine', 'Océane', 'Félicité', 'Jeanne', 'Camille', 'Raphaël', 'Chloé V', 'Antoine', 
+            'Maëlys', 'Maxime', 'Eva S', 'Justine', 'Manon', 'Solène', 'Lise', 'Lucie', 'Laura', 'Louise', 'Emma D', 'Jean', 'Laurena', 'Mahé', 'Victor', 'Marie F', 
+            'Inès', 'Arthur B', 'Oscar', 'Grégoire', 'Julien D', 'Anatole', 'Marie G', 'Martin', 'Léopold', 'Vadim', 'Tom', 'Chloé P', 'Baptiste', 'Aurélien', 
+            'Thibaut D', 'Boris', 'Carole', 'Théotime', 'Thomas', 'Olivier', 'Cléo', 'Lison', 'Hélène', 'Claire', 'Julien G', 'Daniel', 'Fabien', 'Emma J', 
+            'Adèle', 'Robin', 'Ivain', 'Audrey', 'Flavien', 'Delphine', 'Nicolas', 'Alice', 'Amandine', 'Loïc', 'Arthur C', 'Juliette G', 'Paul', 'Sarah', 'Julie', 'Pauline', 
+            'Jonathan', 'Pia', 'Eloi', 'Alban', 'Eva L', 'Maxence', 'Johan', 'Marie D', 'Emeric', 'Emma L', 'Thibaut C', 'Bérénice', "Valentine"]
+  // Julian, Yuexuan, Etienne 
   let chopeA = noms[Math.floor(Math.random() * Math.floor(noms.length))]
-  let chopeB = ratios[chopeA][Math.floor(Math.random() * Math.floor(ratios[chopeA].length))]
+  let chopeB = noms[Math.floor(Math.random() * Math.floor(noms.length))]
+
+  while (chopeA === chopeB) {
+    chopeB = noms[Math.floor(Math.random() * Math.floor(noms.length))]
+  }
 
   let applyChope = function (nom, id) {
     let chopeElt = document.getElementById(id)
@@ -127,32 +131,42 @@ let genNouvelleChope = function () {
 }
 
 let sendNoChope = function () {
-  let chope = {}
-  chope['validay'] = 'no' // Miskine le couple n'est pas validé par le commuzard
-  chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
-  chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
-  chope['id'] = hashUser;
-  chope['timestamp'] = Date.now();
 
-  const req2 = new XMLHttpRequest()
-  req2.open('POST', 'https://bastienlaville.alwaysdata.net/')
-  req2.send(JSON.stringify(chope))
+  let chope = new FormData();
+  chope.append("validay", 'no');
+  chope.append('chopeA', document.getElementById('chopeA').childNodes[1].innerHTML);
+  chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
+  chope.append('id', hashUser);
+  chope.append('timestamp', Date.now());
+
+  const response = fetch('https://commuzlyon.alwaysdata.net/vote', {
+        headers: {
+            Accept: 'application/json',
+        },
+        method: 'POST',
+        body: chope,
+      })
 
   genNouvelleChope()
 }
 
 let sendChope = function () {
-  let chope = {}
-  chope['validay'] = 'yes' // Là c'est une chope validée
-  chope['chopeA'] = document.getElementById('chopeA').childNodes[1].innerHTML
-  chope['chopeB'] = document.getElementById('chopeB').childNodes[1].innerHTML
-  chope['id'] = hashUser;
-  chope['timestamp'] = Date.now();
+  
+  let chope = new FormData();
+  chope.append("validay", 'yes');
+  chope.append('chopeA', document.getElementById('chopeA').childNodes[1].innerHTML);
+  chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
+  chope.append('id', hashUser);
+  chope.append('timestamp', Date.now());
 
-  const req = new XMLHttpRequest()
-  req.open('POST', 'https://bastienlaville.alwaysdata.net/')
-  req.send(JSON.stringify(chope))
-
+  const response = fetch('https://commuzlyon.alwaysdata.net/vote', {
+        headers: {
+            Accept: 'application/json',
+        },
+        method: 'POST',
+        body: chope,
+      })
+      
   genNouvelleChope()
 }
 
@@ -261,7 +275,7 @@ export default {
       width: auto;
     }
     @media (min-width: 800px) {
-      width: 100%;
+      width: 75%;
       height: auto;
     }
     max-width: 100%;
