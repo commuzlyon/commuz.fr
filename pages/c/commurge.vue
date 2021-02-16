@@ -104,13 +104,13 @@ let genChope = function () {
   }).add({
     targets: loveLoaderElt,
     opacity: 0,
-    duration: 500,
+    duration: 2500, // 500
     easing: 'easeInOutQuart',
     offset: '+=2000'
   }).add({
     targets: matchElt,
     opacity: [0, 1],
-    duration: 300,
+    duration: 300, // 300
     easing: 'easeInOutQuart'
   })
 }
