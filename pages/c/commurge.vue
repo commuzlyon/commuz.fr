@@ -67,7 +67,7 @@ let openOverlay = function () {
 }
 
 let genChope = function () {
-  let noms = ['Julian', 'Yuexan', 'Etienne', 'Bro', 'Albane', 'Clémence', 'Juliette B', 'Joseph', 'Perrine', 'Océane', 'Félicité', 'Jeanne', 'Camille', 'Raphaël', 'Chloé V', 'Antoine', 
+  let noms = ['Lecerf', 'Julian', 'Yuexan', 'Etienne', 'Bro', 'Albane', 'Clémence', 'Juliette B', 'Joseph', 'Perrine', 'Océane', 'Félicité', 'Jeanne', 'Camille', 'Raphaël', 'Chloé V', 'Antoine', 
             'Maëlys', 'Maxime', 'Eva S', 'Justine', 'Manon', 'Solène', 'Lise', 'Lucie', 'Laura', 'Louise', 'Emma D', 'Jean', 'Laurena', 'Mahé', 'Victor', 'Marie F', 
             'Inès', 'Arthur B', 'Oscar', 'Grégoire', 'Julien D', 'Anatole', 'Marie G', 'Martin', 'Léopold', 'Vadim', 'Tom', 'Chloé P', 'Baptiste', 'Aurélien', 
             'Thibaut D', 'Boris', 'Carole', 'Théotime', 'Thomas', 'Olivier', 'Cléo', 'Lison', 'Hélène', 'Claire', 'Julien G', 'Daniel', 'Fabien', 'Emma J', 
