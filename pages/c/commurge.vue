@@ -104,7 +104,7 @@ let genChope = function () {
   }).add({
     targets: loveLoaderElt,
     opacity: 0,
-    duration: 2500, // 500
+    duration: 500, // 500
     easing: 'easeInOutQuart',
     offset: '+=2000'
   }).add({
