@@ -75,6 +75,10 @@
     </video>
   </div>
 
+  <div id="diffusion">
+    <p>Retrouvez la diffusion de la Commuz' 2021: Noces d'Opium en cliquant sur ce lien (disponible à partir de 19h20)</p>
+  </div>
+
   <pane :type="'pane--left'" :bgImage="'/images/danseurs-2019.jpg'" :text="presentation"></pane>
   <pane :type="'pane--right'" :bgImage="'/images/spectacleAaZ.jpg'" :text="maquillage"></pane>
 
@@ -334,6 +338,21 @@ export default {
       max-height: 100px;
       margin: 1rem;
     }
+  }
+}
+#diffusion {
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  margin-bottom: 1rem;
+
+  a {
+    color: var(--pink);
   }
 }
 </style>

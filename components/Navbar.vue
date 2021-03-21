@@ -45,6 +45,9 @@
       <li class="navbar__item">
         <router-link class="navbar__link" active-class="navbar__link--active" to="/partenariats"><span>Partenariats</span></router-link>
       </li>
+      <li class="navbar__item">
+        <router-link class="navbar__link" active-class="navbar__link--active" to="/diffusion"><span>Diffusion en direct</span></router-link>
+      </li>
     </ul>
   </nav>
 </template>
