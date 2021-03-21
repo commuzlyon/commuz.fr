@@ -1,6 +1,6 @@
 <template lang="html">
 
-<div>
+<div id=diffusion>
   <navbar class="rel"></navbar>
 
     <pane :type="'pane--left'" :bgImage="'/images/Affiche-NocesDopium.png'" :text="texte"></pane>
@@ -15,7 +15,7 @@ import Pane from "@/components/Pane";
 
 
 
-let texte = "<p>Retrouvez la diffusion de la Commuz' 2021: Noces d'Opium en cliquant sur ce lien (disponible à partir de 19h20)</p>";
+let texte = "<p id=diffusion>Retrouvez la diffusion de la Commuz' 2021: Noces d'Opium en cliquant sur ce lien <a href=\"https://youtu.be/AroAWdG9IK8\">https://youtu.be/AroAWdG9IK8</a></p>";
 
 export default {
   components: { Navbar, Pane },
@@ -87,7 +87,7 @@ export default {
   }
 }
 
-#plaquette {
+#diffusion {
   color: white;
   padding: 2rem;
   margin-bottom: 2rem;
