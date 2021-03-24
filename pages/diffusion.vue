@@ -1,3 +1,5 @@
+<!-- Page utilisée pour la soirée diffusion de la commuz 2021 -->
+
 <template lang="html">
 
 <div id=diffusion>
