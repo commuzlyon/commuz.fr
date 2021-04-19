@@ -70,8 +70,8 @@
 </svg>
     <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
     <video id="home__hero_bg" poster="/images/poster-video-accueil.jpg" autoplay loop>
-      <source src="/videos/video_intro_webm.webm" type="video/webm">
-      <source src="/videos/video_intro_mp4.mp4" type="video/mp4">
+      <source src="/videos/video-intro-site-2021.webm" type="video/webm">
+      <!--<source src="/videos/video_intro_mp4.mp4" type="video/mp4">-->
     </video>
   </div>
 
