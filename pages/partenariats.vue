@@ -51,25 +51,25 @@ import Pane from "@/components/Pane";
 
 let respoPartenariats = {
   respo3: {
-    prenom: "Pauline",
-    nom: "Perrin",
-    telephone: "06 60 08 95 87",
+    prenom: "Saban",
+    nom: "Suresh",
+    telephone: "07 81 65 10 85",
     mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/Pauline_Perrin_1.png",
+    image: "/images/Partenaires/Saban_Suresh.jpg",
   },
   respo1: {
-    prenom: "Jonathan",
-    nom: "Tata",
-    telephone: "07 89 53 81 41",
+    prenom: "Aurélia",
+    nom: "Zhang",
+    telephone: "",
     mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/Jonathan_Tata_1.jpg",
+    image: "/images/Partenaires/_.jpg",
   },
   respo2: {
-    prenom: "Julie",
-    nom: "Humayou",
-    telephone: "06 89 94 77 59",
+    prenom: "Eulalie",
+    nom: "Valha Bouret",
+    telephone: "",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/Julie_Humayou_1.jpg",
+    image: "/images/Partenaires/_.jpg",
   },
 };
 

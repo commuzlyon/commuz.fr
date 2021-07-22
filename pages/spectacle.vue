@@ -1,18 +1,22 @@
 <template lang="html">
 <div>
   <navbar class="rel"></navbar>
-
-  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2021.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
-  <div id="trailer--2019">
-<!--     <h2>Découvrez bientôt le trailer de l'édition 2020 !</h2> -->
-<!--     <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
+  <!-- Editions de  l'année -->
+  <!-- <pane id="infos" type="pane--media" image="/images/affiches/affiche--2021.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane> -->
+  
+  <!-- 
+    <div id="trailer--2019">
+    <h2>Découvrez bientôt le trailer de l'édition 2020 !</h2> 
+    <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
       <source src="/videos/trailer--2019.mp4" type="video/mp4">
       <source src="/videos/trailer--2019.webm" type="video/webm">
     </video> -->
   </div>
+
+  <!-- Les éditions précédentes -->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
-    <p>Déjà plus de 18 ans de représentations, de 2002 à 2020 !</p>
+    <p>Déjà plus de 20 ans de représentations, de 2002 à 2021 !</p>
     <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>
@@ -35,11 +39,21 @@
 import Navbar from '@/components/Navbar'
 import Pane from '@/components/Pane'
 
+// Ici le contenu pour l'édition actuelle
 let infos = "<h2>2021 - Noces d'opium</h2>" +
           "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>"
                   // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
+// Les éditions précédentes
 let anneesPassees = [
+  { annee: 2021,
+    text: "<h2>2021 - Noces d'opium</h2>" +
+                  "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.<</p>",
+    bgImage: '/images/equipes/equipe--2021.jpg', 
+    image: '/images/affiches/affiche--2021.jpg',
+    gallerie: true,
+    equipe: true
+  },
   { annee: 2020,
     text: '<h2>Commuz 2020 - Contretemps</h2>' +
                   "<p>Titouan, adolescent de 17 ans en fac d'Histoire se réveille à Versailles, un matin de 1712, dans un corps qui n'est pas le sien. Le propriétaire de ce corps s'appelle Joseph, est compositeur du Roi, et reprend connaissance au même moment dans la chambre de Titouan, au XXI<sup>e</sup> siècle. Alors que les proches de Joseph défilent devant Titouan avec leurs intrigues et leurs secrets, l'adolescent se rend rapidement compte qu'il a une énorme responsabilité : il doit composer une comédie-ballet pour Louis XIV. </p>",
