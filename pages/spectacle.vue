@@ -11,7 +11,7 @@
       <source src="/videos/trailer--2019.mp4" type="video/mp4">
       <source src="/videos/trailer--2019.webm" type="video/webm">
     </video> -->
-  </div>
+  <!-- </div> -->
 
   <!-- Les éditions précédentes -->
   <div id="precedentes">
