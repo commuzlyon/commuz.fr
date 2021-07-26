@@ -1,6 +1,6 @@
 <template lang="html">
 <footer>
-  <img src="/logos/logo_clin_oeil.svg" alt="Logo clin d'oeil" id="footer__logo">
+  <img src="/images/commuz-masque-logo-noir.png" alt="Logo Commuz' Noir" id="footer__logo">
   <div id="social">
     <ul>
       <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li>
