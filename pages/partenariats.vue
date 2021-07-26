@@ -4,7 +4,7 @@
   <navbar class="rel"></navbar>
 
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2021.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Pauline, Jonathan et Julie à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2022.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Saban, Aurélia et Eulalie à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
   </div>
 
   <div id="tablePartenaires">
