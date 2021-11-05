@@ -16,7 +16,7 @@
   </div>
   <div id="contact">
     <h3>Contacts</h3>
-    <p>Pour toute question, contactez <a class="inline-link" href="mailto:contact@commuz.fr">Rémi, Juliette et Gaspard</a> par mail ou sur notre page <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
+    <p>Pour toute question, contactez <a class="inline-link" href="mailto:remi.amoroso@ecl17.ec-lyon.fr">Rémi, Juliette et Gaspard</a> par mail ou sur notre page <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
     Pour toute demande relative aux partenariats, contactez nos responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Saban, Aurélia et Eulalie</span></router-link></p>
   </div>
 </footer>
