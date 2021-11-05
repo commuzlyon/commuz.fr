@@ -55,21 +55,21 @@ let respoPartenariats = {
     nom: "Suresh",
     telephone: "07 81 65 10 85",
     mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/Saban_Suresh.jpg",
+    image: "/images/Partenaires/saban.png",
   },
   respo1: {
     prenom: "Aurélia",
     nom: "Zhang",
     telephone: "06 50 93 88 14",
     mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/aurelia.jpg",
+    image: "/images/Partenaires/aurelia.png",
   },
   respo2: {
     prenom: "Eulalie",
     nom: "Valha Bouret",
     telephone: "06 12 01 76 54",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/eulalie.jpg",
+    image: "/images/Partenaires/eulalie.png",
   },
 };
 
