@@ -18,7 +18,7 @@
           <p>{{ partenaire.prenom }} {{ partenaire.nom  }}
           
           <br>
-          Téléphone : {{ partenaire.telephone }}</p>
+          {{ partenaire.telephone }}</p>
         </td>
       </tr>
     </table>
@@ -60,16 +60,16 @@ let respoPartenariats = {
   respo1: {
     prenom: "Aurélia",
     nom: "Zhang",
-    telephone: "",
+    telephone: "06 50 93 88 14",
     mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/_.jpg",
+    image: "/images/Partenaires/aurelia.jpg",
   },
   respo2: {
     prenom: "Eulalie",
     nom: "Valha Bouret",
-    telephone: "",
+    telephone: "06 12 01 76 54",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/_.jpg",
+    image: "/images/Partenaires/eulalie.jpg",
   },
 };
 
