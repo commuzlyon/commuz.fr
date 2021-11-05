@@ -91,7 +91,7 @@ export default {
 
   img {
     margin-right: 1em;
-    height: 200px;
+    height: 281px;
     width: 200px;
   }
 }
