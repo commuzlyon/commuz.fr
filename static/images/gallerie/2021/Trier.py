@@ -13,7 +13,7 @@ if __name__ == "__main__" :
                 if file_extension in ['.jpg', '.gif', '.png', '.mp4', '.mov', '.jpeg', '.heic']:
                     if os.path.isfile(file):
                         try :
-                            os.rename(os.path.join(root, file), "{}.{}".format(i,file_extension))
+                            os.rename(os.path.join(root, file), "{}{}".format(i,file_extension))
                             print(filename)
                             i += 1
                         except :
