@@ -1,5 +1,6 @@
 export default {
     components: true,
+    target: 'static',
     css: ['~/assets/css/global'],
     head : {
         meta: [
