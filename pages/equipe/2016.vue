@@ -161,7 +161,6 @@
 </template>
 
 <script>
-import Pane from '@/components/Pane'
 
 let presentation = {
   text: '<h2>2016 : Les Fruits de la Passion</h2>' +
@@ -594,12 +593,8 @@ let equipe = {
 }
 
 export default {
-  components: { Pane },
   data: function () {
     return { equipe, presentation }
   }
 }
 </script>
-
-<style lang="scss">
-</style>

@@ -176,8 +176,6 @@
 </template>
 
 <script>
-import Pane from '@/components/Pane'
-
 let presentation = {
   text: '<h2>Bas les masques</h2>' +
         '<p>1919, États-Unis.</p>' +
@@ -634,12 +632,8 @@ let equipe = {
 }
 
 export default {
-  components: { Pane },
   data: function () {
     return { equipe, presentation }
   }
 }
 </script>
-
-<style lang="scss">
-</style>

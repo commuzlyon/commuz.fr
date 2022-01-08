@@ -176,8 +176,6 @@
 </template>
 
 <script>
-import Pane from '@/components/Pane'
-
 let presentation = {
   text: '<h2>2019 : Désorientés</h2>' +
           "<p>Au cœur du XIe siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
@@ -621,16 +619,8 @@ let equipe = {
 }
 
 export default {
-  components: { Pane },
   data: function () {
     return { equipe, presentation }
   }
 }
 </script>
-
-<style lang="scss">
-    /*.trombi_membre {
-        position: absolute;
-        clip:rect(0px,185px,170px,15px);
-    }*/
-</style>

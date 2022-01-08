@@ -174,8 +174,6 @@
 </template>
 
 <script>
-import Pane from '@/components/Pane'
-
 let presentation = {
   text: '<h2>2020 - Contretemps</h2>' +
           "<p>Titouan, adolescent de 17 ans en fac d'Histoire se réveille à Versailles, un matin de 1712, dans un corps qui n'est pas le sien. Le propriétaire de ce corps s'appelle Joseph, est compositeur du Roi, et reprend connaissance au même moment dans la chambre de Titouan, au XXI<sup>e</sup> siècle. Alors que les proches de Joseph défilent devant Titouan avec leurs intrigues et leurs secrets, l'adolescent se rend rapidement compte qu'il a une énorme responsabilité : il doit composer une comédie-ballet pour Louis XIV. </p>",
@@ -647,16 +645,8 @@ let equipe = {
 
 
 export default {
-  components: { Pane },
   data: function () {
     return { equipe, presentation }
   }
 }
 </script>
-
-<style lang="scss">
-    /*.trombi_membre {
-        position: absolute;
-        clip:rect(0px,185px,170px,15px);
-    }*/
-</style>
