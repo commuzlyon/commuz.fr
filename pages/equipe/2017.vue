@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text">
-      <template scope="props">
+      <template v-slot="props">
         <div class="annee__links">
           <div class="button-link">
             <router-link :to="`/gallerie/2017`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>

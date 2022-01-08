@@ -21,7 +21,6 @@ La version actuelle du site est une refonte menée par Étienne Sanguinetti, ins
 - Raphaël Chalicarne : Webmestre du mandat 2018 - 2019 ;
 - Bastien Laville : Webmestre du mandat 2019 - 2020 ;
 - Alban Gosset: Webmestre du mandat 2020 - 2021.
+- Benjamin Denise : Webmester du mandat 2021-2022
 
-# À faire
 
-- Galerie photo (https://vuejsexamples.com/simple-lightbox-component-for-vue-applications/)

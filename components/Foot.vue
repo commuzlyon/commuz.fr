@@ -1,6 +1,6 @@
-<template lang="html">
+<template>
 <footer>
-  <img src="/images/commuz-masque-logo-noir.png" alt="Logo Commuz' Noir" id="footer__logo">
+  <img src="/logos/commuz-masque-logo-gris.png" alt="Logo Commuz' Noir" id="footer__logo">
   <div id="social">
     <ul>
       <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li>
@@ -21,36 +21,6 @@
   </div>
 </footer>
 </template>
-
-<script>
-import anime from 'animejs'
-
-export default {
-  methods: {
-    wink () {
-      anime({
-        targets: '#right-eye',
-        d: 'M 261.435 221.661 L 261.362 221.714 C 261.405 221.696 261.436 221.678 261.435 221.661 Z M 257.712 240.29 C 254.249 242.524 250.741 243.873 248.121 244.726 C 245.5 245.58 243.767 245.94 243.852 246.197 C 243.916 246.391 244.57 246.596 245.286 246.66 C 247.779 246.884 251.414 246.538 253.501 245.879 C 256.478 244.938 260.182 242.546 263.116 239.668 C 266.396 236.452 267.104 235.036 267.316 231.273 C 267.4 229.783 267.449 228.529 267.424 228.487 C 266.55 230.383 265.017 232.757 263.255 234.945 C 261.493 237.132 259.502 239.135 257.712 240.29 C 257.712 240.29 257.712 240.29 257.712 240.29',
-        direction: 'alternate',
-        easing: [0.77, 0.06, 0.515, 0.955],
-        duration: 150
-      })
-    }
-  },
-  mounted: function () {
-    var observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          window.setTimeout(this.wink, 400)
-        }
-      })
-    }, {
-      threshold: 0.9
-    })
-    observer.observe(document.querySelector('footer'))
-  }
-}
-</script>
 
 <style lang="scss">
 footer {

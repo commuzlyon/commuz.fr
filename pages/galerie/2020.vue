@@ -1,25 +1,58 @@
 <template lang="html">
   <div>
-    <div class="gallerie_grid">
-      <div class="gallerie_grid__entry" v-for="n in gallerie2020.photos[0]" :key="n" :class="gallerie2020.emphase.indexOf(n) >= 0 ? 'big-image' : 'small-image'">
-        <!-- <img v-img="{ group: edition.annee, src: '/images/gallerie/2019' + edition.photos[1] }" class="lazy-image" :data-src="'/static/images/gallerie/' + edition.annee + '/' + n + edition.photos[1]"/> -->
-        <img class="lazy-image" :data-src="'/images/gallerie/2020/' + n + gallerie2020.photos[1]"/>
+    <div class="galerie_grid">
+      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i" :class="galerie.emphase.indexOf(i+1) >= 0 ? 'big-image' : 'small-image'">
+        <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
       </div>
     </div>
+    <vue-easy-lightbox
+    :visible="visible"
+    :imgs="galerie.images_src"
+    :index="index"
+    @hide="handleHide"
+  ></vue-easy-lightbox>
   </div>
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
 
-let gallerie2020 = {//////////////////////////////
-  photos: [ 465, '.jpg' ],
-  emphase: [1, 16, 31, 46, 61, 76, 91, 106, 121, 136, 151, 166, 181, 196, 211, 226, 241, 256, 271, 286, 301, 316, 331, 346, 361, 376, 391, 406, 421, 436, 451]
+let year = 2020;
+let totalImages = 221;
+let extension = ".jpg";
+
+let images_src = [];
+
+for(let i = 1; i <= totalImages; i++) {
+  images_src.push(['/images/galeries/',year,'/',i,extension].join(''));
+}
+
+let galerie = {
+  images_src : images_src,
+  emphase: [1, 16, 31, 46, 61, 76, 91, 106, 121, 136, 151, 166, 181, 196, 211]
 }
 
 export default {
-  data: function () {
-    return { gallerie2020 }
+  components: {
+    VueEasyLightbox
   },
+  data: function () {
+    return { 
+      galerie,
+      visible: false,
+      index: 0
+    }
+  },
+  methods: {
+      showImg (index) {
+        this.index = index;
+        this.visible = true;
+        console.log(index);
+      },
+      handleHide () {
+        this.visible = false
+      }
+    },
   mounted: function () {
     // Get all of the images that are marked up to lazy load
     const images = document.querySelectorAll('.lazy-image')

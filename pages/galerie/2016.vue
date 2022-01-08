@@ -1,25 +1,57 @@
 <template lang="html">
   <div>
-    <div class="gallerie_grid">
-      <div class="gallerie_grid__entry" v-for="n in gallerie2016.photos[0]" :key="n" :class="gallerie2016.emphase.indexOf(n) >= 0 ? 'big-image' : 'small-image'">
-        <!-- <img v-img="{ group: edition.annee, src: '/images/gallerie/2017' + edition.photos[1] }" class="lazy-image" :data-src="'/static/images/gallerie/' + edition.annee + '/' + n + edition.photos[1]"/> -->
-        <img class="lazy-image" :data-src="'/images/gallerie/2016/' + n + gallerie2016.photos[1]"/>
+    <div class="galerie_grid">
+      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i" :class="galerie.emphase.indexOf(i+1) >= 0 ? 'big-image' : 'small-image'">
+        <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
       </div>
     </div>
+    <vue-easy-lightbox
+    :visible="visible"
+    :imgs="galerie.images_src"
+    :index="index"
+    @hide="handleHide"
+  ></vue-easy-lightbox>
   </div>
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
+let year = 2016;
+let totalImages = 53;
+let extension = ".jpg";
 
-let gallerie2016 = {
-  photos: [ 53, '.jpg' ],
+let images_src = [];
+
+for(let i = 1; i <= totalImages; i++) {
+  images_src.push(['/images/galeries/',year,'/',i,extension].join(''));
+}
+
+let galerie = {
+  images_src : images_src,
   emphase: [2,7,9,12,14,17,20,33,35,41,43,47]
 }
 
 export default {
-  data: function () {
-    return { gallerie2016 }
+  components: {
+    VueEasyLightbox
   },
+  data: function () {
+    return { 
+      galerie,
+      visible: false,
+      index: 0
+    }
+  },
+  methods: {
+      showImg (index) {
+        this.index = index;
+        this.visible = true;
+        console.log(index);
+      },
+      handleHide () {
+        this.visible = false
+      }
+    },
   mounted: function () {
     // Get all of the images that are marked up to lazy load
     const images = document.querySelectorAll('.lazy-image')

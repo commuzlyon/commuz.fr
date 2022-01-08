@@ -1,18 +1,5 @@
 <template lang="html">
 <div>
-  <navbar class="rel"></navbar>
-  <!-- Editions de  l'année -->
-  <!-- <pane id="infos" type="pane--media" image="/images/affiches/affiche--2021.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane> -->
-  
-  <!-- 
-    <div id="trailer--2019">
-    <h2>Découvrez bientôt le trailer de l'édition 2020 !</h2> 
-    <video id="trailer-video" poster="/images/poster-trailer--2019.jpg" controls>
-      <source src="/videos/trailer--2019.mp4" type="video/mp4">
-      <source src="/videos/trailer--2019.webm" type="video/webm">
-    </video> -->
-  <!-- </div> -->
-
   <!-- Les éditions précédentes -->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
@@ -21,10 +8,10 @@
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>
   <pane v-for="(annee, id) in anneesPassees" :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text">
-    <template scope="props">
-      <div v-if="annee.gallerie || annee.equipe" class="annee__links">
-        <div v-if="annee.gallerie" class="button-link">
-          <router-link class="" :to="`/galerie/${annee.annee}`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>
+    <template v-slot="props">
+      <div v-if="annee.galerie || annee.equipe" class="annee__links">
+        <div v-if="annee.galerie" class="button-link">
+          <router-link class="" :to="`/galerie/${annee.annee}`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
         </div>
         <div v-if="annee.equipe" class="button-link">
           <router-link class="" :to="`/equipe/${annee.annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
@@ -36,8 +23,6 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-import Pane from '@/components/Pane'
 
 // Ici le contenu pour l'édition actuelle
 let infos = "<h2>2021 - Noces d'opium</h2>" +
@@ -51,7 +36,7 @@ let anneesPassees = [
                   "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
     bgImage: '/images/equipes/equipe--2021.jpg', 
     image: '/images/affiches/affiche--2021.jpg',
-    gallerie: true,
+    galerie: true,
     equipe: true
   },
   { annee: 2020,
@@ -59,7 +44,7 @@ let anneesPassees = [
                   "<p>Titouan, adolescent de 17 ans en fac d'Histoire se réveille à Versailles, un matin de 1712, dans un corps qui n'est pas le sien. Le propriétaire de ce corps s'appelle Joseph, est compositeur du Roi, et reprend connaissance au même moment dans la chambre de Titouan, au XXI<sup>e</sup> siècle. Alors que les proches de Joseph défilent devant Titouan avec leurs intrigues et leurs secrets, l'adolescent se rend rapidement compte qu'il a une énorme responsabilité : il doit composer une comédie-ballet pour Louis XIV. </p>",
     bgImage: '/images/equipes/equipe--2020.jpg', 
     image: '/images/affiches/affiche--2020.jpg',
-    gallerie: true,
+    galerie: true,
     equipe: true
   },
   {
@@ -68,7 +53,7 @@ let anneesPassees = [
           "<p>Au cœur du XIe siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
     bgImage: '/images/equipes/equipe--2019.jpg',
     image: '/images/affiches/affiche--2019.jpg',
-    gallerie: true,
+    galerie: true,
     equipe: true
   },
   {
@@ -79,7 +64,7 @@ let anneesPassees = [
           "<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>",
     bgImage: '/images/equipes/equipe--2018.jpg',
     image: '/images/affiches/affiche--2018.jpg',
-    gallerie: true,
+    galerie: true,
     equipe: true
   },
   {
@@ -90,7 +75,7 @@ let anneesPassees = [
           '<p>Quel destin réservent-ils à Pélops ?</p>',
     bgImage: '/images/equipes/equipe--2017.jpg',
     image: '/images/affiches/affiche--2017.jpg',
-    gallerie: true,
+    galerie: true,
     equipe: true
   },
   {
@@ -101,7 +86,7 @@ let anneesPassees = [
           '<p>Son entourage va-t-il enfin se décider à réagir ?</p>',
     bgImage: '/images/equipes/equipe--2016.jpg',
     image: '/images/affiches/affiche--2016.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: true
   },
   {
@@ -110,7 +95,7 @@ let anneesPassees = [
           '<p>Une sacrée histoire de bonnes sœurs et de moines qui chaussent leurs sandales pour échapper à leur quotidien.</p>',
     bgImage: '/images/equipes/equipe--2015.jpg',
     image: '/images/affiches/affiche--2015.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -120,7 +105,7 @@ let anneesPassees = [
           '<p>Sous les yeux d\'un producteur aussi despotique qu\'incompétent et de son stagiaire préposé au café, tous deux escaladent les feux de la rampe, jusqu\'à l\'arrivée de Cunégonde Wise, la fille de John Wise.</p>',
     bgImage: '/images/equipes/equipe--2014.jpg',
     image: '/images/affiches/affiche--2014.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: true
   },
   {
@@ -130,7 +115,7 @@ let anneesPassees = [
           '<p>Cela sous le regard de la fatale Laure, de l\'inventeur fou Gaston et de la sévère secrétaire de son père.</p>',
     bgImage: '/images/equipes/equipe--2013.jpg',
     image: '/images/affiches/affiche--2013.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -140,7 +125,7 @@ let anneesPassees = [
           '<p>Une enquête romantico-politique dans laquelle les masques tombent et les passions se déchaînent.</p>',
     bgImage: '/images/equipes/2012.jpg',
     image: '/images/affiches/affiche--2012.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -150,7 +135,7 @@ let anneesPassees = [
           '<p>Goûtant aux jeux d\'un monde de paillettes, saura-t-il déjouer les pièges tendus par la diabolique Miss Devil sans se brûler les ailes ?</p>',
     bgImage: '/images/equipes/2011.jpg',
     image: '/images/affiches/affiche--2011.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -159,7 +144,7 @@ let anneesPassees = [
           '<p>La pièce retrace l’histoire (véritable) de nos plus grands peintres de la Renaissance : Raphaël, Léonard, Vitruve, et Michel et Ange, les siamois.</p>',
     bgImage: '/images/equipes/equipe--2010.jpg',
     image: '/images/affiches/affiche--2010.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -169,7 +154,7 @@ let anneesPassees = [
           '<p>Les rencontres s\'enchaînent, heureuses, malheureuses, souvent tumultueuses, sous les yeux attentifs de Dora, une déesse rivale de Dieu, et de son fils, Marcus, qui feront tout pour l\'empêcher d\'accomplir sa mission...</p>',
     bgImage: '/images/equipes/2009.jpg',
     image: '/images/affiches/affiche--2009.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -179,7 +164,7 @@ let anneesPassees = [
           '<p>Les rideaux s\'ouvrent, les personnages s\'affrontent, se méfient, s\'aiment, se détestent... Les quiproquos naissent, se mêlent pour concocter une potion efficace contre les idées les plus noires. Tandis que les émotions se succèdent au gré des situations, les indices apparaissent et disparaissent sous les yeux des spectateurs. Serez-vous aussi perspicace que notre détective pour percer le mystère ?</p>',
     bgImage: '/images/equipes/2008.jpg',
     image: '/images/affiches/affiche--2008.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -189,7 +174,7 @@ let anneesPassees = [
           '<p>La première vient d\'être dérobée mais la seconde a disparu depuis des temps immémoriaux. Afin de protéger cette dernière, deux experts décident de partir à sa recherche.</p>',
     bgImage: '/images/equipes/2007.jpg',
     image: '/images/affiches/affiche--2007.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -199,7 +184,7 @@ let anneesPassees = [
           '<p>Un chef qui plaque tout du jour au lendemain... voilà qui donne une bien mauvaise image dans le milieu de la politique. Pour rester crédible, les quatre membres qui restent n’ont qu’une seule solution : être unis, et essayer de cacher l’affaire aux médias. Mais la réalité est d’un tout autre ton !</p>',
     bgImage: '/images/equipes/2006.jpg',
     image: '/images/affiches/affiche--2006.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -209,7 +194,7 @@ let anneesPassees = [
           '<p>Dans ce lieu où le temps semble ne plus exister, sous le regard cynique de l’administrateur, ces 6 personnes vont apprendre à voir leur vie sous un éclairage différent, à la lumière de l\'histoire et du regard des 5 autres. Ne pas savoir pourquoi pour combien de temps elles sont ensemble les pousse à découvrir leurs sentiments, leurs envies, et à se parler sans se préoccuper des apparences.',
     bgImage: '/images/equipes/equipe--2005.jpg',
     image: '/images/affiches/affiche--2005.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -220,7 +205,7 @@ let anneesPassees = [
           '<p>Parfois, c\'est la jungle.</p>',
     bgImage: '/images/equipes/equipe--2004.jpg',
     image: '/images/affiches/affiche--2004.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -229,7 +214,7 @@ let anneesPassees = [
           '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
     bgImage: '',
     image: '/images/affiches/affiche--2003.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   },
   {
@@ -238,15 +223,20 @@ let anneesPassees = [
           '<p>Un temps que les moins de 20 ans ne peuvent pas connaître.</p>',
     bgImage: '',
     image: '/images/affiches/affiche--2002.jpg',
-    gallerie: false,
+    galerie: false,
     equipe: false
   }
 ]
 
 export default {
-  components: { Navbar, Pane },
   data: function () {
     return { anneesPassees, infos }
+  },
+  
+  head() {
+    return {
+      title: "La Commuz' - Les spectacles",
+    }
   }
 }
 </script>

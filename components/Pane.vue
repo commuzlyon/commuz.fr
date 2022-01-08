@@ -3,7 +3,6 @@
     <div class="pane__text_container">
       <div class="pane__text">
         <div v-html='text'></div>
-        <slot></slot>
       </div>
       <img v-if="type == 'pane--media'" class="pane__img" :src="image">
     </div>

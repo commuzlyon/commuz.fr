@@ -1,6 +1,5 @@
 <template lang="html">
   <div>
-    <navbar class="rel"></navbar>
     <div id="years-list">
       <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{ annee }}</router-link>
     </div>
@@ -9,14 +8,16 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-
 let anneesEquipes = [ '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default {
-  components: { Navbar },
   data: function () {
     return { anneesEquipes }
+  },
+  head() {
+    return {
+      title: "La Commuz' - L'équipe",
+    }
   }
 }
 </script>

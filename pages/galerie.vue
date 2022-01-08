@@ -1,22 +1,24 @@
 <template lang="html">
   <div>
-    <navbar class="rel"></navbar>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesGallerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesgalerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
     </div>
     <nuxt-child/>
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-
-let anneesGallerie = ['2021', '2020', '2019', '2018', '2017','2016' ]
+let anneesgalerie = ['2021', '2020', '2019', '2018', '2017','2016' ]
 
 export default {
-  components: { Navbar },
   data: function () {
-    return { anneesGallerie }
+    return { anneesgalerie }
+  },
+  
+  head() {
+    return {
+      title: "La Commuz' - Les photos",
+    }
   }
 }
 </script>
@@ -39,7 +41,7 @@ export default {
   }
 }
 
-.gallerie_grid {
+.galerie_grid {
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
@@ -68,7 +70,7 @@ export default {
   grid-area: span 1 / span 1;
 }
 
-.gallerie_grid__entry {
+.galerie_grid__entry {
   background-color: #2a0917;
 
   img {

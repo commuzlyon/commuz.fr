@@ -1,18 +1,34 @@
 <template lang="html">
   <div>
-    <div class="gallerie_grid">
-      <div class="gallerie_grid__entry" v-for="n in gallerie2019.photos[0]" :key="n" :class="gallerie2019.emphase.indexOf(n) >= 0 ? 'big-image' : 'small-image'">
-        <!-- <img v-img="{ group: edition.annee, src: '/images/gallerie/2019' + edition.photos[1] }" class="lazy-image" :data-src="'/static/images/gallerie/' + edition.annee + '/' + n + edition.photos[1]"/> -->
-        <img class="lazy-image" :data-src="'/images/gallerie/2019/' + n + gallerie2019.photos[1]"/>
+    <div class="galerie_grid">
+      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i" :class="galerie.emphase.indexOf(i+1) >= 0 ? 'big-image' : 'small-image'">
+        <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
       </div>
     </div>
+    <vue-easy-lightbox
+    :visible="visible"
+    :imgs="galerie.images_src"
+    :index="index"
+    @hide="handleHide"
+  ></vue-easy-lightbox>
   </div>
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
 
-let gallerie2019 = {//////////////////////////////
-  photos: [ 44, '.jpg' ],
+let year = 2019;
+let totalImages = 44;
+let extension = ".jpg";
+
+let images_src = [];
+
+for(let i = 1; i <= totalImages; i++) {
+  images_src.push(['/images/galeries/',year,'/',i,extension].join(''));
+}
+
+let galerie = {
+  images_src : images_src,
   emphase: [
     1,
     10,
@@ -25,9 +41,26 @@ let gallerie2019 = {//////////////////////////////
 }
 
 export default {
-  data: function () {
-    return { gallerie2019 }
+  components: {
+    VueEasyLightbox
   },
+  data: function () {
+    return { 
+      galerie,
+      visible: false,
+      index: 0
+    }
+  },
+  methods: {
+      showImg (index) {
+        this.index = index;
+        this.visible = true;
+        console.log(index);
+      },
+      handleHide () {
+        this.visible = false
+      }
+    },
   mounted: function () {
     // Get all of the images that are marked up to lazy load
     const images = document.querySelectorAll('.lazy-image')

@@ -1,33 +1,17 @@
 {
-  "name": "site-commuz",
-  "version": "1.0.0",
-  "description": "Site internet de la Commuz",
-  "author": "",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "animejs": "^2.2.0",
-    "fontfaceobserver": "^2.0.13",
-    "nuxt": "^1.3.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.18.2",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6"
-  }
+    "name": "commuz",
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "start": "nuxt start"
+    },
+    "dependencies": {
+        "nuxt": "^2.15.8",
+        "vue-easy-lightbox": "^0.16.2"
+    },
+    "devDependencies": {
+        "sass": "^1.43.5",
+        "sass-loader": "^10.2.0"
+    }
 }
