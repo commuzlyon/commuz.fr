@@ -45,7 +45,7 @@ let respoPartenariats = {
   },
   respo2: {
     prenom: "Eulalie",
-    nom: "Valha Bouret",
+    nom: "Bouret",
     telephone: "06 12 01 76 54",
     mail: "commuzlyon@gmail.com",
     image: "/images/Partenaires/eulalie.png",
