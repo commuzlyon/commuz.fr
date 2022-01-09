@@ -24,3 +24,8 @@ La version actuelle du site est une refonte menée par Étienne Sanguinetti, ins
 - Benjamin Denise : Webmester du mandat 2021-2022
 
 
+
+# Dépendances 
+
+Ce projet a été développé sous Node.js@16.13.0 avec le framework *Nuxt*@2.15.8.
+
