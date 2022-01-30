@@ -31,4 +31,4 @@ Ce projet a été développé sous Node.js@16.13.0 avec le framework *Nuxt*@2.15
 
 # TODO :
 
-- Mettre à jours les dépendances. Certaines ouvrent des vulnérabilités
+- Mettre à jour les dépendances. Certaines ouvrent des vulnérabilités
