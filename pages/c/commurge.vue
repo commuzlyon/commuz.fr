@@ -26,7 +26,7 @@
       <img class="commurge__image" id="speedy" src="/c/commurge/speedy-gonzales.png" alt="Speedy Gonzales">
       <img class="commurge__image" id="hands" src="/c/commurge/iloveyou.gif" alt="Hands in Heart">
       <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="Colombe">
-      <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">Hola ! Te ves sexy !</button>
+      <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">¡ Hola Sexy !</button>
     </div>
     
   </div>
