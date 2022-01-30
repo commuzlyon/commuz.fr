@@ -14,14 +14,14 @@ Site Internet de la Commuz' – Comédie musicale étudiante commune à l'École
 
 # Auteurs
 
-La version actuelle du site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier jet de Gauthier Fanucci. Les auteurs sont depuis ce jour :
+Le site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier jet de Gauthier Fanucci. Il a été remis à jours en 2022 par Benjamin Denise. Les auteurs sont depuis ce jour :
 
 - Gauthier Fanucci : Webmestre du mandat 2016 - 2017 ;
 - Étienne Sanguinetti : Webmestre du mandat 2017 - 2018 ;
 - Raphaël Chalicarne : Webmestre du mandat 2018 - 2019 ;
 - Bastien Laville : Webmestre du mandat 2019 - 2020 ;
-- Alban Gosset: Webmestre du mandat 2020 - 2021.
-- Benjamin Denise : Webmester du mandat 2021-2022
+- Alban Gosset: Webmestre du mandat 2020 - 2021 ;
+- Benjamin Denise : Webmestre du mandat 2021-2022 ;
 
 
 
