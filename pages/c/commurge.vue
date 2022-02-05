@@ -139,7 +139,7 @@ let sendChope = function (answer) {
   if(['yes', 'no'].includes(answer)) {
     // Construction de la requête
     if (answer === "yes") {
-      rainingParticles(["🧡"])
+      rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
     }
     else {
       rainingParticles(["🤮", "💩"])
