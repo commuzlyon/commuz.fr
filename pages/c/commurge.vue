@@ -35,16 +35,6 @@
 
 <script>
 import anime from 'animejs'
-import ratios from '@/static/c/commurge/ratios.json'
-
-// Si jamais on veut attribuer un token unique par connexion au site
-let hashToken = function () {
-  return(Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15));
-}
-
-let hashUser = hashToken();
-
-let heart
 
 
 // Fait apparaitre les propositions de choppes.
@@ -53,9 +43,9 @@ let openOverlay = function () {
   let homeElt = document.getElementById('commurge__home');
 
   // Timeline : voir documentation anime.js
-  let choppeTimeline = anime.timeline();
+  let chopeTimeline = anime.timeline();
 
-  choppeTimeline.add({
+  chopeTimeline.add({
     targets: homeElt,
     opacity : [1, 0],
     duration : 500,
@@ -66,7 +56,7 @@ let openOverlay = function () {
       homeElt.remove();
     },
   })
-  choppeTimeline.add({
+  chopeTimeline.add({
     targets: overlayChopeElt,
     borderRadius: ['50%', '0%'],
     scale: [0, 1],
@@ -123,8 +113,8 @@ let genChope = function () {
 // Transistion d'un couple à l'autre 
 let genNouvelleChope = function () {
 
-  let nouvelleChoppeTimeline = anime.timeline();
-  nouvelleChoppeTimeline.add({
+  let nouvellechopeTimeline = anime.timeline();
+  nouvellechopeTimeline.add({
     targets : document.getElementById('overlay_chope'),
     borderRadius: ['0', '50%'],
     scale: [1, 0],
@@ -132,7 +122,7 @@ let genNouvelleChope = function () {
     duration: 1000,
     easing: 'easeInOutQuart'
   });
-  nouvelleChoppeTimeline.add({
+  nouvellechopeTimeline.add({
     targets : document.getElementById('overlay_chope'),
     borderRadius: ['50%', '0%'],
     scale: [0, 1],
@@ -158,8 +148,6 @@ let sendChope = function (answer) {
     chope.append("validay", answer);
     chope.append('chopeA', document.getElementById('chopeA').childNodes[1].innerHTML);
     chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
-    chope.append('id', hashUser);
-    chope.append('timestamp', Date.now());
 
     // Envoie de la requete
     fetch('https://commuzlyon.alwaysdata.net/vote', {
