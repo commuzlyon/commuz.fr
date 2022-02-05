@@ -9,16 +9,22 @@
         <div id="match_pictures">
           <div class="match__person" id="chopeA">
             <img src="" alt="">
-            <p></p>
+            <div class="match__description">
+              <p>Nom 1</p>
+              <p>Viergee - INTJ</p>
+            </div>
           </div>
           <div class="match__person" id="chopeB">
             <img src="" alt="">
-            <p></p>
+            <div class="match__description">
+              <p>Nom 1</p>
+              <p>Viergee - INTJ</p>
+            </div>
           </div>
         </div>
         <div id="chopOrNot">
-          <img @click="sendChope('no')" class="answer_chope" id="send_no_chope" src="/c/commurge/puck.png" alt="Puck Emoji">
-          <img @click="sendChope('yes')" class="answer_chope" id="send_chope" src="/c/commurge/lovely.png" alt="Smile Emoji With Earths">
+          <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
+          <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
         </div>
       </div>
     </div>
@@ -118,7 +124,6 @@ let genNouvelleChope = function () {
     targets : document.getElementById('overlay_chope'),
     borderRadius: ['0', '50%'],
     scale: [1, 0],
-    delay: 1000,
     duration: 1000,
     easing: 'easeInOutQuart'
   });
@@ -149,17 +154,27 @@ let sendChope = function (answer) {
     chope.append('chopeA', document.getElementById('chopeA').childNodes[1].innerHTML);
     chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
 
-    // Envoie de la requete
     fetch('https://commurge.alwaysdata.net/vote', {
           headers: {
-              Accept: 'application/json',
+              "Content-Type": 'application/json',
           },
           method: 'POST',
-          body: chope,
+          body: JSON.stringify({
+            validay: answer,
+            chopeA: document.getElementById('chopeA').childNodes[1].innerHTML,
+            chopeB: document.getElementById('chopeB').childNodes[1].innerHTML,
+          })
         })
+      .then(res => {
+        if(res.ok){
+          genNouvelleChope()
+        }
+        else {
+          alert("Erreur 😿")
+        }
+      })
+      .catch(() => alert("Erreur 😭"))
     
-    // Changement de couple
-    genNouvelleChope();
   }
   
 }
@@ -314,20 +329,39 @@ export default {
     display : flex;
     flex-direction : column;
     justify-content: space-around;
-    margin : 0 auto;
+    align-items: center;
     height: 100%;
+    width: 100%;
+
+    p {
+      margin : 0;
+    }
 
     #match_pictures {
       display : flex;
       flex-direction : column;
       text-align: center;
+      justify-content: space-between;
+      height : 70%;
+      width: fit-content;
       @media (min-width: 700px) {
         flex-direction : row;
       }
       .match__person {
+        display : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        height : 45%;
         img {
-          width : 400px;
-          max-width : 70%
+            max-width:100%;
+            max-height:80%;
+            width: auto;
+            height: auto;
+        }
+        .match__description {
+          font-weight : bold;
+          height: 20%;
+          margin-top: 1em;
         }
       }
     }
@@ -335,19 +369,20 @@ export default {
 
     #chopOrNot {
       display : flex;
+      align-items: bottom;
       justify-content : space-around;
+      font-size: 8vh;
+      width: 100%;
+      p {
+        margin: 0;
+      }
 
       #send_chope {
       cursor: pointer;
-      height: 70px;
-      top: 30px;
-      left: 50%;
       }
 
       #send_no_chope {
       cursor: pointer;
-      height: 70px;
-      right: 50%;
       }
     }
   }
