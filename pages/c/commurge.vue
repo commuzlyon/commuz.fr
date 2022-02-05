@@ -150,7 +150,7 @@ let sendChope = function (answer) {
     chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
 
     // Envoie de la requete
-    fetch('https://commuzlyon.alwaysdata.net/vote', {
+    fetch('https://commurge.alwaysdata.net/vote', {
           headers: {
               Accept: 'application/json',
           },
