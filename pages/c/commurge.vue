@@ -10,15 +10,15 @@
           <div class="match__person" id="chopeA">
             <img src="" alt="">
             <div class="match__description">
-              <p>Nom 1</p>
-              <p>Viergee - INTJ</p>
+              <p id="chopeA__name" class="match__names">Nom 1</p>
+              <p id="chopeA__desc">Viergee - INTJ</p>
             </div>
           </div>
           <div class="match__person" id="chopeB">
             <img src="" alt="">
             <div class="match__description">
-              <p>Nom 1</p>
-              <p>Viergee - INTJ</p>
+              <p id="chopeB__name" class="match__names">Nom 1</p>
+              <p id="chopeB__desc">Viergee - INTJ</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,8 @@
 </template>
 
 <script>
-import anime from 'animejs'
+import anime from 'animejs';
+import {parse} from 'csv-parse';
 
 
 // Fait apparaitre les propositions de choppes.
@@ -86,30 +87,29 @@ let openOverlay = function () {
 
 }
 
-const noms = ['Le Cerf', 'Julian', 'Yuexuan', 'Etienne', 'Bro', 'Albane', 'Clémence', 'Juliette B', 'Joseph', 'Perrine', 'Océane', 'Félicité', 'Jeanne', 'Camille', 'Raphaël', 'Chloé V', 'Antoine', 
-            'Maëlys', 'Maxime', 'Eva S', 'Justine', 'Manon', 'Solène', 'Lise', 'Lucie', 'Laura', 'Louise', 'Emma D', 'Jean', 'Laurena', 'Mahé', 'Victor', 'Marie F', 
-            'Inès', 'Arthur B', 'Oscar', 'Grégoire', 'Julien D', 'Anatole', 'Marie G', 'Martin', 'Léopold', 'Vadim', 'Tom', 'Chloé P', 'Baptiste', 'Aurélien', 
-            'Thibaut D', 'Boris', 'Carole', 'Théotime', 'Thomas', 'Olivier', 'Cléo', 'Lison', 'Hélène', 'Claire', 'Julien G', 'Daniel', 'Fabien', 'Emma J', 
-            'Adèle', 'Robin', 'Ivain', 'Audrey', 'Flavien', 'Delphine', 'Nicolas', 'Alice', 'Amandine', 'Loïc', 'Arthur C', 'Juliette G', 'Paul', 'Sarah', 'Julie', 'Pauline', 
-            'Jonathan', 'Pia', 'Eloi', 'Alban', 'Eva L', 'Maxence', 'Johan', 'Marie D', 'Emeric', 'Emma L', 'Thibaut C', 'Bérénice', "Valentine"]
+
+
+let commuzards = [];
 
 // Mis à jours des photos
-let applyChope = function (nom, id) {
+let applyChope = function (commuzard, id) {
   let chopeElt = document.getElementById(id)
   let chopeImg = chopeElt.childNodes[0]
-  let chopeP = chopeElt.childNodes[1]
-  chopeImg.src = `/c/commurge/trombi/${nom}.jpg`
-  chopeP.innerHTML = `${nom}`
+  let chopeName = document.getElementById(id+'__name')
+  let chopeDesc = document.getElementById(id+'__desc')
+  chopeImg.src = `/c/commurge/pictures/${commuzard[3]}`
+  chopeName.innerHTML = `${commuzard[0]}`
+  chopeDesc.innerHTML = `${commuzard[1]} - ${commuzard[2]}`
 }
 
 // Génération d'un couple
 let genChope = function () {
   
   // Tirage au sort
-  let chopeA = noms[Math.floor(Math.random() * Math.floor(noms.length))]
-  let chopeB = noms[Math.floor(Math.random() * Math.floor(noms.length))]
+  let chopeA = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
+  let chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
   while (chopeA === chopeB) {
-    chopeB = noms[Math.floor(Math.random() * Math.floor(noms.length))]
+    chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
   }
   // Mis à jour des photos
   applyChope(chopeA, 'chopeA')
@@ -149,11 +149,7 @@ let sendChope = function (answer) {
     else {
       rainingParticles(["🤮", "💩"])
     }
-    let chope = new FormData();
-    chope.append("validay", answer);
-    chope.append('chopeA', document.getElementById('chopeA').childNodes[1].innerHTML);
-    chope.append('chopeB', document.getElementById('chopeB').childNodes[1].innerHTML);
-
+    
     fetch('https://commurge.alwaysdata.net/vote', {
           headers: {
               "Content-Type": 'application/json',
@@ -161,8 +157,8 @@ let sendChope = function (answer) {
           method: 'POST',
           body: JSON.stringify({
             validay: answer,
-            chopeA: document.getElementById('chopeA').childNodes[1].innerHTML,
-            chopeB: document.getElementById('chopeB').childNodes[1].innerHTML,
+            chopeA: document.getElementById('chopeA__name').innerHTML,
+            chopeB: document.getElementById('chopeB__name').innerHTML,
           })
         })
       .then(res => {
@@ -178,11 +174,6 @@ let sendChope = function (answer) {
   }
   
 }
-
-// Note (BL) : j'ai volontairement laissé tomber le système à base de zapier
-// Il n'était ni pérenne (compte à recréer toutes les 2 semaines) ni efficace (interface GUI brouillonne)
-// À la place, je conseille d'utiliser un système php ultra simple et un compte perso gratuit sur alwaysdata
-// C'est moins élégant, mais on a un contrôle plus fin sur nos données
 
 let rainingParticles = function (particles) {
     // adaptée de http://xahlee.info/js/js_raining_particles.html
@@ -286,8 +277,13 @@ let rainingParticles = function (particles) {
 export default {
   layout: 'conchiage',
   methods: { openOverlay, sendChope, rainingParticles },
-  mounted: function () {
-    let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
+  mounted: async function () {
+    await fetch('http://localhost:3000/c/commurge/infos.csv')
+    .then((response) => response.text())
+    .then(csv => csv.split('\r\n'))
+    .then(t => t.forEach(e => commuzards.push(e.split(';'))))
+    .then(console.log(commuzards))
+      let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
     let i = Math.floor(Math.random() * Math.floor(chansons.length));
     document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`;
     anime({
@@ -326,6 +322,7 @@ export default {
   }
 
   #match{
+    color : gold;
     display : flex;
     flex-direction : column;
     justify-content: space-around;
@@ -346,6 +343,9 @@ export default {
       width: fit-content;
       @media (min-width: 700px) {
         flex-direction : row;
+      }
+      .match__names {
+        font-size: 2em;
       }
       .match__person {
         display : flex;

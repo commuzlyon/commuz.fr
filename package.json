@@ -8,6 +8,7 @@
     },
     "dependencies": {
         "animejs": "^3.2.1",
+        "csv": "^6.0.5",
         "nuxt": "^2.15.8",
         "vue-easy-lightbox": "^0.16.2"
     },
