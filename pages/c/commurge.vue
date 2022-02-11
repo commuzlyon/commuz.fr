@@ -6,16 +6,18 @@
     <div id="overlay_chope">
       <img id="love_loader" src="/c/commurge/wink.gif">
       <div id="match">
-        <div id="match_pictures">
+        <div id="match__pictures">
           <div class="match__person" id="chopeA">
-            <img src="" alt="">
+            <img id="chopeA_photo" src="">
+            <!-- <div id="chopeA__photo" class="match__pictures"></div> -->
             <div class="match__description">
               <p id="chopeA__name" class="match__names">Nom 1</p>
               <p id="chopeA__desc">Viergee - INTJ</p>
             </div>
           </div>
           <div class="match__person" id="chopeB">
-            <img src="" alt="">
+            <img id="chopeB_photo" src="">
+            <!-- <div id="chopeB__photo" class="match__pictures"></div> -->
             <div class="match__description">
               <p id="chopeB__name" class="match__names">Nom 1</p>
               <p id="chopeB__desc">Viergee - INTJ</p>
@@ -94,10 +96,11 @@ let commuzards = [];
 // Mis à jours des photos
 let applyChope = function (commuzard, id) {
   let chopeElt = document.getElementById(id)
-  let chopeImg = chopeElt.childNodes[0]
+  let chopeImg = document.getElementById(id+'_photo')
+  console.log(chopeImg)
   let chopeName = document.getElementById(id+'__name')
   let chopeDesc = document.getElementById(id+'__desc')
-  chopeImg.src = `/c/commurge/pictures/${commuzard[3]}`
+  chopeImg.src =`/c/commurge/pictures/${commuzard[3]}`
   chopeName.innerHTML = `${commuzard[0]}`
   chopeDesc.innerHTML = `${commuzard[1]} - ${commuzard[2]}`
 }
@@ -330,39 +333,44 @@ export default {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 20px;
 
     p {
       margin : 0;
     }
 
-    #match_pictures {
+    #match__pictures {
       display : flex;
       flex-direction : column;
       text-align: center;
-      justify-content: space-between;
-      height : 70%;
-      width: fit-content;
+      justify-content: center;
+      flex : 1;
+      width: 100%;
+      gap : 20px;
       @media (min-width: 700px) {
         flex-direction : row;
       }
+      #chopeA {
+        flex-direction: column-reverse;
+      }
       .match__names {
         font-size: 2em;
+      }
+
+      .match__pictures {
+        background-size: cover;
       }
       .match__person {
         display : flex;
         flex-direction : column;
         justify-content: space-between;
-        height : 45%;
-        img {
-            max-width:100%;
-            max-height:80%;
-            width: auto;
-            height: auto;
+        align-items : center;
+        gap: 10px;
+        img{
+          width: 60%;
         }
         .match__description {
           font-weight : bold;
-          height: 20%;
-          margin-top: 1em;
         }
       }
     }
