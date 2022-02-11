@@ -278,7 +278,7 @@ export default {
   layout: 'conchiage',
   methods: { openOverlay, sendChope, rainingParticles },
   mounted: async function () {
-    await fetch('http://commuz.fr/c/commurge/infos.csv')
+    await fetch('https://commuz.fr/c/commurge/infos.csv')
     .then((response) => response.text())
     .then(csv => csv.split('\n'))
     .then(t => {console.log(t); t.forEach(e => commuzards.push(e.split(';')))})
