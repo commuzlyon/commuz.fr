@@ -280,7 +280,7 @@ export default {
   mounted: async function () {
     await fetch('http://commuz.fr/c/commurge/infos.csv')
     .then((response) => response.text())
-    .then(csv => csv.split('\r\n'))
+    .then(csv => csv.split('\n'))
     .then(t => {console.log(t); t.forEach(e => commuzards.push(e.split(';')))})
     .then(console.log('test'))
     .then(console.log(commuzards))
