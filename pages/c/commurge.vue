@@ -281,7 +281,8 @@ export default {
     await fetch('http://commuz.fr/c/commurge/infos.csv')
     .then((response) => response.text())
     .then(csv => csv.split('\r\n'))
-    .then(t => t.forEach(e => commuzards.push(e.split(';'))))
+    .then(t => {console.log(t); t.forEach(e => commuzards.push(e.split(';')))})
+    .then(console.log('test'))
     .then(console.log(commuzards))
       let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
     let i = Math.floor(Math.random() * Math.floor(chansons.length));
