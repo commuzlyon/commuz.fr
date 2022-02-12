@@ -109,8 +109,8 @@ let applyChope = function (commuzard, id) {
 let genChope = function () {
   
   // Tirage au sort
-  let chopeA = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
-  let chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
+  let chopeA = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))]
+  let chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))]
   while (chopeA === chopeB) {
     chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
   }
