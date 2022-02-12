@@ -102,7 +102,7 @@ let applyChope = function (commuzard, id) {
   let chopeDesc = document.getElementById(id+'__desc')
   chopeImg.src =`/c/commurge/pictures/${commuzard[3]}`
   chopeName.innerHTML = `${commuzard[0]}`
-  chopeDesc.innerHTML = `${commuzard[1]} - ${commuzard[2]}`
+  chopeDesc.innerHTML = `${commuzard[4]} - ${commuzard[1]} - ${commuzard[2]}`
 }
 
 // Génération d'un couple
