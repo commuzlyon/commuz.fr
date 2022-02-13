@@ -45,6 +45,22 @@
 import anime from 'animejs';
 import {parse} from 'csv-parse';
 
+let hashFunction = function (v, a,b,t) {
+  let string = v + a + b + t;
+
+  let hash = 0;
+
+  if (string.length == 0) return hash;
+
+  for (let i = 0 ;i<string.length ; i++){
+    let ch = string.charCodeAt(i);
+    hash = ((hash << 5) - hash) + ch;
+    hash = hash & hash;
+  }
+
+  return hash;
+}
+
 
 // Fait apparaitre les propositions de choppes.
 let openOverlay = function () {
@@ -152,7 +168,11 @@ let sendChope = function (answer) {
     else {
       rainingParticles(["🤮", "💩"])
     }
-    
+
+    let chopeA = document.getElementById('chopeA__name').innerHTML;
+    let chopeB = document.getElementById('chopeB__name').innerHTML;
+    let timestamp = Date.now().toString();
+
     fetch('https://commurge.alwaysdata.net/vote', {
           headers: {
               "Content-Type": 'application/json',
@@ -160,8 +180,10 @@ let sendChope = function (answer) {
           method: 'POST',
           body: JSON.stringify({
             validay: answer,
-            chopeA: document.getElementById('chopeA__name').innerHTML,
-            chopeB: document.getElementById('chopeB__name').innerHTML,
+            chopeA: chopeA,
+            chopeB: chopeB,
+            timestamp :  timestamp,
+            hash : hashFunction(answer, chopeA, chopeB, timestamp)  
           })
         })
       .then(res => {
