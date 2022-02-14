@@ -165,6 +165,12 @@
     
 export default {
   layout: 'conchiage',
+  head: {
+    title: 'Pépites des castings',
+    meta: [
+       { name: 'robots', content: 'noindex' },
+    ],
+  },
   methods: { refresh_perle },
   data () {
     return {

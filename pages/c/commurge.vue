@@ -301,6 +301,12 @@ let rainingParticles = function (particles) {
 
 export default {
   layout: 'conchiage',
+   head: {
+    title: 'Site des chopes',
+    meta: [
+       { name: 'robots', content: 'noindex' },
+    ],
+  },
   methods: { openOverlay, sendChope, rainingParticles },
   mounted: async function () {
     await fetch('https://commuz.fr/c/commurge/infos.csv')
