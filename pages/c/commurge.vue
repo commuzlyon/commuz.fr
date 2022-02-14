@@ -109,6 +109,8 @@ let openOverlay = function () {
 
 let commuzards = [];
 
+let canVote = true;
+
 // Mis à jours des photos
 let applyChope = function (commuzard, id) {
   let chopeElt = document.getElementById(id)
@@ -125,14 +127,15 @@ let applyChope = function (commuzard, id) {
 let genChope = function () {
   
   // Tirage au sort
-  let chopeA = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))]
-  let chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))]
+  let chopeA = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))];
+  let chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-2))];
   while (chopeA === chopeB) {
     chopeB = commuzards[1+Math.floor(Math.random() * Math.floor(commuzards.length-1))]
   }
   // Mis à jour des photos
-  applyChope(chopeA, 'chopeA')
-  applyChope(chopeB, 'chopeB')
+  applyChope(chopeA, 'chopeA');
+  applyChope(chopeB, 'chopeB');
+  canVote = true;
 }
 
 // Transistion d'un couple à l'autre 
@@ -160,42 +163,45 @@ let genNouvelleChope = function () {
 
 // Envoie réponse positive
 let sendChope = function (answer) {
-  if(['yes', 'no'].includes(answer)) {
-    // Construction de la requête
-    if (answer === "yes") {
-      rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
-    }
-    else {
-      rainingParticles(["🤮", "💩"])
-    }
+  if (canVote) {
+    canVote = false;
+    if(['yes', 'no'].includes(answer)) {
+      // Construction de la requête
+      if (answer === "yes") {
+        rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
+      }
+      else {
+        rainingParticles(["🤮", "💩"])
+      }
 
-    let chopeA = document.getElementById('chopeA__name').innerHTML;
-    let chopeB = document.getElementById('chopeB__name').innerHTML;
-    let timestamp = Date.now().toString();
+      let chopeA = document.getElementById('chopeA__name').innerHTML;
+      let chopeB = document.getElementById('chopeB__name').innerHTML;
+      let timestamp = Date.now().toString();
 
-    fetch('https://commurge.alwaysdata.net/vote', {
-          headers: {
-              "Content-Type": 'application/json',
-          },
-          method: 'POST',
-          body: JSON.stringify({
-            validay: answer,
-            chopeA: chopeA,
-            chopeB: chopeB,
-            timestamp :  timestamp,
-            hash : hashFunction(answer, chopeA, chopeB, timestamp)  
+      fetch('https://commurge.alwaysdata.net/vote', {
+            headers: {
+                "Content-Type": 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify({
+              validay: answer,
+              chopeA: chopeA,
+              chopeB: chopeB,
+              timestamp :  timestamp,
+              hash : hashFunction(answer, chopeA, chopeB, timestamp)  
+            })
           })
+        .then(res => {
+          if(res.ok){
+            genNouvelleChope()
+          }
+          else {
+            alert("Erreur 😿")
+          }
         })
-      .then(res => {
-        if(res.ok){
-          genNouvelleChope()
-        }
-        else {
-          alert("Erreur 😿")
-        }
-      })
-      .catch(() => alert("Erreur 😭"))
-    
+        .catch(() => alert("Erreur 😭"))
+      
+    }
   }
   
 }
