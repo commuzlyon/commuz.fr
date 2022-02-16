@@ -6,7 +6,7 @@
   
     <div id="trailer--2019">
     <h2>Découvrez le trailer de l'édition 2022 !</h2> 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <!-- Les éditions précédentes -->
   <div id="precedentes">
@@ -34,7 +34,7 @@
 
 // Ici le contenu pour l'édition actuelle
 let infos = "<h2>2022 - En Memoria</h2>" +
-          "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>"
+          "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>  "
                   // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 // Les éditions précédentes
@@ -291,7 +291,11 @@ export default {
       width: 100%;
     }
 }
-    
+
+#youtube {
+  max-width : 100%;
+}
+
 @media screen and (min-width: 800px) {
     #trailer--2019 {
         #trailer-video {
