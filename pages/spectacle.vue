@@ -1,5 +1,13 @@
 <template lang="html">
 <div>
+  <!-- Editions de  l'année -->
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2022.png" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  
+  
+    <div id="trailer--2019">
+    <h2>Découvrez le trailer de l'édition 2022 !</h2> 
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
   <!-- Les éditions précédentes -->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
@@ -25,8 +33,8 @@
 <script>
 
 // Ici le contenu pour l'édition actuelle
-let infos = "<h2>2021 - Noces d'opium</h2>" +
-          "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>"
+let infos = "<h2>2022 - En Memoria</h2>" +
+          "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>"
                   // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 // Les éditions précédentes
