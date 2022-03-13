@@ -4,7 +4,7 @@
       <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img src="/logos/logo.svg" alt="" width="37.44" height="48"/></NuxtLink></li>
       <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/spectacle" class="navbar__link">Le  spectacle</NuxtLink></li>
       <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/galerie/2021" class="navbar__link">Les photos</NuxtLink></li>
-      <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/equipe/2021" class="navbar__link">L'équipe</NuxtLink></li>
+      <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/equipe/2022" class="navbar__link">L'équipe</NuxtLink></li>
       <li class="navbar__item"><NuxtLink active-class="navbar__link--active" to="/partenariats" class="navbar__link">Partenariats</NuxtLink></li>
       <li class="navbar__item"><a href="https://collecte.io/commuz-2022-centrale-1252787/fr">Billeterie</a></li>
     </ul> 

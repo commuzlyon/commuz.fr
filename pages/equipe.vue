@@ -8,7 +8,7 @@
 </template>
 
 <script>
-let anneesEquipes = [ '2021', '2020', '2019', '2018', '2017', '2016']
+let anneesEquipes = [ '2022', '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default {
   data: function () {

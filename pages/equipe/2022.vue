@@ -8,7 +8,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -21,7 +21,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -34,7 +34,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -47,7 +47,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -60,7 +60,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -73,7 +73,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -86,7 +86,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -99,7 +99,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -112,7 +112,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -125,7 +125,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -138,7 +138,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -151,7 +151,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -164,7 +164,7 @@
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
-          <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
+          <img v-if="membre.photo != ''" :src="'/images/equipes/2022/' + membre.photo" alt="">
           <p><b>{{ membre.nom }}</b><br/>
           <i>{{ membre.role }}</i></p>
         </div>
@@ -175,10 +175,10 @@
 
 <script>
 let presentation = {
-  text: "<h2>2021 - Noces d'opium</h2>" +
-          "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
+  text: "<h2>2022 - En Memoria</h2>" +
+          "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>",
   bgImage: '/images/equipes/equipe--2021.jpg',
-  image: '/images/affiches/affiche--2021.jpg'
+  image: '/images/affiches/affiche--2022.png'
 }
 
 
@@ -186,479 +186,469 @@ let equipe = {
   bureau: [
     {
       role: 'Président',
-      nom: 'Maxence Bideaux',
-      photo: '26-MaxenceB.jpg'
+      nom: 'Rémi Amoroso',
+      photo: 'PP_Remi.png'
     },
     {
       role: 'Vice-Président',
-      nom: 'Thibaut Caporgno',
-      photo: '32-ThibautC.jpg'
+      nom: 'Juliette Brosolo',
+      photo: 'PP_Juliette.jpg'
     },
     {
       role: 'Secrétaire Générale',
-      nom: "Marie d'Harcourt",
-      photo: '31-MarieD.jpg'
+      nom: "Marie Gachère",
+      photo: 'PP_Marie.jpg'
     },
     {
       role: 'Trésorier',
-      nom: 'Johan Bernard',
-      photo: '25-JohanB.jpg'
+      nom: 'Gaspard Boraud',
+      photo: 'PP_Gaspard.jpg'
     }
   ],
 
   visibilite: [
+    // {
+    //   role: 'Star',
+    //   nom: 'Bro Douai',
+    //   photo: '0-Bro.jpg'
+    // },
     {
-      role: 'Star',
-      nom: 'Bro Douai',
-      photo: '0-Bro.jpg'
+      role: 'Communication',
+      nom: 'Fabien Leclerc',
+      photo: 'PP_Fabien.jpg'
     },
     {
       role: 'Communication',
-      nom: 'Eva Louste',
-      photo: '9-EvaL.jpg'
-    },
-    {
-      role: 'Communication',
-      nom: 'Eloi Roudaire',
-      photo: '2-EloiR.jpg'
-    },
-    {
-      role: 'Communication',
-      nom: 'Pia de Vita',
-      photo: '87-Piad.jpg'
+      nom: 'Cassandre Manas',
+      photo: 'PP_Cassandre.png'
     },
     {
       role: 'Webmestre',
-      nom: 'Alban Gosset',
-      photo: '40-AlbanG.jpg'
+      nom: 'Benjamin Denise',
+      photo: 'PP_Benjamin.jpg'
     },
     {
       role: 'Partenariats',
-      nom: 'Pauline Perrin',
-      photo: '36-PaulineP.jpg'
+      nom: 'Saban Suresh',
+      photo: 'PP_Saban.png'
     },
     {
       role: 'Partenariats',
-      nom: 'Julie Humayou',
-      photo: '88-JulieH.jpg'
-    },
-    {
-      role: 'Partenariats',
-      nom: 'Jonathan Tata',
-      photo: '33-JonathanT.jpg'
+      nom: 'Aurélia Zhang',
+      photo: 'PP_Aurelia.jpg'
     }
   ],
 
   scenario: [
     {
       role: 'Scénariste',
-      nom: 'Juliette Gandon',
-      photo: '42-JulietteG.jpg'
+      nom: 'Inès Battisti',
+      photo: 'PP_Ines.jpg'
     },
     {
       role: 'Scénariste',
-      nom: 'Paul Nédélec',
-      photo: '39-PaulN.jpg'
+      nom: 'Andréas Dagannaud',
+      photo: 'PP_Andreas.jpg'
     },
     {
       role: 'Scénariste',
-      nom: 'Sarah Schmidt',
-      photo: '1-SarahS.jpg'
+      nom: 'Atnoine Haynez',
+      photo: 'PP_Antoine.jpg'
     },
     {
       role: 'Scénariste',
-      nom: 'Arthur Cena',
-      photo: '8-ArthurC.jpg'
+      nom: 'Claire de Montgolfier',
+      photo: 'PP_Claire.jpg'
     }
   ],
 
   mes: [
     {
       role: 'Coordinatrice artistique',
-      nom: 'Amandine Chemoul',
-      photo: '38-AmandineC.jpg'
+      nom: 'Marie Ferran',
+      photo: 'PP_Marie_CA.jpg'
+    },
+    {
+      role: 'Coordinatrice artistique',
+      nom: 'Joseph Garnier',
+      photo: 'PP_Jospeh.jpg'
     },
     {
       role: 'Metteur en scène',
-      nom: 'Loïc Denis',
-      photo: '29-LoïcD.jpg'
+      nom: 'Zaccharie Lakhal',
+      photo: 'PP_Zac.jpg'
     },
     {
       role: 'Metteuse en scène',
-      nom: 'Alice Benussan',
-      photo: '28-AliceB.jpg'
+      nom: 'Adèle Lefevre',
+      photo: 'PP_Adele.jpg'
     }
   ],
 
   ac: [
     {
       role: 'Actrice-chanteuse',
-      nom: 'Emma Jaremko',
-      photo: '72-EmmaJ.jpg'
+      nom: 'Alice Bensussan',
+      photo: 'PP_Alice.jpg'
       },
     {
-      role: 'Acteur-chanteur',
-      nom: 'Fabien Duranson',
-      photo: '27-FabienD.jpg'
+      role: 'Actrice-chanteur',
+      nom: 'Roxane Boyer',
+      photo: 'PP_Roxane.jpg'
     },
     {
       role: 'Acteur-chanteur',
-      nom: 'Robin Mourton',
-      photo: '22-RobinM.jpg'
+      nom: 'Antonin Delorme',
+      photo: 'PP_Antonin.jpg'
+    },
+    {
+      role: 'Actreur-chanteuse',
+      nom: 'Vincent Haguet',
+      photo: 'PP_Vincent.jpg'
+    },
+    {
+      role: 'Acteur-chanteur',
+      nom: 'Jean Rannou',
+      photo: 'PP_Jean.jpg'
     },
     {
       role: 'Actrice-chanteuse',
-      nom: 'Adèle Lefevre',
-      photo: '73-AdèleL.jpg'
-    },
-    {
-      role: 'Acteur-chanteur',
-      nom: 'Ivain Rodriguez',
-      photo: '49-IvainR.jpg'
-    },
-    {
-      role: 'Actrice-chanteuse',
-      nom: 'Audrey Teixeira',
-      photo: '84-AudreyT.jpg'
+      nom: 'Julie Ugolini',
+      photo: 'PP_Jean.jpg'
     }
   ],
 
   chant: [
     {
       role: 'Respo chant',
-      nom: 'Julian Achatz',
-      photo: '67-JulianA.jpg'
+      nom: 'Hélène Burget',
+      photo: 'PP_Helene.jpg'
     },
     {
       role: 'Respo chant',
-      nom: 'Lison Allard',
-      photo: '66-LisonA.jpg'
+      nom: 'Julien Guinot',
+      photo: 'PP_Julien.jpg'
     },
     {
       role: 'Choriste',
-      nom: 'Hélène Burget',
-      photo: '68-HélèneB.jpg'
+      nom: 'Anaïs Bousseau',
+      photo: 'PP_Anais.jpg'
     },
     {
       role: 'Choriste',
-      nom: 'Claire de Montgolfier',
-      photo: '69-ClaireD.jpg'
+      nom: 'Yohan Kumanovic',
+      photo: 'PP_Yohan.jpg'
     },
     {
       role: 'Choriste',
-      nom: "Julien Guinot",
-      photo: '70-JulienG.jpg'
+      nom: 'Margerite Lafeuillade',
+      photo: 'PP_Marguerite.jpg'
     },
     {
       role: 'Choriste',
-      nom: 'Daniel Mer',
-      photo: '71-DanielM.jpg'
+      nom: 'Matthieu Leveau',
+      photo: 'PP_Matthieu.jpg'
     }
   ],
 
   composition: [
     {
       role: 'Respo compositeur',
-      nom: 'Emma de Boissoudy',
-      photo: '10-EmmaD.jpg'
+      nom: 'Abel Bichot',
+      photo: 'PP_Abel.jpg'
     },
     {
       role: 'Respo compositeur',
+      nom: 'Etienne Granger',
+      photo: 'PP_Etienne.jpg'
+    },
+    {
+      role: 'Compositeur',
+      nom: 'Amélie Cochard',
+      photo: 'PP_Amélie.jpg'
+    },
+    {
+      role: 'Compositeur',
+      nom: 'Paul Kassis',
+      photo: 'PP_Paul.jpg'
+    },
+    {
+      role: 'Compositeur',
       nom: 'Jean Turck',
-      photo: '16-JeanT.jpg'
-    },
-    {
-      role: 'Compositeur',
-      nom: 'Laurena Eliard',
-      photo: '15-LaurenaE.jpg'
-    },
-    {
-      role: 'Compositeur',
-      nom: 'Mahé Venault',
-      photo: '50-MahéV.jpg'
+      photo: 'PP_Zan.jpg'
     }
   ],
 
   zikos: [
     {
-      role: 'Respo Zikos',
-      nom: 'Victor Penalver',
-      photo: '37-VictorP.jpg'
+      role: 'Respo Zikos / Chef d\'orchestre',
+      nom: 'Julien Delaffon',
+      photo: 'PP_Julien_zikos.jpg'
     },
     {
-      role: 'Respo Zikos',
-      nom: 'Marie Ferran',
-      photo: '51-MarieF.jpg'
-    },
-    {
-      role: 'Violon',
-      nom: 'Arthur Becker',
-      photo: '12-ArthurB.jpg'
+      role: 'Respo Zikos / Piano',
+      nom: 'Léopold Kowalski',
+      photo: 'PP_Leopold.jpg'
     },
     {
       role: 'Violon',
-      nom: 'Ettienne Granger',
-      photo: '57-EtienneG.jpg'
+      nom: 'Anouk Chavane',
+      photo: 'PP_Anouk.jpg'
+    },
+    {
+      role: 'Violon',
+      nom: 'Camille Normant',
+      photo: 'PP_Camille_zikos.jpg'
+    },
+    {
+      role: 'Violon',
+      nom: 'Antoine Marin',
+      photo: 'PP_Antoine_zikos.jpg'
     },
     {
       role: 'Alto',
       nom: 'Marie Gachère',
-      photo: '55-MarieG.jpg'
+      photo: 'PP_Marie.jpg'
     },
     {
       role: 'Violoncelle',
-      nom: 'Vadim Lagresle',
-      photo: '59-VadimL.jpg'
+      nom: 'Agnès Grardel',
+      photo: 'PP_Agnes.jpg'
     },
     {
-      role: 'Flûte',
-      nom: 'Inès Battisti',
-      photo: '11-InesB.jpg'
+      role: 'Contrebasse',
+      nom: 'Rita Khadari',
+      photo: 'PP_Rita.jpg'
     },
     {
       role: 'Flûte',
       nom: 'Chloé Peltier',
-      photo: '61-ChloéP.jpg'
+      photo: 'PP_Chloe_Zikos.jpg'
     },
     {
-      role: 'Saxophone soprano',
-      nom: 'Martin Greiveldinger',
-      photo: '54-MartinG.jpg'
+      role: 'Hautbois',
+      nom: 'Zoé Nopehr',
+      photo: 'PP_Zoe.jpg'
     },
     {
-      role: 'Saxophone alto',
-      nom: 'Aurélien Vu Ngoc',
-      photo: '53-AurélienV.jpg'
+      role: 'Saxophone',
+      nom: 'Paul Kaassis',
+      photo: 'PP_Paul.jpg'
     },
     {
       role: 'Trompette',
       nom: 'Grégoire Bon',
-      photo: '14-GrégoireB.jpg'
-    },
-    {
-      role: 'Trombone',
-      nom: 'Tom Mehl',
-      photo: '64-TomM.jpg'
+      photo: 'PP_Grégoire.jpg'
     },
     {
       role: 'Cor',
       nom: 'Baptiste Perreyon',
-      photo: '65-BaptisteP.jpg'
-    },
-    {
-      role: 'Piano',
-      nom: 'Léopold Kowalski',
-      photo: '58-LeopoldK.jpg'
+      photo: 'PP_Baptiste.jpg'
     },
     {
       role: 'Guitare',
-      nom: 'Anatole Dung',
-      photo: '52-AnatoleD.jpg'
+      nom: 'Clément Pacoret',
+      photo: 'PP_Dino.jpg'
     },
     {
       role: 'Guitare basse',
-      nom: 'Julien Delaffon',
-      photo: '48-JulienD.jpg'
+      nom: 'Solal Chomand',
+      photo: 'PP_Solal.jpg'
     },
     {
       role: 'Batterie',
-      nom: 'Oscar Bolzinger',
-      photo: '13-OscarB.jpg'
+      nom: 'Mathis De Géa',
+      photo: 'PP_Mathis.jpg'
     }    
   ],
 
   danse: [
     {
       role: 'Respo danse',
-      nom: 'Bérénice Vives',
-      photo: '35-BéréniceV.jpg'
+      nom: 'Camille Nivelet',
+      photo: 'PP_Camille_danse.jpg'
     },
     {
       role: 'Respo danse',
-      nom: 'Albane Tayac',
-      photo: '24-AlbaneT.jpg'
+      nom: 'Chloé Vacheron',
+      photo: 'PP_Chloe_danse.jpg'
     },
     {
       role: 'Danseuse',
-      nom: 'Félicité Lambel',
-      photo: '19-FélicitéL.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Juliette Brosolo',
-      photo: '60-JulietteB.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Clémence Bouquillon',
-      photo: '80-ClémenceB.jpg'
-    },
-    {
-      role: 'Danseur',
-      nom: 'Joseph Garnier',
-      photo: '30-JosephG.jpg'
+      nom: 'Margaux_Aloin',
+      photo: 'PP_Margaux.jpg'
     },
     {
       role: 'Danseuse',
       nom: 'Perrine Gouaillard',
-      photo: '81-PerrineG.jpg'
+      photo: 'PP_Perrine.jpg'
     },
     {
       role: 'Danseuse',
-      nom: 'Océane Haddad',
-      photo: '34-OcéaneH.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Yuexuan Kong',
-      photo: '44-YuexuanK.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Jeanne Monnier',
-      photo: '23-JeanneM.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Camille Nivelet',
-      photo: '82-CamilleN.jpg'
-    },
-    {
-      role: 'Danseuse',
-      nom: 'Chloé Vacheron',
-      photo: '43-ChloéV.jpg'
+      nom: 'Apolline Kozlovsky',
+      photo: 'PP_Apolline.jpg'
     },
     {
       role: 'Danseur',
-      nom: 'Raphaël Régnault',
-      photo: '83-RaphaëlR.jpg'
+      nom: 'Sarah Martinotti',
+      photo: 'PP_Sarah_Martinotti.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Julie Mateu',
+      photo: 'PP_Julie_danse.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Sarah Menand',
+      photo: 'PP_Sarah_Menand.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Cléa Milcent',
+      photo: 'PP_Clea.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Carla Salique',
+      photo: 'PP_Carla.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Linbo Sun',
+      photo: 'PP_Linbo.jpg'
+    },
+    {
+      role: 'Danseuse',
+      nom: 'Edmond Verdier',
+      photo: 'PP_Edmond.jpg'
+    },
+    {
+      role: 'Danseur',
+      nom: 'Rebecca Walker',
+      photo: 'PP_Rebecca.jpg'
     }
   ],
 
   costumes: [
     {
       role: 'Respo costumes',
-      nom: 'Solène Butault',
-      photo: '78-SolèneB.jpg'
+      nom: 'Eliam Tchandeu Noundou',
+      photo: 'PP_Eliam.jpg'
     },
     {
       role: 'Respo costumes',
-      nom: 'Lise Charcosset',
-      photo: '74-LiseC.jpg'
+      nom: 'Louise Wittmann',
+      photo: 'PP_Louise.jpg'
     },
     {
       role: 'Costumière',
-      nom: 'Lucie Giordano',
-      photo: '79-LucieG.jpg'
+      nom: 'Lucile Audard',
+      photo: 'PP_Lucile.jpg'
     },
     {
       role: 'Costumière',
-      nom: 'Laura Sallet',
-      photo: '75-LauraS.jpg'
+      nom: 'Clémentine Dunglas',
+      photo: 'PP_Clementine.jpg'
     },
     {
       role: 'Costumière',
-      nom: 'Louise Wittman',
-      photo: '63-LouiseW.jpg'
+      nom: 'Tistou Fages',
+      photo: 'PP_Tistou.jpg'
     }
   ],
 
   decors: [
     {
       role: 'Respo décors',
-      nom: 'Antoine Caisson',
-      photo: '56-AntoineC.jpg'
+      nom: 'Pierre Arzul',
+      photo: 'PP_Pierre.jpg'
     },
     {
       role: 'Respo décors',
-      nom: 'Maëlys Herrouin',
-      photo: '3-MaelysH.jpg'
+      nom: 'Justine Bayet',
+      photo: 'PP_Justine.jpg'
     },
     {
       role: 'Décorateur',
-      nom: 'Maxime Peter',
-      photo: '46-MaximeP.jpg'
+      nom: 'Anne-Fleur Cotte',
+      photo: 'PP_Anne_Fleur.jpg'
     },
     {
       role: 'Décoratrice',
-      nom: 'Eva Simarik',
-      photo: '85-EvaS.jpg'
+      nom: 'Capucine de Bourayne',
+      photo: 'PP_Capucine.jpg'
     },
     {
       role: 'Décoratrice',
-      nom: 'Justine Bayet',
-      photo: '86-JustineB.jpg'
+      nom: 'Clémence Magnière',
+      photo: 'PP_Clémence.jpg'
     },
     {
       role: 'Décoratrice',
-      nom: 'Manon Boisson',
-      photo: '62-ManonB.jpg'
+      nom: 'Audrey Teixeira',
+      photo: 'PP_Audrey.jpg'
     }
   ],
 
   technique: [
     {
       role: 'Respo lumière',
-      nom: 'Cléo Larminay',
-      photo: '7-CléoL.jpg'
+      nom: 'Naomi Sakata',
+      photo: 'PP_Naomi.jpg'
     },
     {
       role: 'Respo son',
-      nom: 'Thibaut Decombe',
-      photo: '77-ThibautD.jpg'
-    },
-    {
-      role: 'Respo son',
-      nom: 'Boris Laurent',
-      photo: '76-BorisL.jpg'
+      nom: 'Jules Mansion',
+      photo: 'PP_Jules.jpg'
     },
     {
       role: 'VP son',
-      nom: 'Carole Belot',
-      photo: '4-CaroleB.jpg'
+      nom: 'Réjane Bastien',
+      photo: 'PP_Rejane.jpg'
     },
     {
       role: 'VP son',
-      nom: 'Théotime Bergese',
-      photo: '41-ThéotimeB.jpg'
+      nom: 'Oscar Bolzinger',
+      photo: 'PP_Oscar.jpg'
     },
     {
       role: 'VP son',
-      nom: 'Thomas Levasseur',
-      photo: '45-ThomasL.jpg'
+      nom: 'Quentin Gracia',
+      photo: 'PP_Quentin.jpg'
     },
     {
       role: 'VP son',
-      nom: 'Olivier Wifak',
-      photo: '47-OlivierW.jpg'
+      nom: 'Agustìn Soux',
+      photo: 'PP_Agustin.jpg'
     },
     {
       role: 'Respo vidéo',
-      nom: 'Emeric le Hors',
-      photo: '6-EmericL.jpg'
+      nom: 'Nicolas Starc',
+      photo: 'PP_Nicolas.jpg'
     }
   ],
 
   amour: [
     {
       role: 'VP Amour',
-      nom: 'Flavien Foucart',
-      photo: '21-FlavienF.jpg'
+      nom: 'Clara Angrand',
+      photo: 'PP_Clara.jpg'
     },
     {
       role: 'VP Amour',
-      nom: 'Delphine Gindre',
-      photo: '18-DelphineG.jpg'
+      nom: 'Benoit Decorse',
+      photo: 'PP_Benoit.jpg'
     },
     {
       role: 'VP Amour',
-      nom: 'Nicolas Miranda',
-      photo: '20-NicolasM.jpg'
+      nom: 'Aurore Granier',
+      photo: 'PP_Aurore.jpg'
     },
     {
       role: 'VP Amour',
-      nom: 'Valentine Rasse',
-      photo: '17-ValentineR.jpg'
+      nom: 'Chloé Lutz',
+      photo: 'PP_Chloe.jpg'
     }
   ]
 }
