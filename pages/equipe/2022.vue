@@ -440,7 +440,7 @@ let equipe = {
     },
     {
       role: 'Hautbois',
-      nom: 'Zoé Nopehr',
+      nom: 'Zoé Morel',
       photo: 'PP_Zoe.jpg'
     },
     {
@@ -488,7 +488,7 @@ let equipe = {
     },
     {
       role: 'Danseuse',
-      nom: 'Margaux_Aloin',
+      nom: 'Margaux Aloin',
       photo: 'PP_Margaux.jpg'
     },
     {
