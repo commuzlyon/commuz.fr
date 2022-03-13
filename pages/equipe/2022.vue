@@ -310,7 +310,7 @@ let equipe = {
       photo: 'PP_Antonin.jpg'
     },
     {
-      role: 'Actreur-chanteuse',
+      role: 'Acteur-chanteur',
       nom: 'Vincent Haguet',
       photo: 'PP_Vincent.jpg'
     },
