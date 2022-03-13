@@ -198,7 +198,7 @@ let equipe = {
       photo: 'PP_Remi.png'
     },
     {
-      role: 'Vice-Président',
+      role: 'Vice-Présidente',
       nom: 'Juliette Brosolo',
       photo: 'PP_Juliette.jpg'
     },
@@ -260,7 +260,7 @@ let equipe = {
     },
     {
       role: 'Scénariste',
-      nom: 'Atnoine Haynez',
+      nom: 'Antoine Haynez',
       photo: 'PP_Antoine.jpg'
     },
     {
