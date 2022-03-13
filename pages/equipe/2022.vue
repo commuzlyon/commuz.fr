@@ -421,7 +421,7 @@ let equipe = {
       photo: 'PP_Rita.jpg'
     },
     {
-      role: 'Flûte',
+      role: 'Pipo',
       nom: 'Chloé Peltier',
       photo: 'PP_Chloe_Zikos.jpg'
     },
@@ -431,7 +431,7 @@ let equipe = {
       photo: 'PP_Zoe.jpg'
     },
     {
-      role: 'Saxophone',
+      role: 'Saxophone Alto',
       nom: 'Paul Kaassis',
       photo: 'PP_Paul.jpg'
     },
