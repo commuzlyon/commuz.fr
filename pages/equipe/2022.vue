@@ -3,7 +3,7 @@
     <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text"></pane>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/bureau.png" alt="Bureau">
+        <img src="/logos/poles/2022/bureau.png" alt="Bureau">
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
@@ -16,7 +16,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/visibilite.png" alt="Visibilité">
+        <img src="/logos/poles/2022/visibilite.png" alt="Visibilité">
         <h2>Visibilité</h2>
       </div>
       <div class="section__membres">
@@ -29,7 +29,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/scenario.png" alt="Scénario">
+        <img src="/logos/poles/2022/scenario.png" alt="Scénario">
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
@@ -42,7 +42,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/mes.png" alt="Mise en scène">
+        <img src="/logos/poles/2022/mes.png" alt="Mise en scène">
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
@@ -55,7 +55,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/ac.png" alt="Acteur-chanteur, comédien">
+        <img src="/logos/poles/2022/ac.png" alt="Acteur-chanteur, comédien">
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
@@ -68,7 +68,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/choristes.png" alt="Choristes">
+        <img src="/logos/poles/2022/choristes.png" alt="Choristes">
         <h2>Chant</h2>
       </div>
       <div class="section__membres">
@@ -81,7 +81,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/composition.png" alt="Composition">
+        <img src="/logos/poles/2022/composition.png" alt="Composition">
         <h2>Composition</h2>
       </div>
       <div class="section__membres">
@@ -94,7 +94,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/musik.png" alt="Musique">
+        <img src="/logos/poles/2022/zikos.png" alt="Musique">
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
@@ -107,7 +107,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/danse.png" alt="Danseuses">
+        <img src="/logos/poles/2022/danse.png" alt="Danseuses">
         <h2>Danse</h2>
       </div>
       <div class="section__membres">
@@ -120,7 +120,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/costumes.png" alt="Costumes">
+        <img src="/logos/poles/2022/costumes.png" alt="Costumes">
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
@@ -133,7 +133,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/decors.png" alt="Décors">
+        <img src="/logos/poles/2022/decors.png" alt="Décors">
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
@@ -146,8 +146,8 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/technique.png" alt="Technique">
-        <h2>Son, lumière et vidéo</h2>
+        <img src="/logos/poles/2022/technique.png" alt="Technique">
+        <h2>Lumière et son</h2>
       </div>
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
@@ -159,7 +159,7 @@
     </div>
     <div class="section">
       <div class="section__description">
-        <img src="/logos/poles/2021/amour.png" alt="Support">
+        <img src="/logos/poles/2022/amour.png" alt="Support">
         <h2>Amour</h2>
       </div>
       <div class="section__membres">
@@ -269,7 +269,7 @@ let equipe = {
       photo: 'PP_Marie_CA.jpg'
     },
     {
-      role: 'Coordinatrice artistique',
+      role: 'Coordinateur artistique',
       nom: 'Joseph Garnier',
       photo: 'PP_Jospeh.jpg'
     },
@@ -363,7 +363,7 @@ let equipe = {
       photo: 'PP_Etienne.jpg'
     },
     {
-      role: 'Compositeur',
+      role: 'Compositrice',
       nom: 'Amélie Cochard',
       photo: 'PP_Amélie.jpg'
     },
@@ -489,7 +489,7 @@ let equipe = {
       photo: 'PP_Apolline.jpg'
     },
     {
-      role: 'Danseur',
+      role: 'Danseuse',
       nom: 'Sarah Martinotti',
       photo: 'PP_Sarah_Martinotti.jpg'
     },
@@ -514,17 +514,17 @@ let equipe = {
       photo: 'PP_Carla.jpg'
     },
     {
-      role: 'Danseuse',
+      role: 'Danseur',
       nom: 'Linbo Sun',
       photo: 'PP_Linbo.jpg'
     },
     {
-      role: 'Danseuse',
+      role: 'Danseur',
       nom: 'Edmond Verdier',
       photo: 'PP_Edmond.jpg'
     },
     {
-      role: 'Danseur',
+      role: 'Danseuse',
       nom: 'Rebecca Walker',
       photo: 'PP_Rebecca.jpg'
     }
@@ -552,7 +552,7 @@ let equipe = {
       photo: 'PP_Clementine.jpg'
     },
     {
-      role: 'Costumière',
+      role: 'Costumier',
       nom: 'Tistou Fages',
       photo: 'PP_Tistou.jpg'
     }
@@ -570,7 +570,7 @@ let equipe = {
       photo: 'PP_Justine.jpg'
     },
     {
-      role: 'Décorateur',
+      role: 'Décoratrice',
       nom: 'Anne-Fleur Cotte',
       photo: 'PP_Anne_Fleur.jpg'
     },
@@ -623,7 +623,7 @@ let equipe = {
       photo: 'PP_Agustin.jpg'
     },
     {
-      role: 'Respo vidéo',
+      role: 'VP son',
       nom: 'Nicolas Starc',
       photo: 'PP_Nicolas.jpg'
     }

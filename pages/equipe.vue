@@ -69,8 +69,8 @@ export default {
 
   img {
     margin-right: 1em;
-    height: 100px;
-    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
   }
 
   h2 {
