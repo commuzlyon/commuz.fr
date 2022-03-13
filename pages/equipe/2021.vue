@@ -285,7 +285,7 @@ let equipe = {
     },
     {
       role: 'Metteuse en scène',
-      nom: 'Alice Benussan',
+      nom: 'Alice Bensussan',
       photo: '28-AliceB.jpg'
     }
   ],
