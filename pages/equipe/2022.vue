@@ -300,7 +300,7 @@ let equipe = {
       photo: 'PP_Alice.jpg'
       },
     {
-      role: 'Actrice-chanteur',
+      role: 'Actrice-chanteuse',
       nom: 'Roxane Boyer',
       photo: 'PP_Roxane.jpg'
     },
