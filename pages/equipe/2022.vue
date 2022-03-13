@@ -322,7 +322,7 @@ let equipe = {
     {
       role: 'Actrice-chanteuse',
       nom: 'Julie Ugolini',
-      photo: 'PP_Jean.jpg'
+      photo: 'PP_Julie.jpg'
     }
   ],
 
