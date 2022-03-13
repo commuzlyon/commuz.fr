@@ -382,7 +382,7 @@ let equipe = {
     },
     {
       role: 'Compositeur',
-      nom: 'Paul Kassis',
+      nom: 'Paul Kaassis',
       photo: 'PP_Paul.jpg'
     },
     {
@@ -568,6 +568,11 @@ let equipe = {
       role: 'Costumier',
       nom: 'Tistou Fages',
       photo: 'PP_Tistou.jpg'
+    },
+    {
+      role: 'Costumier',
+      nom: 'Jean Turck',
+      photo: 'PP_Zan.jpg'
     }
   ],
 
