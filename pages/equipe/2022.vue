@@ -236,6 +236,11 @@ let equipe = {
       photo: 'PP_Benjamin.jpg'
     },
     {
+      role: 'Respo Vidéo',
+      nom: 'Enzo Pelous',
+      photo: 'PP_Enzo.jpg'
+    },
+    {
       role: 'Partenariats',
       nom: 'Saban Suresh',
       photo: 'PP_Saban.png'
