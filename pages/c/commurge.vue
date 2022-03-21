@@ -186,8 +186,8 @@ let sendChope = function (answer) {
               validay: answer,
               chopeA: chopeA,
               chopeB: chopeB,
-              timestamp :  timestamp,
-              hash : hashFunction(answer, chopeA, chopeB, timestamp)  
+              timestamp :  timestamp
+              // hash : hashFunction(answer, chopeA, chopeB, timestamp)  
             })
           })
         .then(res => {
