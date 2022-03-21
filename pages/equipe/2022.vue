@@ -43,7 +43,7 @@
     <div class="section">
       <div class="section__description">
         <img src="/logos/poles/2022/mes.png" alt="Mise en scène">
-        <h2>Mise en scène</h2>
+        <h2>Direction Artistique</h2>
       </div>
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
