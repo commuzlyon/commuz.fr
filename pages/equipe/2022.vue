@@ -354,7 +354,7 @@ let equipe = {
     },
     {
       role: 'Choriste',
-      nom: 'Margerite Lafeuillade',
+      nom: 'Marguerite Lafeuillade',
       photo: 'PP_Marguerite.jpg'
     },
     {
