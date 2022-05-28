@@ -2,7 +2,7 @@
 
 <div>
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2022.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Saban, Aurélia et Eulalie à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2022.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats Thomas à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -30,25 +30,11 @@
 <script>
 let respoPartenariats = {
   respo3: {
-    prenom: "Saban",
-    nom: "Suresh",
-    telephone: "07 81 65 10 85",
-    mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/saban.png",
-  },
-  respo1: {
-    prenom: "Aurélia",
-    nom: "Zhang",
-    telephone: "06 50 93 88 14",
-    mail: "commuzlyon@gmail.co",
-    image: "/images/Partenaires/aurelia.png",
-  },
-  respo2: {
-    prenom: "Eulalie",
-    nom: "Bouret",
-    telephone: "06 12 01 76 54",
+    prenom: "Thomas",
+    nom: "Houziel",
+    telephone: "06 62 96 67 92",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/eulalie.png",
+    image: "/images/Partenaires/Thomas.jpg",
   },
 };
 
