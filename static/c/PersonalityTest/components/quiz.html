@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="questionBox">
+        <div class="landingPage" v-if="questionIndex < 0">
+            <header>
+                <h1 class="title">Quel poste de la Commuz est fait pour toi ?</h1>
+            </header>
+            <div class="description">
+                <div class="buttonWrapper">
+                    <a class="button is-active" v-on:click="next();">
+                        Commencer le test
+                    </a>
+                </div>
+                <p class="remarks">Aucune donnée personnelle n'est collectée au cours du processus.</p>
+            </div>
+        </div>
+
+        <!--questionContainer-->
+        <div class="questionContainer" v-if="questionIndex<quiz.questions.length && questionIndex >= 0"
+            v-bind:key="questionIndex">
+
+            <header>
+                <h1 class="title is-6">Quel poste de la Commuz est fait pour toi ?</h1>
+                <!--progress-->
+                <div class="progressContainer">
+                    <progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100"
+                        max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
+                    <p>Question {{questionIndex + 1}}/{{quiz.questions.length}}</p>
+                </div>
+                <!--/progress-->
+            </header>
+
+            <!-- questionTitle -->
+            <h2 class="titleContainer title">{{ quiz.questions[questionIndex].text }}</h2>
+
+            <!-- quizOptions -->
+            <div class="optionContainer">
+                <div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses"
+                    @click="selectOption(index)" :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                    :key="index">
+                    {{ index | charIndex }}. {{ response.text }}
+                </div>
+            </div>
+
+            <!--quizFooter: navigation and progress-->
+            <footer class="questionFooter">
+
+                <!--pagination-->
+                <nav class="pagination" role="navigation" aria-label="pagination">
+
+                    <!-- back button -->
+                    <!-- <a class="button" v-on:click="prev();" :class="questionIndex < 1?'disabled':''">
+                  Back
+                </a> -->
+
+                    <!-- next button -->
+                    <a :class="userResponses[questionIndex]==null?'disabled':'is-active'" class="button align-right"
+                        v-on:click="next();">
+                        Suivant
+                    </a>
+
+                </nav>
+                <!--/pagination-->
+
+            </footer>
+            <!--/quizFooter-->
+
+        </div>
+        <!--/questionContainer-->
+
+        <!--quizCompletedResult-->
+        <div v-if="quizCompleted()" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
+
+            <!-- quizCompletedIcon: Achievement Icon -->
+            <!-- <span class="icon">
+              <i class="fa" :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"></i>
+            </span> -->
+            <div class="innerContainer">
+                <h2 class="title">
+                    Ton poste idéal serait
+                </h2>
+                <h2 class="title">
+                    {{ score()["persona"] }}
+                </h2>
+                <!--resultTitleBlock-->
+                <p class="subtitle">
+                    {{ score()["description"] }}
+                </p>
+                <!--Image de description -->
+                <img :src="score().image" alt="" id="image_pole" height="400">
+                <p class="remarks">
+                    {{ score()["notes"] }}
+                </p>
+                <!--/resultTitleBlock-->
+                <p class="subtitle">
+                    Alors pourquoi pas toi ? Participe aux castings !
+                </p>
+                <!--PENSER A CHANGER LE LIEN !!!-->
+                <a target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/" class="inline-link-black">
+                <font color="black">Lien d'inscription aux castings</font>
+                </a>
+            </div>
+            <div class="buttonWrapper">
+                <a class="button is-active" @click="restart()">Refaire le test</a>
+            </div>
+        </div>
+        <!--/quizCompetedResult-->
+
+    </div>
+</div>

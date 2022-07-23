@@ -22,6 +22,7 @@ Le site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier 
 - Bastien Laville : Webmestre du mandat 2019 - 2020 ;
 - Alban Gosset: Webmestre du mandat 2020 - 2021 ;
 - Benjamin Denise : Webmestre du mandat 2021-2022 ;
+- Antoine Haynez : Webmestre du mandat 2022-2023 ;
 
 
 
