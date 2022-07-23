@@ -7,7 +7,7 @@
             <div class="description">
                 <div class="buttonWrapper">
                     <a class="button is-active" v-on:click="next();">
-                        Commencer le test
+                        Commencer
                     </a>
                 </div>
                 <p class="remarks">Aucune donnée personnelle n'est collectée au cours du processus.</p>
@@ -86,7 +86,7 @@
                     {{ score()["description"] }}
                 </p>
                 <!--Image de description -->
-                <img :src="score().image" alt="" id="image_pole" height="400">
+                <img :src="score().image" alt="" id="image_pole" height="350">
                 <p class="remarks">
                     {{ score()["notes"] }}
                 </p>
