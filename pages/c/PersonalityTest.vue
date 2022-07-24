@@ -27,7 +27,7 @@ body {
     font-size: 14px;
     height: 100vh;
     background: $primary_color;
-    color: blue;
+    color: black;
 
     /* mocking native UI */
     // cursor: default !important; /* remove text selection cursor */

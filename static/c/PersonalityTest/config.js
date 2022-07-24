@@ -2,109 +2,21 @@ const quiz = {
     user: "",
     questions: [
         {
-            text: "Do you know what day is it today?",
+            text: "Question 1",
             responses: [
-                { text: "Of course!", type: ["Choriste"] },
-                { text: "Of course, it's Friday everyday!", type: ["Son"] },
-                { text: "No, I've totally lost track of time.", type: ["Decors"] },
-                { text: "Does it matter?", type: ["Costumes"] }
+                { text: "AC,Choriste,Amour", type: ["AC","Choriste","Amour"] },
+                { text: "Son,Composition,Costume", type: ["Son","Composition","Costume"] },
+                { text: "Lumiere,Danse", type: ["Lumiere","Danse"] },
+                { text: "Zikos,Decors", type: ["Zikos","Decors"] }
             ]
         },
         {
-            text: "What do you think of the term 'circuit breaker'?",
+            text: "Question 2",
             responses: [
-                {
-                    text: "Very creative name! (No sarcasm intended)",
-                    type: ["Choriste", "Decors"]
-                },
-                { text: "Lockdown then say lockdown lah...", type: ["AC", "Zikos"] },
-                { text: "I catch no ball/ I don't understand.", type: ["Son"] },
-                { text: "So smart I cannot even.", type: ["Costumes"] }
-            ]
-        },
-        {
-            text: "How is working from home/ home-based learning for you?",
-            responses: [
-                {
-                    text: "What is that! I'm an essential worker.",
-                    type: ["Costumes", "Choriste"]
-                },
-                {
-                    text:
-                        "I'm an essential worker but I think I ought/ want to be home.",
-                    type: ["Zikos"]
-                },
-                { text: "I'm so enjoying it.", type: ["Son"] },
-                { text: "It's even more tiring.", type: ["Decors"] }
-            ]
-        },
-        {
-            text: "What is your opinion on the timing of the circuit breaker?",
-            responses: [
-                { text: "Too late! Too slow!", type: ["AC"] },
-                { text: "Just timely!", type: ["Choriste"] },
-                {
-                    text: "No need CB lah!",
-                    type: ["Zikos"]
-                },
-                { text: "KNNBCCB", type: ["Costumes"] }
-            ]
-        },
-        {
-            text: "Which scenario is the worst to you?",
-            responses: [
-                { text: "WIFI down", type: ["Son"] },
-                {
-                    text: "Ran out of toilet paper",
-                    type: ["Zikos"]
-                },
-                { text: "Another extension in the circuit breaker", type: ["AC"] },
-                { text: "Food delivery got lost", type: ["Decors"] }
-            ]
-        },
-        {
-            text:
-                "Which scene (from a movie/ series) does COVID-19 resemble the most to you?",
-            responses: [
-                {
-                    text: "Thanos snapping his fingers in Avengers: Infinity War",
-                    type: ["Zikos"]
-                },
-                { text: "The zombie apocalypse in Train to Busan", type: ["Costumes"] },
-                { text: "The political mess in Chernobyl", type: ["AC"] },
-                { text: "I don't watch movies.", type: ["Decors"] }
-            ]
-        },
-        {
-            text:
-                "Which category of app did you download/ use the most during the circuit breaker?",
-            responses: [
-                { text: "Shopping app", type: ["Decors"] },
-                { text: "Government-related app", type: ["Choriste"] },
-                {
-                    text: "Gaming app",
-                    type: ["Son"]
-                },
-                { text: "Social media app", type: ["AC"] }
-            ]
-        },
-        {
-            text: "What do you look forward to each day?",
-            responses: [
-                {
-                    text: "The number of confirmed (and unlinked etc.) cases lor!",
-                    type: ["Costumes"]
-                },
-                {
-                    text:
-                        "I don't look forward to the next day nor the day after next and the day after.",
-                    type: ["Zikos","Lumiere"]
-                },
-                {
-                    text: "Knowing that tomorrow will be a better day :)",
-                    type: ["Choriste", "Son"]
-                },
-                { text: "A better government.", type: ["AC","Danseur"] }
+                { text: "AC,Son,Lumiere", type: ["AC","Son","Lumiere"] },
+                { text: "Choriste,Costume,Danse", type: ["Choriste","Costume", "Danse"] },
+                { text: "Zikos,Amour", type: ["Zikos","Amour"] },
+                { text: "Decors,Composition", type: ["Decors","Composition"] }
             ]
         }
     ]
@@ -148,7 +60,7 @@ const information = {
         notes: "N'hésite pas à contacter Agustin Soux ou Clément Pacoret si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Son.jpg"
     },
-    Costumes: {
+    Costume: {
         persona: "VP Costumes",
         description:
             "Le pôle costume est un des piliers de la Commuz’ : sa mission est d’habiller chaque personnage en s’efforçant de retranscrire le caractère et le rôle de chaque acteur.rice, tout en véhiculant les idées et le ton de la pièce.",
