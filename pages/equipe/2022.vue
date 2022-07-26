@@ -185,7 +185,7 @@
 let presentation = {
   text: "<h2>2022 - En Memoria</h2>" +
           "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>",
-  bgImage: '/images/equipes/equipe--2021.jpg',
+  bgImage: '/images/equipes/equipe--2022.jpg',
   image: '/images/affiches/affiche--2022.png'
 }
 

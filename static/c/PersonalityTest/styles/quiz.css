@@ -5,7 +5,7 @@
 }
 
 .title {
-  color: black;
+  color: white;
 }
 .subtitle,
 .remarks {
@@ -32,24 +32,21 @@
 }
 
 .questionBox {
-  max-width: 40rem;
-  width: 100%;
-  min-height: 30rem;
-  background: #fafafa;
-  color: black;
+  color: #f7f8fb;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 0.5rem;
   overflow: hidden;
+  min-height: 30rem;
+  background: linear-gradient(100deg,#621837,#47193b 40%);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .questionBox header {
-  background: rgba(0, 0, 0, 0.025);
-  color: black;
+  color: #f7f8fb;
   padding: 1.5rem;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -177,7 +174,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e4e4e4;
   color: rgba(0, 0, 0, 0.85);
   border: transparent 1px solid;
 }
@@ -204,6 +201,7 @@
       align-self: flex-end;
   padding: 1mm 1mm;
   grid-template-columns: 2fr 2fr 2fr;
+  box-shadow : none;
 }
 
 .questionBox .questionContainer .questionFooter .pagination {
