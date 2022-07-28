@@ -8,7 +8,7 @@
       <img id="home__hero_bg" src="/c/PersonalityTest/images/Poster-Casting.jpg">
     </div>
     <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"></pane>
-    <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="itemSpectacleAaZ"></pane>
+    <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"></pane>
     <pane :type="'pane--left'" :bgImage="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"></pane>
 
 
