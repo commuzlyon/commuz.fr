@@ -5,12 +5,14 @@
         <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
       </div>
     </div>
+    <no-ssr>
     <vue-easy-lightbox
     :visible="visible"
     :imgs="galerie.images_src"
     :index="index"
     @hide="handleHide"
   ></vue-easy-lightbox>
+  </no-ssr>
   </div>
 </template>
 

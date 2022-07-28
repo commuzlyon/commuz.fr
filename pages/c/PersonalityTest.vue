@@ -14,28 +14,37 @@
 
     <!-- Test -->
     <div class="Main" id="app">
+      <no-ssr>
       <Quiz />
+      </no-ssr>
     </div>
 
     <!-- Presentation postes -->
     <div style="text-align:center">
       <h1>Parcourir les postes</h1>
     </div>
-    <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
-               :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="600">
-      <slide v-for="poste in postes" :index="poste.ID">
-        <h2 class="title"> {{ poste.persona }}</h2>
-        <figure><img :src="poste.image"></figure>
-        <p>{{ poste.description }}</p>
-      </slide>
-    </carousel-3d>
+    <div>
+    <no-ssr>
+      <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
+                :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="600">
+          <slide v-for="poste in postes" :index="poste.ID">
+            <h2 class="title"> {{ poste.persona }}</h2>
+            <figure><img :src="poste.image"></figure>
+            <p>{{ poste.description }}</p>
+          </slide>
+      </carousel-3d>
+    </no-ssr>
+    </div>
 
   </div>
 </template>
 
 <script>
 import Quiz from "~/static/c/PersonalityTest/components/quiz.vue";
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+//import { Carousel3d, Slide } from 'vue-carousel-3d';
+
+const yourModuleName = require('vue-carousel-3d');
+const { Carousel3d, Slide } = yourModuleName;
 
 let data = {
   presentation:
@@ -186,7 +195,6 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 2em;
-        background: blue;
     }
 
 #home__hero {
