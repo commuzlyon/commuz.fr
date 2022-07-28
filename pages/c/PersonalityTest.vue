@@ -24,16 +24,16 @@
       <h1>Parcourir les postes</h1>
     </div>
     <div>
-    <no-ssr>
       <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
                 :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="600">
+              <no-ssr>
           <slide v-for="poste in postes" :index="poste.ID">
             <h2 class="title"> {{ poste.persona }}</h2>
             <figure><img :src="poste.image"></figure>
             <p>{{ poste.description }}</p>
           </slide>
+          </no-ssr>
       </carousel-3d>
-    </no-ssr>
     </div>
 
   </div>
@@ -41,10 +41,8 @@
 
 <script>
 import Quiz from "~/static/c/PersonalityTest/components/quiz.vue";
-//import { Carousel3d, Slide } from 'vue-carousel-3d';
-
-const yourModuleName = require('vue-carousel-3d');
-const { Carousel3d, Slide } = yourModuleName;
+import Slide from "~/static/c/PersonalityTest/components/carousel-3d/Slide.vue";
+import Carousel3d from "~/static/c/PersonalityTest/components/carousel-3d/Carousel3d.vue";
 
 let data = {
   presentation:
