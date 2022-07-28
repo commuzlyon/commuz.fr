@@ -186,7 +186,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 2em;
-        background: blue;
+        background: black;
     }
 
 #home__hero {
