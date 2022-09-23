@@ -60,6 +60,7 @@ let data = {
     "<center> <a target='_blank' rel='noopener' href='https://www.instagram.com/commuzlyon/' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
 };
 
+
 let information = {
     AC: {
         persona: "Acteur.rice-Chanteur.euse",
@@ -178,7 +179,7 @@ body {
     font-size: 14px;
     height: 100vh;
     background: linear-gradient(100deg,#621837,#47193b 40%);
-    color: black;
+    color: blue;
 
     /* mocking native UI */
     // cursor: default !important; /* remove text selection cursor */
