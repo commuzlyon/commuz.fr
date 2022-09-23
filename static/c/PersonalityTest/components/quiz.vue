@@ -57,7 +57,7 @@ export default {
         }
         ++result[collateTypes[i]];
       }
-      const order = ["TWGA", "TSGW", "TPCB", "TSSW", "TCLG", "TRC"];
+      const order = ["AC","Choriste","Zikos","Decors","Son","Costume","Amour","Composition","Lumiere","Danse"];
 
       return Object.keys(result).reduce((a, b) => {
         if (result[a] > result[b]) {

@@ -2,23 +2,95 @@ const quiz = {
     user: "",
     questions: [
         {
-            text: "Question 1",
+            text: "Quand tu regardes un spectacle, qu'est ce qui t'attire le plus ?",
             responses: [
-                { text: "AC,Choriste,Amour", type: ["AC","Choriste","Amour"] },
-                { text: "Son,Composition,Costume", type: ["Son","Composition","Costume"] },
-                { text: "Lumiere,Danse", type: ["Lumiere","Danse"] },
-                { text: "Zikos,Decors", type: ["Zikos","Decors"] }
+                { text: "L'imaginer, l'écrire", type: ["Composition","Danse"] },
+                { text: "Le mettre en place, le monter", type: ["Decors","Costume"] },
+                { text: "Le gérer, l'animer", type: ["Lumiere","Son","Amour"] },
+                { text: "Le faire vivre", type: ["AC","Zikos","Choriste"] }
             ]
         },
         {
-            text: "Question 2",
+            text: "Dans les grandes lignes, quelle serait ta personnalité ?",
             responses: [
-                { text: "AC,Son,Lumiere", type: ["AC","Son","Lumiere"] },
-                { text: "Choriste,Costume,Danse", type: ["Choriste","Costume", "Danse"] },
-                { text: "Zikos,Amour", type: ["Zikos","Amour"] },
-                { text: "Decors,Composition", type: ["Decors","Composition"] }
+                { text: "Extraverti, sociable", type: ["Amour","AC","Choriste"] },
+                { text: "Je suis un peu dans mon monde", type: ["Decors","Composition"] },
+                { text: "Hyperactif, toujours à courir à gauche à droite", type: [ "Danse"] },
+                { text: "Je me fond dans la masse, pour créer quelque chose de plus grand", type: ["Costume","Zikos"] }
             ]
-        }
+        },
+        {
+            text: "Dans la vie tu es plutôt...",
+            responses: [
+                { text: "Manuel", type: ["Decors","Costume","Amour"] },
+                { text: "Technique", type: ["Son","Lumiere"] },
+                { text: "Créatif", type: [ "Zikos","Choriste","Composition"] },
+                { text: "Une star", type: ["AC","Danse"] }
+            ]
+        },
+        {
+            text: "Petites vacances entre amis, tu es ...",
+            responses: [
+                { text: "L'oganisateur : tu prévois la nourriture et le budget", type: ["Amour","Composition"] },
+                { text: "Le retardataire : tu manques de louper le train de peu", type: ["Son","Lumiere","Zikos"] },
+                { text: "L'influenceur : story à la piscine de 10h à 22h", type: [ "AC","Choriste","Danse"] },
+                { text: "L'hyperactif : tu veux tout visiter, tout explorer", type: ["Decors","Costume"] }
+            ]
+        },
+        {
+            text: "Si tu avais un super pouvoir ce serait ?",
+            responses: [
+                { text: "Voyager dans le temps", type: ["Costume","Decors","Composition"] },
+                { text: "Être riche sans limite", type: ["Son","Amour"] },
+                { text: "Devenir invisible", type: [ "Zikos","Choriste","Lumiere"] },
+                { text: "Plaire à n'importe qui", type: ["AC","Danse"] }
+            ]
+        },
+        {
+            text: "Il pleut et tu cherches une activité tu...",
+            responses: [
+                { text: "vas voir un concert/un film", type: ["Zikos","Choriste"] },
+                { text: "restes bien au chaud au fond de ton lit", type: ["Son","Lumiere"] },
+                { text: "vas au musée", type: [ "Decors","Costume",] },
+                { text: "en profites pour prendre le temps de cuisiner", type: ["Amour","Composition"] }
+            ]
+        },
+        {
+            text: "Un de tes amis chante faux...",
+            responses: [
+                { text: "tu te sens obligé de le corriger", type: ["AC","Choriste","Composition"] },
+                { text: "tu tentes de l'accompagner pour sauver les meubles", type: ["Zikos","Amour","Danse"] },
+                { text: "Tu t'éloignes pour ne plus l'entendre", type: [ "Decors","Costume",] },
+                { text: "Tu mets ton casque pour soulager tes oreilles", type: ["Son","Lumiere"] }
+            ]
+        },
+        {
+            text: "Une petite jam session s'improvise devant toi : tu…",
+            responses: [
+                { text: "Fonces jouer avec les autres musiciens ", type: ["AC","Choriste","Zikos"] },
+                { text: "T'enjailles a fond, tu danses, tu vis la musique ", type: ["Composition","Danse"] },
+                { text: "Applaudis en souriant fièrement : ils sont talentueux tes potes ", type: ["Son","Lumiere","Amour"] },
+                { text: "Regardes de loin, tu savoures discrètement ce qui se passe ", type: ["Decors", "Costume"] }
+            ]
+        },
+        {
+            text: "Quand tu sors d'un concert/d'une pièce de théâtre…",
+            responses: [
+                { text: "Tu gardes des images de l'ambiance plein la tête ", type: [ "Decors","Lumiere"] },
+                { text: "Tu rêves d'être sur scène toi aussi ", type: ["AC","Choriste","Zikos"] },
+                { text: "Tu cherches à savoir comment ils en sont venus à ce résultat ", type: ["Composition","Son", "Costume"] },
+                { text: "Tu te repasses les musiques/le texte des centaines de fois ", type: ["Danse","Amour"] }
+            ]
+        },
+        {
+            text: "Si tu étais dans une comédie musicale tu serais…",
+            responses: [
+                { text: "L'original, avec des centaines d'idées en tête ", type: ["Composition" ,"Lumiere"] },
+                { text: "Celui/celle qui transforme toute sa vie en chanson ", type: ["AC","Choriste",] },
+                { text: "Celui/celle sur qui on peut compter : toujours derrière ses potes !", type: ["Zikos", "Danse","Amour"] },
+                { text: "Le/la MacGyver : avec un rien tu fais de la magie", type: ["Son", "Costume","Decors" ] }
+            ]
+        },
     ]
 }
 
@@ -49,7 +121,7 @@ const information = {
     Decors: {
         persona: "Décorateur.rice",
         description:
-            "Viens t’aventurer au pôle décors - le pôle complètement marteau ! 🔨 Artiste à temps plein ou occasionnel, bricoleur.euse du dimanche ou technicien.ne hors-pair, passionné.e de dessin ou non, tu es le.la bienvenu.e au pôle décors tant que tu as de l’imagination et que tu veux en faire profiter les autres !",
+            "Une comédie musicale c'est cool, mais une comédie musicale qui te fait voyager et qui te transporte vers une autre époque, c'est encore mieux ! Quoi de plus idéal qu'une scène remplie de décors hyper stylés pour y parvenir ? Rejoindre le pôle Décors, c'est concevoir, réaliser et fabriquer l'ensemble des décors du spectacle. ",
         notes: "N'hésite pas à contacter Adèle Lefevre ou Chloé Mrtte si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Decors.jpg"
     },
@@ -79,7 +151,7 @@ const information = {
     Composition: {
         persona: "VP Composition",
         description:
-            "Être compositeur.rice, c’est créer les musiques qui seront jouées par les musicien.nne.s à la Commuz. Pas besoin d’être un Vivaldi pour composer, il suffit d’être créatif.ve. Tu pourras alors poser ta patte d’artiste sur ce magnifique projet qu’est la Commuz' et donner forme et musicalité au scénario.",
+            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
         notes:
             "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Compo.jpg"
@@ -95,7 +167,7 @@ const information = {
     Danse: {
         persona: "Danseur.euse",
         description:
-            "Le pôle danse, c’est un pôle bourré de talents issus de différents parcours dans la danse (donc n’hésite pas à t’inscrire aux castings que tu sois débutant.e, avancé.e, classique, contempo ou hip-hop) et de personnalités toutes aussi géniales les unes que les autres.",
+            "La danse est à la Commuz ce que Bonnie est à Clyde : un indispensable ! C’est le pôle qui donne vie aux tableaux et qui en met plein la vue aux spectateurs ! Les danseurs, c’est avant tout une team pleine de talent, créative et soudée!",
         notes:
             "N'hésite pas à contacter Margaux Aloin ou Sarah Mrtn si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Danse.jpg"
