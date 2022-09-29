@@ -65,7 +65,7 @@ let information = {
     AC: {
         persona: "Acteur.rice-Chanteur.euse",
         description:
-            "Être acteur.rice-chanteur.euse, c’est incarner les personnages qui feront vivre le spectacle de la Commuz' 2022. Tu as l’âme de Jean-Paul Belmondo, Emma Stone ou même Lady Gaga ? Tu es attiré.e par la scène et tu aimes chanter, jouer et danser ? Alors le poste d’acteur.rice-chanteur.euse est fait pour toi !",
+            "Tu aimes faire du théâtre, chanter à pleins poumons, bouger ton petit corps et être sous le feu des projecteurs ? Aucun doute, tu es fait pour le poste d’Acteur/ice Chanteur/euse. En devenant AC, tu incarneras un des personnages qui donneront vie à la Commuz 2023, et tu vivras une incroyable aventure artistique et humaine. ",
         notes: "N'hésite pas à contacter Inès Battisti ou Jean Rannou si tu as la moindre question !",
         image: "/c/PersonalityTest/images/AC.jpg",
         ID : 0
@@ -82,7 +82,7 @@ let information = {
     Zikos: {
         persona: "Zikos/Musicien.nne",
         description:
-            "Qu’est-ce qu’un.e Zikos ? Le Zikos fait partie du plus gros pôle de la Commuz’ et joue dans l’orchestre aux côtés de musicien.ne.s talentueux.euses et à l’écoute ! Que tu sois concertiste de renom ou bien musicien.ne amateur.rice, tu donneras vie aux reprises et compositions originales de la Commuz’.",
+            "Es-tu fait.e pour le pôle Zikos ? Si tu joues d'un instrument de musique et que tu aimes jouer en groupe, la réponse est oui ! Le pôle Zikos, c'est tout simplement l'orchestre de la Commuz' et donc  le meilleur pôle !",
         notes:
             "N'hésite pas à contacter Paul Kaassis ou Emilie Stentz si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Zikos.jpg",
@@ -91,7 +91,7 @@ let information = {
     Decors: {
         persona: "Décorateur.rice",
         description:
-            "Viens t’aventurer au pôle décors - le pôle complètement marteau ! 🔨 Artiste à temps plein ou occasionnel, bricoleur.euse du dimanche ou technicien.ne hors-pair, passionné.e de dessin ou non, tu es le.la bienvenu.e au pôle décors tant que tu as de l’imagination et que tu veux en faire profiter les autres !",
+            "Une comédie musicale c'est cool, mais une comédie musicale qui te fait voyager et qui te transporte vers une autre époque, c'est encore mieux ! Quoi de plus idéal qu'une scène remplie de décors hyper stylés pour y parvenir ?",
         notes: "N'hésite pas à contacter Adèle Lefevre ou Chloé Mrtte si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Decors.jpg",
         ID : 3
@@ -107,7 +107,7 @@ let information = {
     Costume: {
         persona: "VP Costumes",
         description:
-            "Le pôle costume est un des piliers de la Commuz’ : sa mission est d’habiller chaque personnage en s’efforçant de retranscrire le caractère et le rôle de chaque acteur.rice, tout en véhiculant les idées et le ton de la pièce.",
+            "Le pôle costume est un pilier de la Commuz’ : il doit réaliser une centaine de costumes pour habiller les acteurs-chanteurs, les choristes, les danseurs, tout en s'inscrivant dans le thème, l'ambiance musicale et l'époque de la pièce.",
         notes:
             "N'hésite pas à contacter Imane Demnati ou Jean Turck si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Costume.jpg",
@@ -125,7 +125,7 @@ let information = {
     Composition: {
         persona: "VP Composition",
         description:
-            "Être compositeur.rice, c’est créer les musiques qui seront jouées par les musicien.nne.s à la Commuz. Pas besoin d’être un Vivaldi pour composer, il suffit d’être créatif.ve. Tu pourras alors poser ta patte d’artiste sur ce magnifique projet qu’est la Commuz' et donner forme et musicalité au scénario.",
+            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
         notes:
             "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Compo.jpg",
@@ -165,7 +165,13 @@ export default {
       postes : information
     };
     
+  },
+  head() {
+    return {
+      title: "La Commuz' - Castings 2023",
+    }
   }
+  
 };  
 </script>
 

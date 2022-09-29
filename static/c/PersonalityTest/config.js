@@ -2,12 +2,12 @@ const quiz = {
     user: "",
     questions: [
         {
-            text: "Quand tu regardes un spectacle, qu'est ce qui t'attire le plus ?",
+            text: "Quand tu vois tes amis, tu proposes :",
             responses: [
-                { text: "L'imaginer, l'écrire", type: ["Composition","Danse"] },
-                { text: "Le mettre en place, le monter", type: ["Decors","Costume"] },
-                { text: "Le gérer, l'animer", type: ["Lumiere","Son","Amour"] },
-                { text: "Le faire vivre", type: ["AC","Zikos","Choriste"] }
+                { text: "Un Netflix & chill : écran 4K, popcorn XL", type: ["Composition","Amour"] },
+                { text: "Un musée ou concert : l'art réuni les gens", type: ["Decors","Costume","Zikos"] },
+                { text: "Un plan dîner-ciné : le porte-monnaie se vide, mais tes yeux brillent", type: ["Lumiere","Son"] },
+                { text: "L'embuscade : un bar et on verra bien la suite", type: ["AC","Choriste","Danse"] }
             ]
         },
         {
@@ -35,6 +35,15 @@ const quiz = {
                 { text: "Le retardataire : tu manques de louper le train de peu", type: ["Son","Lumiere","Zikos"] },
                 { text: "L'influenceur : story à la piscine de 10h à 22h", type: [ "AC","Choriste","Danse"] },
                 { text: "L'hyperactif : tu veux tout visiter, tout explorer", type: ["Decors","Costume"] }
+            ]
+        },
+        {
+            text: "D'ailleurs ces vacances (d'été), elles se passent...",
+            responses: [
+                { text: "En montagne : Profiter de l'air frais et du paysage", type: ["Danse","Decors","Composition"] },
+                { text: "Dans une capitale étrangère : Découvrir un pays et sa vie nocturne ", type: ["Son","Lumiere","Choriste",] },
+                { text: "À la plage : Rien de mieux que le sable chaud en été", type: ["AC","Costume"] },
+                { text: "Dans ta ville : toi et tes potes, on change pas une équipe qui gagne", type: ["Amour","Zikos"] }
             ]
         },
         {
