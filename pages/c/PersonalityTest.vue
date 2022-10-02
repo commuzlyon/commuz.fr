@@ -148,7 +148,7 @@ let information = {
             "N'hésite pas à contacter Margaux Aloin ou Sarah Mrtn si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Danse.jpg",
         ID : 9
-    }
+    },
     Partenariat: {
         persona: "Danseur.euse",
         description:
@@ -156,7 +156,7 @@ let information = {
         notes:
             "N'hésite pas à contacter Benjamin Denise si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Partenariat.jpg",
-        ID : 9
+        ID : 10
     }
 }
 
