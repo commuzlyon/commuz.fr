@@ -150,7 +150,7 @@ let information = {
         ID : 9
     },
     Partenariat: {
-        persona: "Danseur.euse",
+        persona: "Respo Partenariat",
         description:
             "Le VP Partenariat à la Commuz, c'est le coup de pouce de tout le monde. ça permet de travailler avec tout le monde, de pouvoir intervenir sur des projets super variés des le début du mandat. ",
         notes:
