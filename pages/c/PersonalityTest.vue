@@ -43,6 +43,7 @@
 import Quiz from "~/static/c/PersonalityTest/components/quiz.vue";
 import Slide from "~/static/c/PersonalityTest/components/carousel-3d/Slide.vue";
 import Carousel3d from "~/static/c/PersonalityTest/components/carousel-3d/Carousel3d.vue";
+import information from  "~/static/c/PersonalityTest/config.js"
 
 let data = {
   presentation:
@@ -55,101 +56,13 @@ let data = {
     "<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d'une qualité professionnelle.</p>",
   CastingAaZ:
     "<h2>Bonne nouvelle : la Commuz' recrute !</h2>" +
-    "<p>Quelque soit ton talent ou ta passion, la Commuz' t'accueille à bras ouverts pour l'aventure 2022 !  Les castings sont ouverts à toutes et tous et se dérouleront courant novembre.</p>" +
+    "<p>Quelque soit ton talent ou ta passion, la Commuz' t'accueille à bras ouverts pour l'aventure 2023 !  Les castings sont ouverts à toutes et tous et se dérouleront courant novembre.</p>" +
     "<p>Au programme : Danse 👯, Décors 🛠, Musique (Zikos) 🎻, VP Amour ❤️, Chant 🎤, Costumes 🪡, Acting 🎭, Son 📣, Lumière 💡,Composition 🎼 et partenariat 🤝. Fin des inscriptions le 21 Octobre à minuit !</p>" +
     "<center> <a target='_blank' rel='noopener' href='https://docs.google.com/forms/d/1ejyHhwJNPysFFgDL2GTDH7UEbBAqA1m8X102XW1IkAU/' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
 };
 
 
-let information = {
-    AC: {
-        persona: "Acteur.rice-Chanteur.euse",
-        description:
-            "Tu aimes faire du théâtre, chanter à pleins poumons, bouger ton petit corps et être sous le feu des projecteurs ? Aucun doute, tu es fait pour le poste d’Acteur/ice Chanteur/euse. En devenant AC, tu incarneras un des personnages qui donneront vie à la Commuz 2023, et tu vivras une incroyable aventure artistique et humaine. ",
-        notes: "N'hésite pas à contacter Inès Battisti ou Jean Rannou si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/AC.jpg",
-        ID : 0
-    },
-    Choriste: {
-        persona: "Choriste",
-        description:
-            "Parce que ton pommeau de douche n’est pas le seul qui mérite d’entendre ta douce voix, rejoins-nous et mets le feu pendant la prochaine comédie musicale en devenant Choriste 🎤🎶",
-        notes:
-            "N'hésite pas à contacter Antonin Delorme ou Marguerite Lafeuillade si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Choriste.jpg",
-        ID : 1
-    },
-    Zikos: {
-        persona: "Zikos/Musicien.nne",
-        description:
-            "Es-tu fait.e pour le pôle Zikos ? Si tu joues d'un instrument de musique et que tu aimes jouer en groupe, la réponse est oui ! Le pôle Zikos, c'est tout simplement l'orchestre de la Commuz' et donc  le meilleur pôle !",
-        notes:
-            "N'hésite pas à contacter Paul Kaassis ou Emilie Stentz si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Zikos.jpg",
-        ID : 2
-    },
-    Decors: {
-        persona: "Décorateur.rice",
-        description:
-            "Les choristes de la commuz’, élément essentiel de l’orchestre et soutien inestimable pour les AC, sont au nombre de quatre. Quatre jeux de cordes vocales de la plus haute qualité, dénichés au cours même des castings auxquels tu es sur le point de t’inscrire!",
-        notes: "N'hésite pas à contacter Adèle Lefevre ou Chloé Mrtte si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Decors.jpg",
-        ID : 3
-    },
-    Son: {
-        persona: "VP Son",
-        description:
-            "Que serait la Commuz sans une sonorisation digne de ce nom ? Si tu es fan de son, de beau matos et que tu souhaite faire vibrer les cœurs du publique autant que leurs fauteuils, alors le pôle son t’attend à bras ouverts ! Que tu sois débutant ou dbs(wo)man aguerri, tu as ta place ici !",
-        notes: "N'hésite pas à contacter Agustin Soux ou Clément Pacoret si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Son.jpg",
-        ID : 4
-    },
-    Costume: {
-        persona: "VP Costumes",
-        description:
-            "Le pôle costume est un pilier de la Commuz’ : il doit réaliser une centaine de costumes pour habiller les acteurs-chanteurs, les choristes, les danseurs, tout en s'inscrivant dans le thème, l'ambiance musicale et l'époque de la pièce.",
-        notes:
-            "N'hésite pas à contacter Imane Demnati ou Jean Turck si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Costume.jpg",
-        ID : 5
-    },
-    Amour: {
-        persona: "VP Amour",
-        description:
-            "Un humain a besoin en moyenne de 2500 kcal par jour. Pendant un WER ça peut monter facilement à 10 000, surtout pour les Zikos qui passent leurs journées à courir dans tous les sens !! Autant dire que sans une mécanique bien huilée pour nourrir nos petits Commuzards, le spectacle n’aurait jamais lieu.",
-        notes:
-            "N'hésite pas à contacter Aurore Granier si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Amour.jpg",
-        ID : 6
-    },
-    Composition: {
-        persona: "VP Composition",
-        description:
-            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire les musiques jouées par l'orchestre.",
-        notes:
-            "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Compo.jpg",
-        ID : 7
-    },
-    Lumiere: {
-        persona: "Respo Lumière",
-        description:
-            "La ou le Respo Lumière c’est la personne qui s’occupe de A à Z de la mise en scène lumineuse de la Commuz’.  Elle doit travailler en étroite collaboration avec les metteurs en scène et les coordinateurs artistiques pour donner une cohérence lumineuse au spectacle !",
-        notes:
-            "N'hésite pas à contacter Benjamin Denise si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Lumiere.jpg",
-        ID : 8
-    },
-    Danse: {
-        persona: "Danseur.euse",
-        description:
-            "Le pôle danse, c’est un pôle bourré de talents issus de différents parcours dans la danse (donc n’hésite pas à t’inscrire aux castings que tu sois débutant.e, avancé.e, classique, contempo ou hip-hop) et de personnalités toutes aussi géniales les unes que les autres.",
-        notes:
-            "N'hésite pas à contacter Margaux Aloin ou Sarah Mrtn si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Danse.jpg",
-        ID : 9
-    }
-}
+
 
 
 export default {

@@ -16,7 +16,7 @@ const quiz = {
                 { text: "Extraverti, sociable", type: ["Amour","AC","Choriste"] },
                 { text: "Je suis un peu dans mon monde", type: ["Decors","Composition"] },
                 { text: "Hyperactif, toujours à courir à gauche à droite", type: [ "Danse"] },
-                { text: "Je me fond dans la masse, pour créer quelque chose de plus grand", type: ["Costume","Zikos"] }
+                { text: "Je me fonds dans la masse, pour créer quelque chose de plus grand", type: ["Costume","Zikos"] }
             ]
         },
         {
@@ -109,7 +109,8 @@ const information = {
         description:
             "Tu aimes faire du théâtre, chanter à pleins poumons, bouger ton petit corps et être sous le feu des projecteurs ? Aucun doute, tu es fait pour le poste d’AC. Tu incarneras un des personnages qui donneront vie à la Commuz 2023, et tu vivras une incroyable aventure artistique et humaine.",
         notes: "N'hésite pas à contacter Inès Battisti ou Jean Rannou si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/AC.jpg"
+        image: "/c/PersonalityTest/images/AC.jpg",
+        ID : 0
     },
     Choriste: {
         persona: "Choriste",
@@ -117,37 +118,42 @@ const information = {
             "Parce que ton pommeau de douche n’est pas le seul qui mérite d’entendre ta douce voix, rejoins-nous et mets le feu pendant la prochaine comédie musicale en devenant Choriste 🎤🎶",
         notes:
             "N'hésite pas à contacter Antonin Delorme ou Marguerite Lafeuillade si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Choriste.jpg"
+        image: "/c/PersonalityTest/images/Choriste.jpg",
+        ID : 1
     },
     Zikos: {
         persona: "Zikos/Musicien.nne",
         description:
-            "Qu’est-ce qu’un.e Zikos ? Le Zikos fait partie du plus gros pôle de la Commuz’ et joue dans l’orchestre aux côtés de musicien.ne.s talentueux.euses et à l’écoute ! Que tu sois concertiste de renom ou bien musicien.ne amateur.rice, tu donneras vie aux reprises et compositions originales de la Commuz’.",
+            "Es-tu fait.e pour le pôle Zikos ? Si tu joues d'un instrument de musique et que tu aimes jouer en groupe, la réponse est oui ! Le pôle Zikos, c'est tout simplement l'orchestre de la Commuz' et donc  le meilleur pôle !",
         notes:
             "N'hésite pas à contacter Paul Kaassis ou Emilie Stentz si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Zikos.jpg"
+        image: "/c/PersonalityTest/images/Zikos.jpg",
+        ID : 2
     },
     Decors: {
         persona: "Décorateur.rice",
         description:
             "Une comédie musicale c'est cool, mais une comédie musicale qui te fait voyager et qui te transporte vers une autre époque, c'est encore mieux ! Quoi de plus idéal qu'une scène remplie de décors hyper stylés pour y parvenir ? Rejoindre le pôle Décors, c'est concevoir, réaliser et fabriquer l'ensemble des décors du spectacle. ",
         notes: "N'hésite pas à contacter Adèle Lefevre ou Chloé Mrtte si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Decors.jpg"
+        image: "/c/PersonalityTest/images/Decors.jpg",
+        ID : 3
     },
     Son: {
         persona: "VP Son",
         description:
-            "Être VP Son, c'est assurer à l'aide d'une équipe réduite la sonorisation de toute la Commuz' (week-ends de répétition et représentations), pour un orchestre, les choristes et les acteurs-chanteur.euse.s . Objectif: une sonorisation parfaite et 0 larsen !",
+            "Que serait la Commuz sans une sonorisation digne de ce nom ? Si tu es fan de son, de beau matos et que tu souhaite faire vibrer les cœurs du publique autant que leurs fauteuils, alors le pôle son t’attend à bras ouverts ! Que tu sois débutant ou dbs(wo)man aguerri, tu as ta place ici !",
         notes: "N'hésite pas à contacter Agustin Soux ou Clément Pacoret si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Son.jpg"
+        image: "/c/PersonalityTest/images/Son.jpg",
+        ID : 4
     },
     Costume: {
         persona: "VP Costumes",
         description:
-            "Le pôle costume est un des piliers de la Commuz’ : sa mission est d’habiller chaque personnage en s’efforçant de retranscrire le caractère et le rôle de chaque acteur.rice, tout en véhiculant les idées et le ton de la pièce.",
+            "Le pôle costume est un pilier de la Commuz’ : il doit réaliser une centaine de costumes pour habiller les acteurs-chanteurs, les choristes, les danseurs, tout en s'inscrivant dans le thème, l'ambiance musicale et l'époque de la pièce.",
         notes:
             "N'hésite pas à contacter Imane Demnati ou Jean Turck si tu as la moindre question !",
-            image: "/c/PersonalityTest/images/Costume.jpg"
+        image: "/c/PersonalityTest/images/Costume.jpg",
+        ID : 5
     },
     Amour: {
         persona: "VP Amour",
@@ -155,7 +161,8 @@ const information = {
             "Un humain a besoin en moyenne de 2500 kcal par jour. Pendant un WER ça peut monter facilement à 10 000, surtout pour les Zikos qui passent leurs journées à courir dans tous les sens !! Autant dire que sans une mécanique bien huilée pour nourrir nos petits Commuzards, le spectacle n’aurait jamais lieu.",
         notes:
             "N'hésite pas à contacter Aurore Granier si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Amour.jpg"
+        image: "/c/PersonalityTest/images/Amour.jpg",
+        ID : 6
     },
     Composition: {
         persona: "VP Composition",
@@ -163,23 +170,26 @@ const information = {
             "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toutes ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourras écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
         notes:
             "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Compo.jpg"
+        image: "/c/PersonalityTest/images/Compo.jpg",
+        ID : 7
     },
     Lumiere: {
         persona: "Respo Lumière",
         description:
-            "Le.la Respo Lumière est la personne qui s’occupe de A à Z de la mise en scène lumineuse de la Commuz’. Il.elle doit travailler en étroite collaboration avec les metteurs en scène et les coordinateurs artistiques pour donner une cohérence lumineuse au spectacle !",
+            "La ou le Respo Lumière c’est la personne qui s’occupe de A à Z de la mise en scène lumineuse de la Commuz’.  Elle doit travailler en étroite collaboration avec les metteurs en scène et les coordinateurs artistiques pour donner une cohérence lumineuse au spectacle !",
         notes:
             "N'hésite pas à contacter Benjamin Denise si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Lumiere.jpg"
+        image: "/c/PersonalityTest/images/Lumiere.jpg",
+        ID : 8
     },
     Danse: {
         persona: "Danseur.euse",
         description:
-            "La danse est à la Commuz ce que Bonnie est à Clyde : un indispensable ! C’est le pôle qui donne vie aux tableaux et qui en met plein la vue aux spectateurs ! Les danseurs, c’est avant tout une team pleine de talent, créative et soudée!",
+            "Le pôle danse, c’est un pôle bourré de talents issus de différents parcours dans la danse (donc n’hésite pas à t’inscrire aux castings que tu sois débutant.e, avancé.e, classique, contempo ou hip-hop) et de personnalités toutes aussi géniales les unes que les autres.",
         notes:
             "N'hésite pas à contacter Margaux Aloin ou Sarah Mrtn si tu as la moindre question !",
-        image: "/c/PersonalityTest/images/Danse.jpg"
+        image: "/c/PersonalityTest/images/Danse.jpg",
+        ID : 9
     }
 }
 
