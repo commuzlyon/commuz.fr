@@ -57,7 +57,7 @@ let data = {
     "<h2>Bonne nouvelle : la Commuz' recrute !</h2>" +
     "<p>Quelque soit ton talent ou ta passion, la Commuz' t'accueille à bras ouverts pour l'aventure 2022 !  Les castings sont ouverts à toutes et tous et se dérouleront courant novembre.</p>" +
     "<p>Au programme : Danse 👯, Décors 🛠, Musique (Zikos) 🎻, VP Amour ❤️, Chant 🎤, Costumes 🪡, Acting 🎭, Son 📣, Lumière 💡,Composition 🎼. Fin des inscriptions le 20 Octobre à minuit !</p>" +
-    "<center> <a target='_blank' rel='noopener' href='https://www.instagram.com/commuzlyon/' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
+    "<center> <a target='_blank' rel='noopener' href='https://docs.google.com/forms/d/1ejyHhwJNPysFFgDL2GTDH7UEbBAqA1m8X102XW1IkAU/' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
 };
 
 
