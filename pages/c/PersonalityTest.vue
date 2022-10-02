@@ -91,7 +91,7 @@ let information = {
     Decors: {
         persona: "Décorateur.rice",
         description:
-            "Une comédie musicale c'est cool, mais une comédie musicale qui te fait voyager et qui te transporte vers une autre époque, c'est encore mieux ! Quoi de plus idéal qu'une scène remplie de décors hyper stylés pour y parvenir ?",
+            "Les choristes de la commuz’, élément essentiel de l’orchestre et soutien inestimable pour les AC, sont au nombre de quatre. Quatre jeux de cordes vocales de la plus haute qualité, dénichés au cours même des castings auxquels tu es sur le point de t’inscrire!",
         notes: "N'hésite pas à contacter Adèle Lefevre ou Chloé Mrtte si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Decors.jpg",
         ID : 3
@@ -99,7 +99,7 @@ let information = {
     Son: {
         persona: "VP Son",
         description:
-            "Être VP Son, c'est assurer à l'aide d'une équipe réduite la sonorisation de toute la Commuz' (week-ends de répétition et représentations), pour un orchestre, les choristes et les acteurs-chanteur.euse.s . Objectif: une sonorisation parfaite et 0 larsen !",
+            "Que serait la Commuz sans une sonorisation digne de ce nom ? Si tu es fan de son, de beau matos et que tu souhaite faire vibrer les cœurs du publique autant que leurs fauteuils, alors le pôle son t’attend à bras ouverts ! Que tu sois débutant ou dbs(wo)man aguerri, tu as ta place ici !",
         notes: "N'hésite pas à contacter Agustin Soux ou Clément Pacoret si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Son.jpg",
         ID : 4
@@ -134,7 +134,7 @@ let information = {
     Lumiere: {
         persona: "Respo Lumière",
         description:
-            "Le.la Respo Lumière est la personne qui s’occupe de A à Z de la mise en scène lumineuse de la Commuz’. Il.elle doit travailler en étroite collaboration avec les metteurs en scène et les coordinateurs artistiques pour donner une cohérence lumineuse au spectacle !",
+            "La ou le Respo Lumière c’est la personne qui s’occupe de A à Z de la mise en scène lumineuse de la Commuz’.  Elle doit travailler en étroite collaboration avec les metteurs en scène et les coordinateurs artistiques pour donner une cohérence lumineuse au spectacle !",
         notes:
             "N'hésite pas à contacter Benjamin Denise si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Lumiere.jpg",
