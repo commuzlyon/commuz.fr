@@ -56,7 +56,7 @@ let data = {
   CastingAaZ:
     "<h2>Bonne nouvelle : la Commuz' recrute !</h2>" +
     "<p>Quelque soit ton talent ou ta passion, la Commuz' t'accueille à bras ouverts pour l'aventure 2022 !  Les castings sont ouverts à toutes et tous et se dérouleront courant novembre.</p>" +
-    "<p>Au programme : Danse 👯, Décors 🛠, Musique (Zikos) 🎻, VP Amour ❤️, Chant 🎤, Costumes 🪡, Acting 🎭, Son 📣, Lumière 💡,Composition 🎼. Fin des inscriptions le 20 Octobre à minuit !</p>" +
+    "<p>Au programme : Danse 👯, Décors 🛠, Musique (Zikos) 🎻, VP Amour ❤️, Chant 🎤, Costumes 🪡, Acting 🎭, Son 📣, Lumière 💡,Composition 🎼 et partenariat 🤝. Fin des inscriptions le 21 Octobre à minuit !</p>" +
     "<center> <a target='_blank' rel='noopener' href='https://docs.google.com/forms/d/1ejyHhwJNPysFFgDL2GTDH7UEbBAqA1m8X102XW1IkAU/' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
 };
 
@@ -125,7 +125,7 @@ let information = {
     Composition: {
         persona: "VP Composition",
         description:
-            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
+            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire les musiques jouées par l'orchestre.",
         notes:
             "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Compo.jpg",

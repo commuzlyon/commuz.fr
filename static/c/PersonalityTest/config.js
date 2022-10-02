@@ -31,7 +31,7 @@ const quiz = {
         {
             text: "Petites vacances entre amis, tu es ...",
             responses: [
-                { text: "L'oganisateur : tu prévois la nourriture et le budget", type: ["Amour","Composition"] },
+                { text: "L'organisateur : tu prévois la nourriture et le budget", type: ["Amour","Composition"] },
                 { text: "Le retardataire : tu manques de louper le train de peu", type: ["Son","Lumiere","Zikos"] },
                 { text: "L'influenceur : story à la piscine de 10h à 22h", type: [ "AC","Choriste","Danse"] },
                 { text: "L'hyperactif : tu veux tout visiter, tout explorer", type: ["Decors","Costume"] }
@@ -107,7 +107,7 @@ const information = {
     AC: {
         persona: "Acteur.rice-Chanteur.euse",
         description:
-            "Être acteur.rice-chanteur.euse, c’est incarner les personnages qui feront vivre le spectacle de la Commuz' 2022. Tu as l’âme de Jean-Paul Belmondo, Emma Stone ou même Lady Gaga ? Tu es attiré.e par la scène et tu aimes chanter, jouer et danser ? Alors le poste d’acteur.rice-chanteur.euse est fait pour toi !",
+            "Tu aimes faire du théâtre, chanter à pleins poumons, bouger ton petit corps et être sous le feu des projecteurs ? Aucun doute, tu es fait pour le poste d’AC. Tu incarneras un des personnages qui donneront vie à la Commuz 2023, et tu vivras une incroyable aventure artistique et humaine.",
         notes: "N'hésite pas à contacter Inès Battisti ou Jean Rannou si tu as la moindre question !",
         image: "/c/PersonalityTest/images/AC.jpg"
     },
@@ -160,7 +160,7 @@ const information = {
     Composition: {
         persona: "VP Composition",
         description:
-            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toute ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourra écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
+            "La composition à la Commuz c'est comme le cœur chez l'homme, c'est elle qui lui donne toutes ses émotions. Pour composer à la Commuz, nul besoin d'un niveau stratosphérique, il suffit de faire preuve de créativité. En tant que compositeur tu pourras écrire et imaginer les musiques jouées par l'orchestre qui en mettront plein la vue aux spectateurs.",
         notes:
             "N'hésite pas à contacter Antonin Rouffet ou Léopold Kowalski si tu as la moindre question !",
         image: "/c/PersonalityTest/images/Compo.jpg"

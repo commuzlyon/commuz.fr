@@ -37,6 +37,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   border-radius: 0.5rem;
   overflow: hidden;
   min-height: 30rem;
