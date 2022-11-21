@@ -2,7 +2,7 @@
 
 <div>
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2022.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats Thomas à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats Thomas à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
   </div>
 
   <div id="tablePartenaires">

@@ -3,7 +3,7 @@
         <div id="sponsors__text">
             <h2>Ils nous ont soutenus</h2>
             <p>Vous aussi, entrez en scène à nos côtés !</p>
-            <p>Téléchargez la <a class="inline-link" href="/Plaquette 2022.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Thomas</span></router-link></p>
+            <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Thomas</span></router-link></p>
         
         </div>
         <div id="sponsors__logos">

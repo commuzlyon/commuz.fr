@@ -23,7 +23,7 @@
     </div>
 
     <div class="quote">
-      <p>Cette comédie musicale est entièrement imaginée par nos élèves. Du scénario aux chorégraphies, en passant par l’éclairage, le son, les costumes, les paroles et musiques ; tout est parfaitement pensé et orchestré pour produire un spectacle unique et d’une qualité exceptionnelle.</p>
+      <p>Tout est parfaitement pensé et orchestré pour produire un spectacle unique et d’une qualité exceptionnelle. N’hésitez-pas à rejoindre l’aventure Commu’z en soutenant le talent de nos étuidant.e.s. Et n’oubliez-pas de venir les applaudir sur scène. Merci pour eux !</p>
       <img src="/icons/quote_open.svg" alt="Guillemets">
       <div class="quote__author">
         <img src="/images/homepage/PascalRay.jpg" alt="Photo de Pascal Ray">
