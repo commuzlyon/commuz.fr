@@ -141,6 +141,8 @@ export default {
   .quote {
     max-width: 70ch;
     position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 
     & > img {
       position: absolute;
