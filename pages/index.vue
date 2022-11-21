@@ -18,9 +18,22 @@
       <img src="/icons/quote_open.svg" alt="Guillemets">
       <div class="quote__author">
         <img src="/images/homepage/debouck.jpg" alt="Photo de Frank Debouck">
-        <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon</span>
+        <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon entre 2011 et 2021 </span>
       </div>
     </div>
+
+    <div class="quote">
+      <p>Cette comédie musicale est entièrement imaginée par nos élèves. Du scénario aux chorégraphies, en passant par l’éclairage, le son, les costumes, les paroles et musiques ; tout est parfaitementpensé et orchestré pour produire un spectacle unique et d’une qualité exceptionnelle.</p>
+      <img src="/icons/quote_open.svg" alt="Guillemets">
+      <div class="quote__author">
+        <img src="/images/homepage/PascalRay.jpg" alt="Photo de Pascal Ray">
+        <span>Pascal Ray &ndash; Directeur de l'École Centrale de Lyon depuis 2021 </span>
+      </div>
+    </div>
+
+
+
+   
   </section>
   <!-- Sponsors -->
   <sponsors></sponsors>
