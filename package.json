@@ -9,7 +9,7 @@
     "dependencies": {
         "animejs": "^3.2.1",
         "csv": "^6.0.5",
-        "nuxt": "^2.15.8",
+        "nuxt": "^3.0.0",
         "vue-carousel-3d": "^1.0.1",
         "vue-easy-lightbox": "^0.16.2"
     },
