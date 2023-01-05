@@ -23,7 +23,7 @@
     </div>
 
     <div class="quote">
-      <p>Tout est parfaitement pensé et orchestré pour produire un spectacle unique et d’une qualité exceptionnelle. N’hésitez-pas à rejoindre l’aventure Commu’z en soutenant le talent de nos étuidant.e.s. Et n’oubliez-pas de venir les applaudir sur scène. Merci pour eux !</p>
+      <p>Tout est parfaitement pensé et orchestré pour produire un spectacle unique et d'une qualité exceptionnelle. N'hésitez-pas à rejoindre l'aventure Commuz' en soutenant le talent de nos étudiant.e.s. Et n'oubliez-pas de venir les applaudir sur scène. Merci pour eux !</p>
       <img src="/icons/quote_open.svg" alt="Guillemets">
       <div class="quote__author">
         <img src="/images/homepage/PascalRay.jpg" alt="Photo de Pascal Ray">
