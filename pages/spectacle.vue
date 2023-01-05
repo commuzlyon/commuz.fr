@@ -1,8 +1,8 @@
 <template lang="html">
 <div>
   <!-- Editions de  l'année -->
-  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2022.png" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
-  
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+
     <!--
     <div id="trailer--2019">
      
@@ -13,35 +13,47 @@
   <!-- Les éditions précédentes -->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
-    <p>Déjà plus de 20 ans de représentations, de 2002 à 2021 !</p>
+    <p>Déjà plus de 20 ans de représentations, de 2002 à 2023 !</p>
     <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
     <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
   </div>
-  <pane v-for="(annee, id) in anneesPassees" :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text">
-    <template v-slot="props">
-      <div v-if="annee.galerie || annee.equipe" class="annee__links">
+
+  <div v-for="(annee, id) in anneesPassees">
+    <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text">
+    <!-- <template v-slot="props">-->
+    <!-- </template>-->
+    </pane>
+    <div v-if="annee.galerie || annee.equipe" class="annee__links" style="justify-content: center">
         <div v-if="annee.galerie" class="button-link">
           <router-link class="" :to="`/galerie/${annee.annee}`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
         </div>
         <div v-if="annee.equipe" class="button-link">
           <router-link class="" :to="`/equipe/${annee.annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
         </div>
-      </div>
-    </template>
-  </pane>
+    </div>
+  </div>
   </div>
 </template>
 
 <script>
 
 // Ici le contenu pour l'édition actuelle
-let infos = "<h2>2022 - En Memoria</h2>" +
-          "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>  "
+let infos = "<h2>2023 - ???</h2>" +
+          "<p>Tout sur la Commuz' 2023 en Février 2023 ! D'ici là suivez nos aventures sur : </p>  "+
+          ' <ul> <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li></ul>'
                   // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
 
 // Les éditions précédentes
 let anneesPassees = [
-  { annee: 2021,
+{ annee: 2022,
+    text: "<h2>2022 - En Memoria</h2>" +
+                  "<p>Mexique, 1842. Happée par la Fête des morts, la danseuse Diana prépare son spectacle, tiraillée entre la mémoire de sa mère biologique et les desseins vengeurs de sa mère adoptive. De son côté, son fiancé Rafael enquête sur la mort de l’ancien gouverneur du Vera Cruz dont le fantôme lui apparaît : un grand danger s’annonce.<br />Les ombres du passé resurgissent, de vieilles blessures se réveillent. Leurs destins s’entremêlent inextricablement. Pourront-ils empêcher cette fête de tourner au drame ?</p>",
+    bgImage: '/images/equipes/equipe--2022.jpg', 
+    image: '/images/affiches/affiche--2022.png',
+    galerie: true,
+    equipe: true
+  },
+{ annee: 2021,
     text: "<h2>2021 - Noces d'opium</h2>" +
                   "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
     bgImage: '/images/equipes/equipe--2021.jpg', 
@@ -96,7 +108,7 @@ let anneesPassees = [
           '<p>Son entourage va-t-il enfin se décider à réagir ?</p>',
     bgImage: '/images/equipes/equipe--2016.jpg',
     image: '/images/affiches/affiche--2016.jpg',
-    galerie: false,
+    galerie: true,
     equipe: true
   },
   {
@@ -116,7 +128,7 @@ let anneesPassees = [
     bgImage: '/images/equipes/equipe--2014.jpg',
     image: '/images/affiches/affiche--2014.jpg',
     galerie: false,
-    equipe: true
+    equipe: false
   },
   {
     annee: 2013,
@@ -275,7 +287,8 @@ export default {
 }
 
 .button-link {
-  margin-top: 1em;
+  margin-top: 0.5em;
+  margin-top: 0.5em;
 }
     
 #trailer--2019 {
