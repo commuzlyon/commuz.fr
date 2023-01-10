@@ -7,7 +7,7 @@
     <div id="trailer--2019">
      
     <h2>Découvrez le trailer de l'édition 2022 !</h2> 
-    <iframe id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     -->
   <!-- Les éditions précédentes -->
@@ -19,51 +19,10 @@
   </div>
 
   <div v-for="(annee, id) in anneesPassees">    
-    <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text">
+    <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text" :galerie="annee.galerie" :equipe="annee.equipe" :deezer="annee.deezer" :youtube="annee.youtube" :spotify="annee.spotify">
     <!-- <template v-slot="props">-->
     <!-- </template>-->
     </pane>
-    <div v-if="annee.galerie || annee.equipe || annee.youtube" class="annee__links" style="justify-content: center">
-        
-      <table width="50%">
-      <tr align="center">
-        <table cellspacing="0" width="50%">
-          <th>
-          <div v-if='annee.deezer != ""'>
-              <a :href="annee.deezer" @click="navigate">
-              <img src="/icons/Deezer.png" alt=""></a> 
-          </div>
-          </th>
-          <th>
-          <div v-if='annee.youtube != ""'>
-              <a :href="annee.youtube" @click="navigate">
-              <img src="/icons/Youtube.png" alt=""></a> 
-          </div>
-          </th>
-          <th>
-          <div v-if='annee.spotify != ""'>
-              <a :href="annee.spotify" @click="navigate">
-              <img src="/icons/Spotify.png" alt=""></a> 
-          </div>
-          </th>
-        </table>
-      </tr> 
-      <tr align="center">
-        <table >
-          <th>
-          <div v-if="annee.galerie" class="button-link">
-            <router-link class="" :to="`/galerie/${annee.annee}`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
-          </div>
-          </th>
-          <th>
-          <div v-if="annee.equipe" class="button-link">
-            <router-link class="" :to="`/equipe/${annee.annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
-          </div>
-          </th>
-        </table>
-      </tr>
-    </table>
-    </div>
   </div>
 </div>
 </template>
@@ -87,7 +46,7 @@ let anneesPassees = [
     equipe: true,
     deezer: 'https://www.deezer.com/fr/album/369942037',
     spotify:  'https://open.spotify.com/album/4boTthC3VNuTVeBVcmJAED?si=v-lbw3GbSfWFfbZ_HxZ_cw',
-    youtube : 'https://youtu.be/Lrsam24N3GM'
+    youtube: 'https://youtu.be/Lrsam24N3GM'
   },
 { annee: 2021,
     text: "<h2>2021 - Noces d'opium</h2>" +
@@ -98,7 +57,7 @@ let anneesPassees = [
     equipe: true,
     deezer: 'https://deezer.page.link/2WyH56nTqYPyuFBa6',
     spotify:  'https://open.spotify.com/album/75UGY5R9yFlqCxhYB91CLB?si=1hmhdxhrTnuvfKQQKoHxmg',
-    youtube : 'https://youtu.be/Ol1sHc2vqZc'
+    youtube: 'https://youtu.be/Ol1sHc2vqZc'
   },
   { annee: 2020,
     text: '<h2>Commuz 2020 - Contretemps</h2>' +
@@ -109,7 +68,7 @@ let anneesPassees = [
     equipe: true,
     deezer: '',
     spotify:  'https://open.spotify.com/album/4vHXsNBT0GHheB2SSNk7u1?si=9kWyVeiuQa63yN-LUUOQvg',
-    youtube : 'https://youtu.be/lv7gpmfUM18'
+    youtube: 'https://youtu.be/lv7gpmfUM18'
   },
   {
     annee: 2019,
@@ -121,7 +80,7 @@ let anneesPassees = [
     equipe: true,
     deezer: 'https://deezer.page.link/6Q77z1Uv5kF3MCmy6',
     spotify:  'https://open.spotify.com/album/6ymtsIOKfk6TsKiHoGssp5?si=5wNVOCC_QyeHY0TLd3JRFw',
-    youtube : 'https://youtu.be/rYEpRUDMMVY'
+    youtube: 'https://youtu.be/rYEpRUDMMVY'
   },
   {
     annee: 2018,
@@ -135,7 +94,7 @@ let anneesPassees = [
     equipe: true,
     deezer: 'https://deezer.page.link/hav7hyoD5KXgLXpGA',
     spotify:  'https://open.spotify.com/album/1s8CnJ9apfTqF5w3gVrDbB?si=0y3VMFGrQPiFahQbWjBf4w',
-    youtube : 'https://youtu.be/4Q8OuQs7RYM'
+    youtube: 'https://youtu.be/4Q8OuQs7RYM'
   },
   {
     annee: 2017,
@@ -149,7 +108,7 @@ let anneesPassees = [
     equipe: true,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnZXpNN6eE4WzZ6jlA3HFEE'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnZXpNN6eE4WzZ6jlA3HFEE'
   },
   {
     annee: 2016,
@@ -163,7 +122,7 @@ let anneesPassees = [
     equipe: true,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mll2wirTaiZAMUQpZKCY1kNt'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mll2wirTaiZAMUQpZKCY1kNt'
   },
   {
     annee: 2015,
@@ -175,7 +134,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2014,
@@ -188,7 +147,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2013,
@@ -201,7 +160,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnAZnSwPstP1z8-sIDdAkUu'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnAZnSwPstP1z8-sIDdAkUu'
   },
   {
     annee: 2012,
@@ -214,7 +173,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mlmz5oL30V_Q7nlFFfoDpHI7'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mlmz5oL30V_Q7nlFFfoDpHI7'
   },
   {
     annee: 2011,
@@ -227,7 +186,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlmWKQqIeNZ8llL4qPpt8vQj'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlmWKQqIeNZ8llL4qPpt8vQj'
   },
   {
     annee: 2010,
@@ -239,7 +198,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mln8q3O7XbEItLRd7CP6Y83b'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6Mln8q3O7XbEItLRd7CP6Y83b'
   },
   {
     annee: 2009,
@@ -252,7 +211,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MllVpKCrke2mD3UNwrZsKMY8'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MllVpKCrke2mD3UNwrZsKMY8'
   },
   {
     annee: 2008,
@@ -265,7 +224,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MllNvY9aq3IXNj3xZRAUtq2-'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MllNvY9aq3IXNj3xZRAUtq2-'
   },
   {
     annee: 2007,
@@ -278,7 +237,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnvSrpfcwxgElB15TTvdcOw'
+    youtube: 'https://www.youtube.com/playlist?list=PL6KbPcvX6MlnvSrpfcwxgElB15TTvdcOw'
   },
   {
     annee: 2006,
@@ -291,7 +250,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2005,
@@ -304,7 +263,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2004,
@@ -318,7 +277,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2003,
@@ -330,7 +289,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   },
   {
     annee: 2002,
@@ -342,7 +301,7 @@ let anneesPassees = [
     equipe: false,
     deezer: '',
     spotify:  '',
-    youtube : ''
+    youtube: ''
   }
 ]
 
@@ -403,7 +362,7 @@ export default {
     }
 }
 
-#youtube {
+#youtube{
   max-width : 100%;
 }
 
@@ -420,4 +379,10 @@ export default {
         }
     }
 }
+
+
+
+
+
+
 </style>

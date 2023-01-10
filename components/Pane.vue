@@ -1,18 +1,61 @@
 <template lang="html">
 <div :class="type">
     <div class="pane__text_container">
-      <div class="pane__text">
+      <div class="pane__text" >
         <div v-html='text'></div>
+        <div v-if="galerie || equipe || youtube" class="annee__links" style="justify-content: center" width="100%">
+          <table>
+            <tr align="center">
+              <table cellspacing="10">
+                <th>
+                <div v-if='deezer != ""'>
+                    <a :href="deezer" @click="navigate">
+                    <img src="/icons/Deezer.png" alt=""></a> 
+                </div>
+                </th>
+                <th>
+                <div v-if='youtube != ""'>
+                    <a :href="youtube" @click="navigate">
+                    <img src="/icons/Youtube.png" alt=""></a> 
+                </div>
+                </th>
+                <th>
+                <div v-if='spotify != ""'>
+                    <a :href="spotify" @click="navigate">
+                    <img src="/icons/Spotify.png" alt=""></a> 
+                </div>
+                </th>
+              </table>
+            </tr> 
+            <tr align="center">
+              <table>
+                <th>
+                <div v-if="galerie" class="button-link">
+                  <router-link class="" :to="`/galerie/${annee}`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
+                </div>
+                </th>
+                <th>
+                <div v-if="equipe" class="button-link">
+                  <router-link class="" :to="`/equipe/${annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
+                </div>
+                </th>
+              </table>
+            </tr>
+          </table>
+        </div>
       </div>
       <img v-if="type == 'pane--media'" class="pane__img" :src="image">
+      
+      
     </div>
+    
   <img v-if="bgImage != ''" class="pane__bg" :src="bgImage">
 </div>
 </template>
 
 <script>
 export default {
-  props: [ 'bgImage', 'image', 'text', 'type' ]
+  props: [ 'bgImage', 'image', 'text', 'type','galerie','equipe','deezer', 'youtube', 'spotify' ]
 }
 </script>
 
@@ -22,7 +65,7 @@ export default {
   justify-items: center;
   align-items: center;
   grid-gap: 1em;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);;
   grid-template-rows: minmax(500px, auto);
   @media only screen and (orientation: landscape) {
     grid-template-rows: 500px;
@@ -125,5 +168,10 @@ export default {
       grid-column: span 2 / -1;
     }
   }
+}
+
+.annee__links {
+  display: flex;
+  flex-direction: row;
 }
 </style>
