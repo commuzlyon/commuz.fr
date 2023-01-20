@@ -296,7 +296,7 @@ export default {
       .match__person {
         display : flex;
         flex-direction : column;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items : center;
         gap: 10px;
         img{
