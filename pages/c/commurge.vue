@@ -26,8 +26,10 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
-          <p id="counter">0</p>
           <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
+        </div>
+        <div id="chopOrNot">
+          <p> <p id="counter_no" style="color: Green">0</p> / <p id="counter_yes" style="color: Fushia">0</p> </p>
         </div>
       </div>
     </div>
@@ -161,21 +163,26 @@ let genNouvelleChope = function () {
 }
 
 // Envoie réponse positive
-let count = 0;
+let count_no = 0;
+let count_yes = 0;
 
 let sendChope = function (answer) {
-  // Incrémentation du compteur
-  count++;
-  document.getElementById('counter').innerText = count;
+
   if (canVote) {
     canVote = false;
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
         rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
+          // Incrémentation du compteur
+          count_yes++;
+          document.getElementById('counter_yes').innerText = count_yes;
       }
       else {
         rainingParticles(["🤮", "💩"])
+        // Incrémentation du compteur
+        count_no++;
+        document.getElementById('counter_no').innerText = count_no;
       }
 
       let chopeA = document.getElementById('chopeA__name').innerHTML;
