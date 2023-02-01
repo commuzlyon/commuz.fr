@@ -29,12 +29,12 @@
           <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
-          <p> <p id="counter_no" style="color: Green">0</p> / <p id="counter_yes" style="color: Fushia">0</p> </p>
+          <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
         </div>
       </div>
     </div>
     <div id="commurge__home">
-      <img class="commurge__image" id="speedy" src="/c/commurge/speedy-gonzales.png" alt="Speedy Gonzales">
+      <img class="commurge__image" id="speedy" src="/c/commurge/thomas-the-train.png" alt="Thomas the Train">
       <img class="commurge__image" id="hands" src="/c/commurge/iloveyou.gif" alt="Hands in Heart">
       <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="Colombe">
       <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">¡ Hola Sexy !</button>
