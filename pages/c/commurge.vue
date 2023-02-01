@@ -28,6 +28,9 @@
           <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
           <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
         </div>
+        <div id="counter">
+          Compteur : {{counter}}
+        </div>
       </div>
     </div>
     <div id="commurge__home">
@@ -161,7 +164,10 @@ let genNouvelleChope = function () {
 }
 
 // Envoie réponse positive
+var counter = 0;
+
 let sendChope = function (answer) {
+  counter ++;
   if (canVote) {
     canVote = false;
     if(['yes', 'no'].includes(answer)) {
