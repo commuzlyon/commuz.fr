@@ -26,10 +26,8 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
+          <p id="counter">0</p>
           <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
-        </div>
-        <div id="counter">
-          Compteur : {{counter}}
         </div>
       </div>
     </div>
@@ -63,7 +61,6 @@ let hashFunction = function (v, a,b,t) {
 
   return hash;
 }
-
 
 // Fait apparaitre les propositions de choppes.
 let openOverlay = function () {
@@ -164,10 +161,12 @@ let genNouvelleChope = function () {
 }
 
 // Envoie réponse positive
-var counter = 0;
+let count = 0;
 
 let sendChope = function (answer) {
-  counter ++;
+  // Incrémentation du compteur
+  count++;
+  document.getElementById('counter').innerText = count;
   if (canVote) {
     canVote = false;
     if(['yes', 'no'].includes(answer)) {
