@@ -1,6 +1,6 @@
 <template lang="html">
-<div style="overflow-y: hidden;">
-  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>
+<div style="overflow-y: hidden;"> 
+  <!--  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>-->
   
   <div id="commurge__container">
     <div id="overlay_chope">
@@ -232,9 +232,9 @@ export default {
     .then((response) => response.text())
     .then(csv => csv.split('\n'))
     .then(t => {t.forEach(e => commuzards.push(e.split(';')))})
-    let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
-    let i = Math.floor(Math.random() * Math.floor(chansons.length));
-    document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`;
+    //let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
+    //let i = Math.floor(Math.random() * Math.floor(chansons.length));
+    //document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`;
     anime({
       targets : '#show_chope',
       autoplay: true,

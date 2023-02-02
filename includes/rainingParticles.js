@@ -1,7 +1,7 @@
 export default function rainingParticles(particles) {
     // adaptée de http://xahlee.info/js/js_raining_particles.html
 
-    const num_of_particles = 50;  // Nombre de particules
+    const num_of_particles = 30;  // Nombre de particules
     const driftX = 50;          // Déplacement vertical
     const gravity = 30;        // Dpalcement horizontal
     const update_speed = 100;
