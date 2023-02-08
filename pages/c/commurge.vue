@@ -3,9 +3,6 @@
   <!--  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>-->
   
   <div id="commurge__container">
-    <div id="commurge_newbackground" 
-        v-bind:style="{ opacity: counter_gen / 10 }"
-        v-bind:class="{ 'new_background': counter_gen > 0 }">
     <div id="overlay_chope">
       <img id="love_loader" src="/c/commurge/wink.gif">
       <div id="match">
@@ -42,7 +39,7 @@
       <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="Colombe">
       <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">¡ Hola Sexy !</button>
     </div>
-    </div>
+    
   </div>
 </div>
 </template>
@@ -168,7 +165,6 @@ let genNouvelleChope = function () {
 // Envoie réponse positive
 let count_no = 0;
 let count_yes = 0;
-let count_gen = 0;
 
 let sendChope = function (answer) {
 
@@ -181,16 +177,12 @@ let sendChope = function (answer) {
           // Incrémentation du compteur
           count_yes++;
           document.getElementById('counter_yes').innerText = count_yes;
-          count_gen++
-          document.getElementById('counter_gen').innerText = count_gen;
       }
       else {
         rainingParticles(["🤮", "💩"])
         // Incrémentation du compteur
         count_no++;
         document.getElementById('counter_no').innerText = count_no;
-        count_gen++
-        document.getElementById('counter_gen').innerText = count_gen;
       }
 
       let chopeA = document.getElementById('chopeA__name').innerHTML;
@@ -368,15 +360,6 @@ export default {
     background-color: #480ca8;
     background-image: url('/c/commurge/stars_bg.gif');
     background-repeat: repeat;
-
-    .new_background{
-      height: 100vh;
-      width: 100%;
-      align-items: center;
-      justify-items: center;
-      background-image: url('/c/commurge/tchou tchou.jpg');
-      transition: new_background 1s linear;
-    }
 
     #commurge__home {
       padding : 20px;
