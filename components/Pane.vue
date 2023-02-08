@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  props: [ 'bgImage', 'image', 'text', 'type','galerie','equipe','deezer', 'youtube', 'spotify' ]
+  props: [ 'bgImage', 'image', 'text', 'type','galerie','equipe','deezer', 'youtube', 'spotify','annee' ]
 }
 </script>
 

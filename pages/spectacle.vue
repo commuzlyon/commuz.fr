@@ -19,7 +19,7 @@
   </div>
 
   <div v-for="(annee, id) in anneesPassees">    
-    <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text" :galerie="annee.galerie" :equipe="annee.equipe" :deezer="annee.deezer" :youtube="annee.youtube" :spotify="annee.spotify">
+    <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image" :text="annee.text" :galerie="annee.galerie" :equipe="annee.equipe" :deezer="annee.deezer" :youtube="annee.youtube" :spotify="annee.spotify" :annee="annee.annee">
     <!-- <template v-slot="props">-->
     <!-- </template>-->
     </pane>
