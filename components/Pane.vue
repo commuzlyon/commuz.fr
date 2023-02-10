@@ -1,6 +1,7 @@
 <template lang="html">
 <div :class="type">
     <div class="pane__text_container">
+      <img v-if="type == 'pane--media-left'" class="pane__img" :src="image">
       <div class="pane__text" >
         <div v-html='text'></div>
         <div v-if="galerie || equipe || youtube" class="annee__links" style="justify-content: center" width="100%">
@@ -55,12 +56,12 @@
 
 <script>
 export default {
-  props: [ 'bgImage', 'image', 'text', 'type','galerie','equipe','deezer', 'youtube', 'spotify','annee' ]
+  props: [ 'bgImage', 'image','text', 'type','galerie','equipe','deezer', 'youtube', 'spotify','annee' ]
 }
 </script>
 
 <style lang="scss">
-.pane--media, .pane--right, .pane--left {
+.pane--media, .pane--right, .pane--left, .pane--media-left {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -90,11 +91,12 @@ export default {
 }
 
 
-.pane--media {
+.pane--media, .pane--media-left {
   .pane__img {
     height: auto;
     max-height: 400px;
     margin: 2em;
+    max-width: min(100%, 600px);
   }
 
   .pane__text_container {
@@ -116,6 +118,9 @@ export default {
   }
 }
 
+.pane--media-left{
+  background: linear-gradient(100deg,#621837,#47193b 40%);
+}
 
 .pane--left, .pane--right {
   grid-row-start: 1;
