@@ -3,13 +3,12 @@
   <!-- Editions de  l'année -->
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
 
-    <!--
     <div id="trailer--2019">
      
-    <h2>Découvrez le trailer de l'édition 2022 !</h2> 
-    <iframe id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/P2c3stcFeZo" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Découvrez le pré-trailer de l'édition 2023 !</h2> 
+    <iframe id="youtube" width="560" height="315" src="https://youtu.be/q2omqIBKX_k" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    -->
+
   <!-- Les éditions précédentes -->
   <div id="precedentes">
     <h2>Éditions précédentes</h2>
