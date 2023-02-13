@@ -16,7 +16,7 @@
     <!-- Trailer -->
     <div style="text-align:center; margin:2em">
       <h1>Trailer de l'édition 2023 !</h1> 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <!-- Presentation des personnages -->
     <div style="text-align:center; margin:2em">
