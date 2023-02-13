@@ -6,7 +6,7 @@
     <div id="trailer--2019">
      
     <h2>Découvrez le pré-trailer de l'édition 2023 !</h2> 
-    <iframe id="youtube" width="560" height="315" src="https://youtu.be/embed/q2omqIBKX_k" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/q2omqIBKX_k" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
   <!-- Les éditions précédentes -->
