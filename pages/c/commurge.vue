@@ -211,6 +211,34 @@ let sendChope = function (answer) {
           }
         })
         .catch(() => alert("Erreur 😭"))
+
+      //Ajout d'un deuxième vote
+      if(answer == "yes"){
+        count_yes++;
+        document.getElementById('counter_yes').innerText = count_yes;
+        fetch('https://commurge.alwaysdata.net/vote', {
+              headers: {
+                  "Content-Type": 'application/json',
+              },
+              method: 'POST',
+              body: JSON.stringify({
+                validay: answer,
+                chopeA: chopeA,
+                chopeB: chopeB,
+                timestamp :  timestamp
+                // hash : hashFunction(answer, chopeA, chopeB, timestamp)  
+              })
+            })
+          .then(res => {
+            if(res.ok){
+              genNouvelleChope()
+            }
+            else {
+              alert("Erreur 😿")
+            }
+          })
+          .catch(() => alert("Erreur 😭"))
+        }
       
     }
   }
