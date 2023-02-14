@@ -169,7 +169,7 @@ let count_yes = 0;
 let sendChope = function (answer) {
 
   if (canVote) {
-    canVote = false;
+    //canVote = false;
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -183,6 +183,7 @@ let sendChope = function (answer) {
         // Incrémentation du compteur
         count_no++;
         document.getElementById('counter_no').innerText = count_no;
+        canVote = false;
       }
 
       let chopeA = document.getElementById('chopeA__name').innerHTML;
