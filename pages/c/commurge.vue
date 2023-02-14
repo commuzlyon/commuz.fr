@@ -26,7 +26,7 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
-          <p @click="sendChope('yes'); sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
+          <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
@@ -169,7 +169,7 @@ let count_yes = 0;
 let sendChope = function (answer) {
 
   if (canVote) {
-    //canVote = false;
+    canVote = false;
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -183,7 +183,6 @@ let sendChope = function (answer) {
         // Incrémentation du compteur
         count_no++;
         document.getElementById('counter_no').innerText = count_no;
-        canVote = false;
       }
 
       let chopeA = document.getElementById('chopeA__name').innerHTML;
