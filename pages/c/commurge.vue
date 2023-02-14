@@ -229,15 +229,6 @@ let sendChope = function (answer) {
                 // hash : hashFunction(answer, chopeA, chopeB, timestamp)  
               })
             })
-          .then(res => {
-            if(res.ok){
-              genNouvelleChope()
-            }
-            else {
-              alert("Erreur 😿")
-            }
-          })
-          .catch(() => alert("Erreur 😭"))
         }
       
     }
