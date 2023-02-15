@@ -45,8 +45,8 @@
 let data = {
   presentation:
     "<h2>La Commuz', c'est quoi ?</h2>" +
-    "<p>La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de 80 étudiants de l'École Centrale de Lyon et de emlyon business school.</p>" +
-    "<p>La Commuz’ réunit chaque année plus de 1000 spectateurs lors des soirées de spectacle au mois de mars. </p>",
+    "<p>La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon.</p>" +
+    "<p>La Commuz’ réunit chaque année plus de 1200 spectateurs lors des soirées de spectacle au mois de mars. </p>",
   SpectacleAaZ:
     "<h2>Un spectacle imaginé de A à Z</h2>" +
     "<p>De l'élaboration du scénario en passant par les chorégraphies, la composition et l'orchestration des musiques, la mise en place de l'éclairage et du son, la création des costumes et des décors&hellip;</p>" +
