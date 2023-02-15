@@ -1,11 +1,12 @@
 <template lang="html">
 <div>
   <!-- Editions de  l'année -->
-  <pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>
+  <pane id="infos" type="pane--media" image="/images/affiches/affiche--2023.png" bgImage="/images/equipes/equipe--2023.jpg" :text="infos"></pane>
+  <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->
 
     <div id="trailer--2019">
      
-    <h2>Découvrez le pré-trailer de l'édition 2023 !</h2> 
+    <h2>Découvrez le trailer de Hymne à la Voie !</h2> 
     <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/q2omqIBKX_k" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
@@ -29,10 +30,12 @@
 <script>
 
 // Ici le contenu pour l'édition actuelle
-let infos = "<h2>2023 - ???</h2>" +
-          "<p>Tout sur la Commuz' 2023 en Février 2023 ! D'ici là suivez nos aventures sur : </p>  "+
-          ' <ul> <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li></ul>'
-                  // '<p>Pour toute question relative aux billets, adressez-vous à la page <a style="color: var(--pink);" class="inline-link" target="_blank" href="https://www.facebook.com/commuzlyon">Facebook</a>.</p>'
+let infos = "<h2>2023 - Hymne à la Voie</h2>" +
+        "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>" +
+        '<p>Pour en savoir plus concernant l’édition 2023 rendez-vous <a style="color: var(--pink);" class="inline-link" target="_blank" href="/commuz2023">sur cette page</a>.</p>'
+         // "<p>Tout sur la Commuz' 2023 en Février 2023 ! D'ici là suivez nos aventures sur : </p>  "+
+         // ' <ul> <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li></ul>'
+                
 
 // Les éditions précédentes
 let anneesPassees = [

@@ -3,10 +3,13 @@
   <div>
     <!-- Description -->
     <div id="home__hero">
-      <img id="home__hero__logo"  src="/c/PersonalityTest/images/Watermark-Casting.png" alt="Commuz">
+      <img id="home__hero__logo"  src="/Commuz2023/images/watermark-2023.png" alt="Commuz">
       <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
       <!-- Image d'en tête -->
-      <img id="home__hero_bg" src="/c/PersonalityTest/images/Poster-Casting.jpg">
+      <picture id="home__hero_bg">
+      <source  id="home__hero_bg" media="(min-width:560px)" srcset="/Commuz2023/images/poster-commuz2023.png">
+      <img  id="home__hero_bg" src= "/Commuz2023/images/poster-mobile-commuz2023.png">
+      </picture>
     </div>
     <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2023/images/famille.png'" :text="item.text1"></pane>
     <pane id="infos2" :type="'pane--media'" :image="'/Commuz2023/images/ecrivains.png'" :text="item.text2"></pane>
@@ -16,7 +19,7 @@
     <!-- Trailer -->
     <div style="text-align:center; margin:2em">
       <h1>Trailer de l'édition 2023 !</h1> 
-      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/P2c3stcFeZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <!-- Presentation des personnages -->
     <div style="text-align:center; margin:2em">
@@ -24,7 +27,7 @@
     </div>
     <div>
       <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
-                :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="600">
+                :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="500" >
               <no-ssr>
           <slide v-for="poste in postes" :index="poste.ID">
             <!--<h2 class="title"> {{ poste.persona }}</h2>-->
@@ -49,15 +52,20 @@ import Carousel3d from "~/static/Commuz2023/components/carousel-3d/Carousel3d.vu
 
 let data = {
   text1:
-    "<h2>Lorem Ipsum</h2>" +
-    "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra ut justo eget consectetur. Etiam dictum felis non mi egestas, non molestie sem consequat. Vestibulum tempus massa nec risus aliquam rhoncus. Nullam fermentum ex eu congue porta. Proin eu ligula a erat congue iaculis. Nunc mollis blandit accumsan. Integer leo elit, tempus non dapibus a, consectetur sed sem. Morbi pretium scelerisque vestibulum. Praesent ac accumsan libero. Integer commodo eu elit vel blandit. Donec elementum pretium dui, feugiat molestie arcu dapibus et. Nulla nunc ipsum, porta varius sem sit amet, facilisis sodales libero.</p>",
+    "<h2>Synopsis</h2>" +
+    "<p align=justify >Au début du XIX siècle, l’ingénieur Robert Fawkes a la folle ambition de rallier les capitales européennes par le rail en construisant un train titanesque : le Léviathan. Ainsi est lancé en 1825 le plus grand projet jamais entrepris par l’Homme Des chantiers voient le jour partout en Europe, des ponts, des tunnels et des gares aux proportions inédites sont bâties. Seulement, les conditions de travail délétères des ouvriers conduisent à des contestations, qui s’amplifient rapidement pour devenir de véritables élans révolutionnaires, connus aujourd’hui sous le nom de Printemps de Peuples. Parmi les meneurs des insurrections socialistes, le jeune Français Thomas Ravet parvient à fédérer les groupes contestataires indépendants et crée un organisme puissant, la Confrérie Ouvrière, pour les représenter. Dès lors, l’opposition fait rage. Le Léviathan accompagne l’émergence d’une idéologie politique nouvelle : Le Libéralisme, alors que la Confrérie constitue désormais une force socialiste majeure.</p>",
   text2:
-    "<h2>Lorem Ipsum</h2>" +
-    "<p>Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  .</p>",
+    "<p align=justify>1848, alors que le combat idéologique fait rage, la Confrérie Ouvrière est accusée d’avoir voulu prendre le pouvoir par la force. La Confrérie est dissoute, le socialisme enterré. Démarre alors une véritable chasse aux sorcières des anciens leaders de l’organisation, et de Thomas Ravet en particulier.</p>"+
+    "<p align=justify>Nous sommes en 1851. Après 26 années de travaux, le Léviathan est enfin sur le point d’achever sa tournée inaugurale à destination de la Grande Exposition Universelle des Travaux de l’Industrie à Londres. La Confrérie et les évènements de 1848 se font tranquillement oublier, et les passagers profitent des joies du voyage. Mais désormais capable de relier Moscou à Londres, le Léviathan cristallise de nouveau les tensions entre deux mondes. Et dans l’ombre, il se murmure que la Confrérie serait de retour. </p>",
   text3:
-    "<h2>Lorem Ipsum</h2>" +
-    "<p>Vivamus a orci placerat, ultrices mi quis, condimentum est. Aliquam a augue eu sapien consectetur interdum. Praesent quis turpis sit amet quam facilisis fermentum. Praesent vestibulum auctor varius. Suspendisse eget ullamcorper tellus, eget pulvinar neque. Maecenas pellentesque tellus a urna hendrerit, non dignissim ante lobortis. Maecenas quis ligula et nibh consectetur tempor. Duis sodales ut dui pulvinar dignissim. Mauris tempor placerat enim, et venenatis nibh iaculis ac. Cras sit amet libero at neque condimentum luctus. Nam interdum nibh quis purus ultricies, in vestibulum odio semper. Etiam pretium velit vitae sapien porta, convallis pharetra mi ultricies. Proin ornare quis mauris id euismod.</p>" +
-    "<center> <a target='_blank' rel='noopener' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
+    "<h2>Informations pratiques</h2>" +
+    "<p>La Commuz' vous invite à nouveau à voyager les 3-4-5 mars !</p>"+
+    "<p> <U>Adresse :</U> Théâtre Astrée, 6 Avenue Gaston Berger, 69100 Villeurbanne (accessible en tramway)</p>"+
+    "<p> <U> Horaire d'ouverture des portes </U> : </p>"+
+    "<ul><li> Vendredi : 19h </li> <li> Samedi : 19h </li> <li> Dimanche : 17h</li> </ul>" +
+    "<p> Le spectacle commence 30 minutes après l'ouverture des portes.</p>"+
+    "<center> <p> Ouverture de la billetterie générale le <strong style='color: var(--pink);'> 21 Février !</strong></p> "
+    //"<center> <a target='_blank' rel='noopener' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
 };
 
 
@@ -65,7 +73,7 @@ let information = {
     Robert: {
         persona: "Robert Fawkes",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Chers amis ! l’époque qui s’ouvre est celle du Libéralisme, de la Paix, et du triomphe de la Science. J’ai initié le plus grand chantier de l’Histoire pour bâtir le Léviathan.",
         notes: "",
         image: "/Commuz2023/images/Robert.png",
         ID : 0
@@ -73,7 +81,7 @@ let information = {
     Elisabeth: {
         persona: "Elisabeth Fawkes",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Ah non, votre réplique ne marche pas ! Je dois absolument finir cette maudite pièce avant l’arrivée à Londres. Mais je crois que ma plume m’abandonne…",
         notes: "",
         image: "/Commuz2023/images/Elisabeth.png",
         ID : 1
@@ -81,7 +89,7 @@ let information = {
     Daisy: {
         persona: "Daisy Fawkes",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Thomas, La Confrérie Ouvrière…  c’est de l’histoire ancienne. Moi aussi, je veux plaider la cause du socialisme, mais je le ferai à ma manière.",
         notes: "",
         image: "/Commuz2023/images/Daisy.png",
         ID : 2
@@ -89,7 +97,7 @@ let information = {
     Alex: {
         persona: "Alex",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Moi, je vis sur les planches, pas ailleurs ! Comédien vedette de la troupe d’Elisabeth, je lui suis tellement reconnaissant pour tout ce qu’elle m’a appris.",
         notes: "",
         image: "/Commuz2023/images/Alex.png",
         ID : 3
@@ -97,7 +105,7 @@ let information = {
     Thomas: {
         persona: "Thomas",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Confrères ! Amis ! Rejoignez-nous dans la lutte. La Confrérie Ouvrière n’est pas morte. Nous rétablirons la vérité.",
         notes: "",
         image: "/Commuz2023/images/Thomas.png",
         ID : 4
@@ -105,13 +113,19 @@ let information = {
     Helene: {
         persona: "Hélène",
         description:
-            "Donec ac ex in erat aliquam volutpat sit amet vehicula nisi. Cras imperdiet in nisi pretium fringilla. Integer id condimentum leo. Phasellus erat velit, egestas vitae erat quis, fermentum suscipit nunc. Curabitur tempor lorem a viverra auctor.  ",
+            "Alors c’est vrai ? J’ai gagné ma place dans le Léviathan ! Je ne réalise pas encore, mais je sens que ça va être exceptionnel. Quelle joie de voyager hors de Paris !",
         notes: "",
         image: "/Commuz2023/images/Helene.png",
         ID : 5
     }
 }
 
+let background = "/Commuz2023/images/poster-commuz2023.png"
+
+//if(screen.width < 1020) {
+//  background = "/Commuz2023/images/poster-mobile-commuz2023.png";}
+//else{ 
+//  background= "/Commuz2023/images/Helene.png"}
 
 export default {
   name: "App",
@@ -122,7 +136,8 @@ export default {
   data: function () {
     return {
       item : data,
-      postes : information
+      postes : information,
+      bgImg : background
     };
     
   },
@@ -169,7 +184,7 @@ body {
   @media (orientation: landscape) {
     height: 100vh;
   }
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr auto 1fr;
@@ -179,9 +194,9 @@ body {
   #home__hero__logo {
     grid-area: 2 / 1 / 3 / -1;
     z-index: 1;
-    width: 75%;
+    width: 95%;
     @media (min-width: 992px) {
-      width: 50%;
+      width: 75%;
     }
   }
 
