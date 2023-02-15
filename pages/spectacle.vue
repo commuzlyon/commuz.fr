@@ -7,7 +7,7 @@
     <div id="trailer--2019">
      
     <h2>Découvrez le trailer de Hymne à la Voie !</h2> 
-    <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/q2omqIBKX_k" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY" title="youtubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
   <!-- Les éditions précédentes -->
