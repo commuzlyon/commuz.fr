@@ -222,7 +222,7 @@ let equipe = {
     // },
     {
       role: 'Communication',
-      nom: 'Tristan ¨Petit',
+      nom: 'Tristan Petit',
       photo: 'Bliss.png'
     },
     {
