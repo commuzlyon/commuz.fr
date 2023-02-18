@@ -566,7 +566,7 @@ let equipe = {
     },
     {
       role: 'Costumière',
-      nom: 'Laura CHevaillier',
+      nom: 'Laura Chevaillier',
       photo: 'Laura.png'
     },
     {
