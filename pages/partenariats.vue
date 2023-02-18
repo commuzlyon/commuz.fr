@@ -2,7 +2,7 @@
 
 <div>
   <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez notre responsable partenariats Thomas à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
   </div>
 
   <div id="tablePartenaires">
@@ -29,13 +29,20 @@
 
 <script>
 let respoPartenariats = {
-  respo3: {
-    prenom: "Thomas",
-    nom: "Houziel",
-    telephone: "06 62 96 67 92",
+  respo1: {
+    prenom: "Aleksandra",
+    nom: "Krivokapic",
+    telephone: "07 63 14 07 77",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/Thomas.jpg",
+    image: "/images/Partenaires/KS.png",
   },
+  respo2: {
+    prenom: "Paul-Etienne",
+    nom: "Clément",
+    telephone: "",
+    mail: "commuzlyon@gmail.com",
+    image: "/images/Partenaires/PE.png",
+  }
 };
 
 let data = {};
@@ -61,7 +68,7 @@ export default {
   img {
     margin-right: 1em;
     height: 281px;
-    width: 200px;
+    width: 281px; //200px;
   }
 }
 
