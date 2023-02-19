@@ -29,7 +29,7 @@
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
-          <p @click="sendSuperChope()" :class="ClassSuperChope" id="send_super_chope">🤩</p>
+          <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
         </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
@@ -180,8 +180,11 @@ let sendChope = function (answer) {
 
   if (canVote) {
     canVote = false;
+    //At each vote we actualise the count_super_chope and we add the emoji if it is useable !
     count_super_chope ++;
-    document.getElementById('counter_super_chope').innerText = count_super_chope;
+    if(count_super_chope > 2){
+      document.getElementById('super_chope').innerText = "🤩";
+    }
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -231,8 +234,10 @@ let sendChope = function (answer) {
 let sendSuperChope = function () {
   if (canVote && (count_super_chope > 2)) {
     canVote = false;
+    //On actualise count_super_chope et on enlève l'emoji
     count_super_chope = 0;
-    document.getElementById('counter_super_chope').innerText = count_super_chope;
+    document.getElementById('super_chope').innerText = " ";
+
     rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
     // On boucle 2 fois pour envoyer 2 votes
     for(let i=0; i<2; i++){
@@ -287,16 +292,6 @@ export default {
     meta: [
        { name: 'robots', content: 'noindex' },
     ],
-  },
-  computed: {
-    ClassSuperChope() {
-      if(this.count_super_chope < 2){
-        return 'answer_chope_disabled'
-      }
-      else{
-        return 'answer_chope'
-      }
-    }
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope },
   mounted: async function () {
