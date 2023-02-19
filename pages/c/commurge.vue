@@ -64,10 +64,14 @@ let hashFunction = function (v, a,b,t) {
   return hash;
 }
 
+//We define the status of the Overlay
+let OverlayStatus = False;
+
 // Fait apparaitre les propositions de choppes.
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope');
   let homeElt = document.getElementById('commurge__home');
+  OverlayStatus = True;
 
   // Timeline : voir documentation anime.js
   let chopeTimeline = anime.timeline();
@@ -217,10 +221,12 @@ let sendChope = function (answer) {
 }
 
 let handleKeyDown = function(event) {
-      if (event.keyCode === 37 || event.key === 'ArrowLeft') {
-        this.sendChope('no');
-      } else if (event.keyCode === 39 || event.key === 'ArrowRight') {
-        this.sendChope('yes');
+      if(OverlayStatus){
+        if (event.keyCode === 37 || event.key === 'ArrowLeft') {
+          this.sendChope('no');
+        } else if (event.keyCode === 39 || event.key === 'ArrowRight') {
+          this.sendChope('yes');
+        }
       }
     }
 
