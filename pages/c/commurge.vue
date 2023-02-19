@@ -25,9 +25,11 @@
           </div>
         </div>
         <div id="chopOrNot">
-          <p @click="sendChope('no')" @keyup.left="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
-          <p @click="sendChope('yes')" @keyup.right="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
+          <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
+          <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
+        <input @keyup.left="sendChope('no')"/>
+        <input @keyup.right="sendChope('yes')" />
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
         </div>
