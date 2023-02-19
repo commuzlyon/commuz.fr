@@ -33,7 +33,6 @@
         </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
-          <p id="counter_super_chope" style="color: #00FF00">0</p>
         </div>
       </div>
     </div>
@@ -411,7 +410,7 @@ export default {
       cursor: pointer;
       }
 
-      #send_super_chope {
+      #super_chope {
       cursor: pointer;
       }
 
