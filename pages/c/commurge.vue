@@ -29,7 +29,7 @@
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
-          <p @click="sendSuperChope()" :class="['answer_chope', { 'answer_chope--disabled': isButtonDisabled }]" id="send_super_chope">🤩</p>
+          <p @click="sendSuperChope()" :class="['answer_chope', isButtonDisabled ? 'answer_chope--disabled' : '']" id="send_super_chope">🤩</p>
         </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
@@ -287,7 +287,7 @@ export default {
   },
   computed: {
     isButtonDisabled() {
-      return this.count_super_chope < 20;
+      return this.count_super_chope < 2;
     }
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown },
@@ -407,6 +407,11 @@ export default {
       #send_no_chope {
       cursor: pointer;
       }
+
+      #send_super_chope{
+        cursor: pointer;
+      }
+
     }
   }
   .answer_chope--disabled {
