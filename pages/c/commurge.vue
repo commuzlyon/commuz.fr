@@ -3,7 +3,7 @@
   <!--  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>-->
   
   <div id="commurge__container">
-    <div @keyup.left="sendChope('no')"  @keyup.right="sendChope('yes')"  id="overlay_chope">
+    <div id="overlay_chope">
       <img id="love_loader" src="/c/commurge/wink.gif">
       <div id="match">
         <div id="match__pictures">
@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-        <div id="chopOrNot">
+        <div id="chopOrNot" @keydown="handleKeyDown">
           <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
@@ -216,6 +216,14 @@ let sendChope = function (answer) {
   
 }
 
+let handleKeyDown = function(event) {
+      if (event.keyCode === 37 || event.key === 'ArrowLeft') {
+        this.sendChope('no');
+      } else if (event.keyCode === 39 || event.key === 'ArrowRight') {
+        this.sendChope('yes');
+      }
+    }
+
 export default {
   layout: 'conchiage',
    head: {
@@ -224,7 +232,7 @@ export default {
        { name: 'robots', content: 'noindex' },
     ],
   },
-  methods: { openOverlay, sendChope, rainingParticles },
+  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown },
   mounted: async function () {
     
     await fetch('https://commuz.fr/c/commurge/infos.csv')
