@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-        <div id="chopOrNot" @keydown="handleKeyDown">
+        <div id="chopOrNot">
           <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
@@ -257,7 +257,11 @@ export default {
       direction: 'alternate',
       loop: true,
       easing: 'easeInOutSine'
-    })
+    });
+    window.addEventListener('keydown', this.handleKeyDown);
+  },
+  beforeUnmount() {
+    window.removeEventListener('keydown', this.handleKeyDown);
   }
 }
 
