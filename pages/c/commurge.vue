@@ -65,13 +65,13 @@ let hashFunction = function (v, a,b,t) {
 }
 
 //We define the status of the Overlay
-let OverlayStatus = False;
+let OverlayStatus = false;
 
 // Fait apparaitre les propositions de choppes.
 let openOverlay = function () {
   let overlayChopeElt = document.getElementById('overlay_chope');
   let homeElt = document.getElementById('commurge__home');
-  OverlayStatus = True;
+  OverlayStatus = true;
 
   // Timeline : voir documentation anime.js
   let chopeTimeline = anime.timeline();
