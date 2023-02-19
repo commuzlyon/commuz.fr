@@ -229,7 +229,7 @@ let sendChope = function (answer) {
 }
 
 let sendSuperChope = function () {
-  if (canVote) {
+  if (canVote && (count_super_chope > 2)) {
     canVote = false;
     count_super_chope = 0;
     document.getElementById('counter_super_chope').innerText = count_super_chope;
@@ -255,18 +255,18 @@ let sendSuperChope = function () {
               timestamp :  timestamp
               // hash : hashFunction(answer, chopeA, chopeB, timestamp)  
             })
-          })
-        .then(res => {
-          if(res.ok){
-            genNouvelleChope()
-          }
-          else {
-            alert("Erreur 😿")
-          }
-        })
-        .catch(() => alert("Erreur 😭"))
+      })
+      .then(res => {
+        if(res.ok){
+          genNouvelleChope()
+        }
+        else {
+          alert("Erreur 😿")
+        }
+      })
+      .catch(() => alert("Erreur 😭"))
     }
-    }
+  }
 }
 
 
@@ -290,15 +290,15 @@ export default {
   },
   computed: {
     ClassSuperChope() {
-      if(this.count_super_chope<2){
-        return 'answer_chope--disabled'
+      if(this.count_super_chope < 2){
+        return 'answer_chope_disabled'
       }
       else{
         return 'answer_chope'
       }
     }
   },
-  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown },
+  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope },
   mounted: async function () {
     
     await fetch('https://commuz.fr/c/commurge/infos.csv')
@@ -422,7 +422,7 @@ export default {
 
     }
   }
-  .answer_chope--disabled {
+  .answer_chope_disabled {
   color: #c4c4c4;
   cursor: not-allowed;
   }
