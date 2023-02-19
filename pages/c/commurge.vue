@@ -29,6 +29,9 @@
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
+          <p @click="sendSuperChope()" :class="['answer_chope', { 'answer_chope--disabled': isButtonDisabled }]" id="send_super_chope">🤩</p>
+        </div>
+        <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
         </div>
       </div>
@@ -169,11 +172,14 @@ let genNouvelleChope = function () {
 // Envoie réponse positive
 let count_no = 0;
 let count_yes = 0;
+// Compter superchope
+let count_super_chope = 0;
 
 let sendChope = function (answer) {
 
   if (canVote) {
     canVote = false;
+    count_super_chope ++;
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -220,6 +226,47 @@ let sendChope = function (answer) {
   
 }
 
+let sendSuperChope = function () {
+  if (canVote) {
+    canVote = false;
+    count_super_chope = 0;
+    rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
+    // On boucle 2 fois pour envoyer 2 votes
+    for(let i=0; i<2; i++){
+      count_yes++;
+      document.getElementById('counter_yes').innerText = count_yes;
+
+      let chopeA = document.getElementById('chopeA__name').innerHTML;
+      let chopeB = document.getElementById('chopeB__name').innerHTML;
+      let timestamp = Date.now().toString();
+
+      fetch('https://commurge.alwaysdata.net/vote', {
+            headers: {
+                "Content-Type": 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify({
+              validay: answer,
+              chopeA: chopeA,
+              chopeB: chopeB,
+              timestamp :  timestamp
+              // hash : hashFunction(answer, chopeA, chopeB, timestamp)  
+            })
+          })
+        .then(res => {
+          if(res.ok){
+            genNouvelleChope()
+          }
+          else {
+            alert("Erreur 😿")
+          }
+        })
+        .catch(() => alert("Erreur 😭"))
+    }
+    }
+}
+
+
 let handleKeyDown = function(event) {
       if(OverlayStatus){
         if (event.keyCode === 37 || event.key === 'ArrowLeft') {
@@ -237,6 +284,11 @@ export default {
     meta: [
        { name: 'robots', content: 'noindex' },
     ],
+  },
+  computed: {
+    isButtonDisabled() {
+      return this.count_super_chope < 20;
+    }
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown },
   mounted: async function () {
@@ -356,6 +408,10 @@ export default {
       cursor: pointer;
       }
     }
+  }
+  .answer_chope--disabled {
+  color: #c4c4c4;
+  cursor: not-allowed;
   }
   
   #love_loader {
