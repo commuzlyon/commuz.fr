@@ -30,7 +30,8 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendSuperChope()" :class="['answer_chope', isButtonDisabled ? 'answer_chope--disabled' : '']" id="send_super_chope">🤩</p>
-        </div>
+          <p id="counter_super_chope" style="color: #00FF00">0</p>
+      </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
         </div>
@@ -180,6 +181,7 @@ let sendChope = function (answer) {
   if (canVote) {
     canVote = false;
     count_super_chope ++;
+    document.getElementById('counter_super_chope').innerText = count_super_chope;
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -246,7 +248,7 @@ let sendSuperChope = function () {
             },
             method: 'POST',
             body: JSON.stringify({
-              validay: answer,
+              validay: "yes",
               chopeA: chopeA,
               chopeB: chopeB,
               timestamp :  timestamp
@@ -406,10 +408,6 @@ export default {
 
       #send_no_chope {
       cursor: pointer;
-      }
-
-      #send_super_chope{
-        cursor: pointer;
       }
 
     }
