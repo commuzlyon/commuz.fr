@@ -181,7 +181,7 @@ let sendChope = function (answer) {
     canVote = false;
     //At each vote we actualise the count_super_chope and we add the emoji if it is useable !
     count_super_chope ++;
-    if(count_super_chope > 2){
+    if(count_super_chope > 20){
       document.getElementById('super_chope').innerText = "🤩";
     }
     if(['yes', 'no'].includes(answer)) {
@@ -231,7 +231,7 @@ let sendChope = function (answer) {
 }
 
 let sendSuperChope = function () {
-  if (canVote && (count_super_chope > 2)) {
+  if (canVote && (count_super_chope > 20)) {
     canVote = false;
     //On actualise count_super_chope et on enlève l'emoji
     count_super_chope = 0;
