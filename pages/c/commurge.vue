@@ -29,11 +29,11 @@
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
-          <p @click="sendSuperChope()" :class="['answer_chope', isButtonDisabled ? 'answer_chope--disabled' : '']" id="send_super_chope">🤩</p>
-          <p id="counter_super_chope" style="color: #00FF00">0</p>
-      </div>
+          <p @click="sendSuperChope()" :class="ClassSuperChope" id="send_super_chope">🤩</p>
+        </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
+          <p id="counter_super_chope" style="color: #00FF00">0</p>
         </div>
       </div>
     </div>
@@ -232,6 +232,7 @@ let sendSuperChope = function () {
   if (canVote) {
     canVote = false;
     count_super_chope = 0;
+    document.getElementById('counter_super_chope').innerText = count_super_chope;
     rainingParticles(["🧡", "💜","❤️","🌼", "🌸"])
     // On boucle 2 fois pour envoyer 2 votes
     for(let i=0; i<2; i++){
@@ -288,8 +289,13 @@ export default {
     ],
   },
   computed: {
-    isButtonDisabled() {
-      return this.count_super_chope < 2;
+    ClassSuperChope() {
+      if(this.count_super_chope<2){
+        return 'answer_chope--disabled'
+      }
+      else{
+        return 'answer_chope'
+      }
     }
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown },
@@ -407,6 +413,10 @@ export default {
       }
 
       #send_no_chope {
+      cursor: pointer;
+      }
+
+      #send_super_chope {
       cursor: pointer;
       }
 
