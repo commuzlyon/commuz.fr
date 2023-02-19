@@ -26,10 +26,8 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
-          <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
-        </div>
-        <div id="chopOrNot">
           <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
+          <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
           <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
@@ -181,7 +179,7 @@ let sendChope = function (answer) {
     canVote = false;
     //At each vote we actualise the count_super_chope and we add the emoji if it is useable !
     count_super_chope ++;
-    if(count_super_chope > 20){
+    if(count_super_chope > 1){
       document.getElementById('super_chope').innerText = "🤩";
     }
     if(['yes', 'no'].includes(answer)) {
@@ -231,7 +229,7 @@ let sendChope = function (answer) {
 }
 
 let sendSuperChope = function () {
-  if (canVote && (count_super_chope > 20)) {
+  if (canVote && (count_super_chope > 1)) {
     canVote = false;
     //On actualise count_super_chope et on enlève l'emoji
     count_super_chope = 0;
