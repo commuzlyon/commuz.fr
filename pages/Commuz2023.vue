@@ -64,8 +64,7 @@ let data = {
     "<p> <U> Horaire d'ouverture des portes </U> : </p>"+
     "<ul><li> Vendredi : 19h </li> <li> Samedi : 19h </li> <li> Dimanche : 17h</li> </ul>" +
     "<p> Le spectacle commence 30 minutes après l'ouverture des portes.</p>"+
-    "<center> <p> Ouverture de la billetterie générale le <strong style='color: var(--pink);'> 21 Février !</strong></p> "
-    //"<center> <a target='_blank' rel='noopener' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
+    "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2023-billetterie-generale-2418903/fr' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
 };
 
 
