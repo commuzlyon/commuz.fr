@@ -26,7 +26,7 @@
         </div>
         <div id="chopOrNot">
           <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
-          <!-- <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>  -->
+          <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
         </div>
         <div id="chopOrNot">
@@ -178,10 +178,10 @@ let sendChope = function (answer) {
   if (canVote) {
     canVote = false;
     //At each vote we actualise the count_super_chope and we add the emoji if it is useable !
-    //count_super_chope ++;
-    //if(count_super_chope > 19){
-    //  document.getElementById('super_chope').innerText = "🤩";
-    //}
+    count_super_chope ++;
+    if(count_super_chope > 19){
+      document.getElementById('super_chope').innerText = "🤩";
+    }
     if(['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -290,7 +290,7 @@ export default {
        { name: 'robots', content: 'noindex' },
     ],
   },
-  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown }, //, sendSuperChope
+  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
     
     await fetch('https://commuz.fr/c/commurge/infos.csv')
