@@ -431,9 +431,10 @@ export default {
 
 
   #commurge__container {
-    height: 100vh;
+    height: 100%;
     @media (min-height: 700px) {
-        height: 100%;
+        height: 100vh;
+        overflow-y: scroll;
       }
     width: 100%;
     align-items: center;
