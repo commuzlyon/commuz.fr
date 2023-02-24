@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div id="commurge__home">
+    <div id="commurge__home" style="height : 100vh;">
       <img class="commurge__image" id="speedy" src="/c/commurge/thomas-the-train.png" alt="Thomas the Train">
       <img class="commurge__image" id="hands" src="/c/commurge/iloveyou.gif" alt="Hands in Heart">
       <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="Colombe">
