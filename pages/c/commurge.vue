@@ -6,9 +6,6 @@
     <div id="overlay_chope">
       <img id="love_loader" src="/c/commurge/wink.gif">
       <div id="match">
-        <div id="chopOrNot">
-          <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
-        </div>
         <div id="match__pictures">
           <div class="match__person" id="chopeA">
             <img id="chopeA_photo" src="">
@@ -31,6 +28,9 @@
           <p @click="sendChope('no')"  class="answer_chope" id="send_no_chope">🤮</p>
           <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
           <p @click="sendChope('yes')"  class="answer_chope" id="send_chope">🥰</p>
+        </div>
+        <div id="chopOrNot">
+          <p> <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p> </p>
         </div>
       </div>
     </div>
@@ -334,7 +334,7 @@ export default {
     display: none;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
     align-items: center;
     justify-content: center;
   }
@@ -431,7 +431,7 @@ export default {
 
 
   #commurge__container {
-    height: 100vh;
+    //height: 100vh;
     width: 100%;
     align-items: center;
     justify-items: center;
