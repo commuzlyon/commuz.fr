@@ -629,7 +629,7 @@ let equipe = {
     },
     {
       role: 'Décoratrice',
-      nom: 'Soline Minvieille',
+      nom: 'Soline Minvielle',
       photo: 'Ysby.png'
     },
     {
