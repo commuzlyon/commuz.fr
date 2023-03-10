@@ -3,7 +3,7 @@
   <!--  <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>-->
   
   <div id="commurge__container">
-    <div id="overlay_chope" v-touch:swipe.left="send_no_chope" v-touch:swipe.right="send_chope">
+    <div id="overlay_chope">
       <img id="love_loader" src="/c/commurge/wink.gif">
       <div id="match">
         <div id="match__pictures">
@@ -48,8 +48,6 @@
 <script>
 import anime from 'animejs';
 import rainingParticles from '~/includes/rainingParticles';
-var VueTouch = require('vue-touch')
-Vue.use(VueTouch);
 
 let hashFunction = function (v, a,b,t) {
   let string = v + a + b + t;
