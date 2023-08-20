@@ -8,7 +8,7 @@
 </template>
 
 <script>
-let anneesgalerie = ['2022','2021', '2020', '2019', '2018', '2017', '2016']
+let anneesgalerie = ['2023','2022','2021', '2020', '2019', '2018', '2017', '2016']
 
 export default {
   data: function () {
