@@ -1,6 +1,6 @@
 <script>
 import Vue from "vue";
-import {quiz, information } from "./../config";
+import {quiz, information} from "./../config";
 
 const userResponseSkelaton = Array(quiz.questions.length).fill(null);
 const userResponseTypesSkelaton = Array(quiz.questions.length).fill(null);
