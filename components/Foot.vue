@@ -16,8 +16,8 @@
   </div>
   <div id="contact">
     <h3>Contacts</h3>
-    <p>Pour toute question, contactez <a class="inline-link" href="mailto:benjamin.denise@ecl20.ec-lyon.fr">Benjamin, Andreas, Clara et Aurore</a> par mail ou sur notre page <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
-    Pour toute demande relative aux partenariats, contactez nos responsables partenariats <router-link class="inline-link" active-class="navbar__link--active" to="/partenariats"><span>Aleksandra et Paul-Etienne</span></router-link></p>
+    <p>Pour toute question, contactez <a class="inline-link" href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a> par mail ou sur notre page <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
+    Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a class="inline-link" href="mailto:vincent.rouaret@edu.em-lyon.com">Vincent</a>.</p>
   </div>
 </footer>
 </template>
