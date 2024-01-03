@@ -4,7 +4,7 @@
   
   <div id="commurge__container">
     <div id="overlay_chope">
-      <img id="love_loader" src="/c/commurge/wink.gif">
+      <img id="love_loader" src="/c/commurge/iloveyou.gif">
       <div id="match">
         <div id="match__pictures">
           <div class="match__person" id="chopeA">

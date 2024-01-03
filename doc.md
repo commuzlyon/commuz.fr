@@ -1,5 +1,5 @@
 # Version
-Node v16.13.0npm 
-NPM v 8.1.4
-Nuxt v2.15.8
+Node v18.19.0npm 
+NPM v 10.2.5
+Nuxt v2.17.2
 

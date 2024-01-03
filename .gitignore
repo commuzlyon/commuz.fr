@@ -21,3 +21,6 @@ commuzLocal.bat
 
 # Fichiers vscode
 .vscode
+
+# Mac specific
+.DS_store

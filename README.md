@@ -21,14 +21,14 @@ Le site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier 
 - Raphaël Chalicarne : Webmestre du mandat 2018 - 2019 ;
 - Bastien Laville : Webmestre du mandat 2019 - 2020 ;
 - Alban Gosset: Webmestre du mandat 2020 - 2021 ;
-- Benjamin Denise : Webmestre du mandat 2021-2022 ;
-- Antoine Haynez : Webmestre du mandat 2022-2023 ;
-
+- Benjamin Denise : Webmestre du mandat 2021 - 2022 ;
+- Antoine Haynez : Webmestre du mandat 2022 - 2023 ;
+- Frédéric Legrand : Webmestre du mandat 2023 - 2024 ;
 
 
 # Dépendances 
 
-Ce projet a été développé sous Node.js@16.13.0 avec le framework *Nuxt*@2.15.8.
+Ce projet a été développé sous Node.js@18.19.0 avec le framework *Nuxt*@2.17.2.
 
 # TODO :
 
