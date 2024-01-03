@@ -1,8 +1,16 @@
 export default {
     components: true,
-    target: 'static',
-    css: ['~/assets/css/global'],
+    css: ['~/assets/css/global.scss'],
     head : {
+        script: [
+            {
+                src: "https://www.googletagmanager.com/gtag/js?id=G-CC0ZQE9TB5",
+                async: true,
+            },
+            {
+                src: "js/ga.js",
+            }
+        ],
         meta: [
             { charset: 'utf-8' },
             { name: 'language', content: 'French'},
