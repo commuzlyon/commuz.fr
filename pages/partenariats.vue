@@ -1,5 +1,6 @@
 <template lang="html">
-
+  <title>La Commuz' - Partenaires</title>
+  <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire."/>
 <div>
   <div id="plaquette">
     <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>

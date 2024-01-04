@@ -1,4 +1,6 @@
 <template lang="html">
+  <title>La Commuz' - Galerie</title>
+  <Meta name="description" content="Retour en image sur les quelques dernières années."/>
   <div>
     <div id="years-list">
       <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>

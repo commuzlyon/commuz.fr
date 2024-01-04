@@ -1,4 +1,6 @@
 <template lang="html">
+  <title>La Commuz' - Spectacle</title>
+  <Meta name="description" content="La Commuz existe depuis plus de 20 ans."/>
 <div>
   <!-- Editions de  l'année -->
   <pane id="infos" type="pane--media" image="/images/affiches/affiche--2023.png" bgImage="/images/equipes/equipe--2023.jpg" :text="infos"></pane>

@@ -1,4 +1,6 @@
 <template lang="html">
+  <title>La Commuz' - Equipe</title>
+  <Meta name="description" content="Chaque année, c'est un peu moins d'une centaine de d'étudiants qui font vivre le spectacle."/>
   <div>
     <div id="years-list">
       <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{ annee }}</router-link>

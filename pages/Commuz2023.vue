@@ -1,5 +1,7 @@
 
 <template>
+  <title>La Commuz' - Commuz' 2023</title>
+  <Meta name="description" content="La Commuz présente son spectacle de 2023."/>
   <div>
     <!-- Description -->
     <div id="home__hero">

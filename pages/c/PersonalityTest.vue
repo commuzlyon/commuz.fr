@@ -1,5 +1,7 @@
 
 <template>
+  <title>La Commuz' - Castings</Title>
+  <Meta name="description" content="La Commuz' recrute chaque année!"/>
   <div>
     <!-- Description -->
     <div id="home__hero">

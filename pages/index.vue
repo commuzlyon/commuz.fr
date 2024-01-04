@@ -1,4 +1,6 @@
 <template>
+  <title>La Commuz'</Title>
+  <Meta name="description" content="La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon."/>
 <div>
   <div id="home__hero">
     <img id="home__hero__logo"  src="/images/homepage/Commuz_Titre.svg" alt="Commuz">
@@ -60,7 +62,6 @@ export default defineComponent({
   setup() {
     definePageMeta({
     layout: 'home',
-    name: 'La Commuz\'',
     components: { Sponsors, Pane }
     });
   },
@@ -68,6 +69,7 @@ export default defineComponent({
     return data;
     
   },
+  
 });
 </script>
 
