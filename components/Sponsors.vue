@@ -1,19 +1,25 @@
 <template>
-    <section id="sponsors">
-        <div id="sponsors__text">
-            <h2>Ils nous ont soutenus</h2>
-            <p>Vous aussi, entrez en scène à nos côtés !</p>
-            <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
-        
-        </div>
-        <div id="sponsors__logos">
-            <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/ecl.svg" alt="Logo de l'École Centrale de Lyon"></a>
-            <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/sponsors/em_corpo.svg" alt="Logo de la corpo emlyon business school"></a>
-            <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/crous.png" alt="Logo du Crous de Lyon"></a>
-            <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/udl.svg" alt="Logo de l'Université de Lyon"></a>
-            <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
-        </div>
-    </section>
+  <section id="sponsors">
+    <div id="sponsors__text">
+      <h2>Ils nous ont soutenus</h2>
+      <p>Vous aussi, entrez en scène à nos côtés !</p>
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez
+        nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a
+          href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+
+    </div>
+    <div id="sponsors__logos">
+      <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/ecl.svg"
+          alt="Logo de l'École Centrale de Lyon"></a>
+      <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/sponsors/em_corpo.svg"
+          alt="Logo de la corpo emlyon business school"></a>
+      <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/crous.png"
+          alt="Logo du Crous de Lyon"></a>
+      <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/udl.svg"
+          alt="Logo de l'Université de Lyon"></a>
+      <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
+    </div>
+  </section>
 </template>
 
 <style lang="scss" >
@@ -36,15 +42,17 @@
   }
 
   a {
-      color : var(--pink);
+    color: var(--pink);
   }
 
   #sponsors__logos {
     display: flex;
     width: 80%;
+
     @media only screen and (min-width: 992px) {
       width: 60%;
     }
+
     flex-wrap: wrap;
     justify-content: center;
 
@@ -57,9 +65,11 @@
   #partenaires_photo {
     display: flex;
     width: 80%;
+
     @media only screen and (min-width: 992px) {
       width: 60%;
     }
+
     flex-wrap: wrap;
     justify-content: center;
 
@@ -68,5 +78,4 @@
       margin: 1rem;
     }
   }
-}
-</style>
+}</style>

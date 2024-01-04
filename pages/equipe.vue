@@ -1,11 +1,13 @@
 <template lang="html">
   <title>La Commuz' - Equipe</title>
-  <Meta name="description" content="Chaque année, c'est un peu moins d'une centaine de d'étudiants qui font vivre le spectacle."/>
+  <Meta name="description"
+    content="Chaque année, c'est un peu moins d'une centaine de d'étudiants qui font vivre le spectacle." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{ annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{
+        annee }}</router-link>
     </div>
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
 
@@ -15,8 +17,8 @@ let anneesEquipes = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '20
 export default {
   setup() {
     definePageMeta({
-    layout: 'default',
-  });
+      layout: 'default',
+    });
   },
   data: function () {
     return { anneesEquipes }
@@ -58,7 +60,7 @@ export default {
   margin-top: 1em;
 }
 
-.pane--media ~ .section {
+.pane--media~.section {
   margin-top: 5rem;
 }
 

@@ -1,31 +1,34 @@
 <template lang="html">
   <title>La Commuz' - Partenaires</title>
-  <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire."/>
-<div>
-  <div id="plaquette">
-    <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
-  </div>
+  <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire." />
+  <div>
+    <div id="plaquette">
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez
+        nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a
+          href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+    </div>
 
-  <div id="tablePartenaires">
-    <table>
-      <tr>
-        <td v-for="partenaire in respoPartenariats">
-          <img :src="partenaire.image" alt="" id="partenaires_photo">
-        </td>
-      </tr>
-      <tr>
-        <td v-for="partenaire in respoPartenariats">
-          <p>{{ partenaire.prenom }} {{ partenaire.nom  }}
-          
-          <br>
-          {{ partenaire.telephone }}</p>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <div id="tablePartenaires">
+      <table>
+        <tr>
+          <td v-for="partenaire in respoPartenariats">
+            <img :src="partenaire.image" alt="" id="partenaires_photo">
+          </td>
+        </tr>
+        <tr>
+          <td v-for="partenaire in respoPartenariats">
+            <p>{{ partenaire.prenom }} {{ partenaire.nom }}
 
-  <sponsors></sponsors>
-</div>
+              <br>
+              {{ partenaire.telephone }}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <sponsors></sponsors>
+  </div>
 </template>
 
 <script>
@@ -49,8 +52,8 @@ let respoPartenariats = {
 export default defineComponent({
   setup() {
     definePageMeta({
-    layout: 'default',
-  });
+      layout: 'default',
+    });
   },
   data: function () {
     return { respoPartenariats }

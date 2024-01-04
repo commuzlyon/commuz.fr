@@ -1,44 +1,46 @@
 <template lang="html">
-<div :class="type">
+  <div :class="type">
     <div class="pane__text_container">
       <img v-if="type == 'pane--media-left'" class="pane__img" :src="image">
-      <div class="pane__text" >
+      <div class="pane__text">
         <div v-html='text'></div>
         <div v-if="galerie || equipe || youtube" class="annee__links" style="justify-content: center" width="100%">
           <table>
             <tr align="center">
               <table cellspacing="10">
                 <th>
-                <div v-if='deezer != ""'>
+                  <div v-if='deezer != ""'>
                     <a :href="deezer" @click="navigate">
-                    <img src="/icons/Deezer.png" alt=""></a> 
-                </div>
+                      <img src="/icons/Deezer.png" alt=""></a>
+                  </div>
                 </th>
                 <th>
-                <div v-if='youtube != ""'>
+                  <div v-if='youtube != ""'>
                     <a :href="youtube" @click="navigate">
-                    <img src="/icons/Youtube.png" alt=""></a> 
-                </div>
+                      <img src="/icons/Youtube.png" alt=""></a>
+                  </div>
                 </th>
                 <th>
-                <div v-if='spotify != ""'>
+                  <div v-if='spotify != ""'>
                     <a :href="spotify" @click="navigate">
-                    <img src="/icons/Spotify.png" alt=""></a> 
-                </div>
+                      <img src="/icons/Spotify.png" alt=""></a>
+                  </div>
                 </th>
               </table>
-            </tr> 
+            </tr>
             <tr align="center">
               <table>
                 <th>
-                <div v-if="galerie" class="button-link">
-                  <router-link class="" :to="`/galerie/${annee}`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
-                </div>
+                  <div v-if="galerie" class="button-link">
+                    <router-link class="" :to="`/galerie/${annee}`"><img src="/icons/galerie.svg" alt="">Voir les
+                      photos</router-link>
+                  </div>
                 </th>
                 <th>
-                <div v-if="equipe" class="button-link">
-                  <router-link class="" :to="`/equipe/${annee}`"><img src="/icons/equipe.svg" alt="">Voir l'équipe</router-link>
-                </div>
+                  <div v-if="equipe" class="button-link">
+                    <router-link class="" :to="`/equipe/${annee}`"><img src="/icons/equipe.svg" alt="">Voir
+                      l'équipe</router-link>
+                  </div>
                 </th>
               </table>
             </tr>
@@ -46,28 +48,33 @@
         </div>
       </div>
       <img v-if="type == 'pane--media'" class="pane__img" :src="image">
-      
-      
+
+
     </div>
-    
-  <img v-if="bgImage != ''" class="pane__bg" :src="bgImage">
-</div>
+
+    <img v-if="bgImage != ''" class="pane__bg" :src="bgImage">
+  </div>
 </template>
 
 <script>
 export default defineComponent({
-  props: [ 'bgImage', 'image','text', 'type','galerie','equipe','deezer', 'youtube', 'spotify','annee' ]
+  props: ['bgImage', 'image', 'text', 'type', 'galerie', 'equipe', 'deezer', 'youtube', 'spotify', 'annee']
 })
 </script>
 
 <style lang="scss">
-.pane--media, .pane--right, .pane--left, .pane--media-left {
+.pane--media,
+.pane--right,
+.pane--left,
+.pane--media-left {
   display: grid;
   justify-items: center;
   align-items: center;
   grid-gap: 1em;
-  grid-template-columns: repeat(2, 1fr);;
+  grid-template-columns: repeat(2, 1fr);
+  ;
   grid-template-rows: minmax(500px, auto);
+
   @media only screen and (orientation: landscape) {
     grid-template-rows: 500px;
   }
@@ -91,7 +98,8 @@ export default defineComponent({
 }
 
 
-.pane--media, .pane--media-left {
+.pane--media,
+.pane--media-left {
   .pane__img {
     height: auto;
     max-height: 400px;
@@ -104,10 +112,12 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     display: flex;
+
     @media only screen and (max-width: 576px) {
       flex-direction: column;
       padding: 4em 2em 1em 2em;
     }
+
     align-items: center;
     justify-content: center;
   }
@@ -118,20 +128,23 @@ export default defineComponent({
   }
 }
 
-.pane--media-left{
-  background: linear-gradient(100deg,#621837,#47193b 40%);
+.pane--media-left {
+  background: linear-gradient(100deg, #621837, #47193b 40%);
 }
 
-.pane--left, .pane--right {
+.pane--left,
+.pane--right {
   grid-row-start: 1;
   align-self: center;
+
   @media only screen and (min-width: 768px) {
     padding: 2em 4em;
   }
 
   .pane__text {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
   }
+
   .pane__bg {
     grid-area: 1 / 1 / -1 / -1;
   }
@@ -147,9 +160,11 @@ export default defineComponent({
   .pane__text_container {
     grid-row-start: 1;
     grid-column: 1 / span 4;
+
     @media only screen and (min-width: 768px) {
       grid-column: 1 / span 3;
     }
+
     @media only screen and (min-width: 992px) {
       grid-column: 1 / span 2;
     }
@@ -166,9 +181,11 @@ export default defineComponent({
   .pane__text_container {
     grid-row-start: 1;
     grid-column: span 4 / -1;
+
     @media only screen and (min-width: 768px) {
       grid-column: span 3 / -1;
     }
+
     @media only screen and (min-width: 992px) {
       grid-column: span 2 / -1;
     }
@@ -178,5 +195,4 @@ export default defineComponent({
 .annee__links {
   display: flex;
   flex-direction: row;
-}
-</style>
+}</style>

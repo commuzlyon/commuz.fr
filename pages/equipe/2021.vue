@@ -9,8 +9,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -22,8 +23,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -35,8 +37,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -48,8 +51,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -61,8 +65,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -74,8 +79,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -87,8 +93,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -100,8 +107,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -113,8 +121,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -126,8 +135,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -139,8 +149,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -152,8 +163,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -165,8 +177,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -176,7 +189,7 @@
 <script>
 let presentation = {
   text: "<h2>2021 - Noces d'opium</h2>" +
-          "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
+    "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
   bgImage: '/images/equipes/equipe--2021.jpg',
   image: '/images/affiches/affiche--2021.jpg'
 }
@@ -295,7 +308,7 @@ let equipe = {
       role: 'Actrice-chanteuse',
       nom: 'Emma Jaremko',
       photo: '72-EmmaJ.jpg'
-      },
+    },
     {
       role: 'Acteur-chanteur',
       nom: 'Fabien Duranson',
@@ -464,7 +477,7 @@ let equipe = {
       role: 'Batterie',
       nom: 'Oscar Bolzinger',
       photo: '13-OscarB.jpg'
-    }    
+    }
   ],
 
   danse: [

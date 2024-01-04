@@ -8,8 +8,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -20,8 +21,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.communication" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -32,8 +34,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -44,8 +47,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -56,8 +60,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -68,8 +73,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -80,8 +86,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -92,8 +99,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -104,8 +112,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -116,8 +125,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -128,8 +138,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -140,8 +151,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -152,8 +164,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2016/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -164,9 +177,9 @@
 
 let presentation = {
   text: '<h2>2016 : Les Fruits de la Passion</h2>' +
-        '<p>Voyagez dans une Espagne morcelée où la Renaissance n’en est encore qu’à ses prémices... A cette époque où les guerres de territoires sont encore monnaie courante, le duché de la Rioja, l\'un des plus important duché d\'Espagne, vit des moments difficiles : les finances du royaume sont au plus mal et les tensions avec les royaumes voisins de Castille et d\'Aragon sont palpables...</p>' +
-        '<p>Comment la situation a-t-elle pu dégénérer à ce point ? La gestion calamiteuse et frivole du Duc de la Rioja y est certainement pour quelque chose ! Ce joyeux luron a une fâcheuse tendance à privilégier les bals décadents et les danses folâtres aux problèmes géopolitiques...</p>' +
-        '<p>Son entourage va-t-il enfin se décider à réagir ?</p>',
+    '<p>Voyagez dans une Espagne morcelée où la Renaissance n’en est encore qu’à ses prémices... A cette époque où les guerres de territoires sont encore monnaie courante, le duché de la Rioja, l\'un des plus important duché d\'Espagne, vit des moments difficiles : les finances du royaume sont au plus mal et les tensions avec les royaumes voisins de Castille et d\'Aragon sont palpables...</p>' +
+    '<p>Comment la situation a-t-elle pu dégénérer à ce point ? La gestion calamiteuse et frivole du Duc de la Rioja y est certainement pour quelque chose ! Ce joyeux luron a une fâcheuse tendance à privilégier les bals décadents et les danses folâtres aux problèmes géopolitiques...</p>' +
+    '<p>Son entourage va-t-il enfin se décider à réagir ?</p>',
   bgImage: '/images/equipes/equipe--2016.jpg',
   image: '/images/affiches/affiche--2016.jpg'
 }

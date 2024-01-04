@@ -9,8 +9,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -22,8 +23,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -35,8 +37,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -48,8 +51,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -61,8 +65,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -74,8 +79,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -87,8 +93,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -100,8 +107,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -113,8 +121,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -126,8 +135,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -139,8 +149,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -152,8 +163,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -165,8 +177,9 @@
       <div class="section__membres">
         <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2023/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -175,16 +188,16 @@
 
 <style lang="scss">
 .trombi_membre.square {
-    img {
-      border-radius: 0%;
-    }
+  img {
+    border-radius: 0%;
+  }
 }
 </style>
 
 <script>
 let presentation = {
   text: "<h2>2023 - Hymne à la Voie</h2>" +
-        "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>",
+    "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>",
   bgImage: '/images/equipes/equipe--2023.jpg',
   image: '/images/affiches/affiche--2023.png'
 }
@@ -298,7 +311,7 @@ let equipe = {
       role: 'Actrice-chanteuse',
       nom: 'Solène Wallaert',
       photo: 'Solene.png'
-      },
+    },
     {
       role: 'Actrice-chanteuse',
       nom: 'Toscane Chemla',
@@ -477,12 +490,12 @@ let equipe = {
       role: 'Sax Soprano',
       nom: 'Martin Greiveldinger',
       photo: 'Quibu.png'
-    }, 
+    },
     {
       role: 'Basson',
       nom: 'Aline Zabban',
       photo: 'Boonth.png'
-    }      
+    }
   ],
 
   danse: [

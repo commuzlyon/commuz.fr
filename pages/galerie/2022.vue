@@ -1,17 +1,14 @@
 <template lang="html">
   <div>
     <div class="galerie_grid">
-      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i" :class="galerie.emphase.indexOf(i) >= 0 ? 'big-image' : 'small-image'">
-        <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
+      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i"
+        :class="galerie.emphase.indexOf(i) >= 0 ? 'big-image' : 'small-image'">
+        <img class="lazy-image" :data-src="src" @click="() => showImg(i)" />
       </div>
     </div>
     <client-only>
-    <vue-easy-lightbox
-    :visible="visible"
-    :imgs="galerie.images_src"
-    :index="index"
-    @hide="handleHide"
-  ></vue-easy-lightbox>
+      <vue-easy-lightbox :visible="visible" :imgs="galerie.images_src" :index="index"
+        @hide="handleHide"></vue-easy-lightbox>
     </client-only>
   </div>
 </template>
@@ -25,12 +22,12 @@ let extension = ".jpg";
 
 let images_src = [];
 
-for(let i = 1; i <= totalImages; i++) {
-  images_src.push(['/images/galeries/',year,'/',i,extension].join(''));
+for (let i = 1; i <= totalImages; i++) {
+  images_src.push(['/images/galeries/', year, '/', i, extension].join(''));
 }
 
 let galerie = {
-  images_src : images_src,
+  images_src: images_src,
   emphase: [1, 16, 31, 46, 61, 76, 91, 106, 121]
 }
 
@@ -39,21 +36,21 @@ export default {
     VueEasyLightbox
   },
   data: function () {
-    return { 
+    return {
       galerie,
       visible: false,
       index: 0
     }
   },
   methods: {
-      showImg (index) {
-        this.index = index;
-        this.visible = true;
-      },
-      handleHide () {
-        this.visible = false
-      }
+    showImg(index) {
+      this.index = index;
+      this.visible = true;
     },
+    handleHide() {
+      this.visible = false
+    }
+  },
   mounted: function () {
     // Get all of the images that are marked up to lazy load
     const images = document.querySelectorAll('.lazy-image')
@@ -75,7 +72,7 @@ export default {
       })
     }
 
-    function fetchImage (url) {
+    function fetchImage(url) {
       return new Promise((resolve, reject) => {
         const image = new Image()
         image.src = url
@@ -84,7 +81,7 @@ export default {
       })
     }
 
-    function preloadImage (image) {
+    function preloadImage(image) {
       const src = image.dataset.src
       if (!src) {
         return
@@ -92,12 +89,12 @@ export default {
       return fetchImage(src).then(() => { applyImage(image, src) })
     }
 
-    function applyImage (img, src) {
+    function applyImage(img, src) {
       img.src = src
       img.classList.add('fade-in')
     }
 
-    function onIntersection (entries) {
+    function onIntersection(entries) {
       // Loop through the entries
       entries.forEach(entry => {
         // Are we in viewport?
@@ -119,6 +116,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

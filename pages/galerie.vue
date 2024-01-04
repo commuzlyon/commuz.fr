@@ -1,26 +1,27 @@
 <template lang="html">
   <title>La Commuz' - Galerie</title>
-  <Meta name="description" content="Retour en image sur les quelques dernières années."/>
+  <Meta name="description" content="Retour en image sur les quelques dernières années." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`" exact>{{
+        annee }}</router-link>
     </div>
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
 
 <script>
-let anneesGalerie = ['2023','2022','2021', '2020', '2019', '2018', '2017', '2016']
+let anneesGalerie = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default defineComponent({
   setup() {
     definePageMeta({
-    layout: 'default',
-  });
+      layout: 'default',
+    });
   },
-    data: function () {
-        return { anneesGalerie };
-    },
+  data: function () {
+    return { anneesGalerie };
+  },
 });
 </script>
 
@@ -91,6 +92,7 @@ export default defineComponent({
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

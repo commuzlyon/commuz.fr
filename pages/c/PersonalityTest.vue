@@ -1,12 +1,13 @@
 
 <template>
   <title>La Commuz' - Castings</Title>
-  <Meta name="description" content="La Commuz' recrute chaque année!"/>
+  <Meta name="description" content="La Commuz' recrute chaque année!" />
   <div>
     <!-- Description -->
     <div id="home__hero">
-      <img id="home__hero__logo"  src="/c/PersonalityTest/images/Watermark-Casting.png" alt="Commuz">
-      <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
+      <img id="home__hero__logo" src="/c/PersonalityTest/images/Watermark-Casting.png" alt="Commuz">
+      <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img
+          src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
       <img id="home__hero_bg" src="/c/PersonalityTest/images/Poster-Casting.jpg">
     </div>
     <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"></pane>
@@ -37,53 +38,56 @@ let data = {
 export default defineComponent({
   setup() {
     definePageMeta({
-    layout: 'default',
-  });
+      layout: 'default',
+    });
   },
   data: function () {
     return {
-      item : data,
-      postes : information
+      item: data,
+      postes: information
     };
-    
-  },  
+
+  },
 });  
 </script>
 
 <style  lang="scss" scoped>
-
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    height: 100vh;
-    background: linear-gradient(100deg,#621837,#47193b 40%);
-    color: blue;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background: linear-gradient(100deg, #621837, #47193b 40%);
+  color: blue;
 
-    /* mocking native UI */
-    // cursor: default !important; /* remove text selection cursor */
-    user-select: none; /* remove text selection */
-    // user-drag: none; /* disbale element dragging */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* mocking native UI */
+  // cursor: default !important; /* remove text selection cursor */
+  user-select: none;
+  /* remove text selection */
+  // user-drag: none; /* disbale element dragging */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2em;
-    }
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
 
 #home__hero {
   position: relative;
   width: 100%;
   height: 80vh;
+
   @media (orientation: landscape) {
     height: 100vh;
   }
+
   margin-bottom: 2em;
   display: grid;
   grid-template-columns: 100%;
@@ -95,6 +99,7 @@ body {
     grid-area: 2 / 1 / 3 / -1;
     z-index: 1;
     width: 75%;
+
     @media (min-width: 992px) {
       width: 50%;
     }
@@ -113,6 +118,7 @@ body {
     img {
       transition: transform 0.2s ease-out;
     }
+
     &:hover img {
       transform: translateY(5px);
       transition: transform 0.3s cubic-bezier(0.42, 0, 0, 2.42);
@@ -129,21 +135,24 @@ body {
     filter: brightness(0.7);
   }
 }
+
 .carousel-3d-container {
   .carousel-3d-slide {
     padding: 20px;
     border-radius: 1px;
     border-color: white;
     border-style: solid;
-    border-radius : 0.5rem;
+    border-radius: 0.5rem;
     background-size: cover;
     background-color: black;
     display: block;
     margin: 0;
     box-sizing: border-box;
     text-align: center;
-    
-    .title { font-size: 22px; }
+
+    .title {
+      font-size: 22px;
+    }
   }
 }
 
@@ -163,5 +172,4 @@ body {
   min-width: 100%;
   box-sizing: border-box;
 }
-
 </style>

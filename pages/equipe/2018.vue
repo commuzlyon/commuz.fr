@@ -9,8 +9,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -22,8 +23,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -35,8 +37,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -48,8 +51,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -61,8 +65,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -74,8 +79,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -87,8 +93,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -101,8 +108,9 @@
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
           <template>
-            <p><b>{{ membre.nom }}</b><br/>
-              <i>{{ membre.role }}</i></p>
+            <p><b>{{ membre.nom }}</b><br />
+              <i>{{ membre.role }}</i>
+            </p>
           </template>
         </div>
       </div>
@@ -115,8 +123,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -128,8 +137,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -141,8 +151,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -154,8 +165,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -167,8 +179,9 @@
       <div class="section__membres">
         <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2018/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br/>
-          <i>{{ membre.role }}</i></p>
+          <p><b>{{ membre.nom }}</b><br />
+            <i>{{ membre.role }}</i>
+          </p>
         </div>
       </div>
     </div>
@@ -178,9 +191,9 @@
 <script>
 let presentation = {
   text: '<h2>Bas les masques</h2>' +
-        '<p>1919, États-Unis.</p>' +
-        '<p>A l\'aube des années folles, un vent de liberté souffle sur l’Amérique. Le grand magnat de l’automobile Daniel Richard vient de quitter ce monde laissant une immense fortune derrière lui. Sur son testament sont inscrits les noms des proches du défunt mais aussi d\'illustres inconnus.</p>' +
-        '<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>',
+    '<p>1919, États-Unis.</p>' +
+    '<p>A l\'aube des années folles, un vent de liberté souffle sur l’Amérique. Le grand magnat de l’automobile Daniel Richard vient de quitter ce monde laissant une immense fortune derrière lui. Sur son testament sont inscrits les noms des proches du défunt mais aussi d\'illustres inconnus.</p>' +
+    '<p>Comment connaissaient-ils Daniel Richard ? Que se cache-t-il derrière ce testament ? Quelles que soient les réponses à ces questions, ce mystère les amènera à se poser des questions sur eux-mêmes et fera ressurgir le passé de Daniel.</p>',
   bgImage: '/images/equipes/equipe--2018.jpg',
   image: '/images/affiches/affiche--2018.jpg'
 }

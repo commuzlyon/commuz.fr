@@ -1,25 +1,33 @@
 <template>
-<footer>
-  <img src="/logos/commuz-masque-logo-gris.png" alt="Logo Commuz' Noir" id="footer__logo">
-  <div id="social">
-    <ul>
-      <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li>
-      <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li>
-      <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li>
-      <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li>
-    </ul>
-  </div>
-  <div id="legal">
-    <h3>Mentions légales</h3>
-    <p>La Commuz' est un projet artistique commun à l'École centrale de Lyon et à emlyon business school.<br/>
-    Elle constitue également un club artistique de l'Association des Élèves de l'École Centrale de Lyon.</p>
-  </div>
-  <div id="contact">
-    <h3>Contacts</h3>
-    <p>Pour toute question, contactez <a class="inline-link" href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a> par mail ou sur notre page <a class="inline-link" target="_blank"  rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>. <br/>
-    Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a class="inline-link" href="mailto:vincent.rouaret@edu.em-lyon.com">Vincent</a>.</p>
-  </div>
-</footer>
+  <footer>
+    <img src="/logos/commuz-masque-logo-gris.png" alt="Logo Commuz' Noir" id="footer__logo">
+    <div id="social">
+      <ul>
+        <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>
+        </li>
+        <li><a class="inline-link" target="_blank" rel="noopener"
+            href="https://www.instagram.com/commuzlyon/">Instagram</a></li>
+        <li><a class="inline-link" target="_blank" rel="noopener"
+            href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li>
+        <li><a class="inline-link" target="_blank" rel="noopener"
+            href="https://www.linkedin.com/company/commuz">Linkedin</a></li>
+      </ul>
+    </div>
+    <div id="legal">
+      <h3>Mentions légales</h3>
+      <p>La Commuz' est un projet artistique commun à l'École centrale de Lyon et à emlyon business school.<br />
+        Elle constitue également un club artistique de l'Association des Élèves de l'École Centrale de Lyon.</p>
+    </div>
+    <div id="contact">
+      <h3>Contacts</h3>
+      <p>Pour toute question, contactez <a class="inline-link"
+          href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a> par
+        mail ou sur notre page <a class="inline-link" target="_blank" rel="noopener"
+          href="https://www.facebook.com/commuzlyon">Facebook</a>. <br />
+        Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a class="inline-link"
+          href="mailto:vincent.rouaret@edu.em-lyon.com">Vincent</a>.</p>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss">
@@ -28,7 +36,7 @@ footer {
   color: #ababab;
   fill: #ababab;
   font-size: 0.9rem;
-  box-shadow: inset 0px 3px 3px -2px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 3px 3px -2px rgba(0, 0, 0, 0.75);
   padding: 3em 2em;
 
   h3 {
@@ -47,9 +55,11 @@ footer {
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
   grid-gap: 2em;
+
   @media only screen and (min-width: 576px) {
     grid-template-columns: 1fr 2fr;
   }
+
   @media only screen and (min-width: 768px) {
     grid-gap: 1em 3em;
     grid-template-columns: 1fr 2fr 2fr;
@@ -59,9 +69,11 @@ footer {
     max-width: 100%;
     max-height: 120px;
     grid-area: 2 / 1 / 3 / 2;
+
     @media only screen and (min-width: 576px) {
       grid-area: 1 / 1 / 3 / 2;
     }
+
     justify-self: center;
     align-self: center;
   }
@@ -70,6 +82,7 @@ footer {
 #social {
   grid-area: 1 / 1 / 2 / 3;
   justify-self: center;
+
   @media only screen and (min-width: 768px) {
     justify-self: auto;
     grid-area: 1 / 2 / 2 / 4;
@@ -86,8 +99,7 @@ footer {
     li {
       display: inline;
 
-      &:not(:first-child)
-      {
+      &:not(:first-child) {
         margin-left: 1ch;
       }
 
@@ -100,6 +112,7 @@ footer {
 
 #contact {
   grid-area: 2 / 2 / 3 / 3;
+
   @media only screen and (min-width: 768px) {
     grid-area: 1 / 3 / 3 / 4;
   }
@@ -124,9 +137,9 @@ footer {
 #legal {
   // grid-area: 2 / 1 / 3 / 3;
   display: none;
+
   @media only screen and (min-width: 768px) {
     grid-area: 2 / 2 / 3 / 3;
     display: block;
   }
-}
-</style>
+}</style>
