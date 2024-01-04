@@ -28,8 +28,13 @@ Le site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier 
 
 # Dépendances 
 
-Ce projet a été développé sous Node.js@18.19.0 avec le framework *Nuxt*@2.17.2.
+Ce projet a été développé sous Node.js@21.5.0 avec le framework *Nuxt*@3.9.0.
+
+# Latest
+
+- Migrate from Nuxt 2 to Nuxt 3
+- Added support for Google Analytics
 
 # TODO :
 
-- Mettre à jour les dépendances. Certaines ouvrent des vulnérabilités
+- Rajouter les caroussels

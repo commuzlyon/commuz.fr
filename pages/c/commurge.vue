@@ -282,13 +282,12 @@ let handleKeyDown = function(event) {
       }
     }
 
-export default {
-  layout: 'conchiage',
-   head: {
-    title: 'Site des chopes',
-    meta: [
-       { name: 'robots', content: 'noindex' },
-    ],
+export default defineComponent({
+  setup(){
+    definePageMeta({
+  layout: "conchiage",
+  name: "Site des chopes",
+});
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
@@ -321,7 +320,7 @@ export default {
   beforeUnmount() {
     window.removeEventListener('keydown', this.handleKeyDown);
   }
-}
+})
 
 </script>
 

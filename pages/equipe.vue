@@ -3,7 +3,7 @@
     <div id="years-list">
       <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{ annee }}</router-link>
     </div>
-    <nuxt-child/>
+    <NuxtPage/>
   </div>
 </template>
 
@@ -11,15 +11,15 @@
 let anneesEquipes = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default {
+  setup() {
+    definePageMeta({
+    layout: 'default',
+  });
+  },
   data: function () {
     return { anneesEquipes }
   },
-  head() {
-    return {
-      title: "La Commuz' - L'équipe",
-    }
-  }
-}
+};
 </script>
 
 <style lang="scss">

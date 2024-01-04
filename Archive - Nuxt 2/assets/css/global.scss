@@ -1,0 +1,162 @@
+// reset styles
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+
+// base theme
+:root {
+  --pink: #f9a;
+  --dark-pink: #fe7a90;
+  --light-pink: #fac0ca;
+}
+
+
+body {
+  background: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+// typography
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Merriweather');
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  font-size: 18px;
+}
+
+p, span, dt, dd, a {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+p {
+  line-height: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 23.4px;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+
+// inlines links with hover animation
+
+.inline-link {
+  @media only screen and (min-width: 768px) {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 1.25em;
+      opacity: 0.5;
+      background: currentColor;
+      transform: scale3d(0,1,1);
+      transform-origin: 100% 50%;
+      transition: transform 0.5s;
+      transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    }
+
+    &:hover {
+      &::before {
+        transform: scale3d(1,1,1);
+        transition-timing-function: ease;
+        transform-origin: 0% 50%;
+      }
+    }
+  }
+}
+
+.inline-link-black {
+  @media only screen and (min-width: 768px) {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 1.25em;
+      opacity: 0.5;
+      background: currentColor;
+      color : black;
+      transform: scale3d(0,1,1);
+      transform-origin: 100% 50%;
+      transition: transform 0.5s;
+      transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    }
+
+    &:hover {
+      &::before {
+        transform: scale3d(1,1,1);
+        transition-timing-function: ease;
+        transform-origin: 0% 50%;
+        color : black;
+      }
+    }
+  }
+}
+
+
+// buttons links
+
+.button-link {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  padding: 0.4em 0.8em;
+
+  a {
+    height: 100%;
+    width: 100%;
+  }
+
+  a:after {
+    content: " ";
+    height: 120%;
+    width: 150%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(70deg, #90404d, #bb5968);
+    transform: skewX(30deg) scale3d(0,1,1);
+    transform-origin: -10% 0%;
+    transition: transform 0.5s cubic-bezier(.25,.46,.06,.86);
+
+  }
+
+  a:hover:after {
+    transform: skewX(0deg) scale3d(1,1,1);
+  }
+}

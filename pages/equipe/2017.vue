@@ -4,7 +4,7 @@
       <template v-slot="props">
         <div class="annee__links">
           <div class="button-link">
-            <router-link :to="`/gallerie/2017`"><img src="/icons/gallerie.svg" alt="">Voir les photos</router-link>
+            <router-link :to="`/gallerie/2017`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
           </div>
         </div>
       </template>

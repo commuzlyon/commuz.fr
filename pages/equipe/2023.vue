@@ -261,7 +261,7 @@ let equipe = {
     {
       role: 'Scénariste',
       nom: 'Jules Mansion',
-      photo: 'Jules.Png'
+      photo: 'Jules.png'
     },
     {
       role: 'Scénariste',
@@ -592,7 +592,7 @@ let equipe = {
     {
       role: 'Costumière',
       nom: 'Audrey Le Mestre',
-      photo: 'Ophyne.Png'
+      photo: 'Ophyne.png'
     }
   ],
 

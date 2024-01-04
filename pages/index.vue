@@ -37,11 +37,14 @@
    
   </section>
   <!-- Sponsors -->
-  <sponsors></sponsors>
+  <Sponsors></Sponsors>
 </div>
 </template>
 
 <script>
+import Pane from '~/components/Pane.vue';
+import Sponsors from '~/components/Sponsors.vue';
+
 let data = {
   presentation:
     "<h2>La Commuz', c'est quoi ?</h2>" +
@@ -52,18 +55,20 @@ let data = {
     "<p>De l'élaboration du scénario en passant par les chorégraphies, la composition et l'orchestration des musiques, la mise en place de l'éclairage et du son, la création des costumes et des décors&hellip;</p>" +
     "<p>Tous les corps de métier du théâtre, du chant et de la danse sont réunis pour créer ce spectacle qui se veut d'une qualité professionnelle.</p>",
 };
-export default {
-  layout: 'home',
+
+export default defineComponent({
+  setup() {
+    definePageMeta({
+    layout: 'home',
+    name: 'La Commuz\'',
+    components: { Sponsors, Pane }
+    });
+  },
   data: function () {
     return data;
     
   },
-  head() {
-    return {
-      title: "La Commuz'",
-    }
-  }
-};
+});
 </script>
 
 <style lang="scss">

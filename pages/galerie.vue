@@ -1,26 +1,25 @@
 <template lang="html">
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesgalerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`" exact>{{ annee }}</router-link>
     </div>
-    <nuxt-child/>
+    <NuxtPage/>
   </div>
 </template>
 
 <script>
-let anneesgalerie = ['2023','2022','2021', '2020', '2019', '2018', '2017', '2016']
+let anneesGalerie = ['2023','2022','2021', '2020', '2019', '2018', '2017', '2016']
 
-export default {
-  data: function () {
-    return { anneesgalerie }
+export default defineComponent({
+  setup() {
+    definePageMeta({
+    layout: 'default',
+  });
   },
-  
-  head() {
-    return {
-      title: "La Commuz' - Les photos",
-    }
-  }
-}
+    data: function () {
+        return { anneesGalerie };
+    },
+});
 </script>
 
 <style lang="scss">

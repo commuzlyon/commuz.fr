@@ -55,9 +55,9 @@
 </template>
 
 <script>
-export default {
+export default defineComponent({
   props: [ 'bgImage', 'image','text', 'type','galerie','equipe','deezer', 'youtube', 'spotify','annee' ]
-}
+})
 </script>
 
 <style lang="scss">

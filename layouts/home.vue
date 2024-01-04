@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar class="abs" />
-    <Nuxt />
+    <slot />
     <Foot />
   </div>
 </template>

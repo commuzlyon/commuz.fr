@@ -21,23 +21,6 @@
       <h1>Trailer de l'édition 2023 !</h1> 
       <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <!-- Presentation des personnages -->
-    <div style="text-align:center; margin:2em">
-      <h1>Découvrir les personnages</h1>
-    </div>
-    <div>
-      <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
-                :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="500" >
-              <no-ssr>
-          <slide v-for="poste in postes" :index="poste.ID">
-            <!--<h2 class="title"> {{ poste.persona }}</h2>-->
-            <figure><img :src="poste.image" style="padding-bottom:1em"></figure>
-            <p>{{ poste.description }}</p>
-          </slide>
-          </no-ssr>
-      </carousel-3d>
-    </div>
-
 
     <!-- Billetterie -->
 
@@ -47,8 +30,8 @@
 </template>
 
 <script>
-import Slide from "~/static/Commuz2023/components/carousel-3d/Slide.vue";
-import Carousel3d from "~/static/Commuz2023/components/carousel-3d/Carousel3d.vue";
+import Slide from "~/public/Commuz2023/components/carousel-3d/Slide.vue";
+import Carousel3d from "~/public/Commuz2023/components/carousel-3d/Carousel3d.vue";
 
 let data = {
   text1:
@@ -68,85 +51,23 @@ let data = {
 };
 
 
-let information = {
-    Robert: {
-        persona: "Robert Fawkes",
-        description:
-            "Chers amis ! l’époque qui s’ouvre est celle du Libéralisme, de la Paix, et du triomphe de la Science. J’ai initié le plus grand chantier de l’Histoire pour bâtir le Léviathan.",
-        notes: "",
-        image: "/Commuz2023/images/Robert.png",
-        ID : 0
-    },
-    Elisabeth: {
-        persona: "Elisabeth Fawkes",
-        description:
-            "Ah non, votre réplique ne marche pas ! Je dois absolument finir cette maudite pièce avant l’arrivée à Londres. Mais je crois que ma plume m’abandonne…",
-        notes: "",
-        image: "/Commuz2023/images/Elisabeth.png",
-        ID : 1
-    },
-    Daisy: {
-        persona: "Daisy Fawkes",
-        description:
-            "Thomas, La Confrérie Ouvrière…  c’est de l’histoire ancienne. Moi aussi, je veux plaider la cause du socialisme, mais je le ferai à ma manière.",
-        notes: "",
-        image: "/Commuz2023/images/Daisy.png",
-        ID : 2
-    },
-    Alex: {
-        persona: "Alex",
-        description:
-            "Moi, je vis sur les planches, pas ailleurs ! Comédien vedette de la troupe d’Elisabeth, je lui suis tellement reconnaissant pour tout ce qu’elle m’a appris.",
-        notes: "",
-        image: "/Commuz2023/images/Alex.png",
-        ID : 3
-    },
-    Thomas: {
-        persona: "Thomas",
-        description:
-            "Confrères ! Amis ! Rejoignez-nous dans la lutte. La Confrérie Ouvrière n’est pas morte. Nous rétablirons la vérité.",
-        notes: "",
-        image: "/Commuz2023/images/Thomas.png",
-        ID : 4
-    },
-    Helene: {
-        persona: "Hélène",
-        description:
-            "Alors c’est vrai ? J’ai gagné ma place dans le Léviathan ! Je ne réalise pas encore, mais je sens que ça va être exceptionnel. Quelle joie de voyager hors de Paris !",
-        notes: "",
-        image: "/Commuz2023/images/Helene.png",
-        ID : 5
-    }
-}
-
 let background = "/Commuz2023/images/poster-commuz2023.png"
 
-//if(screen.width < 1020) {
-//  background = "/Commuz2023/images/poster-mobile-commuz2023.png";}
-//else{ 
-//  background= "/Commuz2023/images/Helene.png"}
-
-export default {
-  name: "App",
-  components: {
-    Carousel3d,
-    Slide
+export default defineComponent({
+  setup() {
+    definePageMeta({
+    name: "App",
+    layout: 'default',
+  });
   },
   data: function () {
     return {
       item : data,
-      postes : information,
       bgImg : background
     };
-    
   },
-  head() {
-    return {
-      title: "La Commuz' - Commuz' 2023",
-    }
-  }
-  
-};  
+  components: { Slide, Carousel3d },
+});
 </script>
 
 <style  lang="scss" scoped>

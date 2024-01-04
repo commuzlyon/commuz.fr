@@ -418,7 +418,7 @@ let equipe = {
     {
       role: 'Piano',
       nom: 'Pauline Colas des Francs',
-      photo: 'Pauline.jpg'
+      photo: 'pauline.jpg'
     },
     {
       role: 'Guitare',

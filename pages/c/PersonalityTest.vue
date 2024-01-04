@@ -10,40 +10,11 @@
     <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"></pane>
     <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"></pane>
     <pane :type="'pane--left'" :bgImage="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"></pane>
-
-
-    <!-- Test -->
-    <div class="Main" id="app">
-      <no-ssr>
-      <Quiz />
-      </no-ssr>
-    </div>
-
-    <!-- Presentation postes -->
-    <div style="text-align:center">
-      <h1>Parcourir les postes</h1>
-    </div>
-    <div>
-      <carousel-3d  :controls-visible="true" :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" 
-                :controls-width="30" :controls-height="60" :clickable="false" :width="350" :height="600">
-              <no-ssr>
-          <slide v-for="poste in postes" :index="poste.ID">
-            <h2 class="title"> {{ poste.persona }}</h2>
-            <figure><img :src="poste.image"></figure>
-            <p>{{ poste.description }}</p>
-          </slide>
-          </no-ssr>
-      </carousel-3d>
-    </div>
-
   </div>
 </template>
 
 <script>
-import Quiz from "~/static/c/PersonalityTest/components/quiz.vue";
-import Slide from "~/static/c/PersonalityTest/components/carousel-3d/Slide.vue";
-import Carousel3d from "~/static/c/PersonalityTest/components/carousel-3d/Carousel3d.vue";
-import {quiz, information} from "~/static/c/PersonalityTest/config";
+import { information } from "~/public/c/PersonalityTest/config";
 
 let data = {
   presentation:
@@ -61,14 +32,11 @@ let data = {
     "<center> <a target='_blank' rel='noopener' href='https://forms.gle/o9MfUHxjAoc2BVt68' class='inline-link'> Pour s'inscrire c'est ici ! </a> </center>",
 };
 
-
-
-export default {
-  name: "App",
-  components: {
-    Quiz,
-    Carousel3d,
-    Slide
+export default defineComponent({
+  setup() {
+    definePageMeta({
+    layout: 'default',
+  });
   },
   data: function () {
     return {
@@ -76,14 +44,8 @@ export default {
       postes : information
     };
     
-  },
-  head() {
-    return {
-      title: "La Commuz' - Castings 2024",
-    }
-  }
-  
-};  
+  },  
+});  
 </script>
 
 <style  lang="scss" scoped>

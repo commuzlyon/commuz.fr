@@ -306,19 +306,19 @@ let anneesPassees = [
     spotify:  '',
     youtube: ''
   }
-]
+];
 
-export default {
+
+export default defineComponent({
+  setup(){
+    definePageMeta({
+    layout: 'default',
+});
+  },
   data: function () {
     return { anneesPassees, infos }
   },
-  
-  head() {
-    return {
-      title: "La Commuz' - Les spectacles",
-    }
-  }
-}
+});
 </script>
 
 <style lang="scss" scoped>

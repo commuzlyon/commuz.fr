@@ -1,22 +1,24 @@
 {
-    "name": "commuz",
-    "scripts": {
-        "nuxt": "nuxt",
-        "dev": "nuxt dev",
-        "build": "nuxt build",
-        "generate": "nuxt generate",
-        "start": "nuxt start"
-    },
-    "dependencies": {
-        "animejs": "^3.2.1",
-        "csv": "^6.0.5",
-        "nuxt": "^2.15.8",
-        "nvm": "^0.0.4",
-        "vue-carousel-3d": "^1.0.1",
-        "vue-easy-lightbox": "^0.16.2"
-    },
-    "devDependencies": {
-        "sass": "^1.43.5",
-        "sass-loader": "^10.2.0"
-    }
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.9.0",
+    "nuxt-gtag": "^1.1.2",
+    "sass": "^1.69.7",
+    "vue": "^3.4.3",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "vue-carousel-3d": "^1.0.1",
+    "vue-easy-lightbox": "^1.17.0"
+  }
 }

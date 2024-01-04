@@ -436,7 +436,7 @@ let equipe = {
     {
       role: 'Pipo',
       nom: 'Chloé Peltier',
-      photo: 'PP_Chloe_Zikos.jpg'
+      photo: 'PP_Chloe_zikos.jpg'
     },
     {
       role: 'Hautbois',

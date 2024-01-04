@@ -45,18 +45,17 @@ let respoPartenariats = {
   }
 };
 
-let data = {};
-
-export default {
-  data: function () {
-    return { respoPartenariats, data };
+export default defineComponent({
+  setup() {
+    definePageMeta({
+    layout: 'default',
+  });
   },
-  head() {
-    return {
-      title: "La Commuz' - Partenariats",
-    }
-  }
-};
+  data: function () {
+    return { respoPartenariats }
+  },
+});
+
 </script>
 
 <style lang="scss" scoped>

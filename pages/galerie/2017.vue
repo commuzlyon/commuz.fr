@@ -5,14 +5,14 @@
         <img class="lazy-image" :data-src="src" @click="() => showImg(i)"/>
       </div>
     </div>
-    <no-ssr>
+    <client-only>
     <vue-easy-lightbox
     :visible="visible"
     :imgs="galerie.images_src"
     :index="index"
     @hide="handleHide"
   ></vue-easy-lightbox>
-  </no-ssr>
+    </client-only>
   </div>
 </template>
 
@@ -62,7 +62,6 @@ export default {
       showImg (index) {
         this.index = index;
         this.visible = true;
-        console.log(index);
       },
       handleHide () {
         this.visible = false
