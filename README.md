@@ -37,4 +37,5 @@ Ce projet a été développé sous Node.js@21.5.0 avec le framework *Nuxt*@3.9.0
 
 # TODO :
 
-- Rajouter les caroussels
+- Rajouter les flèches de navigations pour les carousels
+- Rajouter une banière pour pouvoir opt-out du tracking Google Analytics
