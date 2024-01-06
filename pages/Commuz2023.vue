@@ -27,6 +27,30 @@
         allowfullscreen></iframe>
     </div>
 
+    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a style="color: var(--pink);"
+        class="inline-link" target="_blank" href="https://www.youtube.com/watch?v=KF35clz-ue8">c'est par ici!</a></h2>
+
+
+    <!-- Presentation des personnages -->
+    <div style="text-align:center; margin:2em">
+      <h1>Découvrir les personnages</h1>
+    </div>
+    <div>
+      <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pauseAutoplayOnHover="true">
+        <slide v-for="poste in postes" :key="poste.ID" class="slide">
+          <div class="carousel-item">
+            <h2 class="title"> {{ poste.persona }}</h2>
+            <figure><img class="photos" :src="poste.image"></figure>
+            <p class="description">{{ poste.description }}</p>
+          </div>
+        </slide>
+
+        <template #addons>
+          <navigation />
+        </template>
+      </carousel>
+    </div>
+
     <!-- Billetterie -->
 
     <!-- Event Facebook -->
@@ -35,8 +59,9 @@
 </template>
 
 <script>
-import Slide from "~/public/Commuz2023/components/carousel-3d/Slide.vue";
-import Carousel3d from "~/public/Commuz2023/components/carousel-3d/Carousel3d.vue";
+
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
 let data = {
   text1:
@@ -55,6 +80,56 @@ let data = {
     "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2023-billetterie-generale-2418903/fr' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
 };
 
+let information = {
+  Robert: {
+    persona: "Robert Fawkes",
+    description:
+      "Chers amis ! l’époque qui s’ouvre est celle du Libéralisme, de la Paix, et du triomphe de la Science. J’ai initié le plus grand chantier de l’Histoire pour bâtir le Léviathan.",
+    notes: "",
+    image: "/Commuz2023/images/Robert.png",
+    ID: 0
+  },
+  Elisabeth: {
+    persona: "Elisabeth Fawkes",
+    description:
+      "Ah non, votre réplique ne marche pas ! Je dois absolument finir cette maudite pièce avant l’arrivée à Londres. Mais je crois que ma plume m’abandonne…",
+    notes: "",
+    image: "/Commuz2023/images/Elisabeth.png",
+    ID: 1
+  },
+  Daisy: {
+    persona: "Daisy Fawkes",
+    description:
+      "Thomas, La Confrérie Ouvrière…  c’est de l’histoire ancienne. Moi aussi, je veux plaider la cause du socialisme, mais je le ferai à ma manière.",
+    notes: "",
+    image: "/Commuz2023/images/Daisy.png",
+    ID: 2
+  },
+  Alex: {
+    persona: "Alex",
+    description:
+      "Moi, je vis sur les planches, pas ailleurs ! Comédien vedette de la troupe d’Elisabeth, je lui suis tellement reconnaissant pour tout ce qu’elle m’a appris.",
+    notes: "",
+    image: "/Commuz2023/images/Alex.png",
+    ID: 3
+  },
+  Thomas: {
+    persona: "Thomas",
+    description:
+      "Confrères ! Amis ! Rejoignez-nous dans la lutte. La Confrérie Ouvrière n’est pas morte. Nous rétablirons la vérité.",
+    notes: "",
+    image: "/Commuz2023/images/Thomas.png",
+    ID: 4
+  },
+  Helene: {
+    persona: "Hélène",
+    description:
+      "Alors c’est vrai ? J’ai gagné ma place dans le Léviathan ! Je ne réalise pas encore, mais je sens que ça va être exceptionnel. Quelle joie de voyager hors de Paris !",
+    notes: "",
+    image: "/Commuz2023/images/Helene.png",
+    ID: 5
+  }
+};
 
 let background = "/Commuz2023/images/poster-commuz2023.png"
 
@@ -68,10 +143,15 @@ export default defineComponent({
   data: function () {
     return {
       item: data,
+      postes: information,
       bgImg: background
     };
   },
-  components: { Slide, Carousel3d },
+  components: {
+    Slide,
+    Carousel,
+    Navigation
+  },
 });
 </script>
 
@@ -160,41 +240,35 @@ body {
   }
 }
 
-.carousel-3d-container {
-  .carousel-3d-slide {
-    padding: 20px;
-    border-radius: 1px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 0.5rem;
-    background-size: cover;
-    background-color: black;
-    display: block;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
+.carousel-item {
 
-    .title {
-      font-size: 22px;
-    }
+  .photos {
+    height: 500px;
+    width: 500px;
   }
+
+  .title {
+    font-size: 22;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 18;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+  }
+
 }
 
-.carousel-3d-container figure {
-  margin: 0;
+.inline-link {
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.carousel-3d-container figcaption {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  font-size: 12px;
-  min-width: 100%;
-  box-sizing: border-box;
+h2 {
+  text-align: center;
 }
 
 #youtube {

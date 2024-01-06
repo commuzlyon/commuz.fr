@@ -13,11 +13,41 @@
     <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"></pane>
     <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"></pane>
     <pane :type="'pane--left'" :bgImage="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"></pane>
+
+    <div class="Main" id="app">
+      <slot>
+        <Quiz />
+      </slot>
+    </div>
+
+    <div style="text-align:center">
+      <h1>Parcourir les postes</h1>
+    </div>
+    <div>
+      <Carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pauseAutoplayOnHover="true"
+        :navigationEnabled="true">
+        <slot>
+          <Slide v-for="poste in postes" :index="poste.ID">
+            <div class="carousel-item">
+              <h2 class="title"> {{ poste.persona }}</h2>
+              <figure><img class="photos" :src="poste.image"></figure>
+              <p class="description">{{ poste.description }}</p>
+            </div>
+          </Slide>
+        </slot>
+        <template #addons>
+          <navigation />
+        </template>
+      </Carousel>
+    </div>
+
   </div>
 </template>
 
 <script>
 import { information } from "~/public/c/PersonalityTest/config";
+import Quiz from "~/public/c/PersonalityTest/components/quiz.vue";
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
 let data = {
   presentation:
@@ -46,7 +76,12 @@ export default defineComponent({
       item: data,
       postes: information
     };
-
+  },
+  components: {
+    Quiz,
+    Carousel,
+    Slide,
+    Navigation
   },
 });  
 </script>
@@ -136,40 +171,27 @@ body {
   }
 }
 
-.carousel-3d-container {
-  .carousel-3d-slide {
-    padding: 20px;
-    border-radius: 1px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 0.5rem;
-    background-size: cover;
-    background-color: black;
-    display: block;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
+.carousel-item {
+  .photos {
+    height: 500px;
+    width: 500px;
+  }
 
-    .title {
-      font-size: 22px;
-    }
+  .title {
+    font-size: 22;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 18;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
   }
 }
 
-.carousel-3d-container figure {
-  margin: 0;
-}
-
-.carousel-3d-container figcaption {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  font-size: 12px;
-  min-width: 100%;
-  box-sizing: border-box;
+.carousel__icon {
+  background-color: white;
+  color: white;
 }
 </style>

@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['nuxt-gtag'],
+  modules: ['nuxt-gtag', 'vue3-carousel-nuxt'],
   gtag: {
     id: 'G-CC0ZQE9TB5',
   },

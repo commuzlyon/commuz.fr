@@ -7,7 +7,7 @@
       bgImage="/images/equipes/equipe--2023.jpg" :text="infos"></pane>
     <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->
 
-    <div id="trailer--2019">
+    <div id="trailer--2023">
 
       <h2>Découvrez le trailer de Hymne à la Voie !</h2>
       <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
@@ -15,6 +15,9 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
+
+    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a style="color: var(--pink);"
+        class="inline-link" target="_blank" href="https://www.youtube.com/watch?v=KF35clz-ue8">c'est par ici!</a></h2>
 
     <!-- Les éditions précédentes -->
     <div id="precedentes">
@@ -361,7 +364,7 @@ export default defineComponent({
   margin-top: 0.5em;
 }
 
-#trailer--2019 {
+#trailer--2023 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,6 +377,18 @@ export default defineComponent({
 
   #trailer-video {
     width: 100%;
+  }
+}
+
+#retrospective-2023 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  width: 100%;
+
+  h2 {
+    text-align: center;
   }
 }
 

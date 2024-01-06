@@ -4,7 +4,7 @@
   <div>
     <div id="plaquette">
       <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez
-        nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a
+        nos responsables partenariats Vincent et Lou à l'adresse <a
           href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
     </div>
 
@@ -34,18 +34,18 @@
 <script>
 let respoPartenariats = {
   respo1: {
-    prenom: "Aleksandra",
-    nom: "Krivokapic",
-    telephone: "07 63 14 07 77",
-    mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/KS.png",
-  },
-  respo2: {
-    prenom: "Paul-Etienne",
-    nom: "Clément",
-    telephone: "",
+    prenom: "Vincent",
+    nom: "Rouaret",
+    telephone: "06 70 68 02 23",
     mail: "commuzlyon@gmail.com",
     image: "/images/Partenaires/PE.png",
+  },
+  respo2: {
+    prenom: "Lou",
+    nom: "Taffanel",
+    telephone: "07 82 36 63 30",
+    mail: "commuzlyon@gmail.com",
+    image: "/images/Partenaires/KS.png",
   }
 };
 
