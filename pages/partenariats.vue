@@ -45,7 +45,7 @@ let respoPartenariats = {
     nom: "Taffanel",
     telephone: "07 82 36 63 30",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/KS.png",
+    image: "/images/Partenaires/LT.jpg",
   }
 };
 
