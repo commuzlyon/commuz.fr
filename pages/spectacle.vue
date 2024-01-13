@@ -6,7 +6,7 @@
 
     <center>
       <h1>Stay tuned pour l'édition 2024</h1>
-      <NuxtImg class="image" src="/images/question-mark.png" height="300" width="300" alt="Affiche à venir" />
+      <img class="image" src="/images/question-mark.png" height="300" width="300" alt="Affiche à venir" />
     </center>
 
     <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->

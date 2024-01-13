@@ -34,7 +34,7 @@ export default {
   flex-wrap: wrap;
 
   @media only screen and (max-width: 992px) {
-    font-size: .5em;
+    font-size: .7em;
     justify-content: center;
   }
 
