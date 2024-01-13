@@ -33,6 +33,11 @@ export default {
   display: flex;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: 992px) {
+    font-size: .5em;
+    justify-content: center;
+  }
+
   a {
     margin-right: 0.8em;
     font-size: 1.9em;

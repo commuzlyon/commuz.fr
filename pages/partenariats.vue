@@ -3,29 +3,36 @@
   <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire." />
   <div>
     <div id="plaquette">
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou contactez
         nos responsables partenariats Vincent et Lou à l'adresse <a
-          href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+          href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
     </div>
 
-    <div id="tablePartenaires">
-      <table>
-        <tr>
-          <td v-for="partenaire in respoPartenariats">
-            <img :src="partenaire.image" alt="" id="partenaires_photo">
-          </td>
-        </tr>
-        <tr>
-          <td v-for="partenaire in respoPartenariats">
-            <p>{{ partenaire.prenom }} {{ partenaire.nom }}
+    <div>
+      <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pauseAutoplayOnHover="true">
+        <slide v-for="partenaire in respoPartenariats" :key="partenaire.telephone" class="slide">
+          <div class="carousel-item">
+            <figure><img class="photos" :src="partenaire.image"></figure>
+            <p class="nom-prenom">{{ partenaire.prenom + ' ' + partenaire.nom }}</p>
+            <p class="telephone">{{ partenaire.telephone }}</p>
+          </div>
+        </slide>
 
-              <br>
-              {{ partenaire.telephone }}
-            </p>
-          </td>
-        </tr>
-      </table>
+        <template #addons>
+          <navigation />
+        </template>
+      </carousel>
     </div>
+
+    <div style="text-align:center; margin:2em">
+      <h2>Les coulisses de la Commuz' 2023</h2>
+      <iframe class="youtube" src="https://www.youtube.com/embed/0in9oBqaI0I?si=p0K2z6m5mEhMX8VJ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
 
     <sponsors></sponsors>
   </div>
@@ -38,7 +45,7 @@ let respoPartenariats = {
     nom: "Rouaret",
     telephone: "06 70 68 02 23",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/PE.png",
+    image: "/images/Partenaires/VR.jpg",
   },
   respo2: {
     prenom: "Lou",
@@ -63,20 +70,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-#tablePartenaires {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  img {
-    margin-right: 1em;
-    height: 281px;
-    width: 281px; //200px;
-  }
-}
-
-
-
 #plaquette {
   color: white;
   padding: 2rem;
@@ -90,6 +83,52 @@ export default defineComponent({
 
   a {
     color: var(--pink);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .photos {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .nom-prenom {
+    font-size: 1.5rem;
+  }
+
+  .telephone {
+    font-size: 1.2rem;
+  }
+
+  .youtube {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .photos {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .nom-prenom {
+    font-size: 1.5rem;
+  }
+
+  .telephone {
+    font-size: 1.2rem;
+  }
+
+  .youtube {
+    width: 300px;
+    height: 200px;
   }
 }
 </style>

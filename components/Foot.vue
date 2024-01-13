@@ -25,7 +25,7 @@
         mail ou sur notre page <a class="inline-link" target="_blank" rel="noopener"
           href="https://www.facebook.com/commuzlyon">Facebook</a>. <br />
         Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a class="inline-link"
-          href="mailto:vincent.rouaret@edu.em-lyon.com">Vincent</a>.</p>
+          href="mailto:partenariat@commuz.fr">Lou et Vincent</a>.</p>
     </div>
   </footer>
 </template>
@@ -142,4 +142,5 @@ footer {
     grid-area: 2 / 2 / 3 / 3;
     display: block;
   }
-}</style>
+}
+</style>

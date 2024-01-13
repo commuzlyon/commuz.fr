@@ -72,7 +72,6 @@ export default defineComponent({
   },
   data: function () {
     return data;
-
   },
 
 });

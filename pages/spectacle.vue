@@ -3,26 +3,18 @@
   <Meta name="description" content="La Commuz existe depuis plus de 20 ans." />
   <div>
     <!-- Editions de  l'année -->
-    <pane id="infos" type="pane--media" image="/images/affiches/affiche--2023.png"
-      bgImage="/images/equipes/equipe--2023.jpg" :text="infos"></pane>
+
+    <center>
+      <h1>Stay tuned pour l'édition 2024</h1>
+      <NuxtImg class="image" src="/images/question-mark.png" height="300" width="300" alt="Affiche à venir" />
+    </center>
+
     <!--<pane id="infos" type="pane--media" image="/images/affiches/affiche--Prochaine.jpg" bgImage="/images/spectacteurs.jpg" :text="infos"></pane>-->
-
-    <div id="trailer--2023">
-
-      <h2>Découvrez le trailer de Hymne à la Voie !</h2>
-      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
-        title="youtubevideo player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a style="color: var(--pink);"
-        class="inline-link" target="_blank" href="https://www.youtube.com/watch?v=KF35clz-ue8">c'est par ici!</a></h2>
 
     <!-- Les éditions précédentes -->
     <div id="precedentes">
       <h2>Éditions précédentes</h2>
-      <p>Déjà plus de 20 ans de représentations, de 2002 à 2023 !</p>
+      <p>Déjà plus de 20 ans de représentations, de 2002 à 2024 !</p>
       <p>D'après la légende, la Commuz' existait déjà avant 2002... Nos plus grands détectives sont perdus dans la salle
         des archives, nous vous tenons au courant s'ils parviennent à en sortir !</p>
       <!-- <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee }}</a> -->
@@ -42,16 +34,27 @@
 <script>
 
 // Ici le contenu pour l'édition actuelle
-let infos = "<h2>2023 - Hymne à la Voie</h2>" +
-  "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>" +
-  '<p>Pour en savoir plus concernant l’édition 2023 rendez-vous <a style="color: var(--pink);" class="inline-link" target="_blank" href="/commuz2023">sur cette page</a>.</p>' +
-  "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2023-billetterie-generale-2418903/fr' class='inline-link'> Et pour acheter sa place c'est ici ! </a> </center>"
-// "<p>Tout sur la Commuz' 2023 en Février 2023 ! D'ici là suivez nos aventures sur : </p>  "+
-// ' <ul> <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.instagram.com/commuzlyon/">Instagram</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDZ2LRLcQB0MZ6hkB_RNDuQ">Youtube</a></li><li><a class="inline-link" target="_blank" rel="noopener" href="https://www.linkedin.com/company/commuz">Linkedin</a></li></ul>'
+let infos = "<h2>2024 - Stay tuned</h2>"
+
+// "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>" +
+// '<p>Pour en savoir plus concernant l’édition 2023 rendez-vous <a style="color: var(--pink);" class="inline-link" target="_blank" href="/commuz2023">sur cette page</a>.</p>' +
+// "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2023-billetterie-generale-2418903/fr' class='inline-link'> Et pour acheter sa place c'est ici ! </a> </center>" 
 
 
 // Les éditions précédentes
 let anneesPassees = [
+  {
+    annee: 2023,
+    text: "<h2>2023 - Hymne à la Voie</h2>" +
+      "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>",
+    bgImage: '/images/equipes/equipe--2023.jpg',
+    image: '/images/affiches/affiche--2023.png',
+    galerie: true,
+    equipe: true,
+    deezer: 'https://deezer.page.link/XnKmApuvbtXYbcQ77',
+    spotify: 'https://open.spotify.com/album/4LKVvxW6faIUebrjoH17KT?si=CKOqb9xASp-WeLy19TKxsg',
+    youtube: 'https://www.youtube.com/watch?v=KF35clz-ue8'
+  },
   {
     annee: 2022,
     text: "<h2>2022 - En Memoria</h2>" +
@@ -60,7 +63,7 @@ let anneesPassees = [
     image: '/images/affiches/affiche--2022.png',
     galerie: true,
     equipe: true,
-    deezer: 'https://www.deezer.com/fr/album/369942037',
+    deezer: 'https://deezer.page.link/7Ctzsq8PzZqNzqzn8',
     spotify: 'https://open.spotify.com/album/4boTthC3VNuTVeBVcmJAED?si=v-lbw3GbSfWFfbZ_HxZ_cw',
     youtube: 'https://youtu.be/Lrsam24N3GM'
   },
@@ -352,6 +355,10 @@ export default defineComponent({
       }
     }
   }
+}
+
+.image {
+  margin-top: 50px;
 }
 
 .annee__links {

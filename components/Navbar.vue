@@ -6,7 +6,7 @@
             width="37.44" height="48" /></NuxtLink>
       </li>
       <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/commuz2023" class="navbar__link">Commuz' 2023</NuxtLink>
+        <NuxtLink active-class="navbar__link--active" to="/commuz2024" class="navbar__link">Commuz' 2024</NuxtLink>
       </li>
       <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/spectacle" class="navbar__link">Le spectacle</NuxtLink>
@@ -19,10 +19,6 @@
       </li>
       <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/partenariats" class="navbar__link">Partenariats</NuxtLink>
-      </li>
-      <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/c/PersonalityTest" class="navbar__link">Castings 2024
-        </NuxtLink>
       </li>
       <!-- <li class="navbar__item"><a href="https://collecte.io/commuz-2022-centrale-1252787/fr">Billeterie</a></li> -->
     </ul>
@@ -107,4 +103,5 @@
 
 .navbar__link--active {
   color: var(--pink)
-}</style>
+}
+</style>

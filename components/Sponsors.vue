@@ -1,11 +1,11 @@
 <template>
   <section id="sponsors">
     <div id="sponsors__text">
-      <h2>Ils nous ont soutenus</h2>
+      <h1>Ils nous ont soutenus</h1>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette 2023.pdf" download>plaquette sponsors</a>, ou contactez
+      <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou contactez
         nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a
-          href="mailto:commuzlyon@gmail.com">commuzlyon@gmail.com</a></p>
+          href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
 
     </div>
     <div id="sponsors__logos">
@@ -17,7 +17,8 @@
           alt="Logo du Crous de Lyon"></a>
       <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/udl.svg"
           alt="Logo de l'Université de Lyon"></a>
-      <!--<img src="/logos/petitballon.svg" alt="Logo de Le Petit Ballon">-->
+      <a href="https://www.lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/vdl.png"
+          alt="Logo de la ville de Lyon"></a>
     </div>
   </section>
 </template>
@@ -78,4 +79,5 @@
       margin: 1rem;
     }
   }
-}</style>
+}
+</style>
