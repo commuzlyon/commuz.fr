@@ -4,8 +4,9 @@
     content="Chaque année, c'est un peu moins d'une centaine de d'étudiants qui font vivre le spectacle." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`" exact>{{
-        annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`"
+        active-class="selected" exact>{{
+          annee }}</router-link>
     </div>
     <NuxtPage />
   </div>
@@ -32,6 +33,10 @@ export default {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  .selected {
+    color: white;
+  }
 
   @media only screen and (max-width: 992px) {
     font-size: .7em;

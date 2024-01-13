@@ -3,8 +3,9 @@
   <Meta name="description" content="Retour en image sur les quelques dernières années." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`" exact>{{
-        annee }}</router-link>
+      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`"
+        active-class="selected" exact>{{
+          annee }}</router-link>
     </div>
     <NuxtPage />
   </div>
@@ -31,6 +32,10 @@ export default defineComponent({
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  .selected {
+    color: white;
+  }
 
   @media only screen and (max-width: 992px) {
     font-size: .7em;
