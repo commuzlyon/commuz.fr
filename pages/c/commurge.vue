@@ -154,14 +154,14 @@ let genNouvelleChope = function () {
     targets: document.getElementById('overlay_chope'),
     borderRadius: ['0', '50%'],
     scale: [1, 0],
-    duration: 300,
+    duration: 500,
     easing: 'easeInOutQuart'
   });
   nouvellechopeTimeline.add({
     targets: document.getElementById('overlay_chope'),
     borderRadius: ['50%', '0%'],
     scale: [0, 1],
-    duration: 300,
+    duration: 500,
     easing: 'easeInOutQuart',
     begin: function (anime) {
       genChope()
