@@ -17,8 +17,9 @@
                         </option>
                     </select>
                     <div v-if="selectedPerson1" class="selected-person">
-                        <img :src="'/c/commurge/pictures/' + selectedPerson1.photos" alt="Person 1 Photo" />
-                        <p>MBTI: {{ selectedPerson1.mbti }}</p>
+                        <img :src="'/c/commurge/pictures/' + selectedPerson1.photos" class="person-img"
+                            alt="Person 1 Photo" />
+                        <p class="text-up">MBTI: {{ selectedPerson1.mbti }}</p>
                         <p>Astro: {{ selectedPerson1.astro }}</p>
                     </div>
                 </div>
@@ -33,8 +34,9 @@
                         </option>
                     </select>
                     <div v-if="selectedPerson2" class="selected-person">
-                        <img :src="'/c/commurge/pictures/' + selectedPerson2.photos" alt="Person 2 Photo" />
-                        <p>MBTI: {{ selectedPerson2.mbti }}</p>
+                        <img :src="'/c/commurge/pictures/' + selectedPerson2.photos" class="person-img"
+                            alt="Person 2 Photo" />
+                        <p class="text-up">MBTI: {{ selectedPerson2.mbti }}</p>
                         <p>Astro: {{ selectedPerson2.astro }}</p>
                     </div>
                 </div>
@@ -236,15 +238,6 @@ button {
     outline: none;
 }
 
-.result-container {
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.result-container.expanded {
-    transform: scale(1.2);
-}
-
 .container {
     height: 100vh;
     width: 100%;
@@ -268,6 +261,41 @@ button {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 10em;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens with a maximum width of 600 pixels (typical for phones) */
+
+    .profiles {
+        flex-direction: column;
+        /* Stack profiles vertically on small screens */
+        align-items: center;
+    }
+
+    .person-img {
+        width: 55%;
+    }
+
+    .person-container {
+        margin-right: 0;
+        /* Remove right margin on small screens */
+        margin-left: 0;
+        /* Remove left margin on small screens */
+    }
+
+    .text-up {
+        margin-bottom: 0px;
+    }
+
+    .selected-person {
+        margin-top: 5px;
+        /* Adjust margin on small screens */
+    }
+
+    button {
+        margin-bottom: 5px;
+        /* Adjust margin on small screens */
+    }
 }
 </style>
   
