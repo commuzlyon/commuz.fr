@@ -17,7 +17,7 @@
                         </option>
                     </select>
                     <div v-if="selectedPerson1" class="selected-person">
-                        <img :src="'../commurge/pictures/' + selectedPerson1.photos" alt="Person 1 Photo" />
+                        <img :src="'/c/commurge/pictures/' + selectedPerson1.photos" alt="Person 1 Photo" />
                         <p>MBTI: {{ selectedPerson1.mbti }}</p>
                         <p>Astro: {{ selectedPerson1.astro }}</p>
                     </div>
@@ -33,7 +33,7 @@
                         </option>
                     </select>
                     <div v-if="selectedPerson2" class="selected-person">
-                        <img :src="'../commurge/pictures/' + selectedPerson2.photos" alt="Person 2 Photo" />
+                        <img :src="'/c/commurge/pictures/' + selectedPerson2.photos" alt="Person 2 Photo" />
                         <p>MBTI: {{ selectedPerson2.mbti }}</p>
                         <p>Astro: {{ selectedPerson2.astro }}</p>
                     </div>
