@@ -134,8 +134,8 @@ let applyChope = function (commuzard, id) {
 let genChope = function () {
 
   // Tirage au sort
-  let chopeA = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 2))];
-  let chopeB = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 2))];
+  let chopeA = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))];
+  let chopeB = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))];
   while (chopeA === chopeB) {
     chopeB = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))]
   }
@@ -299,7 +299,7 @@ export default defineComponent({
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
 
-    //await fetch('http://localhost:3000/c/commurge//infos.csv')
+    //await fetch('http://localhost:3000/c/commurge/infos.csv')
     //  .then((response) => response.text())
     //  .then(csv => csv.split('\n'))
     //  .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
@@ -371,65 +371,66 @@ export default defineComponent({
     text-align: center;
     justify-content: center;
     flex: 1;
-    width: 100%;
+    width: 50%;
     gap: 20px;
 
     @media (min-width: 700px) {
       flex-direction: row;
-    }
-
-    #chopeA {
-      flex-direction: column-reverse;
-    }
-
-    .match__names {
-      font-size: 2em;
-    }
-
-    .match__pictures {
-      background-size: cover;
-    }
-
-    .match__person {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 10px;
-
-      img {
-        width: 60%;
-      }
-
-      .match__description {
-        font-weight: bold;
-      }
+      width: 100%;
     }
   }
 
+  #chopeA {
+    flex-direction: column-reverse;
+  }
 
-  #chopOrNot {
+  .match__names {
+    font-size: 2em;
+  }
+
+  .match__pictures {
+    background-size: cover;
+  }
+
+  .match__person {
     display: flex;
-    align-items: bottom;
-    justify-content: space-around;
-    font-size: 8vh;
-    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 
-    p {
-      margin: 0;
+    img {
+      width: 100%;
     }
 
-    #send_chope {
-      cursor: pointer;
+    .match__description {
+      font-weight: bold;
     }
+  }
+}
 
-    #send_no_chope {
-      cursor: pointer;
-    }
 
-    #super_chope {
-      cursor: pointer;
-    }
+#chopOrNot {
+  display: flex;
+  //align-items: bottom;
+  justify-content: space-around;
+  font-size: 8vh;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+
+  #send_chope {
+    cursor: pointer;
+  }
+
+  #send_no_chope {
+    cursor: pointer;
+  }
+
+  #super_chope {
+    cursor: pointer;
   }
 }
 
