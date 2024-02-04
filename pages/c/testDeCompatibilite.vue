@@ -21,6 +21,7 @@
                             alt="Person 1 Photo" />
                         <p class="text-up">MBTI: {{ selectedPerson1.mbti }}</p>
                         <p>Astro: {{ selectedPerson1.astro }}</p>
+                        <p>Poste: {{ selectedPerson1.poste }}</p>
                     </div>
                 </div>
             </div>
@@ -38,6 +39,7 @@
                             alt="Person 2 Photo" />
                         <p class="text-up">MBTI: {{ selectedPerson2.mbti }}</p>
                         <p>Astro: {{ selectedPerson2.astro }}</p>
+                        <p>Poste: {{ selectedPerson2.poste }}</p>
                     </div>
                 </div>
             </div>
@@ -151,9 +153,9 @@ export default defineComponent({
 
         const fetchData = async () => {
             // For local dev
-            //const response = await fetch('http://localhost:3000/c/commurge/infos.csv');
+            const response = await fetch('http://localhost:3000/c/commurge/infos.csv');
             // For prod
-            const response = await fetch('https://commuz.fr/c/commurge/infos.csv')
+            //const response = await fetch('https://commuz.fr/c/commurge/infos.csv')
 
             const csvData = await response.text();
 
@@ -200,6 +202,10 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    margin-bottom: 0%;
 }
 
 h1 {
