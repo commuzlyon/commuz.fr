@@ -10,7 +10,7 @@
       <video id="home__hero_bg" poster="/images/homepage/poster-video-accueil.jpg" autoplay loop>
 
         <!-- <source src="/videos/video-intro-site-2021.webm" type="video/webm">-->
-        <source src="/videos/video-intro-site-2021.mp4" type="video/mp4">
+        <source src="/videos/video-intro-site-2024.mp4" type="video/mp4">
       </video>
     </div>
     <!-- Description -->
