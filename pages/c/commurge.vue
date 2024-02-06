@@ -26,7 +26,7 @@
           </div>
           <div id="chopOrNot">
             <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
-            <!--<p @click="sendSuperChope()" class="answer_chope" id="super_chope">test</p>-->
+            <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
             <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
           </div>
           <div id="chopOrNot">
@@ -181,9 +181,9 @@ let sendChope = function (answer) {
     canVote = false;
     //At each vote we actualise the count_super_chope and we add the emoji if it is useable !
     count_super_chope++;
-    //if (count_super_chope > 19) {
-    //  document.getElementById('super_chope').innerHTML = "🤩";
-    //}
+    if (count_super_chope > 19) {
+      document.getElementById('super_chope').innerHTML = "🤩";
+    }
     if (['yes', 'no'].includes(answer)) {
       // Construction de la requête
       if (answer === "yes") {
@@ -227,7 +227,6 @@ let sendChope = function (answer) {
         .catch(() => alert("Erreur 😭"))
     }
   }
-
 }
 
 let sendSuperChope = function () {
@@ -236,7 +235,7 @@ let sendSuperChope = function () {
     //On actualise count_super_chope et on enlève l'emoji
     count_super_chope -= 20;
     if (count_super_chope < 20) {
-      document.getElementById('super_chope').innerHTML = "";
+      document.getElementById('super_chope').innerHTML = " ";
     }
     rainingParticles(["🧡", "💜", "❤️", "🌼", "🌸"])
     // On boucle 2 fois pour envoyer 2 votes
@@ -295,6 +294,13 @@ export default defineComponent({
       layout: "conchiage",
       name: "Site des chopes",
     });
+  },
+  watch: {
+    canActivateSuperChope: function () {
+      if (this.count_super_chope > 19) {
+        document.getElementById('super_chope').innerHTML = "🤩";
+      }
+    }
   },
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
