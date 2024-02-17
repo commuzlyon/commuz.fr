@@ -31,15 +31,15 @@
           </div>
           <div id="chopOrNot">
             <p>
-            <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: Fuchsia">0</p>
+            <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: rgb(255, 0, 0)">0</p>
             </p>
           </div>
         </div>
       </div>
       <div id="commurge__home" style="height : 100vh;">
-        <img class="commurge__image" id="speedy" src="/c/commurge/thomas-the-train.png" alt="Thomas the Train">
-        <img class="commurge__image" id="hands" src="/c/commurge/iloveyou.gif" alt="Hands in Heart">
-        <img class="commurge__image" id="colombe" src="/c/commurge/colombe.gif" alt="Colombe">
+        <img class="commurge__image" id="desk" src="/c/commurge/desk.png" alt="A Desk">
+        <img class="commurge__image" id="host" src="/c/commurge/host.gif" alt="host">
+        <img class="commurge__image" id="mic" src="/c/commurge/mic.gif" alt="mic">
         <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">¡ Willkommen !</button>
       </div>
 
@@ -305,31 +305,31 @@ export default defineComponent({
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
 
-    //await fetch('http://localhost:3000/c/commurge/infos.csv')
-    //  .then((response) => response.text())
-    //  .then(csv => csv.split('\n'))
-    //  .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
-
-
-    await fetch('https://commuz.fr/c/commurge/infos.csv')
+    await fetch('http://localhost:3000/c/commurge/infos.csv')
       .then((response) => response.text())
       .then(csv => csv.split('\n'))
       .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
+
+
+    //await fetch('https://commuz.fr/c/commurge/infos.csv')
+    //  .then((response) => response.text())
+    //  .then(csv => csv.split('\n'))
+    //  .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
     //let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
     //let i = Math.floor(Math.random() * Math.floor(chansons.length));
     //document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`;
     anime({
-      targets: '#show_chope',
+      targets: '#desk',
       autoplay: true,
-      scale: [1, 1.1],
+      rotateY: [-20, 20],
       direction: 'alternate',
       loop: true,
       easing: 'easeInOutSine'
     });
     anime({
-      targets: '#speedy',
+      targets: '#show_chope',
       autoplay: true,
-      rotateY: [-20, 20],
+      scale: [1, 1.1],
       direction: 'alternate',
       loop: true,
       easing: 'easeInOutSine'
@@ -358,7 +358,7 @@ export default defineComponent({
 }
 
 #match {
-  color: gold;
+  color: rgb(173, 112, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -418,7 +418,6 @@ export default defineComponent({
 
 #chopOrNot {
   display: flex;
-  //align-items: bottom;
   justify-content: space-around;
   font-size: 8vh;
   width: 100%;
@@ -462,7 +461,7 @@ export default defineComponent({
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-color: #480ca8;
+  background-color: #000000;
   background-image: url('/c/commurge/stars_bg.gif');
   background-repeat: repeat;
 
@@ -478,7 +477,7 @@ export default defineComponent({
     .commurge__button {
       grid-area: 4/1/5/4;
       z-index: 2;
-      background-color: #bb98ff;
+      background-color: rgb(173, 112, 0);
       padding: 1em 2em;
       border-radius: 50%;
       font-size: 1.4em;
@@ -489,15 +488,15 @@ export default defineComponent({
       margin: 0 auto;
     }
 
-    #speedy {
+    #desk {
       grid-area: 3/2;
     }
 
-    #colombe {
+    #mic {
       grid-area: 1/3;
     }
 
-    #hands {
+    #host {
       grid-area: 1/1/3/3;
     }
 
