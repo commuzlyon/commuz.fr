@@ -153,9 +153,9 @@ export default defineComponent({
 
         const fetchData = async () => {
             // For local dev
-            const response = await fetch('http://localhost:3000/c/commurge/infos.csv');
+            // const response = await fetch('http://localhost:3000/c/commurge/infos.csv');
             // For prod
-            //const response = await fetch('https://commuz.fr/c/commurge/infos.csv')
+            const response = await fetch('https://commuz.fr/c/commurge/infos.csv')
 
             const csvData = await response.text();
 

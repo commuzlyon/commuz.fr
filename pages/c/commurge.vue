@@ -305,16 +305,16 @@ export default defineComponent({
   methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
   mounted: async function () {
 
-    await fetch('http://localhost:3000/c/commurge/infos.csv')
-      .then((response) => response.text())
-      .then(csv => csv.split('\n'))
-      .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
-
-
-    //await fetch('https://commuz.fr/c/commurge/infos.csv')
+    //await fetch('http://localhost:3000/c/commurge/infos.csv')
     //  .then((response) => response.text())
     //  .then(csv => csv.split('\n'))
     //  .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
+
+
+    await fetch('https://commuz.fr/c/commurge/infos.csv')
+      .then((response) => response.text())
+      .then(csv => csv.split('\n'))
+      .then(t => { t.forEach(e => commuzards.push(e.split(';'))) })
     //let chansons = ['boom.mp3', 'chimai.mp3', 'dion.mp3', 'feuxamour.mp3', 'jul.mp3', 'queen.mp3'];
     //let i = Math.floor(Math.random() * Math.floor(chansons.length));
     //document.getElementById('commurge_audio').src = `/c/commurge/music/${chansons[i]}`;
