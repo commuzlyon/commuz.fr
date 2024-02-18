@@ -4,6 +4,9 @@ node_modules
 # logs
 npm-debug.log
 
+# Local stats 
+stats/
+
 # Nuxt build
 .nuxt
 .output
