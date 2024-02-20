@@ -12,6 +12,9 @@
         <NuxtLink active-class="navbar__link--active" to="/spectacle" class="navbar__link">Le spectacle</NuxtLink>
       </li>
       <li class="navbar__item">
+        <NuxtLink active-class="navbar__link--active" to="/billetterie" class="navbar__link">Billetterie</NuxtLink>
+      </li>
+      <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/galerie/2023" class="navbar__link">Les photos</NuxtLink>
       </li>
       <li class="navbar__item">
@@ -87,7 +90,7 @@
     left: 0;
     bottom: 0;
     opacity: 0.6;
-    background: var(--dark-pink);
+    background: #ee8c04;
     transform: scale3d(0, 1, 1);
     transform-origin: 0% 50%;
     transition: transform 0.5s;
@@ -102,6 +105,6 @@
 }
 
 .navbar__link--active {
-  color: var(--pink)
+  color: #ee8c04
 }
 </style>

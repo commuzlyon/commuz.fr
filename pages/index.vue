@@ -157,7 +157,7 @@ export default defineComponent({
   }
 
   margin: 3em 0;
-  background: linear-gradient(100deg, #621837, #47193b 40%);
+  background: linear-gradient(100deg, #de8406, #e72203 100%);
 
   .quote {
     max-width: 70ch;

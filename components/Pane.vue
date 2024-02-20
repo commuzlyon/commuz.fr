@@ -129,7 +129,7 @@ export default defineComponent({
 }
 
 .pane--media-left {
-  background: linear-gradient(100deg, #621837, #47193b 40%);
+  background: linear-gradient(100deg, rgb(255, 170, 45), rgb(255, 76, 54) 100%);
 }
 
 .pane--left,
@@ -195,4 +195,5 @@ export default defineComponent({
 .annee__links {
   display: flex;
   flex-direction: row;
-}</style>
+}
+</style>
