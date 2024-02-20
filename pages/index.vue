@@ -4,7 +4,7 @@
     content="La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon." />
   <div>
     <div id="home__hero">
-      <img id="home__hero__logo" src="/images/homepage/Commuz_Titre.svg" alt="Commuz">
+      <img id="home__hero__logo" src="/images/homepage/Commuz_Titre.png" alt="Commuz">
       <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img
           src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
       <video id="home__hero_bg" poster="/images/homepage/poster-video-accueil.jpg" autoplay loop>

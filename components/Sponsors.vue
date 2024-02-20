@@ -4,7 +4,7 @@
       <h1>Ils nous ont soutenus</h1>
       <p>Vous aussi, entrez en scène à nos côtés !</p>
       <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou contactez
-        nos responsables partenariats Aleksandra et Paul-Etienne à l'adresse <a
+        nos responsables partenariats Lou et Vincent à l'adresse <a
           href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
 
     </div>
