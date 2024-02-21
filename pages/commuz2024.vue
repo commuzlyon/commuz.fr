@@ -15,8 +15,8 @@
             </picture>
         </div>
 
-        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/ACs.png'" :text="item.text1"></pane>
-        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/MeS.png'" :text="item.text2"></pane>
+        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1"></pane>
+        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2"></pane>
         <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3"></pane>
 
 
