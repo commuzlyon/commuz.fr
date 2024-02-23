@@ -4,8 +4,8 @@
   <div>
     <!-- Editions de  l'année -->
 
-    <pane id="infos" type="pane--media" image="/images/affiches/affiche--2024.png" bgImage="/images/spectacteurs.jpg"
-      :text="infos"></pane>
+    <pane id="infos" type="pane--media" image="/images/affiches/affiche--2024.png"
+      bgImage="/images/equipes/equipe--2024.jpg" :text="infos"></pane>
 
     <!-- Les éditions précédentes -->
     <div id="precedentes">
