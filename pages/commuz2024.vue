@@ -18,6 +18,7 @@
         <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1"></pane>
         <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2"></pane>
         <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3"></pane>
+        <pane id="infos4" :type="'pane--media'" :image="'/Commuz2024/images/Tombola.jpg'" :text="item.text4"></pane>
 
 
         <!-- Trailer -->
@@ -51,6 +52,14 @@ let data = {
         "<ul><li> Vendredi : 19h </li> <li> Samedi : 19h </li> <li> Dimanche : 17h</li> </ul>" +
         "<p> Le spectacle commence 30 minutes après l'ouverture des portes.</p>" +
         "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2024-global-3824258/fr' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
+    text4:
+        "<h2>La Grande Tombola Commuz'</h2>" +
+        "<p> À l'aide de ses partenaires, la Commuz' 2024 vous propose une tombola pour gagner de nombreux lots !</p>" +
+        "<p> Vous pouvez tenter de gagner des places de paintball, des places de cinémas, des goodies au thème de la Commuz' 2024, et bien d'autres encore... </p>" +
+        "<p> <U> Date du tirage: 13/03 <U> </p>" +
+        "<p> <U> Prix du ticket: 2€ <U> </p>" +
+        "<center> <a target='_black' rel='noopener' href='https://collecte.io/commuz-2024-tombola-3825547/fr' class='inline-link'> Pour participer c'est ici ! </a> </center>"
+
 };
 
 let information = {
