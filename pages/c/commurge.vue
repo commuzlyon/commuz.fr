@@ -280,11 +280,9 @@ let handleKeyDown = function (event) {
       this.sendChope('no');
     } else if (event.keyCode === 39 || event.key === 'ArrowRight') {
       this.sendChope('yes');
+    } else if (event.keyCode == 38 || event.key === 'ArrowUp') {
+      this.sendSuperChope();
     }
-
-    //else if (event.keyCode == 38 || event.key === 'ArrowUp') {
-    //  this.sendSuperChope();
-    //}
   }
 }
 
