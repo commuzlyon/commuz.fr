@@ -19,7 +19,7 @@
   align-items: center;
   text-align: center;
   height: 80vh;
-  background-image: url('public/Commuz2024/images/perso.png');
+  background-image: url('/Commuz2024/images/perso.png');
   background-size: cover;
   background-position: center;
   padding-left: 20px;
