@@ -3,7 +3,8 @@
     <img src="/logos/commuz-masque-logo-gris.png" alt="Logo Commuz' Noir" id="footer__logo">
     <div id="social">
       <ul>
-        <li><a class="inline-link" target="_blank" rel="noopener" href="https://www.facebook.com/commuzlyon">Facebook</a>
+        <li><a class="inline-link" target="_blank" rel="noopener"
+            href="https://www.facebook.com/commuzlyon">Facebook</a>
         </li>
         <li><a class="inline-link" target="_blank" rel="noopener"
             href="https://www.instagram.com/commuzlyon/">Instagram</a></li>
@@ -21,7 +22,8 @@
     <div id="contact">
       <h3>Contacts</h3>
       <p>Pour toute question, contactez <a class="inline-link"
-          href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a> par
+          href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a>
+        par
         mail ou sur notre page <a class="inline-link" target="_blank" rel="noopener"
           href="https://www.facebook.com/commuzlyon">Facebook</a>. <br />
         Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a class="inline-link"
@@ -104,7 +106,7 @@ footer {
       }
 
       a {
-        color: var(--pink);
+        color: #ee8c04;
       }
     }
   }

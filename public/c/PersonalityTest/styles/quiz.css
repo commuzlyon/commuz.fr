@@ -41,7 +41,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   min-height: 30rem;
-  background: linear-gradient(100deg,#621837,#47193b 40%);
+  background: linear-gradient(100deg, #ee8c04, #e83a00 80%);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -68,15 +68,15 @@
   border-radius: 5rem;
   overflow: hidden;
   border: none;
-  color: #064864;
+  color: #ee8c04;
 }
 
 .questionBox header .progressContainer > progress::-moz-progress-bar {
-  background: #064864;
+  background: #ee8c04;
 }
 
 .questionBox header .progressContainer > progress::-webkit-progress-value {
-  background: #064864;
+  background: #ee8c04;
 }
 
 .questionBox header .progressContainer > p {
@@ -182,11 +182,11 @@
 
 .questionBox .questionContainer .optionContainer .option.is-selected {
   border-color: rgba(0, 0, 0, 0.25);
-  background-color: #fe7a90;
+  background-color: #ee8c04;
 }
 
 .questionBox .questionContainer .optionContainer .option:hover {
-  background-color: #fac0ca;
+  background-color: #d58412;
 }
 
 .questionBox .questionContainer .optionContainer .option:active {
@@ -196,7 +196,7 @@
 
 .questionBox .questionContainer .questionFooter {
   background: rgba(0, 0, 0, 0.025);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid white;
   width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -253,7 +253,7 @@
 }
 
 .button.is-active {
-  background: #064864;
+  background: #ee8c04;
   color: white;
   border-color: transparent;
 }

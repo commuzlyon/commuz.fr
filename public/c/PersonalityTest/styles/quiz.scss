@@ -30,7 +30,7 @@ $primary_color: #064864;
     min-height: 30rem;
 
     background: #fafafa;
-    color: black;
+    color: white;
     position: relative;
     display: flex;
 
@@ -42,7 +42,7 @@ $primary_color: #064864;
         background: rgba(0, 0, 0, 0.025);
         padding: 1.5rem;
         text-align: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px white;
 
         h1 {
             font-weight: bold;
@@ -99,7 +99,7 @@ $primary_color: #064864;
         width: 100%;
         text-align: center;
         .title {
-            color: black;
+            color: white;
             font-size: 34px;
             line-height: 40px;
         }
@@ -171,7 +171,7 @@ $primary_color: #064864;
 
         .questionFooter {
             background: rgba(0, 0, 0, 0.025);
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid white;
             width: 100%;
             align-self: flex-end;
 

@@ -186,7 +186,7 @@
         </div>
     </div>
 </template>
-  
+
 <style lang="scss">
 .trombi_membre.square {
     img {
@@ -194,7 +194,7 @@
     }
 }
 </style>
-  
+
 <script>
 let presentation = {
     text: "<h2>2024 - Backstage</h2>" +
@@ -314,7 +314,7 @@ let equipe = {
             photo: 'Andréas.png'
         },
         {
-            role: 'Metteuse en scène',
+            role: 'Metteur en scène',
             nom: 'Jules MANSION',
             photo: 'Jules.png'
         }
@@ -458,7 +458,7 @@ let equipe = {
         {
             role: 'Flûte',
             nom: 'Anne-Isabelle DE VILLEMAGNE',
-            photo: 'Cha_ky.png'
+            photo: 'anne isa.png'
         },
         {
             role: 'Flûte',
@@ -745,4 +745,3 @@ export default {
     }
 }
 </script>
-  

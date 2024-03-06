@@ -23,7 +23,7 @@
   </section>
 </template>
 
-<style lang="scss" >
+<style lang="scss">
 #sponsors {
   color: white;
   padding: 2rem;
@@ -43,7 +43,7 @@
   }
 
   a {
-    color: var(--pink);
+    color: #ee8c04;
   }
 
   #sponsors__logos {

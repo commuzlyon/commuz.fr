@@ -82,7 +82,7 @@ export default defineComponent({
   margin-bottom: 1rem;
 
   a {
-    color: var(--pink);
+    color: #ee8c04;
   }
 }
 
