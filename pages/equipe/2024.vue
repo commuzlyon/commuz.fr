@@ -225,7 +225,7 @@ let equipe = {
             photo: 'Antoine_Atmos.png'
         },
         {
-            role: 'Trésorière',
+            role: 'Trésorier',
             nom: 'Oscar BOLZINGER',
             photo: 'Babs.png'
         },
