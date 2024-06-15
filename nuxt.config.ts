@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['nuxt-gtag', 'vue3-carousel-nuxt', "@nuxt/image"],
+  modules: ['nuxt-gtag', 'vue3-carousel-nuxt', "@nuxt/image", '@nuxt/eslint'],
   gtag: {
     id: 'G-CC0ZQE9TB5',
   },
