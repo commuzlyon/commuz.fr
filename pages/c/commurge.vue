@@ -31,7 +31,7 @@
           </div>
           <div id="chopOrNot">
             <p/><p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: rgb(255, 0, 0)">0</p>
-            </p>
+
           </div>
         </div>
       </div>
