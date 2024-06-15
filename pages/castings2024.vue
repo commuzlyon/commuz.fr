@@ -9,11 +9,11 @@
           src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
       <img id="home__hero_bg" src="/c/PersonalityTest/images/Poster-Casting.jpg">
     </div>
-    <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"></pane>
-    <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"></pane>
-    <pane :type="'pane--left'" :bgImage="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"></pane>
+    <pane :type="'pane--left'" :bg-image="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"/>
+    <pane :type="'pane--right'" :bg-image="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"/>
+    <pane :type="'pane--left'" :bg-image="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"/>
 
-    <div class="Main" id="app">
+    <div id="app" class="Main">
       <slot>
         <Quiz />
       </slot>
@@ -23,8 +23,9 @@
       <h1>Parcourir les postes</h1>
     </div>
     <div>
-      <Carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pauseAutoplayOnHover="true"
-        :navigationEnabled="true">
+      <Carousel
+:itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true"
+        :navigation-enabled="true">
         <slot>
           <Slide v-for="poste in postes" :index="poste.ID">
             <div class="carousel-item">
@@ -48,7 +49,7 @@ import { information } from "~/public/c/PersonalityTest/config";
 import Quiz from "~/public/c/PersonalityTest/components/quiz.vue";
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
-let data = {
+const data = {
   presentation:
     "<h2>La Commuz', c'est quoi ?</h2>" +
     "<p>La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de 90 étudiants de l'École Centrale de Lyon et de emlyon business school.</p>" +
@@ -65,6 +66,12 @@ let data = {
 };
 
 export default defineComponent({
+  components: {
+    Quiz,
+    Carousel,
+    Slide,
+    Navigation
+  },
   setup() {
     definePageMeta({
       layout: 'default',
@@ -75,12 +82,6 @@ export default defineComponent({
       item: data,
       postes: information
     };
-  },
-  components: {
-    Quiz,
-    Carousel,
-    Slide,
-    Navigation
   },
 });  
 </script>

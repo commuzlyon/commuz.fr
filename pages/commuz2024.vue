@@ -5,7 +5,8 @@
         <!-- Description -->
         <div id="home__hero">
             <img id="home__hero__logo" src="/Commuz2024/images/watermark-2024.png" alt="Commuz">
-            <a id="home__hero__scroll"
+            <a
+id="home__hero__scroll"
                 onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img
                     src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
             <!-- Image d'en tête -->
@@ -15,19 +16,20 @@
             </picture>
         </div>
 
-        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1"></pane>
-        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2"></pane>
-        <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3"></pane>
-        <pane id="infos4" :type="'pane--media'" :image="'/Commuz2024/images/Tombola.jpg'" :text="item.text4"></pane>
+        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1"/>
+        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2"/>
+        <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3"/>
+        <pane id="infos4" :type="'pane--media'" :image="'/Commuz2024/images/Tombola.jpg'" :text="item.text4"/>
 
 
         <!-- Trailer -->
         <div style="text-align:center; margin:2em">
             <h1>Trailer de l'édition 2024 !</h1>
-            <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/cxJJHY5vGNk"
+            <iframe
+id="youtube" width="560" height="315" src="https://www.youtube.com/embed/cxJJHY5vGNk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen/>
         </div>
     </div>
 </template>
@@ -37,7 +39,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
-let data = {
+const data = {
     text1:
         "<h2>Synopsis</h2>" +
         "<p align=justify >Hollywood, 1964. Le Highlight Show, le talk show le plus populaire des Etats-Unis, est au sommet de sa gloire. Mais au cours d’une énième émission, son host Alec Keaton décide subitement de prendre sa retraite.</p>",
@@ -62,7 +64,7 @@ let data = {
 
 };
 
-let information = {
+const information = {
     Sammy: {
         persona: "Sammy",
         description:
@@ -113,9 +115,14 @@ let information = {
     }
 };
 
-let background = "/Commuz2024/images/poster-commuz2024.png"
+const background = "/Commuz2024/images/poster-commuz2024.png"
 
 export default defineComponent({
+    components: {
+        Slide,
+        Carousel,
+        Navigation
+    },
     setup() {
         definePageMeta({
             name: "App",
@@ -128,11 +135,6 @@ export default defineComponent({
             postes: information,
             bgImg: background
         };
-    },
-    components: {
-        Slide,
-        Carousel,
-        Navigation
     },
 });
 </script>

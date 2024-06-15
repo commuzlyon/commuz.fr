@@ -4,21 +4,22 @@
   <div>
     <!-- Editions de  l'année -->
 
-    <pane id="infos" type="pane--media" image="/images/affiches/affiche--2024.png"
-      bgImage="/images/equipes/equipe--2024.jpg" :text="infos"></pane>
+    <pane
+id="infos" type="pane--media" image="/images/affiches/affiche--2024.png"
+      bg-image="/images/equipes/equipe--2024.jpg" :text="infos"/>
 
     <!-- Les éditions précédentes -->
     <div id="precedentes">
       <h2>Éditions précédentes</h2>
-      <a class="inline-link" v-for="(annee, id) in anneesPassees" :key="id" :href="'#' + annee.annee">{{ annee.annee
+      <a v-for="(annee, id) in anneesPassees" :key="id" class="inline-link" :href="'#' + annee.annee">{{ annee.annee
       }}</a>
     </div>
 
     <div v-for="(annee, id) in anneesPassees">
-      <pane :key="id" :id="annee.annee" :type="'pane--media'" :bgImage="annee.bgImage" :image="annee.image"
+      <pane
+:id="annee.annee" :key="id" :type="'pane--media'" :bg-image="annee.bgImage" :image="annee.image"
         :text="annee.text" :galerie="annee.galerie" :equipe="annee.equipe" :deezer="annee.deezer" :youtube="annee.youtube"
-        :spotify="annee.spotify" :annee="annee.annee">
-      </pane>
+        :spotify="annee.spotify" :annee="annee.annee"/>
     </div>
   </div>
 </template>
@@ -26,7 +27,7 @@
 <script>
 
 // Ici le contenu pour l'édition actuelle
-let infos = "<h2>2024 - Backstage</h2><p>Hollywood, 1964. Le Highlight Show, le talk show le plus populaire des Etats-Unis, est au sommet de sa gloire. Mais au cours d’une énième émission, son host Alec Keaton décide subitement de prendre sa retraite. Face à l’urgence de la situation, la productrice Norma Desmond mettra tout en œuvre pour assurer le maintien de l’émission. Mais c’est sans compter le désir de vengeance de son ex-mari Paul, prêt à tout pour détruire le Highlight, et les machinations du “Réseau”, une mystérieuse organisation qui risque bien de révéler au grand jour les secrets les plus intimes de nos héros. Derrière les paillettes, Backstage explore les coulisses du showbusiness, entre amours, passions et ambitions.</p>"
+const infos = "<h2>2024 - Backstage</h2><p>Hollywood, 1964. Le Highlight Show, le talk show le plus populaire des Etats-Unis, est au sommet de sa gloire. Mais au cours d’une énième émission, son host Alec Keaton décide subitement de prendre sa retraite. Face à l’urgence de la situation, la productrice Norma Desmond mettra tout en œuvre pour assurer le maintien de l’émission. Mais c’est sans compter le désir de vengeance de son ex-mari Paul, prêt à tout pour détruire le Highlight, et les machinations du “Réseau”, une mystérieuse organisation qui risque bien de révéler au grand jour les secrets les plus intimes de nos héros. Derrière les paillettes, Backstage explore les coulisses du showbusiness, entre amours, passions et ambitions.</p>"
 
 // "<p>1851. Le Léviathan, train gigantesque de l’ingénieur Robert Fawkes, achève sa tournée inaugurale. Après avoir traversé toutes les capitales européennes, le prodige s'apprête à rejoindre Londres pour l’ouverture de l’Exposition Universelle. À l’heure de l’avènement du libéralisme, les braises de la Confrérie Ouvrière semblent se raviver. On murmure que Thomas Ravet préparerait son retour. </p>" +
 // '<p>Pour en savoir plus concernant l’édition 2023 rendez-vous <a style="color: var(--pink);" class="inline-link" target="_blank" href="/commuz2023">sur cette page</a>.</p>' +
@@ -34,7 +35,7 @@ let infos = "<h2>2024 - Backstage</h2><p>Hollywood, 1964. Le Highlight Show, le 
 
 
 // Les éditions précédentes
-let anneesPassees = [
+const anneesPassees = [
   {
     annee: 2023,
     text: "<h2>2023 - Hymne à la Voie</h2>" +

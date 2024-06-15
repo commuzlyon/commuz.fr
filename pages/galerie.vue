@@ -3,7 +3,8 @@
   <Meta name="description" content="Retour en image sur les quelques dernières années." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesGalerie" :key="id" :to="`/galerie/${annee}`"
+      <router-link
+v-for="(annee, id) in anneesGalerie" :key="id" class="inline-link" :to="`/galerie/${annee}`"
         active-class="selected" exact>{{
           annee }}</router-link>
     </div>
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-let anneesGalerie = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
+const anneesGalerie = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default defineComponent({
   setup() {

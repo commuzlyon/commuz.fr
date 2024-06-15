@@ -1,13 +1,13 @@
 <template lang="html">
   <div style="overflow-y: hidden;">
-    <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop></audio>
+    <audio id="commurge_audio" type="audio/mp3" src="/c/commurge/music/jul.mp3" autoplay loop/>
 
     <div id="commurge__container">
       <div id="overlay_chope">
         <img id="love_loader" src="/c/commurge/iloveyou.gif">
         <div id="match">
           <div id="match__pictures">
-            <div class="match__person" id="chopeA">
+            <div id="chopeA" class="match__person">
               <img id="chopeA_photo" src="">
               <!-- <div id="chopeA__photo" class="match__pictures"></div> -->
               <div class="match__description">
@@ -15,7 +15,7 @@
                 <p id="chopeA__desc">Viergee - INTJ</p>
               </div>
             </div>
-            <div class="match__person" id="chopeB">
+            <div id="chopeB" class="match__person">
               <img id="chopeB_photo" src="">
               <!-- <div id="chopeB__photo" class="match__pictures"></div> -->
               <div class="match__description">
@@ -25,22 +25,21 @@
             </div>
           </div>
           <div id="chopOrNot">
-            <p @click="sendChope('no')" class="answer_chope" id="send_no_chope">🤮</p>
-            <p @click="sendSuperChope()" class="answer_chope" id="super_chope"> </p>
-            <p @click="sendChope('yes')" class="answer_chope" id="send_chope">🥰</p>
+            <p id="send_no_chope" class="answer_chope" @click="sendChope('no')">🤮</p>
+            <p id="super_chope" class="answer_chope" @click="sendSuperChope()"/>
+            <p id="send_chope" class="answer_chope" @click="sendChope('yes')">🥰</p>
           </div>
           <div id="chopOrNot">
-            <p>
-            <p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: rgb(255, 0, 0)">0</p>
+            <p/><p id="counter_no" style="color: #00FF00">0</p> / <p id="counter_yes" style="color: rgb(255, 0, 0)">0</p>
             </p>
           </div>
         </div>
       </div>
       <div id="commurge__home" style="height : 100vh;">
-        <img class="commurge__image" id="desk" src="/c/commurge/desk.png" alt="A Desk">
-        <img class="commurge__image" id="host" src="/c/commurge/host.gif" alt="host">
-        <img class="commurge__image" id="mic" src="/c/commurge/mic.gif" alt="mic">
-        <button @click="openOverlay()" id="show_chope" type="button" class="commurge__button">¡ Willkommen !</button>
+        <img id="desk" class="commurge__image" src="/c/commurge/desk.png" alt="A Desk">
+        <img id="host" class="commurge__image" src="/c/commurge/host.gif" alt="host">
+        <img id="mic" class="commurge__image" src="/c/commurge/mic.gif" alt="mic">
+        <button id="show_chope" type="button" class="commurge__button" @click="openOverlay()">¡ Willkommen !</button>
       </div>
 
     </div>
@@ -51,15 +50,15 @@
 import anime from 'animejs';
 import rainingParticles from '~/includes/rainingParticles';
 
-let hashFunction = function (v, a, b, t) {
-  let string = v + a + b + t;
+const hashFunction = function (v, a, b, t) {
+  const string = v + a + b + t;
 
   let hash = 0;
 
   if (string.length == 0) return hash;
 
   for (let i = 0; i < string.length; i++) {
-    let ch = string.charCodeAt(i);
+    const ch = string.charCodeAt(i);
     hash = ((hash << 5) - hash) + ch;
     hash = hash & hash;
   }
@@ -71,13 +70,13 @@ let hashFunction = function (v, a, b, t) {
 let OverlayStatus = false;
 
 // Fait apparaitre les propositions de choppes.
-let openOverlay = function () {
-  let overlayChopeElt = document.getElementById('overlay_chope');
-  let homeElt = document.getElementById('commurge__home');
+const openOverlay = function () {
+  const overlayChopeElt = document.getElementById('overlay_chope');
+  const homeElt = document.getElementById('commurge__home');
   OverlayStatus = true;
 
   // Timeline : voir documentation anime.js
-  let chopeTimeline = anime.timeline();
+  const chopeTimeline = anime.timeline();
 
   chopeTimeline.add({
     targets: homeElt,
@@ -115,26 +114,26 @@ let openOverlay = function () {
 
 }
 
-let commuzards = [];
+const commuzards = [];
 
 let canVote = true;
 
 // Mis à jours des photos
-let applyChope = function (commuzard, id) {
-  let chopeElt = document.getElementById(id)
-  let chopeImg = document.getElementById(id + '_photo')
-  let chopeName = document.getElementById(id + '__name')
-  let chopeDesc = document.getElementById(id + '__desc')
+const applyChope = function (commuzard, id) {
+  const chopeElt = document.getElementById(id)
+  const chopeImg = document.getElementById(id + '_photo')
+  const chopeName = document.getElementById(id + '__name')
+  const chopeDesc = document.getElementById(id + '__desc')
   chopeImg.src = `/c/commurge/pictures/${commuzard[3]}`
   chopeName.innerHTML = `${commuzard[0]}`
   chopeDesc.innerHTML = `${commuzard[4]} - ${commuzard[1]} - ${commuzard[2]}`
 }
 
 // Génération d'un couple
-let genChope = function () {
+const genChope = function () {
 
   // Tirage au sort
-  let chopeA = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))];
+  const chopeA = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))];
   let chopeB = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))];
   while (chopeA === chopeB) {
     chopeB = commuzards[1 + Math.floor(Math.random() * Math.floor(commuzards.length - 1))]
@@ -146,10 +145,10 @@ let genChope = function () {
 }
 
 // Transistion d'un couple à l'autre 
-let genNouvelleChope = function () {
+const genNouvelleChope = function () {
 
   // Fase in and out des nouveaux chopes
-  let nouvellechopeTimeline = anime.timeline();
+  const nouvellechopeTimeline = anime.timeline();
   nouvellechopeTimeline.add({
     targets: document.getElementById('overlay_chope'),
     borderRadius: ['0', '50%'],
@@ -175,7 +174,7 @@ let count_yes = 0;
 // Compter superchope
 let count_super_chope = 0;
 
-let sendChope = function (answer) {
+const sendChope = function (answer) {
 
   if (canVote) {
     canVote = false;
@@ -199,9 +198,9 @@ let sendChope = function (answer) {
         document.getElementById('counter_no').innerText = count_no;
       }
 
-      let chopeA = document.getElementById('chopeA__name').innerHTML;
-      let chopeB = document.getElementById('chopeB__name').innerHTML;
-      let timestamp = Date.now().toString();
+      const chopeA = document.getElementById('chopeA__name').innerHTML;
+      const chopeB = document.getElementById('chopeB__name').innerHTML;
+      const timestamp = Date.now().toString();
 
       fetch('https://commurge.alwaysdata.net/vote', {
         headers: {
@@ -229,7 +228,7 @@ let sendChope = function (answer) {
   }
 }
 
-let sendSuperChope = function () {
+const sendSuperChope = function () {
   if (canVote && (count_super_chope > 19)) {
     canVote = false;
     //On actualise count_super_chope et on enlève l'emoji
@@ -243,9 +242,9 @@ let sendSuperChope = function () {
       count_yes++;
       document.getElementById('counter_yes').innerText = count_yes;
 
-      let chopeA = document.getElementById('chopeA__name').innerHTML;
-      let chopeB = document.getElementById('chopeB__name').innerHTML;
-      let timestamp = Date.now().toString();
+      const chopeA = document.getElementById('chopeA__name').innerHTML;
+      const chopeB = document.getElementById('chopeB__name').innerHTML;
+      const timestamp = Date.now().toString();
 
       fetch('https://commurge.alwaysdata.net/vote', {
         headers: {
@@ -274,7 +273,7 @@ let sendSuperChope = function () {
 }
 
 
-let handleKeyDown = function (event) {
+const handleKeyDown = function (event) {
   if (OverlayStatus) {
     if (event.keyCode === 37 || event.key === 'ArrowLeft') {
       this.sendChope('no');
@@ -299,8 +298,7 @@ export default defineComponent({
         document.getElementById('super_chope').innerHTML = "🤩";
       }
     }
-  },
-  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }, //
+  }, //
   mounted: async function () {
 
     //await fetch('http://localhost:3000/c/commurge/infos.csv')
@@ -336,7 +334,8 @@ export default defineComponent({
   },
   beforeUnmount() {
     window.removeEventListener('keydown', this.handleKeyDown);
-  }
+  },
+  methods: { openOverlay, sendChope, rainingParticles, handleKeyDown, sendSuperChope }
 })
 
 </script>

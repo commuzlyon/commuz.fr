@@ -1,14 +1,16 @@
 <template lang="html">
   <div>
     <div class="galerie_grid">
-      <div class="galerie_grid__entry" v-for="(src, i) in galerie.images_src" :key="i"
+      <div
+v-for="(src, i) in galerie.images_src" :key="i" class="galerie_grid__entry"
         :class="galerie.emphase.indexOf(i) >= 0 ? 'big-image' : 'small-image'">
-        <img class="lazy-image" :data-src="src" @click="() => showImg(i)" />
+        <img class="lazy-image" :data-src="src" @click="() => showImg(i)" >
       </div>
     </div>
     <client-only>
-      <vue-easy-lightbox :visible="visible" :imgs="galerie.images_src" :index="index"
-        @hide="handleHide"></vue-easy-lightbox>
+      <vue-easy-lightbox
+:visible="visible" :imgs="galerie.images_src" :index="index"
+        @hide="handleHide"/>
     </client-only>
   </div>
 </template>
@@ -16,17 +18,17 @@
 <script>
 import VueEasyLightbox from 'vue-easy-lightbox'
 
-let year = 2022;
-let totalImages = 155;
-let extension = ".jpg";
+const year = 2022;
+const totalImages = 155;
+const extension = ".jpg";
 
-let images_src = [];
+const images_src = [];
 
 for (let i = 1; i <= totalImages; i++) {
   images_src.push(['/images/galeries/', year, '/', i, extension].join(''));
 }
 
-let galerie = {
+const galerie = {
   images_src: images_src,
   emphase: [1, 16, 31, 46, 61, 76, 91, 106, 121]
 }
@@ -42,15 +44,6 @@ export default {
       index: 0
     }
   },
-  methods: {
-    showImg(index) {
-      this.index = index;
-      this.visible = true;
-    },
-    handleHide() {
-      this.visible = false
-    }
-  },
   mounted: function () {
     // Get all of the images that are marked up to lazy load
     const images = document.querySelectorAll('.lazy-image')
@@ -59,8 +52,8 @@ export default {
       threshold: 0.01
     }
 
-    var imageCount = images.length
-    var observer
+    let imageCount = images.length
+    let observer
 
     // If we don't have support for intersection observer, loads the images immediately
     if (!('IntersectionObserver' in window)) {
@@ -111,6 +104,15 @@ export default {
       if (imageCount === 0) {
         observer.disconnect()
       }
+    }
+  },
+  methods: {
+    showImg(index) {
+      this.index = index;
+      this.visible = true;
+    },
+    handleHide() {
+      this.visible = false
     }
   }
 }

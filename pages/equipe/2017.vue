@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
-    <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text">
-      <template v-slot="props">
+    <pane type="pane--media" :bg-image="presentation.bgImage" :image="presentation.image" :text="presentation.text">
+      <template #default="props">
         <div class="annee__links">
           <div class="button-link">
             <router-link :to="`/gallerie/2017`"><img src="/icons/galerie.svg" alt="">Voir les photos</router-link>
@@ -15,11 +15,12 @@
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.bureau" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -31,11 +32,12 @@
         <h2>Relations Extérieures</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.relExt" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.relExt" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -47,11 +49,12 @@
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.scenario" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -63,11 +66,12 @@
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.mes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -79,11 +83,12 @@
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.ac" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -95,11 +100,12 @@
         <h2>Chant</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.chant" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -111,11 +117,12 @@
         <h2>Composition</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.composition" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -127,11 +134,12 @@
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.zikos" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -143,11 +151,12 @@
         <h2>Danse</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.danse" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -159,11 +168,12 @@
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.costumes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -175,11 +185,12 @@
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.decors" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -191,11 +202,12 @@
         <h2>Technique</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.technique" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -207,11 +219,12 @@
         <h2>Amour</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.amour" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2017/' + membre.photo" alt="">
-          <img class="membre_apparition" v-if="membre.photo != ''"
+          <img
+v-if="membre.photo != ''" class="membre_apparition"
             :src="'/images/equipes/2017/apparitions/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -221,7 +234,7 @@
 </template>
 
 <script>
-let presentation = {
+const presentation = {
   text: '<h2>2017 : Les Caprices des Jeux</h2>' +
     '<p>Grèce Antique, vous avez dit ? Nous irons donc y rencontrer Pélops et sa mère, deux modestes gens vivant paisiblement grâce à leur troupeau de moutons.</p>' +
     '<p>Au grand désespoir de sa mère persuadée que son fils peut accomplir de grandes choses, Pélops se satisfait de sa position, sans véritable ambition. Elle aura beau le sermonner, Pélops reviendra toujours à ses moutons. Cependant, surplombant la Grèce depuis le Mont Olympe, les Dieux, eux, ne font pas la sourde oreille.</p>' +
@@ -230,7 +243,7 @@ let presentation = {
   image: '/images/affiches/affiche--2017.jpg'
 }
 
-let equipe = {
+const equipe = {
   bureau: [
     {
       role: 'Présidente',

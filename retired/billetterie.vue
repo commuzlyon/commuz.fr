@@ -3,11 +3,12 @@
   <Meta name="description" content="Acheter sa place pour le nouveau spectacle de la Commuz." />
   <div class="centered-container">
     <h1>Billetterie</h1>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p/>
+    <p/>
+    <p/>
     <p class="description">Ne manquez pas le nouveau spectacle de la Commuz' 2024 !</p>
-    <a href="https://collecte.io/commuz-2024-global-3824258/fr" target="_blank" rel="noopener noreferrer"
+    <a
+href="https://collecte.io/commuz-2024-global-3824258/fr" target="_blank" rel="noopener noreferrer"
       class="buy-tickets-link">Acheter vos billets ici</a>
   </div>
 </template>

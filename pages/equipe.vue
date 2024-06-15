@@ -1,10 +1,12 @@
 <template lang="html">
   <title>La Commuz' - Equipe</title>
-  <Meta name="description"
+  <Meta
+name="description"
     content="Chaque année, c'est un peu moins d'une centaine de d'étudiants qui font vivre le spectacle." />
   <div>
     <div id="years-list">
-      <router-link class="inline-link" v-for="(annee, id) in anneesEquipes" :key="id" :to="`/equipe/${annee}`"
+      <router-link
+v-for="(annee, id) in anneesEquipes" :key="id" class="inline-link" :to="`/equipe/${annee}`"
         active-class="selected" exact>{{
           annee }}</router-link>
     </div>
@@ -13,7 +15,7 @@
 </template>
 
 <script>
-let anneesEquipes = ['2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
+const anneesEquipes = ['2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
 
 export default {
   setup() {

@@ -14,21 +14,23 @@
       </picture>
     </div>
 
-    <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2023/images/famille.png'" :text="item.text1"></pane>
-    <pane id="infos2" :type="'pane--media'" :image="'/Commuz2023/images/ecrivains.png'" :text="item.text2"></pane>
-    <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2023/images/freres.png'" :text="item.text3"></pane>
+    <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2023/images/famille.png'" :text="item.text1"/>
+    <pane id="infos2" :type="'pane--media'" :image="'/Commuz2023/images/ecrivains.png'" :text="item.text2"/>
+    <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2023/images/freres.png'" :text="item.text3"/>
 
 
     <!-- Trailer -->
     <div style="text-align:center; margin:2em">
       <h1>Trailer de l'édition 2023 !</h1>
-      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
+      <iframe
+id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+        allowfullscreen/>
     </div>
 
-    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a style="color: var(--pink);"
+    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a
+style="color: var(--pink);"
         class="inline-link" target="_blank" href="https://www.youtube.com/watch?v=KF35clz-ue8">c'est par ici!</a></h2>
 
 
@@ -38,7 +40,7 @@
     </div>
 
     <div>
-      <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pauseAutoplayOnHover="true">
+      <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true">
         <slide v-for="poste in postes" :key="poste.ID" class="slide">
           <div class="carousel-item">
             <h2 class="title"> {{ poste.persona }}</h2>
@@ -65,7 +67,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
-let data = {
+const data = {
   text1:
     "<h2>Synopsis</h2>" +
     "<p align=justify >Au début du XIX siècle, l’ingénieur Robert Fawkes a la folle ambition de rallier les capitales européennes par le rail en construisant un train titanesque : le Léviathan. Ainsi est lancé en 1825 le plus grand projet jamais entrepris par l’Homme. Des chantiers voient le jour partout en Europe, des ponts, des tunnels et des gares aux proportions inédites sont bâties. Seulement, les conditions de travail délétères des ouvriers conduisent à des contestations, qui s’amplifient rapidement pour devenir de véritables élans révolutionnaires, connus aujourd’hui sous le nom de Printemps de Peuples. Parmi les meneurs des insurrections socialistes, le jeune français Thomas Ravet parvient à fédérer les groupes contestataires indépendants et crée un organisme puissant, la Confrérie Ouvrière, pour les représenter. Dès lors, l’opposition fait rage. Le Léviathan accompagne l’émergence d’une idéologie politique nouvelle : Le libéralisme, alors que la Confrérie constitue désormais une force socialiste majeure.</p>",
@@ -82,7 +84,7 @@ let data = {
     "<center> <a target='_blank' rel='noopener' href='https://collecte.io/commuz-2023-billetterie-generale-2418903/fr' class='inline-link'> Pour acheter sa place c'est ici ! </a> </center>",
 };
 
-let information = {
+const information = {
   Robert: {
     persona: "Robert Fawkes",
     description:
@@ -133,9 +135,14 @@ let information = {
   }
 };
 
-let background = "/Commuz2023/images/poster-commuz2023.png"
+const background = "/Commuz2023/images/poster-commuz2023.png"
 
 export default defineComponent({
+  components: {
+    Slide,
+    Carousel,
+    Navigation
+  },
   setup() {
     definePageMeta({
       name: "App",
@@ -148,11 +155,6 @@ export default defineComponent({
       postes: information,
       bgImg: background
     };
-  },
-  components: {
-    Slide,
-    Carousel,
-    Navigation
   },
 });
 </script>

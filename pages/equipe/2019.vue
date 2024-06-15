@@ -1,15 +1,15 @@
 <template lang="html">
   <div>
-    <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text"></pane>
+    <pane type="pane--media" :bg-image="presentation.bgImage" :image="presentation.image" :text="presentation.text"/>
     <div class="section">
       <div class="section__description">
         <img src="/logos/poles/2019/bureau.png" alt="">
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.bureau" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -21,9 +21,9 @@
         <h2>Visibilité</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -35,9 +35,9 @@
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.scenario" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -49,9 +49,9 @@
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.mes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -63,9 +63,9 @@
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.ac" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -77,9 +77,9 @@
         <h2>Chant</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.chant" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -91,9 +91,9 @@
         <h2>Composition</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.composition" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -105,10 +105,10 @@
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.zikos" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
           <template>
-            <p><b>{{ membre.nom }}</b><br />
+            <p><b>{{ membre.nom }}</b><br >
               <i>{{ membre.role }}</i>
             </p>
           </template>
@@ -121,9 +121,9 @@
         <h2>Danse</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.danse" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -135,9 +135,9 @@
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.costumes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -149,9 +149,9 @@
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.decors" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -163,9 +163,9 @@
         <h2>Son, lumière et vidéo</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.technique" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -177,9 +177,9 @@
         <h2>Amour</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.amour" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2019/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -189,13 +189,13 @@
 </template>
 
 <script>
-let presentation = {
+const presentation = {
   text: '<h2>2019 : Désorientés</h2>' +
     "<p>Au cœur du XIe siècle, alors que les tensions montent entre Orient et Occident, Elena et Alix sont envoyées en mission à l’aube de la première Croisade. Cependant, elles se font capturer par le puissant Calife. Désormais devenues esclaves, elles se retrouvent au milieu d’un conflit mêlant jalousie, querelles familiales et souvenirs douloureux.</p>" + "<p>Quels secrets chaque membre de cette famille cache-t-il aux autres ? Elena et Alix sauront-elles se sortir de cette prison orientale ? Mais où est donc passée la semoule ? Le vent d’Ouest souffle sur le palais : ils en seront tous... Désorientés.</p>",
   bgImage: '/images/equipes/equipe--2019.jpg',
   image: '/images/affiches/affiche--2019.jpg'
 }
-let equipe = {
+const equipe = {
   bureau: [
     {
       role: 'Présidente',

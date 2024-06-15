@@ -9,15 +9,20 @@
 
     </div>
     <div id="sponsors__logos">
-      <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/ecl.svg"
+      <a href="https://www.ec-lyon.fr/" target="_blank" rel="noopener"><img
+src="/sponsors/ecl.svg"
           alt="Logo de l'École Centrale de Lyon"></a>
-      <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img src="/sponsors/em_corpo.svg"
+      <a href="https://www.em-lyon.com" target="_blank" rel="noopener"><img
+src="/sponsors/em_corpo.svg"
           alt="Logo de la corpo emlyon business school"></a>
-      <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/crous.png"
+      <a href="http://www.crous-lyon.fr/" target="_blank" rel="noopener"><img
+src="/sponsors/crous.png"
           alt="Logo du Crous de Lyon"></a>
-      <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/udl.svg"
+      <a href="https://www.universite-lyon.fr/" target="_blank" rel="noopener"><img
+src="/sponsors/udl.svg"
           alt="Logo de l'Université de Lyon"></a>
-      <a href="https://www.lyon.fr/" target="_blank" rel="noopener"><img src="/sponsors/vdl.png"
+      <a href="https://www.lyon.fr/" target="_blank" rel="noopener"><img
+src="/sponsors/vdl.png"
           alt="Logo de la ville de Lyon"></a>
     </div>
   </section>

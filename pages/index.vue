@@ -1,6 +1,7 @@
 <template>
   <title>La Commuz'</Title>
-  <Meta name="description"
+  <Meta
+name="description"
     content="La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon." />
   <div>
     <div id="home__hero">
@@ -14,8 +15,8 @@
       </video>
     </div>
     <!-- Description -->
-    <pane :type="'pane--left'" :bgImage="'/images/homepage/danseurs-2019.jpg'" :text="presentation"></pane>
-    <pane :type="'pane--right'" :bgImage="'/images/homepage/spectacleAaZ.jpg'" :text="SpectacleAaZ"></pane>
+    <pane :type="'pane--left'" :bg-image="'/images/homepage/danseurs-2019.jpg'" :text="presentation"/>
+    <pane :type="'pane--right'" :bg-image="'/images/homepage/spectacleAaZ.jpg'" :text="SpectacleAaZ"/>
     <!-- Témoignages -->
     <section id="testimonial">
       <div class="quote">
@@ -44,7 +45,7 @@
 
     </section>
     <!-- Sponsors -->
-    <Sponsors></Sponsors>
+    <Sponsors/>
   </div>
 </template>
 
@@ -52,7 +53,7 @@
 import Pane from '~/components/Pane.vue';
 import Sponsors from '~/components/Sponsors.vue';
 
-let data = {
+const data = {
   presentation:
     "<h2>La Commuz', c'est quoi ?</h2>" +
     "<p>La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon.</p>" +

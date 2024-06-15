@@ -3,7 +3,7 @@
     <div class="pane__text_container">
       <img v-if="type == 'pane--media-left'" class="pane__img" :src="image">
       <div class="pane__text">
-        <div v-html='text'></div>
+        <div v-html='text'/>
         <div v-if="galerie || equipe || youtube" class="annee__links" style="justify-content: center" width="100%">
           <table>
             <tr align="center">

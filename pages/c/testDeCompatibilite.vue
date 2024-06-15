@@ -10,15 +10,16 @@
         <div class="profiles">
             <div v-if="people.length" class="person-container">
                 <div class="person-info">
-                    <label for="person1"></label>
-                    <select v-model="selectedPerson1" id="person1">
+                    <label for="person1"/>
+                    <select id="person1" v-model="selectedPerson1">
                         <option v-for="person in people" :key="person.id" :value="person">
                             {{ person.name }}
                         </option>
                     </select>
                     <div v-if="selectedPerson1" class="selected-person">
-                        <img :src="'/c/commurge/pictures/' + selectedPerson1.photos" class="person-img"
-                            alt="Person 1 Photo" />
+                        <img
+:src="'/c/commurge/pictures/' + selectedPerson1.photos" class="person-img"
+                            alt="Person 1 Photo" >
                         <p class="text-up">MBTI: {{ selectedPerson1.mbti }}</p>
                         <p>Astro: {{ selectedPerson1.astro }}</p>
                         <p>Poste: {{ selectedPerson1.poste }}</p>
@@ -28,15 +29,16 @@
 
             <div v-if="people.length" class="person-container">
                 <div class="person-info">
-                    <label for="person2"></label>
-                    <select v-model="selectedPerson2" id="person2">
+                    <label for="person2"/>
+                    <select id="person2" v-model="selectedPerson2">
                         <option v-for="person in people" :key="person.id" :value="person">
                             {{ person.name }}
                         </option>
                     </select>
                     <div v-if="selectedPerson2" class="selected-person">
-                        <img :src="'/c/commurge/pictures/' + selectedPerson2.photos" class="person-img"
-                            alt="Person 2 Photo" />
+                        <img
+:src="'/c/commurge/pictures/' + selectedPerson2.photos" class="person-img"
+                            alt="Person 2 Photo" >
                         <p class="text-up">MBTI: {{ selectedPerson2.mbti }}</p>
                         <p>Astro: {{ selectedPerson2.astro }}</p>
                         <p>Poste: {{ selectedPerson2.poste }}</p>
@@ -45,8 +47,8 @@
             </div>
         </div>
 
-        <button v-if="arePicturesSelected" @click="displayResult" class="image-button">
-            <img src="/c/testDeCompatibilite/coeur.png" alt="Coeur Image" class="heart" />
+        <button v-if="arePicturesSelected" class="image-button" @click="displayResult">
+            <img src="/c/testDeCompatibilite/coeur.png" alt="Coeur Image" class="heart" >
             <span class="result">{{ result }}</span>
         </button>
     </div>

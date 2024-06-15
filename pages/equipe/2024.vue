@@ -1,16 +1,15 @@
 <template lang="html">
     <div>
-        <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text">
-        </pane>
+        <pane type="pane--media" :bg-image="presentation.bgImage" :image="presentation.image" :text="presentation.text"/>
         <div class="section">
             <div class="section__description">
                 <img src="/logos/poles/2024/bureau.png" alt="Bureau">
                 <h2>Bureau</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.bureau" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -22,9 +21,9 @@
                 <h2>Visibilité</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -36,9 +35,9 @@
                 <h2>Scénario</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.scenario" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -50,9 +49,9 @@
                 <h2>Direction Artistique</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.mes" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -64,9 +63,9 @@
                 <h2>Acteurs-chanteurs</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.ac" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -78,9 +77,9 @@
                 <h2>Chant</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.chant" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -92,9 +91,9 @@
                 <h2>Composition</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.composition" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -106,9 +105,9 @@
                 <h2>Musique</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.zikos" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -120,9 +119,9 @@
                 <h2>Danse</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.danse" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -134,9 +133,9 @@
                 <h2>Costumes</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.costumes" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -148,9 +147,9 @@
                 <h2>Décors</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.decors" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -162,9 +161,9 @@
                 <h2>Lumière et son</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.technique" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -176,9 +175,9 @@
                 <h2>Amour</h2>
             </div>
             <div class="section__membres">
-                <div class="trombi_membre square" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
+                <div v-for="(membre, idMembre) in equipe.amour" :key="idMembre" class="trombi_membre square">
                     <img v-if="membre.photo != ''" :src="'/images/equipes/2024/' + membre.photo" alt="">
-                    <p><b>{{ membre.nom }}</b><br />
+                    <p><b>{{ membre.nom }}</b><br >
                         <i>{{ membre.role }}</i>
                     </p>
                 </div>
@@ -187,16 +186,8 @@
     </div>
 </template>
 
-<style lang="scss">
-.trombi_membre.square {
-    img {
-        border-radius: 0%;
-    }
-}
-</style>
-
 <script>
-let presentation = {
+const presentation = {
     text: "<h2>2024 - Backstage</h2>" +
         "<p>Hollywood, 1964.<p/>" +
         "<p> Le Highlight Show, le talk show le plus populaire des Etats-Unis, est au sommet de sa gloire. Mais au cours d’une énième émission, son host Alec Keaton décide subitement de prendre sa retraite. Face à l’urgence de la situation, la productrice Norma Desmond mettra tout en œuvre pour assurer le maintien de l’émission.</p>" +
@@ -207,7 +198,7 @@ let presentation = {
 }
 
 
-let equipe = {
+const equipe = {
     bureau: [
         {
             role: 'Président',
@@ -745,3 +736,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.trombi_membre.square {
+    img {
+        border-radius: 0%;
+    }
+}
+</style>

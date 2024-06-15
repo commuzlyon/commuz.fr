@@ -6,6 +6,11 @@ const userResponseTypesSkelaton = Array(quiz.questions.length).fill(null);
 
 export default defineComponent({
   name: "Quiz",
+  filters: {
+    charIndex: function (i) {
+      return String.fromCharCode(97 + i);
+    }
+  },
   data() {
     return {
       quiz: quiz,
@@ -14,11 +19,6 @@ export default defineComponent({
       userTypes: userResponseTypesSkelaton,
       isActive: false
     };
-  },
-  filters: {
-    charIndex: function (i) {
-      return String.fromCharCode(97 + i);
-    }
   },
 
   methods: {
@@ -45,7 +45,7 @@ export default defineComponent({
     shorthandResult: function () {
       const collateTypes = Array.prototype.concat.apply([], this.userTypes);
 
-      let result = {};
+      const result = {};
       for (let i = 0; i < collateTypes.length; i++) {
         if (!result[collateTypes[i]]) {
           result[collateTypes[i]] = 0;
@@ -73,5 +73,5 @@ export default defineComponent({
 });
 </script>
 
-<style scoped src="../styles/quiz.css"></style>
 <template src="./quiz.html"></template>
+<style scoped src="../styles/quiz.css"></style>

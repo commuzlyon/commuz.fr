@@ -2,8 +2,9 @@
   <nav class="navbar">
     <ul class="navbar__navs">
       <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img src="/logos/logo.svg" alt=""
-            width="37.44" height="48" /></NuxtLink>
+        <NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img
+src="/logos/logo.svg" alt=""
+            width="37.44" height="48" ></NuxtLink>
       </li>
       <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/commuz2024" class="navbar__link">Commuz' 2024</NuxtLink>

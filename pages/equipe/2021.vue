@@ -1,15 +1,15 @@
 <template lang="html">
   <div>
-    <pane type="pane--media" :bgImage="presentation.bgImage" :image="presentation.image" :text="presentation.text"></pane>
+    <pane type="pane--media" :bg-image="presentation.bgImage" :image="presentation.image" :text="presentation.text"/>
     <div class="section">
       <div class="section__description">
         <img src="/logos/poles/2021/bureau.png" alt="Bureau">
         <h2>Bureau</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.bureau" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.bureau" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -21,9 +21,9 @@
         <h2>Visibilité</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.visibilite" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -35,9 +35,9 @@
         <h2>Scénario</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.scenario" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.scenario" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -49,9 +49,9 @@
         <h2>Mise en scène</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.mes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.mes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -63,9 +63,9 @@
         <h2>Acteurs-chanteurs</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.ac" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.ac" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -77,9 +77,9 @@
         <h2>Chant</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.chant" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.chant" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -91,9 +91,9 @@
         <h2>Composition</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.composition" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.composition" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -105,9 +105,9 @@
         <h2>Musique</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.zikos" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.zikos" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -119,9 +119,9 @@
         <h2>Danse</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.danse" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.danse" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -133,9 +133,9 @@
         <h2>Costumes</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.costumes" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.costumes" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -147,9 +147,9 @@
         <h2>Décors</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.decors" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.decors" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -161,9 +161,9 @@
         <h2>Son, lumière et vidéo</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.technique" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.technique" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -175,9 +175,9 @@
         <h2>Amour</h2>
       </div>
       <div class="section__membres">
-        <div class="trombi_membre" v-for="(membre, idMembre) in equipe.amour" :key="idMembre">
+        <div v-for="(membre, idMembre) in equipe.amour" :key="idMembre" class="trombi_membre">
           <img v-if="membre.photo != ''" :src="'/images/equipes/2021/' + membre.photo" alt="">
-          <p><b>{{ membre.nom }}</b><br />
+          <p><b>{{ membre.nom }}</b><br >
             <i>{{ membre.role }}</i>
           </p>
         </div>
@@ -187,7 +187,7 @@
 </template>
 
 <script>
-let presentation = {
+const presentation = {
   text: "<h2>2021 - Noces d'opium</h2>" +
     "<p>Sous couvert de vendre du thé, le jeune Thomas a organisé à Shanghai un gigantesque trafic d’opium. Avec sa partenaire commerciale et amante Meiyun, il s’apprête à faire un dernier gros coup avant de se retirer. Mais c’était sans compter la visite surprise de sa femme Gemma, débarquée tout droit de Londres avec sa belle-famille. Le jeune anglais devra donc rivaliser d'efforts pour gérer son commerce sans être découvert par sa belle-famille.</p>",
   bgImage: '/images/equipes/equipe--2021.jpg',
@@ -195,7 +195,7 @@ let presentation = {
 }
 
 
-let equipe = {
+const equipe = {
   bureau: [
     {
       role: 'Président',
