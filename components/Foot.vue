@@ -27,14 +27,14 @@ class="inline-link" target="_blank" rel="noopener"
       <h3>Contacts</h3>
       <p>Pour toute question, contactez <a
 class="inline-link"
-          href="mailto:agustin.soux@etu.ec-lyon.fr; ines.battisti@edu.em-lyon.com">Agustín, Inès, Antoine et Oscar</a>
+          href="mailto:pierrick.durand-glouchkoff@etu.ec-lyon.fr; johanna.dussoux@edu.em-lyon.com">Pierrick, Johanna, Vincent et Romain</a>
         par
         mail ou sur notre page <a
 class="inline-link" target="_blank" rel="noopener"
           href="https://www.facebook.com/commuzlyon">Facebook</a>. <br >
         Pour toute demande relative aux partenariats, contactez notre responsable partenariats <a
 class="inline-link"
-          href="mailto:partenariat@commuz.fr">Lou et Vincent</a>.</p>
+          href="mailto:partenariat@commuz.fr">Gwladys</a>.</p>
     </div>
   </footer>
 </template>
