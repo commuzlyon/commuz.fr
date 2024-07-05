@@ -6,7 +6,7 @@
       <div id="plaquette">
         <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou
           contactez
-          nos responsables partenariats Vincent et Lou à l'adresse <a
+          notre responsable partenariat Gwladys à l'adresse <a
             href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
       </div>
 
