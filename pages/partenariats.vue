@@ -1,59 +1,66 @@
 <template lang="html">
-  <title>La Commuz' - Partenaires</title>
-  <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire." />
   <div>
-    <div id="plaquette">
-      <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou contactez
-        nos responsables partenariats Vincent et Lou à l'adresse <a
-          href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
-    </div>
-
+    <title>La Commuz' - Partenaires</title>
+    <Meta name="description" content="Venez soutenir la Commuz en devenant partenaire." />
     <div>
-      <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true">
-        <slide v-for="partenaire in respoPartenariats" :key="partenaire.telephone" class="slide">
-          <div class="carousel-item">
-            <figure><img class="photos" :src="partenaire.image"></figure>
-            <p class="nom-prenom">{{ partenaire.prenom + ' ' + partenaire.nom }}</p>
-            <p class="telephone">{{ partenaire.telephone }}</p>
-          </div>
-        </slide>
+      <div id="plaquette">
+        <p>Téléchargez la <a class="inline-link" href="/Plaquette-2024.pdf" download>plaquette sponsors</a>, ou
+          contactez
+          nos responsables partenariats Vincent et Lou à l'adresse <a
+            href="mailto:partenariat@commuz.fr">partenariat@commuz.fr</a></p>
+      </div>
 
-        <template #addons>
-          <navigation />
-        </template>
-      </carousel>
+      <div>
+        <div v-if="Object.keys(respoPartenariats).length > 1">
+          <carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true">
+            <slide v-for="partenaire in respoPartenariats" :key="partenaire.telephone" class="slide">
+              <div class="carousel-item">
+                <figure><img class="photos" :src="partenaire.image"></figure>
+                <p class="nom-prenom">{{ partenaire.prenom + ' ' + partenaire.nom }}</p>
+                <p class="telephone">{{ partenaire.telephone }}</p>
+              </div>
+            </slide>
+
+
+          </carousel>
+        </div>
+        <div v-else>
+          <carousel>
+            <slide v-for="partenaire in respoPartenariats" :key="partenaire.telephone" class="slide">
+              <div class="carousel-item">
+                <figure><img class="photos" :src="partenaire.image"></figure>
+                <p class="nom-prenom">{{ partenaire.prenom + ' ' + partenaire.nom }}</p>
+                <p class="telephone">{{ partenaire.telephone }}</p>
+              </div>
+            </slide>
+          </carousel>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin:2em">
+        <h2>Les coulisses de la Commuz' 2023</h2>
+        <iframe class="youtube" src="https://www.youtube.com/embed/0in9oBqaI0I?si=p0K2z6m5mEhMX8VJ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen />
+      </div>
+
+
+      <sponsors />
     </div>
-
-    <div style="text-align:center; margin:2em">
-      <h2>Les coulisses de la Commuz' 2023</h2>
-      <iframe
-class="youtube" src="https://www.youtube.com/embed/0in9oBqaI0I?si=p0K2z6m5mEhMX8VJ"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen/>
-    </div>
-
-
-    <sponsors/>
   </div>
 </template>
 
 <script>
 const respoPartenariats = {
   respo1: {
-    prenom: "Vincent",
-    nom: "Rouaret",
-    telephone: "06 70 68 02 23",
+    prenom: "Gwladys",
+    nom: "Voisin",
+    telephone: "07 80 00 04 14",
     mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/VR.jpg",
+    image: "/images/Partenaires/Gwladys.jpeg",
   },
-  respo2: {
-    prenom: "Lou",
-    nom: "Taffanel",
-    telephone: "07 82 36 63 30",
-    mail: "commuzlyon@gmail.com",
-    image: "/images/Partenaires/LT.jpg",
-  }
 };
 
 export default defineComponent({
