@@ -1,7 +1,8 @@
 <template>
     <div id="home__hero">
         <img id="home__hero__logo" src="/images/homepage/Commuz_Titre.png" alt="Commuz">
-        <a id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"
+        <a
+id="home__hero__scroll" onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"
             class="flex flex-row">
             <img src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir
         </a>

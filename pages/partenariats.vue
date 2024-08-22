@@ -40,7 +40,8 @@
 
       <div style="text-align:center; margin:2em">
         <h2>Les coulisses de la Commuz' 2023</h2>
-        <iframe class="youtube" src="https://www.youtube.com/embed/0in9oBqaI0I?si=p0K2z6m5mEhMX8VJ"
+        <iframe
+class="youtube" src="https://www.youtube.com/embed/0in9oBqaI0I?si=p0K2z6m5mEhMX8VJ"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen />
