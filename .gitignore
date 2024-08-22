@@ -23,8 +23,5 @@ auth.json
 # Lanceur du site en local
 commuzLocal.bat
 
-# Fichiers vscode
-.vscode
-
 # Mac specific
 .DS_store
