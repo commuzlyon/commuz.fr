@@ -12,7 +12,7 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 #home__hero {
     position: relative;
     width: 100%;

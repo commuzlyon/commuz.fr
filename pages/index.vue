@@ -5,34 +5,24 @@
       content="La Commuz' est une comédie musicale organisée chaque année depuis 20 ans par une équipe de près de 100 étudiants de l'École Centrale de Lyon et de l'EMLyon." />
 
     <IndexVideoTitle />
+
     <!-- Description -->
     <pane :type="'pane--left'" :bg-image="'/images/homepage/danseurs-2019.jpg'" :text="presentation" />
     <pane :type="'pane--right'" :bg-image="'/images/homepage/spectacleAaZ.jpg'" :text="SpectacleAaZ" />
     <!-- Témoignages -->
     <section id="testimonial">
-      <div class="quote">
-        <p>J'ai pris hier soir un grand plaisir, le spectacle est de grande qualité, son, lumière, costumes magnifiques,
-          décors, le tout au service d'artistes de talents : musiciens, danseurs, chanteurs, acteurs-chanteurs.</p>
-        <img src="/icons/quote_open.svg" alt="Guillemets">
-        <div class="quote__author">
-          <img src="/images/homepage/debouck.jpg" alt="Photo de Frank Debouck">
-          <span>Frank Debouck &ndash; Directeur de l'École Centrale de Lyon entre 2011 et 2021 </span>
-        </div>
-      </div>
+      <IndexQuote name="Frank Debouck &ndash; Directeur de l'École Centrale de Lyon entre 2011 et 2021"
+        img-src="/images/homepage/debouck.jpg">
+        J'ai pris hier soir un grand plaisir, le spectacle est de grande qualité, son, lumière, costumes magnifiques,
+        décors, le tout au service d'artistes de talents : musiciens, danseurs, chanteurs, acteurs-chanteurs.
+      </IndexQuote>
 
-      <div class="quote">
-        <p>Tout est parfaitement pensé et orchestré pour produire un spectacle unique et d'une qualité exceptionnelle.
-          N'hésitez-pas à rejoindre l'aventure Commuz' en soutenant le talent de nos étudiant.e.s. Et n'oubliez-pas de
-          venir les applaudir sur scène. Merci pour eux !</p>
-        <img src="/icons/quote_open.svg" alt="Guillemets">
-        <div class="quote__author">
-          <img src="/images/homepage/PascalRay.jpg" alt="Photo de Pascal Ray">
-          <span>Pascal Ray &ndash; Directeur de l'École Centrale de Lyon depuis 2021 </span>
-        </div>
-      </div>
-
-
-
+      <IndexQuote name="Pascal Ray &ndash; Directeur de l'École Centrale de Lyon depuis 2021"
+        img-src="/images/homepage/PascalRay.jpg">
+        Tout est parfaitement pensé et orchestré pour produire un spectacle unique et d'une qualité exceptionnelle.
+        N'hésitez-pas à rejoindre l'aventure Commuz' en soutenant le talent de nos étudiant.e.s. Et n'oubliez-pas de
+        venir les applaudir sur scène. Merci pour eux !
+      </IndexQuote>
 
     </section>
     <!-- Sponsors -->
@@ -94,42 +84,8 @@ export default defineComponent({
   margin: 3em 0;
   background: linear-gradient(100deg, #de8406, #e72203 100%);
 
-  .quote {
-    max-width: 70ch;
-    position: relative;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
 
-    &>img {
-      position: absolute;
-      top: -15px;
-      left: -20px;
-    }
 
-    p {
-      position: relative;
-      z-index: 1;
-      font-size: 1.2em;
 
-      @media only screen and (min-width: 576px) {
-        font-size: 1.3em;
-      }
-
-      margin-bottom: 1em;
-    }
-  }
-
-  .quote__author {
-    display: flex;
-    align-items: center;
-    color: rgb(228, 228, 228);
-
-    &>img {
-      height: 40px;
-      width: 40px;
-      border-radius: 100%;
-      margin-right: 1rem;
-    }
-  }
 }
 </style>
