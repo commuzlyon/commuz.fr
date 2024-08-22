@@ -35,6 +35,18 @@ Ce projet a été développé sous Node.js@21.5.0 avec le framework *Nuxt*@3.9.0
 - Migrate from Nuxt 2 to Nuxt 3
 - Added support for Google Analytics
 
+# Guides
+
+## Change the homepage video
+
+You should keep the same format for the video, which is light and made for the web. You can use the following command to convert a video to the right format :
+
+```bash
+ffmpeg -i input_file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis public/videos/video-intro.webm
+```
+
+Change the file `public/videos/video-intro.webm`
+
 # TODO :
 
 - Rajouter une banière pour pouvoir opt-out du tracking Google Analytics
