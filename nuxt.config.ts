@@ -73,4 +73,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  // TODO remove with vue3-carousel
+  // See https://github.com/ismail9k/vue3-carousel/issues/377
+  alias: {
+    "vue3-carousel/dist/carousel": "vue3-carousel/dist/carousel.es.js",
+  },
 });

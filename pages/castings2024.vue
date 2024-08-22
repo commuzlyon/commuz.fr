@@ -9,9 +9,9 @@
           src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
       <img id="home__hero_bg" src="/c/PersonalityTest/images/Poster-Casting.jpg">
     </div>
-    <pane :type="'pane--left'" :bg-image="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation"/>
-    <pane :type="'pane--right'" :bg-image="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ"/>
-    <pane :type="'pane--left'" :bg-image="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ"/>
+    <pane :type="'pane--left'" :bg-image="'/images/homepage/danseurs-2019.jpg'" :text="item.presentation" />
+    <pane :type="'pane--right'" :bg-image="'/images/homepage/spectacleAaZ.jpg'" :text="item.SpectacleAaZ" />
+    <pane :type="'pane--left'" :bg-image="'/c/PersonalityTest/images/casting-photo.jpg'" :text="item.CastingAaZ" />
 
     <div id="app" class="Main">
       <slot>
@@ -23,8 +23,7 @@
       <h1>Parcourir les postes</h1>
     </div>
     <div>
-      <Carousel
-:itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true"
+      <Carousel :itemstoshow="2.5" :wrap-around="true" :autoplay="2000" :pause-autoplay-on-hover="true"
         :navigation-enabled="true">
         <slot>
           <Slide v-for="poste in postes" :index="poste.ID">
@@ -47,7 +46,7 @@
 <script>
 import { information } from "~/public/c/PersonalityTest/config";
 import Quiz from "~/public/c/PersonalityTest/components/quiz.vue";
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
 
 const data = {
   presentation:
@@ -66,12 +65,7 @@ const data = {
 };
 
 export default defineComponent({
-  components: {
-    Quiz,
-    Carousel,
-    Slide,
-    Navigation
-  },
+
   setup() {
     definePageMeta({
       layout: 'default',
@@ -86,7 +80,7 @@ export default defineComponent({
 });  
 </script>
 
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 

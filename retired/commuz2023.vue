@@ -14,23 +14,21 @@
       </picture>
     </div>
 
-    <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2023/images/famille.png'" :text="item.text1"/>
-    <pane id="infos2" :type="'pane--media'" :image="'/Commuz2023/images/ecrivains.png'" :text="item.text2"/>
-    <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2023/images/freres.png'" :text="item.text3"/>
+    <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2023/images/famille.png'" :text="item.text1" />
+    <pane id="infos2" :type="'pane--media'" :image="'/Commuz2023/images/ecrivains.png'" :text="item.text2" />
+    <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2023/images/freres.png'" :text="item.text3" />
 
 
     <!-- Trailer -->
     <div style="text-align:center; margin:2em">
       <h1>Trailer de l'édition 2023 !</h1>
-      <iframe
-id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
+      <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/W1GMUZgqELY"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen/>
+        allowfullscreen />
     </div>
 
-    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a
-style="color: var(--pink);"
+    <h2 id="retrospective-2023">Pour voir le spectacle de 2023 dans son intégralité, <a style="color: var(--pink);"
         class="inline-link" target="_blank" href="https://www.youtube.com/watch?v=KF35clz-ue8">c'est par ici!</a></h2>
 
 
@@ -65,7 +63,6 @@ style="color: var(--pink);"
 <script>
 
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
 const data = {
   text1:
@@ -138,11 +135,7 @@ const information = {
 const background = "/Commuz2023/images/poster-commuz2023.png"
 
 export default defineComponent({
-  components: {
-    Slide,
-    Carousel,
-    Navigation
-  },
+
   setup() {
     definePageMeta({
       name: "App",
@@ -159,7 +152,7 @@ export default defineComponent({
 });
 </script>
 
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 

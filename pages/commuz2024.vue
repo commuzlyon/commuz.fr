@@ -5,8 +5,7 @@
         <!-- Description -->
         <div id="home__hero">
             <img id="home__hero__logo" src="/Commuz2024/images/watermark-2024.png" alt="Commuz">
-            <a
-id="home__hero__scroll"
+            <a id="home__hero__scroll"
                 onclick="window.scrollTo(0,document.querySelector('#home__hero ~ div').offsetTop)"><img
                     src="/icons/scroll-down.svg" alt="Flèche basse">Découvrir</a>
             <!-- Image d'en tête -->
@@ -16,28 +15,26 @@ id="home__hero__scroll"
             </picture>
         </div>
 
-        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1"/>
-        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2"/>
-        <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3"/>
-        <pane id="infos4" :type="'pane--media'" :image="'/Commuz2024/images/Tombola.jpg'" :text="item.text4"/>
+        <pane id="infos1" :type="'pane--media-left'" :image="'/Commuz2024/images/MeS.png'" :text="item.text1" />
+        <pane id="infos2" :type="'pane--media'" :image="'/Commuz2024/images/ACs.png'" :text="item.text2" />
+        <pane id="infos3" :type="'pane--media-left'" :image="'/Commuz2024/images/Ensembles.png'" :text="item.text3" />
+        <pane id="infos4" :type="'pane--media'" :image="'/Commuz2024/images/Tombola.jpg'" :text="item.text4" />
 
 
         <!-- Trailer -->
         <div style="text-align:center; margin:2em">
             <h1>Trailer de l'édition 2024 !</h1>
-            <iframe
-id="youtube" width="560" height="315" src="https://www.youtube.com/embed/cxJJHY5vGNk"
+            <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/cxJJHY5vGNk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen/>
+                allowfullscreen />
         </div>
     </div>
 </template>
-  
+
 <script>
 
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
 const data = {
     text1:
@@ -118,11 +115,7 @@ const information = {
 const background = "/Commuz2024/images/poster-commuz2024.png"
 
 export default defineComponent({
-    components: {
-        Slide,
-        Carousel,
-        Navigation
-    },
+
     setup() {
         definePageMeta({
             name: "App",
@@ -138,8 +131,8 @@ export default defineComponent({
     },
 });
 </script>
-  
-<style  lang="scss" scoped>
+
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
@@ -258,4 +251,3 @@ h2 {
     max-width: 100%;
 }
 </style>
-  
