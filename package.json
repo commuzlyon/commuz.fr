@@ -16,7 +16,7 @@
     "@nuxt/eslint": "^0.5.1",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.4",
-    "eslint": "^9.9.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "nuxt": "^3.12.4",
