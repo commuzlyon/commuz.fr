@@ -10,6 +10,28 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Beyond The Mountains";
+  src:
+    local("Beyond The Mountains"),
+    url(~/assets/fonts/beyond_the_mountains.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src:
+    local("Caviar Dreams"),
+    url(~/assets/fonts/CaviarDreams.ttf) format("truetype");
+}
+
+.beyond {
+  font-family: "Beyond The Mountains";
+}
+
+.caviar {
+  font-family: "Caviar Dreams";
+}
+
 
 // base theme
 :root {
