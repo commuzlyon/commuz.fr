@@ -13,6 +13,7 @@
     "lintfix": "eslint . --fix && prettier --write --list-different ."
   },
   "devDependencies": {
+    "@iconify-json/ph": "^1.1.14",
     "@nuxt/eslint": "^0.5.1",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.4",
