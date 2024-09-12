@@ -13,7 +13,7 @@
       <UIcon name="i-heroicons-sparkles" class="w-5 h-5 mx-2" />
     </p>
 
-    <a v-for="item in items" :key="item.name" :href="item.link" target="_blank">
+    <a v-for="item in items" :key="item.text" :href="item.link" target="_blank">
       <UCard class="w-80 flex flex-col items-center">
         <div class="flex flex-row items-center space-x-2  caviar text-commuz-500">
           <UIcon :name="item.icon" class="w-5 h-5 mx-2" />
