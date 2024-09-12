@@ -42,7 +42,7 @@
       </div>
     </div>
 
-
+    <!-- 
     <div class="flex flex-col gap-4 md:px-40 px-10 items-center justify-center pt-10">
       Découvrez les postes
 
@@ -59,7 +59,7 @@
         </p>
       </HeroCarousel>
 
-    </div>
+    </div> -->
   </div>
 
 </template>
