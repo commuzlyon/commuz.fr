@@ -7,7 +7,7 @@
       La Commuz'
     </h1>
 
-    <p class="caviar flex flex-row items-center pb-5">
+    <p class="caviar flex flex-row items-center pb-5 text-center">
       <UIcon name="i-heroicons-sparkles" class="w-5 h-5 mx-2" />
       Retrouvez-nous sur vos réseaux préférés
       <UIcon name="i-heroicons-sparkles" class="w-5 h-5 mx-2" />
