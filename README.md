@@ -47,6 +47,12 @@ ffmpeg -i input_file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis public/video
 
 Change the file `public/videos/video-intro.webm`
 
+## Configure the website status
+
+In [layouts/default.vue](./layouts/default.vue) you will be able to configure global variables.
+
+- by settings `castingOpen` to true, the website will advertise its casting page. You should set this during the castings phases, but disable it the rest of the year, to prevent unnecessary informations. The majority of /castings pages should not be really relevant for people outside our schools
+
 # TODO :
 
 - Rajouter une banière pour pouvoir opt-out du tracking Google Analytics
