@@ -22,22 +22,26 @@
     </div>
 
     <div class="flex flex-col gap-4 md:px-40 px-10 items-center justify-center pt-10">
-      <div class="w-3/4 flex flex-row gap-4 items-center  ">
+      <div class="w-full flex flex-row gap-4 items-center  ">
         <UIcon name="i-heroicons-calendar-days" class="w-20 h-20" />
         <span class="flex flex-col">
           <span class="font-bold">Castings anticipés</span>
-          Réservés aux 2A/3A/4A de l'emlyon et Centrale. Inscription entre le 8 août et le 17 septembre
+          Réservés aux 2A/3A/4A de l'emlyon et Centrale.
+          <br />
+          Inscription entre le 8 août et le 17 septembre
           <AnimatedNuxtLink text="Formulaire d'inscription"
             to="https://docs.google.com/forms/d/e/1FAIpQLSfSXolt-PMM8c7XBdwA6NHZtXAUnjglKZDcd4E10RjSWU9yvA/viewform"
             lefticon="i-heroicons-link" />
         </span>
       </div>
 
-      <div class="w-3/4 flex flex-row gap-4 items-center  ">
+      <div class="w-full flex flex-row gap-4 items-center  ">
         <UIcon name="i-heroicons-calendar-days" class="w-20 h-20" />
         <span class="flex flex-col">
           <span class="font-bold">Castings généraux</span>
-          Ouverts à tout élève de l'emlyon et Centrale. Inscription à partir du 2 octobre
+          Ouverts à tout élève de l'emlyon et Centrale.
+          <br />
+          Inscription à partir du 2 octobre
         </span>
       </div>
     </div>
