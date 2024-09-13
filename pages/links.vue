@@ -13,7 +13,22 @@
       <UIcon name="i-heroicons-sparkles" class="w-5 h-5 mx-2" />
     </p>
 
-    <a v-for="item in items" :key="item.text" :href="item.link" target="_blank">
+    <a v-for="item in links" :key="item.text" :href="item.link" target="_blank">
+      <UCard class="w-80 flex flex-col items-center">
+        <div class="flex flex-row items-center space-x-2  caviar text-commuz-500">
+          <UIcon :name="item.icon" class="w-5 h-5 mx-2" />
+          {{ item.text }}
+        </div>
+      </UCard>
+    </a>
+
+    <p class="caviar flex flex-row items-center py-5 text-center">
+      <UIcon name="i-heroicons-musical-note" class="w-5 h-5 mx-2" />
+      Écoutez nos albums sur la plateforme de streaming de votre choix
+      <UIcon name="i-heroicons-musical-note" class="w-5 h-5 mx-2" />
+    </p>
+
+    <a v-for="item in albums" :key="item.text" :href="item.link" target="_blank">
       <UCard class="w-80 flex flex-col items-center">
         <div class="flex flex-row items-center space-x-2  caviar text-commuz-500">
           <UIcon :name="item.icon" class="w-5 h-5 mx-2" />
@@ -25,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-const items = [
+const links = [
   {
     icon: 'i-heroicons-computer-desktop',
     text: 'Site web',
@@ -50,6 +65,34 @@ const items = [
     icon: 'i-ph-linkedin-logo',
     text: 'Linkedln',
     link: 'https://www.linkedin.com/company/commuz',
+  },
+];
+
+const albums = [
+  {
+    icon: 'i-ph-spotify-logo',
+    text: 'Spotify',
+    link: 'https://open.spotify.com/intl-fr/artist/21oCxFRMiWeCx7X0yXiMdS',
+  },
+  {
+    icon: 'i-simple-icons-deezer',
+    text: 'Deezer',
+    link: 'https://www.deezer.com/en/artist/69115622',
+  },
+  {
+    icon: 'i-cib-apple-music',
+    text: 'Apple Music',
+    link: 'https://music.apple.com/fr/artist/commuz/1471619691',
+  },
+  {
+    icon: 'i-material-symbols-youtube-music',
+    text: 'YouTube Music',
+    link: 'https://www.youtube.com/channel/UC727FuhuuLL3d83KaNZ4gOg',
+  },
+  {
+    icon: 'i-simple-icons-amazonmusic',
+    text: 'Amazon Music',
+    link: 'https://music.amazon.fr/artists/B07V29V4P5/commuz',
   },
 ];
 </script>
