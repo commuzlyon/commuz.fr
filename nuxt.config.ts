@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   modules: [
     "nuxt-gtag",
     "vue3-carousel-nuxt",
@@ -8,15 +9,22 @@ export default defineNuxtConfig({
     "@nuxt/ui",
   ],
 
+  image: {
+    format: ["webp"],
+  },
+
   gtag: {
     id: "G-CC0ZQE9TB5",
   },
+
   css: ["~/assets/css/global.scss"],
+
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ["Nuxt"].includes(tag),
     },
   },
+
   app: {
     head: {
       meta: [
@@ -73,9 +81,12 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   // TODO remove with vue3-carousel
   // See https://github.com/ismail9k/vue3-carousel/issues/377
   alias: {
     "vue3-carousel/dist/carousel": "vue3-carousel/dist/carousel.es.js",
   },
+
+  compatibilityDate: "2024-09-15",
 });
