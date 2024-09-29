@@ -1,16 +1,13 @@
 <template lang="html">
   <div>
     <div class="galerie_grid">
-      <div
-v-for="(src, i) in galerie.images_src" :key="i" class="galerie_grid__entry"
+      <div v-for="(src, i) in galerie.images_src" :key="i" class="galerie_grid__entry"
         :class="galerie.emphase.indexOf(i) >= 0 ? 'big-image' : 'small-image'">
-        <img class="lazy-image" :data-src="src" @click="() => showImg(i)" >
+        <NuxtImg :src="src" loading="lazy" @click="() => showImg(i)" />
       </div>
     </div>
     <client-only>
-      <vue-easy-lightbox
-:visible="visible" :imgs="galerie.images_src" :index="index"
-        @hide="handleHide"/>
+      <vue-easy-lightbox :visible="visible" :imgs="galerie.images_src" :index="index" @hide="handleHide" />
     </client-only>
   </div>
 </template>
@@ -18,18 +15,20 @@ v-for="(src, i) in galerie.images_src" :key="i" class="galerie_grid__entry"
 <script>
 import VueEasyLightbox from 'vue-easy-lightbox'
 
-const year = 2023;
-const totalImages = 134;
-const extension = ".jpg";
+const imagesFiles = import.meta.glob('public/images/galeries/2023/*')
 
-const images_src = [];
+const imagesPaths = [];
 
-for (let i = 1; i <= totalImages; i++) {
-  images_src.push(['/images/galeries/', year, '/', i, extension].join(''));
+for (const filepath in imagesFiles) {
+  // We remove /public from the url, as NuxtImage will search for the image in the public directory
+  imagesPaths.push(filepath.replace("/public", ""))
 }
 
+// We need to sort using numerical name, to prevent the following order: 1, 10, 100, 101 ... 11 ... 2, 20, 200 ...
+imagesPaths.sort((p1, p2) => Number(p1.split('/').pop().split(".")[0]) - Number(p2.split('/').pop().split(".")[0]));
+
 const galerie = {
-  images_src: images_src,
+  images_src: imagesPaths,
   emphase: [1, 16, 31, 46, 61, 76, 91, 106, 121]
 }
 
@@ -117,5 +116,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss"></style>

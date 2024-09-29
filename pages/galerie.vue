@@ -1,19 +1,29 @@
 <template lang="html">
-  <title>La Commuz' - Galerie</title>
-  <Meta name="description" content="Retour en image sur les quelques dernières années." />
   <div>
+    <title>La Commuz' - Galerie</title>
+    <Meta name="description" content="Retour en image sur les quelques dernières années." />
     <div id="years-list">
-      <router-link
-v-for="(annee, id) in anneesGalerie" :key="id" class="inline-link" :to="`/galerie/${annee}`"
+      <router-link v-for="(annee, id) in anneesGalerie" :key="id" class="inline-link" :to="`/galerie/${annee}`"
         active-class="selected" exact>{{
-          annee }}</router-link>
+          annee }}
+      </router-link>
     </div>
     <NuxtPage />
   </div>
 </template>
 
-<script>
-const anneesGalerie = ['2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016']
+<script lang="ts">
+const imagesFiles = import.meta.glob('public/images/galeries/**')
+console.log(imagesFiles)
+
+const years = new Set<string>();
+
+for (const filepath in imagesFiles) {
+  // Paths wil have the format : /public/images/galeries/2024/94.jpg, we want to keep 2024
+  years.add(filepath.split("/")[4])
+}
+
+const anneesGalerie = Array.from(years).sort().reverse();
 
 export default defineComponent({
   setup() {
