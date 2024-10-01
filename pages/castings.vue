@@ -86,7 +86,7 @@ l’orchestre et aux AC : la clé de voûte qui
 sublime la musique. Ils sont aux nombres de
 six ! Ainsi chaque harmonie résonne puisse-
 ment et envahit la scène en charmant les oreilles de toutes et tous.`,
-    imageFolder: "choriste"
+    imageFolder: "choristes"
   },
   {
     name: "Danseur.euse",
