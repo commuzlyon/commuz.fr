@@ -2,9 +2,11 @@
   <nav class="navbar">
     <ul class="navbar__navs">
       <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img
-src="/logos/logo.svg" alt=""
-            width="37.44" height="48" ></NuxtLink>
+        <NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img src="/logos/logo.svg" alt=""
+            width="37.44" height="48"></NuxtLink>
+      </li>
+      <li v-if="castingOpen" class="navbar__item">
+        <NuxtLink active-class="navbar__link--active" to="/castings" class="navbar__link">Castings</NuxtLink>
       </li>
       <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/commuz2024" class="navbar__link">Commuz' 2024</NuxtLink>
@@ -24,6 +26,14 @@ src="/logos/logo.svg" alt=""
     </ul>
   </nav>
 </template>
+
+<script setup lang="ts">
+/*
+Set `castingOpen` to true to enable the casting page link in the navigation bar. It will also show a card "La Commuz' recrute" on the main page
+*/
+const castingOpen = useState('castingOpen')
+castingOpen.value = true
+</script>
 
 <style lang="scss">
 .navbar {

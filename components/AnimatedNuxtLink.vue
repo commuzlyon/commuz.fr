@@ -1,6 +1,6 @@
 <template>
   <div class="text-base">
-    <NuxtLink :to="to" class="animated-nuxt-link flex flex-row items-center">
+    <NuxtLink :to="to" class="animated-nuxt-link flex flex-row items-center" :target="target">
       <UIcon v-if="lefticon" :name="lefticon" class="w-5 h-5 mr-2" />
 
       {{ text }}
@@ -15,6 +15,7 @@ defineProps<{
   to: string;
   lefticon?: string;
   icon?: string;
+  target?: string;
 }>();
 </script>
 
