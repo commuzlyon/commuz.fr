@@ -9,7 +9,7 @@
 
     <div class="flex flex-col gap-4 md:px-40 px-10 items-center justify-center ">
       <div class="md:w-1/2">
-        Quelque soient vos talents ou vos passions, la Commuz' vous accueille à bras ouverts pour l'aventure {{ year }} ! Les
+        Quels que soient vos talents ou vos passions, la Commuz' vous accueille à bras ouverts pour l'aventure {{ year }} ! Les
         castings sont ouverts à toutes et tous.
       </div>
       <div class="md:w-1/2">
