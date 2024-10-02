@@ -74,12 +74,7 @@ const poles = [
   },
   {
     name: "Choriste",
-    description: `Les choristes sont essentiels
-pour donner de la force et du soutien à
-l’orchestre et aux AC : la clé de voûte qui
-sublime la musique. Ils sont aux nombres de
-six ! Ainsi chaque harmonie résonne puisse-
-ment et envahit la scène en charmant les oreilles de toutes et tous.`,
+    description: `Les choristes sont essentiels pour donner de la force et du soutien à l’orchestre et aux AC : la clé de voûte qui sublime la musique. Ils sont aux nombres de huit ! Ainsi chaque harmonie résonne puissement et envahit la scène en charmant les oreilles de toutes et tous.`,
     imageFolder: "choristes"
   },
   {
@@ -90,12 +85,7 @@ vivre une expérience incroyable tous ensemble et de KIFFER !`,
   },
   {
     name: "Muscien.ne",
-    description: `Zbouing Pouet Boom Tchatcha Ting... Vous
-reconnessez l’un de ces sons ? Vous avez votre
-place aux meilleurs pupitres de la Commuz',
-celui qui brille sous les projecteurs !!! Rejoingnez notre
-orchestre cette année, nous cherchons tout
-les instruments !`,
+    description: `Zbouing Pouet Boom Tchatcha Ting... Vous reconnaissez l’un de ces sons ? Vous avez votre place aux meilleurs pupitres de la Commuz', celui qui brille sous les projecteurs !!! Rejoingnez notre orchestre cette année, nous cherchons tous les instruments !`,
     imageFolder: "zikos"
   },
   {
@@ -106,13 +96,7 @@ unique, très prenante et parmi les plus gratifiantes qui soient. C’est simple
   },
   {
     name: "Décorateur.rice",
-    description: `Le pôle Décors est une initiation formidable à la
-Commuz’, pas de stress de la scène, pas de pression
-mise par les Respos et que du kiff . On y retroure des
-personnes avec beaucoup de talents de bricolage (on
-sent que les gens ont fait Prépa Techno) et d’autres
-qui souhaitent s’initier à la bricole et qui grâce à notre
-pôle se sont découverts une âme d’artiste.`,
+    description: `Le pôle Décors est une initiation formidable à la Commuz’, pas de stress de la scène, pas de pression mise par les Respos et que du kiff. On y retrouve des personnes avec beaucoup de talents de bricolage (on sent que les gens ont fait Prépa Techno) et d’autres qui souhaitent s’initier à la bricole et qui grâce à notre pôle se sont découverts une âme d’artiste.`,
     imageFolder: "decors"
   },
   {
