@@ -9,12 +9,11 @@
 
     <div class="flex flex-col gap-4 md:px-40 px-10 items-center justify-center ">
       <div class="md:w-1/2">
-        Quelque soit vos talents ou vos passions, la Commuz' vous accueille à bras ouverts pour l'aventure 2024 ! Les
+        Quelque soient vos talents ou vos passions, la Commuz' vous accueille à bras ouverts pour l'aventure {{ year }} ! Les
         castings sont ouverts à toutes et tous.
       </div>
       <div class="md:w-1/2">
-        Au programme : Danse 👯, Décors 🛠, Musique (Zikos) 🎻, VP Amour ❤️, Chant 🎤, Costumes 🪡, Acting 🎭, Son 📣,
-        Projection 📽, Composition 🎼 et Partenariat 🤝.
+        Au programme : {{ poles.map(pole => pole.name.toLowerCase()).join(", ") }}.
       </div>
       <div>
         <AnimatedNuxtLink text="Découvrir la Commuz'" to="/" icon="i-heroicons-arrow-long-right-solid" />
@@ -64,15 +63,10 @@
 
 <script setup lang="ts">
 const castingsAvancesOpen = false;
+const year = 2025;
+
 
 const poles = [
-  // {
-  //   name: "Danseurs et danseuses",
-  //   description: "Le pôle danse, c'est un pôle bourré de talents issus de différents parcours dans la danse \
-  //   et de personnalités toutes aussi géniales les unes que les autres, donc n'hésite pas à t'inscrire aux \
-  //   castings que tu sois débutant.e, avancé.e, classique, contempo ou hip-hop !",
-  //   imageFolder: "danseurs"
-  // },
   {
     name: "Acteur.rice chanteur.euse",
     description: `Incarnez un des personnages qui donneront vie à la Commuz’ 2025, et vivez une incroyable aventure artistique et humaine. Pas besoin d’expérience préalable, nous vous accompagnerons avec un coaching individuel en théâtre, en chant et en danse, pour faire de vous une bête de scène !`,  
@@ -80,7 +74,7 @@ const poles = [
   },
   {
     name: "Choriste",
-    description: `"Les choristes sont essentiels
+    description: `Les choristes sont essentiels
 pour donner de la force et du soutien à
 l’orchestre et aux AC : la clé de voûte qui
 sublime la musique. Ils sont aux nombres de
