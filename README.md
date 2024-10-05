@@ -10,7 +10,7 @@
 
 # Description
 
-Site Internet de la Commuz' – Comédie musicale étudiante commune à l'École centrale de Lyon et à l'emlyon *business school*.
+Site Internet de la Commuz' – Comédie musicale étudiante commune à l'École centrale de Lyon et à l'emlyon _business school_.
 
 # Auteurs
 
@@ -25,10 +25,9 @@ Le site est une refonte menée par Étienne Sanguinetti, inspirée d'un premier 
 - Antoine Haynez : Webmestre du mandat 2022 - 2023 ;
 - Frédéric Legrand : Webmestre du mandat 2023 - 2024 ;
 
+# Dépendances
 
-# Dépendances 
-
-Ce projet a été développé sous Node.js@21.5.0 avec le framework *Nuxt*@3.9.0.
+Ce projet a été développé sous Node.js@21.5.0 avec le framework _Nuxt_@3.9.0.
 
 # Latest
 
@@ -36,6 +35,14 @@ Ce projet a été développé sous Node.js@21.5.0 avec le framework *Nuxt*@3.9.0
 - Added support for Google Analytics
 
 # Guides
+
+## Add pictures of the spectacle
+
+Each year, after the spectacle, you will need to add pictures made during the representations.
+
+These high quality pictures can weight a lot. If we add 3/4 Go of pictures each year to this repository, it will become really hard to clone. Moreover these original pictures will never be used, as we use `NuxtImage` for optimization.
+
+Use the script [image_manipulation.ts](./image_manipulation.ts) to export images. All information are included in the file.
 
 ## Change the homepage video
 
