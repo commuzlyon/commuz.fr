@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     id: "G-CC0ZQE9TB5",
   },
 
-  css: ["~/assets/css/global.scss"],
+  //css: [],
 
   vue: {
     compilerOptions: {
