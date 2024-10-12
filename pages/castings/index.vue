@@ -70,7 +70,7 @@ const poles = [
   {
     name: "Acteur.rice chanteur.euse",
     description: `Incarnez un des personnages qui donneront vie à la Commuz’ 2025, et vivez une incroyable aventure artistique et humaine. Pas besoin d’expérience préalable, nous vous accompagnerons avec un coaching individuel en théâtre, en chant et en danse, pour faire de vous une bête de scène !`,  
-  imageFolder: "ac"
+    imageFolder: "ac"
   },
   {
     name: "Choriste",

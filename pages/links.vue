@@ -7,7 +7,7 @@
       La Commuz'
     </h1>
 
-    <a v-if="castingOpen" href="/castings" class="py-5">
+    <NuxtLink v-if="castingOpen" to="/castings" class="py-5">
       <UCard class="group">
         <div class="w-96 flex flex-col items-center">
           <span
@@ -24,7 +24,7 @@
           </div>
         </div>
       </UCard>
-    </a>
+    </NuxtLink>
 
     <p class="caviar flex flex-row items-center pb-5 text-center">
       <UIcon name="i-heroicons-sparkles" class="w-5 h-5 mx-2" />
