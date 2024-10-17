@@ -5,21 +5,6 @@
         <NuxtLink active-class="navbar__link--active" to="/" class="navbar__link"><img src="/logos/logo.svg" alt=""
             width="37.44" height="48"></NuxtLink>
       </li>
-      <li v-if="castingOpen" class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/castings" class="navbar__link">Castings</NuxtLink>
-      </li>
-      <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/commuz2024" class="navbar__link">Commuz' 2024</NuxtLink>
-      </li>
-      <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/spectacle" class="navbar__link">Le spectacle</NuxtLink>
-      </li>
-      <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/galerie/2024" class="navbar__link">Les photos</NuxtLink>
-      </li>
-      <li class="navbar__item">
-        <NuxtLink active-class="navbar__link--active" to="/equipe/2024" class="navbar__link">L'équipe</NuxtLink>
-      </li>
       <li class="navbar__item">
         <NuxtLink active-class="navbar__link--active" to="/partenariats" class="navbar__link">Partenariats</NuxtLink>
       </li>
