@@ -7,7 +7,7 @@
       La Commuz'
     </h1>
 
-    <a v-if="castingOpen" class="py-5">
+    <a v-if="castingOpen" href="/castings" class="py-5">
       <UCard class="group">
         <div class="w-96 flex flex-col items-center">
           <span
